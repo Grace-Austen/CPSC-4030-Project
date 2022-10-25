@@ -7,6 +7,8 @@
 /*Main body*/
 body {
     background-color: beige;
+    width: 100%;
+    height: 100%;
 }
 
 #main-content {
@@ -17,21 +19,6 @@ body {
 #main-viz {
     background-color: black;
     margin: 10px;
-    position: absolute;
-}
-
-#select-attribute {
-    background-color: black;
-    margin: 10px;
-    position: relative;
-    margin-left: 800px;
-}
-
-#credits-and-about {
-    background-color: black;
-    margin: 10px;
-    position: relative;
-    margin-left: 800px;
 }
 
 /*Credits*/
