@@ -1,0 +1,2815 @@
+Country,Continent,Region,Period,Mean Age
+Afghanistan,Asia,South-Central_Asia,1950-1955,29.8
+Afghanistan,Asia,South-Central_Asia,1955-1960,29.8
+Afghanistan,Asia,South-Central_Asia,1960-1965,29.8
+Afghanistan,Asia,South-Central_Asia,1965-1970,29.8
+Afghanistan,Asia,South-Central_Asia,1970-1975,29.8
+Afghanistan,Asia,South-Central_Asia,1975-1980,29.9
+Afghanistan,Asia,South-Central_Asia,1980-1985,29.9
+Afghanistan,Asia,South-Central_Asia,1985-1990,29.9
+Afghanistan,Asia,South-Central_Asia,1990-1995,29.9
+Afghanistan,Asia,South-Central_Asia,1995-2000,29.8
+Afghanistan,Asia,South-Central_Asia,2000-2005,29.6
+Afghanistan,Asia,South-Central_Asia,2005-2010,29.4
+Afghanistan,Asia,South-Central_Asia,2010-2015,29.2
+Afghanistan,Asia,South-Central_Asia,2015-2020,29.1
+Albania,Europe,Southern_Europe,1950-1955,31.1
+Albania,Europe,Southern_Europe,1955-1960,30.9
+Albania,Europe,Southern_Europe,1960-1965,30.6
+Albania,Europe,Southern_Europe,1965-1970,29.8
+Albania,Europe,Southern_Europe,1970-1975,29.6
+Albania,Europe,Southern_Europe,1975-1980,29.2
+Albania,Europe,Southern_Europe,1980-1985,28.9
+Albania,Europe,Southern_Europe,1985-1990,28.5
+Albania,Europe,Southern_Europe,1990-1995,27.7
+Albania,Europe,Southern_Europe,1995-2000,27.4
+Albania,Europe,Southern_Europe,2000-2005,27.5
+Albania,Europe,Southern_Europe,2005-2010,27.5
+Albania,Europe,Southern_Europe,2010-2015,27.3
+Albania,Europe,Southern_Europe,2015-2020,27.2
+Algeria,Africa,Northern_Africa,1950-1955,29.9
+Algeria,Africa,Northern_Africa,1955-1960,29.9
+Algeria,Africa,Northern_Africa,1960-1965,29.9
+Algeria,Africa,Northern_Africa,1965-1970,30.2
+Algeria,Africa,Northern_Africa,1970-1975,30.4
+Algeria,Africa,Northern_Africa,1975-1980,30.4
+Algeria,Africa,Northern_Africa,1980-1985,30.7
+Algeria,Africa,Northern_Africa,1985-1990,31.2
+Algeria,Africa,Northern_Africa,1990-1995,31.4
+Algeria,Africa,Northern_Africa,1995-2000,31.4
+Algeria,Africa,Northern_Africa,2000-2005,31.5
+Algeria,Africa,Northern_Africa,2005-2010,31.7
+Algeria,Africa,Northern_Africa,2010-2015,31.5
+Algeria,Africa,Northern_Africa,2015-2020,31.5
+Angola,Africa,Middle_Africa,1950-1955,28.2
+Angola,Africa,Middle_Africa,1955-1960,28.2
+Angola,Africa,Middle_Africa,1960-1965,28.2
+Angola,Africa,Middle_Africa,1965-1970,28.2
+Angola,Africa,Middle_Africa,1970-1975,28.2
+Angola,Africa,Middle_Africa,1975-1980,28.2
+Angola,Africa,Middle_Africa,1980-1985,28.2
+Angola,Africa,Middle_Africa,1985-1990,28.2
+Angola,Africa,Middle_Africa,1990-1995,28.3
+Angola,Africa,Middle_Africa,1995-2000,28.5
+Angola,Africa,Middle_Africa,2000-2005,28.6
+Angola,Africa,Middle_Africa,2005-2010,28.7
+Angola,Africa,Middle_Africa,2010-2015,28.7
+Angola,Africa,Middle_Africa,2015-2020,28.8
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1950-1955,26.8
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1955-1960,26.8
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1960-1965,26.8
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1965-1970,26.8
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1970-1975,26.8
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1975-1980,25.8
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1980-1985,25.4
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1985-1990,26.1
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1990-1995,26.9
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.2
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.3
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.4
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,2010-2015,27.5
+Antigua and Barbuda,Latin_America_and_the_Carribean,Caribbean,2015-2020,27.6
+Argentina,Latin_America_and_the_Carribean,South_America,1950-1955,28.3
+Argentina,Latin_America_and_the_Carribean,South_America,1955-1960,28.3
+Argentina,Latin_America_and_the_Carribean,South_America,1960-1965,28.3
+Argentina,Latin_America_and_the_Carribean,South_America,1965-1970,28.3
+Argentina,Latin_America_and_the_Carribean,South_America,1970-1975,28
+Argentina,Latin_America_and_the_Carribean,South_America,1975-1980,27.7
+Argentina,Latin_America_and_the_Carribean,South_America,1980-1985,27.8
+Argentina,Latin_America_and_the_Carribean,South_America,1985-1990,27.8
+Argentina,Latin_America_and_the_Carribean,South_America,1990-1995,27.7
+Argentina,Latin_America_and_the_Carribean,South_America,1995-2000,27.8
+Argentina,Latin_America_and_the_Carribean,South_America,2000-2005,27.9
+Argentina,Latin_America_and_the_Carribean,South_America,2005-2010,27.9
+Argentina,Latin_America_and_the_Carribean,South_America,2010-2015,28.1
+Argentina,Latin_America_and_the_Carribean,South_America,2015-2020,28.2
+Armenia,Asia,Western_Asia,1950-1955,30
+Armenia,Asia,Western_Asia,1955-1960,29.5
+Armenia,Asia,Western_Asia,1960-1965,28.9
+Armenia,Asia,Western_Asia,1965-1970,28.1
+Armenia,Asia,Western_Asia,1970-1975,27.1
+Armenia,Asia,Western_Asia,1975-1980,26.2
+Armenia,Asia,Western_Asia,1980-1985,25.6
+Armenia,Asia,Western_Asia,1985-1990,25.3
+Armenia,Asia,Western_Asia,1990-1995,24.9
+Armenia,Asia,Western_Asia,1995-2000,25
+Armenia,Asia,Western_Asia,2000-2005,25.5
+Armenia,Asia,Western_Asia,2005-2010,25.9
+Armenia,Asia,Western_Asia,2010-2015,26.3
+Armenia,Asia,Western_Asia,2015-2020,26.7
+Aruba,Latin_America_and_the_Carribean,Caribbean,1950-1955,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1955-1960,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1960-1965,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1965-1970,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1970-1975,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1975-1980,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1980-1985,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1990-1995,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.5
+Aruba,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.4
+Aruba,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.7
+Aruba,Latin_America_and_the_Carribean,Caribbean,2010-2015,28
+Aruba,Latin_America_and_the_Carribean,Caribbean,2015-2020,28.3
+Australia,Oceania,Australia_and_New_Zealand,1950-1955,27.9
+Australia,Oceania,Australia_and_New_Zealand,1955-1960,27.6
+Australia,Oceania,Australia_and_New_Zealand,1960-1965,27.5
+Australia,Oceania,Australia_and_New_Zealand,1965-1970,27.3
+Australia,Oceania,Australia_and_New_Zealand,1970-1975,26.8
+Australia,Oceania,Australia_and_New_Zealand,1975-1980,26.9
+Australia,Oceania,Australia_and_New_Zealand,1980-1985,27.4
+Australia,Oceania,Australia_and_New_Zealand,1985-1990,28.1
+Australia,Oceania,Australia_and_New_Zealand,1990-1995,28.6
+Australia,Oceania,Australia_and_New_Zealand,1995-2000,29.2
+Australia,Oceania,Australia_and_New_Zealand,2000-2005,29.8
+Australia,Oceania,Australia_and_New_Zealand,2005-2010,30.3
+Australia,Oceania,Australia_and_New_Zealand,2010-2015,30.6
+Australia,Oceania,Australia_and_New_Zealand,2015-2020,31
+Austria,Europe,Western_Europe,1950-1955,27.9
+Austria,Europe,Western_Europe,1955-1960,27.7
+Austria,Europe,Western_Europe,1960-1965,27.4
+Austria,Europe,Western_Europe,1965-1970,26.9
+Austria,Europe,Western_Europe,1970-1975,26.5
+Austria,Europe,Western_Europe,1975-1980,26.3
+Austria,Europe,Western_Europe,1980-1985,26.4
+Austria,Europe,Western_Europe,1985-1990,26.9
+Austria,Europe,Western_Europe,1990-1995,27.3
+Austria,Europe,Western_Europe,1995-2000,28
+Austria,Europe,Western_Europe,2000-2005,28.6
+Austria,Europe,Western_Europe,2005-2010,29.4
+Austria,Europe,Western_Europe,2010-2015,30.2
+Austria,Europe,Western_Europe,2015-2020,30.9
+Azerbaijan,Asia,Western_Asia,1950-1955,30.5
+Azerbaijan,Asia,Western_Asia,1955-1960,30.5
+Azerbaijan,Asia,Western_Asia,1960-1965,30.3
+Azerbaijan,Asia,Western_Asia,1965-1970,29.9
+Azerbaijan,Asia,Western_Asia,1970-1975,29.5
+Azerbaijan,Asia,Western_Asia,1975-1980,29
+Azerbaijan,Asia,Western_Asia,1980-1985,28.2
+Azerbaijan,Asia,Western_Asia,1985-1990,27.4
+Azerbaijan,Asia,Western_Asia,1990-1995,26.6
+Azerbaijan,Asia,Western_Asia,1995-2000,26.3
+Azerbaijan,Asia,Western_Asia,2000-2005,26.3
+Azerbaijan,Asia,Western_Asia,2005-2010,26
+Azerbaijan,Asia,Western_Asia,2010-2015,25.8
+Azerbaijan,Asia,Western_Asia,2015-2020,25.6
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1950-1955,28.1
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1955-1960,28.1
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1960-1965,28.1
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1965-1970,28.1
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1970-1975,28.1
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1975-1980,27.1
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1980-1985,27.1
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.3
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1990-1995,27.5
+Bahamas,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.5
+Bahamas,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.9
+Bahamas,Latin_America_and_the_Carribean,Caribbean,2005-2010,28.2
+Bahamas,Latin_America_and_the_Carribean,Caribbean,2010-2015,28.7
+Bahamas,Latin_America_and_the_Carribean,Caribbean,2015-2020,29.1
+Bahrain,Asia,Western_Asia,1950-1955,29.9
+Bahrain,Asia,Western_Asia,1955-1960,29.9
+Bahrain,Asia,Western_Asia,1960-1965,29.9
+Bahrain,Asia,Western_Asia,1965-1970,29.9
+Bahrain,Asia,Western_Asia,1970-1975,29.9
+Bahrain,Asia,Western_Asia,1975-1980,29.9
+Bahrain,Asia,Western_Asia,1980-1985,30.1
+Bahrain,Asia,Western_Asia,1985-1990,30.4
+Bahrain,Asia,Western_Asia,1990-1995,30.4
+Bahrain,Asia,Western_Asia,1995-2000,30.3
+Bahrain,Asia,Western_Asia,2000-2005,30
+Bahrain,Asia,Western_Asia,2005-2010,29.8
+Bahrain,Asia,Western_Asia,2010-2015,29.8
+Bahrain,Asia,Western_Asia,2015-2020,29.7
+Bangladesh,Asia,South-Central_Asia,1950-1955,28.3
+Bangladesh,Asia,South-Central_Asia,1955-1960,28.3
+Bangladesh,Asia,South-Central_Asia,1960-1965,28.3
+Bangladesh,Asia,South-Central_Asia,1965-1970,28.3
+Bangladesh,Asia,South-Central_Asia,1970-1975,28.3
+Bangladesh,Asia,South-Central_Asia,1975-1980,28.3
+Bangladesh,Asia,South-Central_Asia,1980-1985,28
+Bangladesh,Asia,South-Central_Asia,1985-1990,27.5
+Bangladesh,Asia,South-Central_Asia,1990-1995,26.9
+Bangladesh,Asia,South-Central_Asia,1995-2000,26.5
+Bangladesh,Asia,South-Central_Asia,2000-2005,26.2
+Bangladesh,Asia,South-Central_Asia,2005-2010,25.9
+Bangladesh,Asia,South-Central_Asia,2010-2015,25.6
+Bangladesh,Asia,South-Central_Asia,2015-2020,25.4
+Barbados,Latin_America_and_the_Carribean,Caribbean,1950-1955,27.3
+Barbados,Latin_America_and_the_Carribean,Caribbean,1955-1960,27.5
+Barbados,Latin_America_and_the_Carribean,Caribbean,1960-1965,28
+Barbados,Latin_America_and_the_Carribean,Caribbean,1965-1970,27.7
+Barbados,Latin_America_and_the_Carribean,Caribbean,1970-1975,26.9
+Barbados,Latin_America_and_the_Carribean,Caribbean,1975-1980,27
+Barbados,Latin_America_and_the_Carribean,Caribbean,1980-1985,26.2
+Barbados,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.1
+Barbados,Latin_America_and_the_Carribean,Caribbean,1990-1995,26.7
+Barbados,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.8
+Barbados,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.3
+Barbados,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.8
+Barbados,Latin_America_and_the_Carribean,Caribbean,2010-2015,28.2
+Barbados,Latin_America_and_the_Carribean,Caribbean,2015-2020,29.3
+Belarus,Europe,Eastern_Europe,1950-1955,29.3
+Belarus,Europe,Eastern_Europe,1955-1960,29
+Belarus,Europe,Eastern_Europe,1960-1965,28.7
+Belarus,Europe,Eastern_Europe,1965-1970,28
+Belarus,Europe,Eastern_Europe,1970-1975,27.2
+Belarus,Europe,Eastern_Europe,1975-1980,26.4
+Belarus,Europe,Eastern_Europe,1980-1985,26
+Belarus,Europe,Eastern_Europe,1985-1990,25.7
+Belarus,Europe,Eastern_Europe,1990-1995,24.9
+Belarus,Europe,Eastern_Europe,1995-2000,25.2
+Belarus,Europe,Eastern_Europe,2000-2005,25.9
+Belarus,Europe,Eastern_Europe,2005-2010,26.8
+Belarus,Europe,Eastern_Europe,2010-2015,27.6
+Belarus,Europe,Eastern_Europe,2015-2020,28.5
+Belgium,Europe,Western_Europe,1950-1955,28.7
+Belgium,Europe,Western_Europe,1955-1960,28.2
+Belgium,Europe,Western_Europe,1960-1965,27.8
+Belgium,Europe,Western_Europe,1965-1970,27.4
+Belgium,Europe,Western_Europe,1970-1975,26.9
+Belgium,Europe,Western_Europe,1975-1980,26.6
+Belgium,Europe,Western_Europe,1980-1985,26.8
+Belgium,Europe,Western_Europe,1985-1990,27.6
+Belgium,Europe,Western_Europe,1990-1995,28.1
+Belgium,Europe,Western_Europe,1995-2000,28.7
+Belgium,Europe,Western_Europe,2000-2005,29
+Belgium,Europe,Western_Europe,2005-2010,29.6
+Belgium,Europe,Western_Europe,2010-2015,30.5
+Belgium,Europe,Western_Europe,2015-2020,30.9
+Belize,Latin_America_and_the_Carribean,Central_America,1950-1955,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1955-1960,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1960-1965,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1965-1970,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1970-1975,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1975-1980,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1980-1985,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1985-1990,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1990-1995,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,1995-2000,27.3
+Belize,Latin_America_and_the_Carribean,Central_America,2000-2005,27.2
+Belize,Latin_America_and_the_Carribean,Central_America,2005-2010,27.2
+Belize,Latin_America_and_the_Carribean,Central_America,2010-2015,27.1
+Belize,Latin_America_and_the_Carribean,Central_America,2015-2020,27.1
+Benin,Africa,Western_Africa,1950-1955,30.6
+Benin,Africa,Western_Africa,1955-1960,30.6
+Benin,Africa,Western_Africa,1960-1965,30.7
+Benin,Africa,Western_Africa,1965-1970,30.8
+Benin,Africa,Western_Africa,1970-1975,30.8
+Benin,Africa,Western_Africa,1975-1980,30.7
+Benin,Africa,Western_Africa,1980-1985,30.5
+Benin,Africa,Western_Africa,1985-1990,30.2
+Benin,Africa,Western_Africa,1990-1995,29.8
+Benin,Africa,Western_Africa,1995-2000,29.6
+Benin,Africa,Western_Africa,2000-2005,29.3
+Benin,Africa,Western_Africa,2005-2010,29.1
+Benin,Africa,Western_Africa,2010-2015,29
+Benin,Africa,Western_Africa,2015-2020,28.8
+Bhutan,Asia,South-Central_Asia,1950-1955,29.2
+Bhutan,Asia,South-Central_Asia,1955-1960,29.2
+Bhutan,Asia,South-Central_Asia,1960-1965,29.2
+Bhutan,Asia,South-Central_Asia,1965-1970,29.2
+Bhutan,Asia,South-Central_Asia,1970-1975,29.2
+Bhutan,Asia,South-Central_Asia,1975-1980,29.2
+Bhutan,Asia,South-Central_Asia,1980-1985,29.1
+Bhutan,Asia,South-Central_Asia,1985-1990,28.9
+Bhutan,Asia,South-Central_Asia,1990-1995,28.6
+Bhutan,Asia,South-Central_Asia,1995-2000,28.3
+Bhutan,Asia,South-Central_Asia,2000-2005,28.1
+Bhutan,Asia,South-Central_Asia,2005-2010,28.2
+Bhutan,Asia,South-Central_Asia,2010-2015,28.5
+Bhutan,Asia,South-Central_Asia,2015-2020,28.7
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1950-1955,30.4
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1955-1960,30.4
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1960-1965,30.3
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1965-1970,30.3
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1970-1975,30.2
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1975-1980,30
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1980-1985,29.6
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1985-1990,29.4
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1990-1995,29.3
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,1995-2000,29
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,2000-2005,28.8
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,2005-2010,28.6
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,2010-2015,28.5
+Bolivia (Plurinational State of),Latin_America_and_the_Carribean,South_America,2015-2020,28.4
+Bosnia and Herzegovina,Europe,Southern_Europe,1950-1955,30
+Bosnia and Herzegovina,Europe,Southern_Europe,1955-1960,29.5
+Bosnia and Herzegovina,Europe,Southern_Europe,1960-1965,28.9
+Bosnia and Herzegovina,Europe,Southern_Europe,1965-1970,28
+Bosnia and Herzegovina,Europe,Southern_Europe,1970-1975,27.2
+Bosnia and Herzegovina,Europe,Southern_Europe,1975-1980,26.9
+Bosnia and Herzegovina,Europe,Southern_Europe,1980-1985,26.4
+Bosnia and Herzegovina,Europe,Southern_Europe,1985-1990,26.3
+Bosnia and Herzegovina,Europe,Southern_Europe,1990-1995,26.7
+Bosnia and Herzegovina,Europe,Southern_Europe,1995-2000,26.7
+Bosnia and Herzegovina,Europe,Southern_Europe,2000-2005,27.1
+Bosnia and Herzegovina,Europe,Southern_Europe,2005-2010,27.8
+Bosnia and Herzegovina,Europe,Southern_Europe,2010-2015,28.6
+Bosnia and Herzegovina,Europe,Southern_Europe,2015-2020,29.3
+Botswana,Africa,Souther_Africa,1950-1955,29.8
+Botswana,Africa,Souther_Africa,1955-1960,29.8
+Botswana,Africa,Souther_Africa,1960-1965,29.8
+Botswana,Africa,Souther_Africa,1965-1970,29.8
+Botswana,Africa,Souther_Africa,1970-1975,29.8
+Botswana,Africa,Souther_Africa,1975-1980,29.8
+Botswana,Africa,Souther_Africa,1980-1985,29.8
+Botswana,Africa,Souther_Africa,1985-1990,29.5
+Botswana,Africa,Souther_Africa,1990-1995,30
+Botswana,Africa,Souther_Africa,1995-2000,29.9
+Botswana,Africa,Souther_Africa,2000-2005,29.7
+Botswana,Africa,Souther_Africa,2005-2010,29.5
+Botswana,Africa,Souther_Africa,2010-2015,29.8
+Botswana,Africa,Souther_Africa,2015-2020,29.9
+Brazil,Latin_America_and_the_Carribean,South_America,1950-1955,30.1
+Brazil,Latin_America_and_the_Carribean,South_America,1955-1960,30.1
+Brazil,Latin_America_and_the_Carribean,South_America,1960-1965,30.1
+Brazil,Latin_America_and_the_Carribean,South_America,1965-1970,29.9
+Brazil,Latin_America_and_the_Carribean,South_America,1970-1975,29.6
+Brazil,Latin_America_and_the_Carribean,South_America,1975-1980,29.2
+Brazil,Latin_America_and_the_Carribean,South_America,1980-1985,28.5
+Brazil,Latin_America_and_the_Carribean,South_America,1985-1990,27.7
+Brazil,Latin_America_and_the_Carribean,South_America,1990-1995,27.1
+Brazil,Latin_America_and_the_Carribean,South_America,1995-2000,26.7
+Brazil,Latin_America_and_the_Carribean,South_America,2000-2005,26.5
+Brazil,Latin_America_and_the_Carribean,South_America,2005-2010,26.3
+Brazil,Latin_America_and_the_Carribean,South_America,2010-2015,26.2
+Brazil,Latin_America_and_the_Carribean,South_America,2015-2020,26.1
+Brunei Darussalam,Asia,South-Eastern_Asia,1950-1955,28.9
+Brunei Darussalam,Asia,South-Eastern_Asia,1955-1960,28.9
+Brunei Darussalam,Asia,South-Eastern_Asia,1960-1965,28.9
+Brunei Darussalam,Asia,South-Eastern_Asia,1965-1970,28.9
+Brunei Darussalam,Asia,South-Eastern_Asia,1970-1975,29
+Brunei Darussalam,Asia,South-Eastern_Asia,1975-1980,29.1
+Brunei Darussalam,Asia,South-Eastern_Asia,1980-1985,29.1
+Brunei Darussalam,Asia,South-Eastern_Asia,1985-1990,29.2
+Brunei Darussalam,Asia,South-Eastern_Asia,1990-1995,29.2
+Brunei Darussalam,Asia,South-Eastern_Asia,1995-2000,29.8
+Brunei Darussalam,Asia,South-Eastern_Asia,2000-2005,29.6
+Brunei Darussalam,Asia,South-Eastern_Asia,2005-2010,29.6
+Brunei Darussalam,Asia,South-Eastern_Asia,2010-2015,30.1
+Brunei Darussalam,Asia,South-Eastern_Asia,2015-2020,30.3
+Bulgaria,Europe,Eastern_Europe,1950-1955,26.6
+Bulgaria,Europe,Eastern_Europe,1955-1960,25.7
+Bulgaria,Europe,Eastern_Europe,1960-1965,25.1
+Bulgaria,Europe,Eastern_Europe,1965-1970,24.8
+Bulgaria,Europe,Eastern_Europe,1970-1975,24.6
+Bulgaria,Europe,Eastern_Europe,1975-1980,24.2
+Bulgaria,Europe,Eastern_Europe,1980-1985,23.9
+Bulgaria,Europe,Eastern_Europe,1985-1990,24
+Bulgaria,Europe,Eastern_Europe,1990-1995,23.9
+Bulgaria,Europe,Eastern_Europe,1995-2000,24.5
+Bulgaria,Europe,Eastern_Europe,2000-2005,25.5
+Bulgaria,Europe,Eastern_Europe,2005-2010,26.5
+Bulgaria,Europe,Eastern_Europe,2010-2015,27.2
+Bulgaria,Europe,Eastern_Europe,2015-2020,28.2
+Burkina Faso,Africa,Western_Africa,1950-1955,27.6
+Burkina Faso,Africa,Western_Africa,1955-1960,28.1
+Burkina Faso,Africa,Western_Africa,1960-1965,28.5
+Burkina Faso,Africa,Western_Africa,1965-1970,29
+Burkina Faso,Africa,Western_Africa,1970-1975,29.4
+Burkina Faso,Africa,Western_Africa,1975-1980,29.7
+Burkina Faso,Africa,Western_Africa,1980-1985,30
+Burkina Faso,Africa,Western_Africa,1985-1990,30.1
+Burkina Faso,Africa,Western_Africa,1990-1995,30.2
+Burkina Faso,Africa,Western_Africa,1995-2000,30
+Burkina Faso,Africa,Western_Africa,2000-2005,29.7
+Burkina Faso,Africa,Western_Africa,2005-2010,29.5
+Burkina Faso,Africa,Western_Africa,2010-2015,29.4
+Burkina Faso,Africa,Western_Africa,2015-2020,29.2
+Burundi,Africa,Eastern_Africa,1950-1955,31.3
+Burundi,Africa,Eastern_Africa,1955-1960,31.3
+Burundi,Africa,Eastern_Africa,1960-1965,31.3
+Burundi,Africa,Eastern_Africa,1965-1970,31.3
+Burundi,Africa,Eastern_Africa,1970-1975,31.3
+Burundi,Africa,Eastern_Africa,1975-1980,31.3
+Burundi,Africa,Eastern_Africa,1980-1985,31.3
+Burundi,Africa,Eastern_Africa,1985-1990,31.3
+Burundi,Africa,Eastern_Africa,1990-1995,31.3
+Burundi,Africa,Eastern_Africa,1995-2000,31.3
+Burundi,Africa,Eastern_Africa,2000-2005,31.4
+Burundi,Africa,Eastern_Africa,2005-2010,31.1
+Burundi,Africa,Eastern_Africa,2010-2015,30.7
+Burundi,Africa,Eastern_Africa,2015-2020,30.3
+Cambodia,Asia,South-Eastern_Asia,1950-1955,30
+Cambodia,Asia,South-Eastern_Asia,1955-1960,30
+Cambodia,Asia,South-Eastern_Asia,1960-1965,30
+Cambodia,Asia,South-Eastern_Asia,1965-1970,30
+Cambodia,Asia,South-Eastern_Asia,1970-1975,30
+Cambodia,Asia,South-Eastern_Asia,1975-1980,30
+Cambodia,Asia,South-Eastern_Asia,1980-1985,30
+Cambodia,Asia,South-Eastern_Asia,1985-1990,30
+Cambodia,Asia,South-Eastern_Asia,1990-1995,29.9
+Cambodia,Asia,South-Eastern_Asia,1995-2000,29.8
+Cambodia,Asia,South-Eastern_Asia,2000-2005,29.2
+Cambodia,Asia,South-Eastern_Asia,2005-2010,28.5
+Cambodia,Asia,South-Eastern_Asia,2010-2015,27.6
+Cambodia,Asia,South-Eastern_Asia,2015-2020,27
+Cameroon,Africa,Middle_Africa,1950-1955,28.6
+Cameroon,Africa,Middle_Africa,1955-1960,28.6
+Cameroon,Africa,Middle_Africa,1960-1965,28.6
+Cameroon,Africa,Middle_Africa,1965-1970,28.6
+Cameroon,Africa,Middle_Africa,1970-1975,28.6
+Cameroon,Africa,Middle_Africa,1975-1980,28.6
+Cameroon,Africa,Middle_Africa,1980-1985,28.5
+Cameroon,Africa,Middle_Africa,1985-1990,28.5
+Cameroon,Africa,Middle_Africa,1990-1995,28.4
+Cameroon,Africa,Middle_Africa,1995-2000,28.3
+Cameroon,Africa,Middle_Africa,2000-2005,28.3
+Cameroon,Africa,Middle_Africa,2005-2010,28.6
+Cameroon,Africa,Middle_Africa,2010-2015,28.7
+Cameroon,Africa,Middle_Africa,2015-2020,28.9
+Canada,North_America,North America,1950-1955,28.4
+Canada,North_America,North America,1955-1960,28
+Canada,North_America,North America,1960-1965,27.8
+Canada,North_America,North America,1965-1970,27.5
+Canada,North_America,North America,1970-1975,26.9
+Canada,North_America,North America,1975-1980,26.9
+Canada,North_America,North America,1980-1985,27.2
+Canada,North_America,North America,1985-1990,27.6
+Canada,North_America,North America,1990-1995,28
+Canada,North_America,North America,1995-2000,28.5
+Canada,North_America,North America,2000-2005,29.3
+Canada,North_America,North America,2005-2010,29.8
+Canada,North_America,North America,2010-2015,30.3
+Canada,North_America,North America,2015-2020,30.7
+Cape Verde,Africa,Western_Africa,1950-1955,30.5
+Cape Verde,Africa,Western_Africa,1955-1960,30.5
+Cape Verde,Africa,Western_Africa,1960-1965,30.5
+Cape Verde,Africa,Western_Africa,1965-1970,30.5
+Cape Verde,Africa,Western_Africa,1970-1975,30.5
+Cape Verde,Africa,Western_Africa,1975-1980,30.5
+Cape Verde,Africa,Western_Africa,1980-1985,30.2
+Cape Verde,Africa,Western_Africa,1985-1990,29.6
+Cape Verde,Africa,Western_Africa,1990-1995,29.1
+Cape Verde,Africa,Western_Africa,1995-2000,28.6
+Cape Verde,Africa,Western_Africa,2000-2005,28.1
+Cape Verde,Africa,Western_Africa,2005-2010,27.7
+Cape Verde,Africa,Western_Africa,2010-2015,27.6
+Cape Verde,Africa,Western_Africa,2015-2020,27.4
+Central African Republic,Africa,Middle_Africa,1950-1955,28.7
+Central African Republic,Africa,Middle_Africa,1955-1960,28.7
+Central African Republic,Africa,Middle_Africa,1960-1965,28.7
+Central African Republic,Africa,Middle_Africa,1965-1970,28.7
+Central African Republic,Africa,Middle_Africa,1970-1975,28.7
+Central African Republic,Africa,Middle_Africa,1975-1980,28.8
+Central African Republic,Africa,Middle_Africa,1980-1985,29.1
+Central African Republic,Africa,Middle_Africa,1985-1990,29.4
+Central African Republic,Africa,Middle_Africa,1990-1995,29.6
+Central African Republic,Africa,Middle_Africa,1995-2000,29.9
+Central African Republic,Africa,Middle_Africa,2000-2005,30.2
+Central African Republic,Africa,Middle_Africa,2005-2010,30.4
+Central African Republic,Africa,Middle_Africa,2010-2015,29.8
+Central African Republic,Africa,Middle_Africa,2015-2020,29.6
+Chad,Africa,Middle_Africa,1950-1955,28.2
+Chad,Africa,Middle_Africa,1955-1960,28.2
+Chad,Africa,Middle_Africa,1960-1965,28.2
+Chad,Africa,Middle_Africa,1965-1970,28.2
+Chad,Africa,Middle_Africa,1970-1975,28.2
+Chad,Africa,Middle_Africa,1975-1980,28.2
+Chad,Africa,Middle_Africa,1980-1985,28.2
+Chad,Africa,Middle_Africa,1985-1990,28.2
+Chad,Africa,Middle_Africa,1990-1995,28.2
+Chad,Africa,Middle_Africa,1995-2000,28.2
+Chad,Africa,Middle_Africa,2000-2005,28.2
+Chad,Africa,Middle_Africa,2005-2010,28.4
+Chad,Africa,Middle_Africa,2010-2015,28.6
+Chad,Africa,Middle_Africa,2015-2020,28.8
+Channel Islands,Europe,Northern_Europe,1950-1955,28.2
+Channel Islands,Europe,Northern_Europe,1955-1960,28.2
+Channel Islands,Europe,Northern_Europe,1960-1965,28.2
+Channel Islands,Europe,Northern_Europe,1965-1970,28.2
+Channel Islands,Europe,Northern_Europe,1970-1975,28.2
+Channel Islands,Europe,Northern_Europe,1975-1980,28.2
+Channel Islands,Europe,Northern_Europe,1980-1985,28.2
+Channel Islands,Europe,Northern_Europe,1985-1990,28.7
+Channel Islands,Europe,Northern_Europe,1990-1995,29.3
+Channel Islands,Europe,Northern_Europe,1995-2000,29.6
+Channel Islands,Europe,Northern_Europe,2000-2005,29.8
+Channel Islands,Europe,Northern_Europe,2005-2010,30
+Channel Islands,Europe,Northern_Europe,2010-2015,30.3
+Channel Islands,Europe,Northern_Europe,2015-2020,30.5
+Chile,Latin_America_and_the_Carribean,South_America,1950-1955,29.6
+Chile,Latin_America_and_the_Carribean,South_America,1955-1960,29.5
+Chile,Latin_America_and_the_Carribean,South_America,1960-1965,29.2
+Chile,Latin_America_and_the_Carribean,South_America,1965-1970,28.7
+Chile,Latin_America_and_the_Carribean,South_America,1970-1975,28.1
+Chile,Latin_America_and_the_Carribean,South_America,1975-1980,27.6
+Chile,Latin_America_and_the_Carribean,South_America,1980-1985,27.4
+Chile,Latin_America_and_the_Carribean,South_America,1985-1990,27.4
+Chile,Latin_America_and_the_Carribean,South_America,1990-1995,27.5
+Chile,Latin_America_and_the_Carribean,South_America,1995-2000,27.6
+Chile,Latin_America_and_the_Carribean,South_America,2000-2005,27.7
+Chile,Latin_America_and_the_Carribean,South_America,2005-2010,27.7
+Chile,Latin_America_and_the_Carribean,South_America,2010-2015,27.7
+Chile,Latin_America_and_the_Carribean,South_America,2015-2020,27.7
+China,Asia,Eastern_Asia,1950-1955,29.7
+China,Asia,Eastern_Asia,1955-1960,29.8
+China,Asia,Eastern_Asia,1960-1965,29.8
+China,Asia,Eastern_Asia,1965-1970,29.8
+China,Asia,Eastern_Asia,1970-1975,29.5
+China,Asia,Eastern_Asia,1975-1980,28.3
+China,Asia,Eastern_Asia,1980-1985,26.4
+China,Asia,Eastern_Asia,1985-1990,26.2
+China,Asia,Eastern_Asia,1990-1995,26.1
+China,Asia,Eastern_Asia,1995-2000,26
+China,Asia,Eastern_Asia,2000-2005,26.3
+China,Asia,Eastern_Asia,2005-2010,26.7
+China,Asia,Eastern_Asia,2010-2015,26.9
+China,Asia,Eastern_Asia,2015-2020,27.9
+Colombia,Latin_America_and_the_Carribean,South_America,1950-1955,29.5
+Colombia,Latin_America_and_the_Carribean,South_America,1955-1960,29.5
+Colombia,Latin_America_and_the_Carribean,South_America,1960-1965,29.5
+Colombia,Latin_America_and_the_Carribean,South_America,1965-1970,29.3
+Colombia,Latin_America_and_the_Carribean,South_America,1970-1975,29.5
+Colombia,Latin_America_and_the_Carribean,South_America,1975-1980,28.9
+Colombia,Latin_America_and_the_Carribean,South_America,1980-1985,28.4
+Colombia,Latin_America_and_the_Carribean,South_America,1985-1990,27.9
+Colombia,Latin_America_and_the_Carribean,South_America,1990-1995,27.4
+Colombia,Latin_America_and_the_Carribean,South_America,1995-2000,27
+Colombia,Latin_America_and_the_Carribean,South_America,2000-2005,26.6
+Colombia,Latin_America_and_the_Carribean,South_America,2005-2010,27.1
+Colombia,Latin_America_and_the_Carribean,South_America,2010-2015,27.1
+Colombia,Latin_America_and_the_Carribean,South_America,2015-2020,27.3
+Comoros,Africa,Eastern_Africa,1950-1955,30.6
+Comoros,Africa,Eastern_Africa,1955-1960,30.6
+Comoros,Africa,Eastern_Africa,1960-1965,30.6
+Comoros,Africa,Eastern_Africa,1965-1970,30.6
+Comoros,Africa,Eastern_Africa,1970-1975,30.6
+Comoros,Africa,Eastern_Africa,1975-1980,30.6
+Comoros,Africa,Eastern_Africa,1980-1985,30.6
+Comoros,Africa,Eastern_Africa,1985-1990,30.6
+Comoros,Africa,Eastern_Africa,1990-1995,30.6
+Comoros,Africa,Eastern_Africa,1995-2000,30.6
+Comoros,Africa,Eastern_Africa,2000-2005,30.4
+Comoros,Africa,Eastern_Africa,2005-2010,30.3
+Comoros,Africa,Eastern_Africa,2010-2015,30.1
+Comoros,Africa,Eastern_Africa,2015-2020,30
+Congo,Africa,Middle_Africa,1950-1955,29.4
+Congo,Africa,Middle_Africa,1955-1960,29.4
+Congo,Africa,Middle_Africa,1960-1965,29.4
+Congo,Africa,Middle_Africa,1965-1970,29.4
+Congo,Africa,Middle_Africa,1970-1975,29.4
+Congo,Africa,Middle_Africa,1975-1980,29.4
+Congo,Africa,Middle_Africa,1980-1985,29.4
+Congo,Africa,Middle_Africa,1985-1990,29.3
+Congo,Africa,Middle_Africa,1990-1995,29.1
+Congo,Africa,Middle_Africa,1995-2000,29
+Congo,Africa,Middle_Africa,2000-2005,28.9
+Congo,Africa,Middle_Africa,2005-2010,28.7
+Congo,Africa,Middle_Africa,2010-2015,28.5
+Congo,Africa,Middle_Africa,2015-2020,28.3
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1950-1955,29
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1955-1960,29
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1960-1965,29.1
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1965-1970,29
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1970-1975,28.5
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1975-1980,27.9
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1980-1985,27.6
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1985-1990,27.5
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1990-1995,27.2
+Costa Rica,Latin_America_and_the_Carribean,Central_America,1995-2000,27
+Costa Rica,Latin_America_and_the_Carribean,Central_America,2000-2005,26.9
+Costa Rica,Latin_America_and_the_Carribean,Central_America,2005-2010,27
+Costa Rica,Latin_America_and_the_Carribean,Central_America,2010-2015,27.1
+Costa Rica,Latin_America_and_the_Carribean,Central_America,2015-2020,27.2
+Cote d'Ivoire,Africa,Western_Africa,1950-1955,28
+Cote d'Ivoire,Africa,Western_Africa,1955-1960,28.6
+Cote d'Ivoire,Africa,Western_Africa,1960-1965,29.1
+Cote d'Ivoire,Africa,Western_Africa,1965-1970,29.5
+Cote d'Ivoire,Africa,Western_Africa,1970-1975,29.6
+Cote d'Ivoire,Africa,Western_Africa,1975-1980,29.5
+Cote d'Ivoire,Africa,Western_Africa,1980-1985,29.6
+Cote d'Ivoire,Africa,Western_Africa,1985-1990,29.7
+Cote d'Ivoire,Africa,Western_Africa,1990-1995,29.7
+Cote d'Ivoire,Africa,Western_Africa,1995-2000,29.5
+Cote d'Ivoire,Africa,Western_Africa,2000-2005,29.2
+Cote d'Ivoire,Africa,Western_Africa,2005-2010,29
+Cote d'Ivoire,Africa,Western_Africa,2010-2015,29
+Cote d'Ivoire,Africa,Western_Africa,2015-2020,28.9
+Croatia,Europe,Southern_Europe,1950-1955,28.1
+Croatia,Europe,Southern_Europe,1955-1960,27.2
+Croatia,Europe,Southern_Europe,1960-1965,26.5
+Croatia,Europe,Southern_Europe,1965-1970,26.1
+Croatia,Europe,Southern_Europe,1970-1975,25.8
+Croatia,Europe,Southern_Europe,1975-1980,25.7
+Croatia,Europe,Southern_Europe,1980-1985,25.6
+Croatia,Europe,Southern_Europe,1985-1990,25.7
+Croatia,Europe,Southern_Europe,1990-1995,26.8
+Croatia,Europe,Southern_Europe,1995-2000,27.3
+Croatia,Europe,Southern_Europe,2000-2005,27.9
+Croatia,Europe,Southern_Europe,2005-2010,28.7
+Croatia,Europe,Southern_Europe,2010-2015,29.5
+Croatia,Europe,Southern_Europe,2015-2020,30.2
+Cuba,Latin_America_and_the_Carribean,Caribbean,1950-1955,28.1
+Cuba,Latin_America_and_the_Carribean,Caribbean,1955-1960,27.8
+Cuba,Latin_America_and_the_Carribean,Caribbean,1960-1965,27.5
+Cuba,Latin_America_and_the_Carribean,Caribbean,1965-1970,27.2
+Cuba,Latin_America_and_the_Carribean,Caribbean,1970-1975,26.6
+Cuba,Latin_America_and_the_Carribean,Caribbean,1975-1980,24.8
+Cuba,Latin_America_and_the_Carribean,Caribbean,1980-1985,24.9
+Cuba,Latin_America_and_the_Carribean,Caribbean,1985-1990,24.9
+Cuba,Latin_America_and_the_Carribean,Caribbean,1990-1995,25.2
+Cuba,Latin_America_and_the_Carribean,Caribbean,1995-2000,25.2
+Cuba,Latin_America_and_the_Carribean,Caribbean,2000-2005,26.2
+Cuba,Latin_America_and_the_Carribean,Caribbean,2005-2010,26.3
+Cuba,Latin_America_and_the_Carribean,Caribbean,2010-2015,26.4
+Cuba,Latin_America_and_the_Carribean,Caribbean,2015-2020,26.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1950-1955,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1955-1960,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1960-1965,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1965-1970,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1970-1975,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1975-1980,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1980-1985,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1990-1995,27.5
+Curaçao,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.9
+Curaçao,Latin_America_and_the_Carribean,Caribbean,2000-2005,28.2
+Curaçao,Latin_America_and_the_Carribean,Caribbean,2005-2010,28.3
+Curaçao,Latin_America_and_the_Carribean,Caribbean,2010-2015,28.4
+Curaçao,Latin_America_and_the_Carribean,Caribbean,2015-2020,28.5
+Cyprus,Asia,Western_Asia,1950-1955,29.7
+Cyprus,Asia,Western_Asia,1955-1960,28.7
+Cyprus,Asia,Western_Asia,1960-1965,28.9
+Cyprus,Asia,Western_Asia,1965-1970,28.4
+Cyprus,Asia,Western_Asia,1970-1975,27.7
+Cyprus,Asia,Western_Asia,1975-1980,27
+Cyprus,Asia,Western_Asia,1980-1985,26.8
+Cyprus,Asia,Western_Asia,1985-1990,27
+Cyprus,Asia,Western_Asia,1990-1995,27.6
+Cyprus,Asia,Western_Asia,1995-2000,28.4
+Cyprus,Asia,Western_Asia,2000-2005,29.2
+Cyprus,Asia,Western_Asia,2005-2010,29.5
+Cyprus,Asia,Western_Asia,2010-2015,29.6
+Cyprus,Asia,Western_Asia,2015-2020,29.8
+Czech Republic,Europe,Eastern_Europe,1950-1955,27
+Czech Republic,Europe,Eastern_Europe,1955-1960,26.1
+Czech Republic,Europe,Eastern_Europe,1960-1965,25.5
+Czech Republic,Europe,Eastern_Europe,1965-1970,25.2
+Czech Republic,Europe,Eastern_Europe,1970-1975,25.2
+Czech Republic,Europe,Eastern_Europe,1975-1980,25
+Czech Republic,Europe,Eastern_Europe,1980-1985,24.6
+Czech Republic,Europe,Eastern_Europe,1985-1990,24.7
+Czech Republic,Europe,Eastern_Europe,1990-1995,25
+Czech Republic,Europe,Eastern_Europe,1995-2000,26.5
+Czech Republic,Europe,Eastern_Europe,2000-2005,28
+Czech Republic,Europe,Eastern_Europe,2005-2010,29.2
+Czech Republic,Europe,Eastern_Europe,2010-2015,29.8
+Czech Republic,Europe,Eastern_Europe,2015-2020,30.7
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1950-1955,31.6
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1955-1960,31.6
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1960-1965,31.3
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1965-1970,30.6
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1970-1975,30.1
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1975-1980,28.9
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1980-1985,27.9
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1985-1990,27.5
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1990-1995,28.2
+Democratic People's Republic of Korea,Asia,Eastern_Asia,1995-2000,28.4
+Democratic People's Republic of Korea,Asia,Eastern_Asia,2000-2005,28.5
+Democratic People's Republic of Korea,Asia,Eastern_Asia,2005-2010,28.7
+Democratic People's Republic of Korea,Asia,Eastern_Asia,2010-2015,28.9
+Democratic People's Republic of Korea,Asia,Eastern_Asia,2015-2020,29
+Democratic Republic of the Congo,Africa,Middle_Africa,1950-1955,29.2
+Democratic Republic of the Congo,Africa,Middle_Africa,1955-1960,29.1
+Democratic Republic of the Congo,Africa,Middle_Africa,1960-1965,28.9
+Democratic Republic of the Congo,Africa,Middle_Africa,1965-1970,29
+Democratic Republic of the Congo,Africa,Middle_Africa,1970-1975,29.2
+Democratic Republic of the Congo,Africa,Middle_Africa,1975-1980,29.5
+Democratic Republic of the Congo,Africa,Middle_Africa,1980-1985,29.8
+Democratic Republic of the Congo,Africa,Middle_Africa,1985-1990,30.1
+Democratic Republic of the Congo,Africa,Middle_Africa,1990-1995,30.2
+Democratic Republic of the Congo,Africa,Middle_Africa,1995-2000,30.2
+Democratic Republic of the Congo,Africa,Middle_Africa,2000-2005,30
+Democratic Republic of the Congo,Africa,Middle_Africa,2005-2010,29.9
+Democratic Republic of the Congo,Africa,Middle_Africa,2010-2015,29.6
+Democratic Republic of the Congo,Africa,Middle_Africa,2015-2020,29.4
+Denmark,Europe,Northern_Europe,1950-1955,27.5
+Denmark,Europe,Northern_Europe,1955-1960,27.1
+Denmark,Europe,Northern_Europe,1960-1965,26.8
+Denmark,Europe,Northern_Europe,1965-1970,26.6
+Denmark,Europe,Northern_Europe,1970-1975,26.6
+Denmark,Europe,Northern_Europe,1975-1980,26.6
+Denmark,Europe,Northern_Europe,1980-1985,27.3
+Denmark,Europe,Northern_Europe,1985-1990,28.1
+Denmark,Europe,Northern_Europe,1990-1995,28.9
+Denmark,Europe,Northern_Europe,1995-2000,29.5
+Denmark,Europe,Northern_Europe,2000-2005,30
+Denmark,Europe,Northern_Europe,2005-2010,30.4
+Denmark,Europe,Northern_Europe,2010-2015,30.7
+Denmark,Europe,Northern_Europe,2015-2020,31
+Djibouti,Africa,Eastern_Africa,1950-1955,32.3
+Djibouti,Africa,Eastern_Africa,1955-1960,32.2
+Djibouti,Africa,Eastern_Africa,1960-1965,32
+Djibouti,Africa,Eastern_Africa,1965-1970,31.9
+Djibouti,Africa,Eastern_Africa,1970-1975,31.8
+Djibouti,Africa,Eastern_Africa,1975-1980,31.8
+Djibouti,Africa,Eastern_Africa,1980-1985,31.7
+Djibouti,Africa,Eastern_Africa,1985-1990,31.6
+Djibouti,Africa,Eastern_Africa,1990-1995,31.6
+Djibouti,Africa,Eastern_Africa,1995-2000,31.8
+Djibouti,Africa,Eastern_Africa,2000-2005,31.9
+Djibouti,Africa,Eastern_Africa,2005-2010,32.1
+Djibouti,Africa,Eastern_Africa,2010-2015,32.1
+Djibouti,Africa,Eastern_Africa,2015-2020,32.2
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1950-1955,29.1
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1955-1960,29.1
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1960-1965,29.1
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1965-1970,29
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1970-1975,28.6
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1975-1980,28.2
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1980-1985,27.7
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.1
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1990-1995,26.5
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,1995-2000,26.1
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,2000-2005,25.8
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,2005-2010,25.7
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,2010-2015,25.8
+Dominican Republic,Latin_America_and_the_Carribean,Caribbean,2015-2020,25.8
+Ecuador,Latin_America_and_the_Carribean,South_America,1950-1955,29.7
+Ecuador,Latin_America_and_the_Carribean,South_America,1955-1960,29.7
+Ecuador,Latin_America_and_the_Carribean,South_America,1960-1965,29.7
+Ecuador,Latin_America_and_the_Carribean,South_America,1965-1970,29.6
+Ecuador,Latin_America_and_the_Carribean,South_America,1970-1975,29.5
+Ecuador,Latin_America_and_the_Carribean,South_America,1975-1980,29.3
+Ecuador,Latin_America_and_the_Carribean,South_America,1980-1985,29.1
+Ecuador,Latin_America_and_the_Carribean,South_America,1985-1990,28.8
+Ecuador,Latin_America_and_the_Carribean,South_America,1990-1995,28.5
+Ecuador,Latin_America_and_the_Carribean,South_America,1995-2000,28.1
+Ecuador,Latin_America_and_the_Carribean,South_America,2000-2005,27.8
+Ecuador,Latin_America_and_the_Carribean,South_America,2005-2010,27.5
+Ecuador,Latin_America_and_the_Carribean,South_America,2010-2015,27.5
+Ecuador,Latin_America_and_the_Carribean,South_America,2015-2020,27.4
+Egypt,Africa,Northern_Africa,1950-1955,28.4
+Egypt,Africa,Northern_Africa,1955-1960,28.4
+Egypt,Africa,Northern_Africa,1960-1965,28.4
+Egypt,Africa,Northern_Africa,1965-1970,28.4
+Egypt,Africa,Northern_Africa,1970-1975,28.4
+Egypt,Africa,Northern_Africa,1975-1980,28.4
+Egypt,Africa,Northern_Africa,1980-1985,28.5
+Egypt,Africa,Northern_Africa,1985-1990,28.8
+Egypt,Africa,Northern_Africa,1990-1995,28.2
+Egypt,Africa,Northern_Africa,1995-2000,28
+Egypt,Africa,Northern_Africa,2000-2005,27.9
+Egypt,Africa,Northern_Africa,2005-2010,27.8
+Egypt,Africa,Northern_Africa,2010-2015,27.6
+Egypt,Africa,Northern_Africa,2015-2020,27.5
+El Salvador,Latin_America_and_the_Carribean,Central_America,1950-1955,29.3
+El Salvador,Latin_America_and_the_Carribean,Central_America,1955-1960,29.3
+El Salvador,Latin_America_and_the_Carribean,Central_America,1960-1965,29.3
+El Salvador,Latin_America_and_the_Carribean,Central_America,1965-1970,29.3
+El Salvador,Latin_America_and_the_Carribean,Central_America,1970-1975,29.2
+El Salvador,Latin_America_and_the_Carribean,Central_America,1975-1980,28.9
+El Salvador,Latin_America_and_the_Carribean,Central_America,1980-1985,28.7
+El Salvador,Latin_America_and_the_Carribean,Central_America,1985-1990,28.4
+El Salvador,Latin_America_and_the_Carribean,Central_America,1990-1995,28.2
+El Salvador,Latin_America_and_the_Carribean,Central_America,1995-2000,27.8
+El Salvador,Latin_America_and_the_Carribean,Central_America,2000-2005,27.2
+El Salvador,Latin_America_and_the_Carribean,Central_America,2005-2010,26.8
+El Salvador,Latin_America_and_the_Carribean,Central_America,2010-2015,26.8
+El Salvador,Latin_America_and_the_Carribean,Central_America,2015-2020,26.7
+Equatorial Guinea,Africa,Middle_Africa,1950-1955,28.8
+Equatorial Guinea,Africa,Middle_Africa,1955-1960,28.8
+Equatorial Guinea,Africa,Middle_Africa,1960-1965,28.8
+Equatorial Guinea,Africa,Middle_Africa,1965-1970,28.8
+Equatorial Guinea,Africa,Middle_Africa,1970-1975,28.7
+Equatorial Guinea,Africa,Middle_Africa,1975-1980,28.6
+Equatorial Guinea,Africa,Middle_Africa,1980-1985,28.6
+Equatorial Guinea,Africa,Middle_Africa,1985-1990,28.8
+Equatorial Guinea,Africa,Middle_Africa,1990-1995,28.8
+Equatorial Guinea,Africa,Middle_Africa,1995-2000,29
+Equatorial Guinea,Africa,Middle_Africa,2000-2005,29
+Equatorial Guinea,Africa,Middle_Africa,2005-2010,28.7
+Equatorial Guinea,Africa,Middle_Africa,2010-2015,28.3
+Equatorial Guinea,Africa,Middle_Africa,2015-2020,28.1
+Eritrea,Africa,Eastern_Africa,1950-1955,30.9
+Eritrea,Africa,Eastern_Africa,1955-1960,30.9
+Eritrea,Africa,Eastern_Africa,1960-1965,30.9
+Eritrea,Africa,Eastern_Africa,1965-1970,30.9
+Eritrea,Africa,Eastern_Africa,1970-1975,30.9
+Eritrea,Africa,Eastern_Africa,1975-1980,30.9
+Eritrea,Africa,Eastern_Africa,1980-1985,30.9
+Eritrea,Africa,Eastern_Africa,1985-1990,30.6
+Eritrea,Africa,Eastern_Africa,1990-1995,30.4
+Eritrea,Africa,Eastern_Africa,1995-2000,30.1
+Eritrea,Africa,Eastern_Africa,2000-2005,30
+Eritrea,Africa,Eastern_Africa,2005-2010,29.8
+Eritrea,Africa,Eastern_Africa,2010-2015,29.7
+Eritrea,Africa,Eastern_Africa,2015-2020,29.5
+Estonia,Europe,Northern_Europe,1950-1955,28.2
+Estonia,Europe,Northern_Europe,1955-1960,27.9
+Estonia,Europe,Northern_Europe,1960-1965,27.6
+Estonia,Europe,Northern_Europe,1965-1970,27
+Estonia,Europe,Northern_Europe,1970-1975,26.6
+Estonia,Europe,Northern_Europe,1975-1980,26
+Estonia,Europe,Northern_Europe,1980-1985,25.9
+Estonia,Europe,Northern_Europe,1985-1990,25.9
+Estonia,Europe,Northern_Europe,1990-1995,25.3
+Estonia,Europe,Northern_Europe,1995-2000,26.2
+Estonia,Europe,Northern_Europe,2000-2005,27.5
+Estonia,Europe,Northern_Europe,2005-2010,28.5
+Estonia,Europe,Northern_Europe,2010-2015,29.4
+Estonia,Europe,Northern_Europe,2015-2020,30.3
+Ethiopia,Africa,Eastern_Africa,1950-1955,30.7
+Ethiopia,Africa,Eastern_Africa,1955-1960,30.7
+Ethiopia,Africa,Eastern_Africa,1960-1965,30.7
+Ethiopia,Africa,Eastern_Africa,1965-1970,30.7
+Ethiopia,Africa,Eastern_Africa,1970-1975,30.7
+Ethiopia,Africa,Eastern_Africa,1975-1980,30.7
+Ethiopia,Africa,Eastern_Africa,1980-1985,30.8
+Ethiopia,Africa,Eastern_Africa,1985-1990,30.6
+Ethiopia,Africa,Eastern_Africa,1990-1995,30.3
+Ethiopia,Africa,Eastern_Africa,1995-2000,30.1
+Ethiopia,Africa,Eastern_Africa,2000-2005,30
+Ethiopia,Africa,Eastern_Africa,2005-2010,30
+Ethiopia,Africa,Eastern_Africa,2010-2015,29.8
+Ethiopia,Africa,Eastern_Africa,2015-2020,29.7
+Fiji,Oceania,Melanesia,1950-1955,28.7
+Fiji,Oceania,Melanesia,1955-1960,28.6
+Fiji,Oceania,Melanesia,1960-1965,28.3
+Fiji,Oceania,Melanesia,1965-1970,29.3
+Fiji,Oceania,Melanesia,1970-1975,28.4
+Fiji,Oceania,Melanesia,1975-1980,27.6
+Fiji,Oceania,Melanesia,1980-1985,27.4
+Fiji,Oceania,Melanesia,1985-1990,27.6
+Fiji,Oceania,Melanesia,1990-1995,26.8
+Fiji,Oceania,Melanesia,1995-2000,27.8
+Fiji,Oceania,Melanesia,2000-2005,27.8
+Fiji,Oceania,Melanesia,2005-2010,27.6
+Fiji,Oceania,Melanesia,2010-2015,28
+Fiji,Oceania,Melanesia,2015-2020,28.1
+Finland,Europe,Northern_Europe,1950-1955,29.3
+Finland,Europe,Northern_Europe,1955-1960,28.7
+Finland,Europe,Northern_Europe,1960-1965,28.2
+Finland,Europe,Northern_Europe,1965-1970,27.7
+Finland,Europe,Northern_Europe,1970-1975,27
+Finland,Europe,Northern_Europe,1975-1980,27.3
+Finland,Europe,Northern_Europe,1980-1985,28
+Finland,Europe,Northern_Europe,1985-1990,28.6
+Finland,Europe,Northern_Europe,1990-1995,29
+Finland,Europe,Northern_Europe,1995-2000,29.4
+Finland,Europe,Northern_Europe,2000-2005,29.7
+Finland,Europe,Northern_Europe,2005-2010,30
+Finland,Europe,Northern_Europe,2010-2015,30.4
+Finland,Europe,Northern_Europe,2015-2020,30.6
+France,Europe,Western_Europe,1950-1955,28
+France,Europe,Western_Europe,1955-1960,27.8
+France,Europe,Western_Europe,1960-1965,27.5
+France,Europe,Western_Europe,1965-1970,27.3
+France,Europe,Western_Europe,1970-1975,26.9
+France,Europe,Western_Europe,1975-1980,26.6
+France,Europe,Western_Europe,1980-1985,27.1
+France,Europe,Western_Europe,1985-1990,27.9
+France,Europe,Western_Europe,1990-1995,28.6
+France,Europe,Western_Europe,1995-2000,29.2
+France,Europe,Western_Europe,2000-2005,29.5
+France,Europe,Western_Europe,2005-2010,29.9
+France,Europe,Western_Europe,2010-2015,30.1
+France,Europe,Western_Europe,2015-2020,30.3
+French Guiana,Latin_America_and_the_Carribean,South_America,1950-1955,28.2
+French Guiana,Latin_America_and_the_Carribean,South_America,1955-1960,28.5
+French Guiana,Latin_America_and_the_Carribean,South_America,1960-1965,28.7
+French Guiana,Latin_America_and_the_Carribean,South_America,1965-1970,28.2
+French Guiana,Latin_America_and_the_Carribean,South_America,1970-1975,27.4
+French Guiana,Latin_America_and_the_Carribean,South_America,1975-1980,27.1
+French Guiana,Latin_America_and_the_Carribean,South_America,1980-1985,27.5
+French Guiana,Latin_America_and_the_Carribean,South_America,1985-1990,27.5
+French Guiana,Latin_America_and_the_Carribean,South_America,1990-1995,27.4
+French Guiana,Latin_America_and_the_Carribean,South_America,1995-2000,27.3
+French Guiana,Latin_America_and_the_Carribean,South_America,2000-2005,27.6
+French Guiana,Latin_America_and_the_Carribean,South_America,2005-2010,28.3
+French Guiana,Latin_America_and_the_Carribean,South_America,2010-2015,28.7
+French Guiana,Latin_America_and_the_Carribean,South_America,2015-2020,29.2
+French Polynesia,Oceania,Polynesia,1950-1955,27.5
+French Polynesia,Oceania,Polynesia,1955-1960,27.5
+French Polynesia,Oceania,Polynesia,1960-1965,27.5
+French Polynesia,Oceania,Polynesia,1965-1970,27.5
+French Polynesia,Oceania,Polynesia,1970-1975,27.5
+French Polynesia,Oceania,Polynesia,1975-1980,27.5
+French Polynesia,Oceania,Polynesia,1980-1985,27.5
+French Polynesia,Oceania,Polynesia,1985-1990,27.5
+French Polynesia,Oceania,Polynesia,1990-1995,27.8
+French Polynesia,Oceania,Polynesia,1995-2000,27.9
+French Polynesia,Oceania,Polynesia,2000-2005,28
+French Polynesia,Oceania,Polynesia,2005-2010,28.3
+French Polynesia,Oceania,Polynesia,2010-2015,28.6
+French Polynesia,Oceania,Polynesia,2015-2020,28.9
+Gabon,Africa,Middle_Africa,1950-1955,27.7
+Gabon,Africa,Middle_Africa,1955-1960,27.7
+Gabon,Africa,Middle_Africa,1960-1965,27.7
+Gabon,Africa,Middle_Africa,1965-1970,27.8
+Gabon,Africa,Middle_Africa,1970-1975,27.8
+Gabon,Africa,Middle_Africa,1975-1980,27.8
+Gabon,Africa,Middle_Africa,1980-1985,27.9
+Gabon,Africa,Middle_Africa,1985-1990,27.9
+Gabon,Africa,Middle_Africa,1990-1995,28
+Gabon,Africa,Middle_Africa,1995-2000,28
+Gabon,Africa,Middle_Africa,2000-2005,28.2
+Gabon,Africa,Middle_Africa,2005-2010,28.5
+Gabon,Africa,Middle_Africa,2010-2015,28.7
+Gabon,Africa,Middle_Africa,2015-2020,29
+Gambia,Africa,Western_Africa,1950-1955,27.8
+Gambia,Africa,Western_Africa,1955-1960,27.8
+Gambia,Africa,Western_Africa,1960-1965,27.8
+Gambia,Africa,Western_Africa,1965-1970,27.8
+Gambia,Africa,Western_Africa,1970-1975,28
+Gambia,Africa,Western_Africa,1975-1980,28.3
+Gambia,Africa,Western_Africa,1980-1985,28.4
+Gambia,Africa,Western_Africa,1985-1990,28.5
+Gambia,Africa,Western_Africa,1990-1995,28.9
+Gambia,Africa,Western_Africa,1995-2000,29.2
+Gambia,Africa,Western_Africa,2000-2005,29.7
+Gambia,Africa,Western_Africa,2005-2010,29.9
+Gambia,Africa,Western_Africa,2010-2015,30.2
+Gambia,Africa,Western_Africa,2015-2020,30.4
+Georgia,Asia,Western_Asia,1950-1955,28.9
+Georgia,Asia,Western_Asia,1955-1960,28.9
+Georgia,Asia,Western_Asia,1960-1965,28.9
+Georgia,Asia,Western_Asia,1965-1970,28.1
+Georgia,Asia,Western_Asia,1970-1975,27.3
+Georgia,Asia,Western_Asia,1975-1980,26.3
+Georgia,Asia,Western_Asia,1980-1985,25.4
+Georgia,Asia,Western_Asia,1985-1990,25.2
+Georgia,Asia,Western_Asia,1990-1995,25.3
+Georgia,Asia,Western_Asia,1995-2000,25.5
+Georgia,Asia,Western_Asia,2000-2005,25.9
+Georgia,Asia,Western_Asia,2005-2010,26.2
+Georgia,Asia,Western_Asia,2010-2015,26.4
+Georgia,Asia,Western_Asia,2015-2020,26.7
+Germany,Europe,Western_Europe,1950-1955,27.7
+Germany,Europe,Western_Europe,1955-1960,27.7
+Germany,Europe,Western_Europe,1960-1965,27.3
+Germany,Europe,Western_Europe,1965-1970,26.8
+Germany,Europe,Western_Europe,1970-1975,26.4
+Germany,Europe,Western_Europe,1975-1980,26.3
+Germany,Europe,Western_Europe,1980-1985,26.7
+Germany,Europe,Western_Europe,1985-1990,27.4
+Germany,Europe,Western_Europe,1990-1995,28
+Germany,Europe,Western_Europe,1995-2000,28.5
+Germany,Europe,Western_Europe,2000-2005,29.1
+Germany,Europe,Western_Europe,2005-2010,29.9
+Germany,Europe,Western_Europe,2010-2015,30.7
+Germany,Europe,Western_Europe,2015-2020,31.4
+Ghana,Africa,Western_Africa,1950-1955,30.1
+Ghana,Africa,Western_Africa,1955-1960,30.1
+Ghana,Africa,Western_Africa,1960-1965,30.1
+Ghana,Africa,Western_Africa,1965-1970,30.1
+Ghana,Africa,Western_Africa,1970-1975,30.2
+Ghana,Africa,Western_Africa,1975-1980,30.3
+Ghana,Africa,Western_Africa,1980-1985,30.2
+Ghana,Africa,Western_Africa,1985-1990,30.2
+Ghana,Africa,Western_Africa,1990-1995,30.1
+Ghana,Africa,Western_Africa,1995-2000,30.2
+Ghana,Africa,Western_Africa,2000-2005,30.1
+Ghana,Africa,Western_Africa,2005-2010,30
+Ghana,Africa,Western_Africa,2010-2015,29.9
+Ghana,Africa,Western_Africa,2015-2020,29.8
+Greece,Europe,Southern_Europe,1950-1955,29.9
+Greece,Europe,Southern_Europe,1955-1960,29.3
+Greece,Europe,Southern_Europe,1960-1965,28.6
+Greece,Europe,Southern_Europe,1965-1970,27.8
+Greece,Europe,Southern_Europe,1970-1975,27.2
+Greece,Europe,Southern_Europe,1975-1980,26.5
+Greece,Europe,Southern_Europe,1980-1985,26.2
+Greece,Europe,Southern_Europe,1985-1990,26.5
+Greece,Europe,Southern_Europe,1990-1995,27.6
+Greece,Europe,Southern_Europe,1995-2000,28.6
+Greece,Europe,Southern_Europe,2000-2005,29.4
+Greece,Europe,Southern_Europe,2005-2010,30
+Greece,Europe,Southern_Europe,2010-2015,30.7
+Greece,Europe,Southern_Europe,2015-2020,31.4
+Grenada,Latin_America_and_the_Carribean,Caribbean,1950-1955,28
+Grenada,Latin_America_and_the_Carribean,Caribbean,1955-1960,28
+Grenada,Latin_America_and_the_Carribean,Caribbean,1960-1965,28.4
+Grenada,Latin_America_and_the_Carribean,Caribbean,1965-1970,28.6
+Grenada,Latin_America_and_the_Carribean,Caribbean,1970-1975,28.5
+Grenada,Latin_America_and_the_Carribean,Caribbean,1975-1980,28.5
+Grenada,Latin_America_and_the_Carribean,Caribbean,1980-1985,28.5
+Grenada,Latin_America_and_the_Carribean,Caribbean,1985-1990,28.5
+Grenada,Latin_America_and_the_Carribean,Caribbean,1990-1995,28.4
+Grenada,Latin_America_and_the_Carribean,Caribbean,1995-2000,28.4
+Grenada,Latin_America_and_the_Carribean,Caribbean,2000-2005,28.7
+Grenada,Latin_America_and_the_Carribean,Caribbean,2005-2010,28.6
+Grenada,Latin_America_and_the_Carribean,Caribbean,2010-2015,28.5
+Grenada,Latin_America_and_the_Carribean,Caribbean,2015-2020,28.5
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1950-1955,30.1
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1955-1960,30.1
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1960-1965,30.1
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1965-1970,29.7
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1970-1975,29.4
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1975-1980,29.1
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1980-1985,28.8
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1985-1990,28.9
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1990-1995,29
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,1995-2000,29.1
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,2000-2005,29.5
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,2005-2010,29.9
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,2010-2015,30
+Guadeloupe,Latin_America_and_the_Carribean,Caribbean,2015-2020,30.2
+Guam,Oceania,Micronesia,1950-1955,29
+Guam,Oceania,Micronesia,1955-1960,28.5
+Guam,Oceania,Micronesia,1960-1965,28.4
+Guam,Oceania,Micronesia,1965-1970,28.1
+Guam,Oceania,Micronesia,1970-1975,27.3
+Guam,Oceania,Micronesia,1975-1980,26.9
+Guam,Oceania,Micronesia,1980-1985,26.8
+Guam,Oceania,Micronesia,1985-1990,26.7
+Guam,Oceania,Micronesia,1990-1995,26.7
+Guam,Oceania,Micronesia,1995-2000,27.1
+Guam,Oceania,Micronesia,2000-2005,27.7
+Guam,Oceania,Micronesia,2005-2010,28.1
+Guam,Oceania,Micronesia,2010-2015,28.4
+Guam,Oceania,Micronesia,2015-2020,28.8
+Guatemala,Latin_America_and_the_Carribean,Central_America,1950-1955,29.1
+Guatemala,Latin_America_and_the_Carribean,Central_America,1955-1960,29
+Guatemala,Latin_America_and_the_Carribean,Central_America,1960-1965,29
+Guatemala,Latin_America_and_the_Carribean,Central_America,1965-1970,29
+Guatemala,Latin_America_and_the_Carribean,Central_America,1970-1975,29
+Guatemala,Latin_America_and_the_Carribean,Central_America,1975-1980,29
+Guatemala,Latin_America_and_the_Carribean,Central_America,1980-1985,28.9
+Guatemala,Latin_America_and_the_Carribean,Central_America,1985-1990,28.8
+Guatemala,Latin_America_and_the_Carribean,Central_America,1990-1995,28.8
+Guatemala,Latin_America_and_the_Carribean,Central_America,1995-2000,28.5
+Guatemala,Latin_America_and_the_Carribean,Central_America,2000-2005,28.5
+Guatemala,Latin_America_and_the_Carribean,Central_America,2005-2010,28.5
+Guatemala,Latin_America_and_the_Carribean,Central_America,2010-2015,28.5
+Guatemala,Latin_America_and_the_Carribean,Central_America,2015-2020,28.5
+Guinea,Africa,Western_Africa,1950-1955,27.6
+Guinea,Africa,Western_Africa,1955-1960,28
+Guinea,Africa,Western_Africa,1960-1965,28.5
+Guinea,Africa,Western_Africa,1965-1970,29
+Guinea,Africa,Western_Africa,1970-1975,29.3
+Guinea,Africa,Western_Africa,1975-1980,29.5
+Guinea,Africa,Western_Africa,1980-1985,29.5
+Guinea,Africa,Western_Africa,1985-1990,29.4
+Guinea,Africa,Western_Africa,1990-1995,29.2
+Guinea,Africa,Western_Africa,1995-2000,29.1
+Guinea,Africa,Western_Africa,2000-2005,29
+Guinea,Africa,Western_Africa,2005-2010,29.1
+Guinea,Africa,Western_Africa,2010-2015,29.1
+Guinea,Africa,Western_Africa,2015-2020,29.1
+Guinea-Bissau,Africa,Western_Africa,1950-1955,29
+Guinea-Bissau,Africa,Western_Africa,1955-1960,29
+Guinea-Bissau,Africa,Western_Africa,1960-1965,29
+Guinea-Bissau,Africa,Western_Africa,1965-1970,29
+Guinea-Bissau,Africa,Western_Africa,1970-1975,29
+Guinea-Bissau,Africa,Western_Africa,1975-1980,29.1
+Guinea-Bissau,Africa,Western_Africa,1980-1985,29.2
+Guinea-Bissau,Africa,Western_Africa,1985-1990,29.4
+Guinea-Bissau,Africa,Western_Africa,1990-1995,29.6
+Guinea-Bissau,Africa,Western_Africa,1995-2000,29.7
+Guinea-Bissau,Africa,Western_Africa,2000-2005,29.6
+Guinea-Bissau,Africa,Western_Africa,2005-2010,29.3
+Guinea-Bissau,Africa,Western_Africa,2010-2015,29.3
+Guinea-Bissau,Africa,Western_Africa,2015-2020,29.2
+Guyana,Latin_America_and_the_Carribean,South_America,1950-1955,27.4
+Guyana,Latin_America_and_the_Carribean,South_America,1955-1960,27.6
+Guyana,Latin_America_and_the_Carribean,South_America,1960-1965,27.9
+Guyana,Latin_America_and_the_Carribean,South_America,1965-1970,27.9
+Guyana,Latin_America_and_the_Carribean,South_America,1970-1975,27.7
+Guyana,Latin_America_and_the_Carribean,South_America,1975-1980,27.6
+Guyana,Latin_America_and_the_Carribean,South_America,1980-1985,27.1
+Guyana,Latin_America_and_the_Carribean,South_America,1985-1990,27.5
+Guyana,Latin_America_and_the_Carribean,South_America,1990-1995,27.2
+Guyana,Latin_America_and_the_Carribean,South_America,1995-2000,27.1
+Guyana,Latin_America_and_the_Carribean,South_America,2000-2005,26.6
+Guyana,Latin_America_and_the_Carribean,South_America,2005-2010,26.6
+Guyana,Latin_America_and_the_Carribean,South_America,2010-2015,26.6
+Guyana,Latin_America_and_the_Carribean,South_America,2015-2020,26.6
+Haiti,Latin_America_and_the_Carribean,Caribbean,1950-1955,31.6
+Haiti,Latin_America_and_the_Carribean,Caribbean,1955-1960,31.6
+Haiti,Latin_America_and_the_Carribean,Caribbean,1960-1965,31.6
+Haiti,Latin_America_and_the_Carribean,Caribbean,1965-1970,31.6
+Haiti,Latin_America_and_the_Carribean,Caribbean,1970-1975,31.3
+Haiti,Latin_America_and_the_Carribean,Caribbean,1975-1980,31.4
+Haiti,Latin_America_and_the_Carribean,Caribbean,1980-1985,31.4
+Haiti,Latin_America_and_the_Carribean,Caribbean,1985-1990,31.2
+Haiti,Latin_America_and_the_Carribean,Caribbean,1990-1995,31
+Haiti,Latin_America_and_the_Carribean,Caribbean,1995-2000,30.8
+Haiti,Latin_America_and_the_Carribean,Caribbean,2000-2005,30.5
+Haiti,Latin_America_and_the_Carribean,Caribbean,2005-2010,30.3
+Haiti,Latin_America_and_the_Carribean,Caribbean,2010-2015,30.2
+Haiti,Latin_America_and_the_Carribean,Caribbean,2015-2020,30
+Honduras,Latin_America_and_the_Carribean,Central_America,1950-1955,29.4
+Honduras,Latin_America_and_the_Carribean,Central_America,1955-1960,29.4
+Honduras,Latin_America_and_the_Carribean,Central_America,1960-1965,29.4
+Honduras,Latin_America_and_the_Carribean,Central_America,1965-1970,29.4
+Honduras,Latin_America_and_the_Carribean,Central_America,1970-1975,29.4
+Honduras,Latin_America_and_the_Carribean,Central_America,1975-1980,29.2
+Honduras,Latin_America_and_the_Carribean,Central_America,1980-1985,29
+Honduras,Latin_America_and_the_Carribean,Central_America,1985-1990,28.6
+Honduras,Latin_America_and_the_Carribean,Central_America,1990-1995,28.4
+Honduras,Latin_America_and_the_Carribean,Central_America,1995-2000,28.2
+Honduras,Latin_America_and_the_Carribean,Central_America,2000-2005,27.8
+Honduras,Latin_America_and_the_Carribean,Central_America,2005-2010,27.7
+Honduras,Latin_America_and_the_Carribean,Central_America,2010-2015,27.7
+Honduras,Latin_America_and_the_Carribean,Central_America,2015-2020,27.6
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1950-1955,29.1
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1955-1960,29.1
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1960-1965,29.1
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1965-1970,29
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1970-1975,28.8
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1975-1980,28.6
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1980-1985,28.8
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1985-1990,29.3
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1990-1995,29.6
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,1995-2000,29.9
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,2000-2005,30.3
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,2005-2010,31
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,2010-2015,31.7
+Hong Kong Special Administrative Region of China,Asia,Eastern_Asia,2015-2020,32.3
+Hungary,Europe,Eastern_Europe,1950-1955,27.2
+Hungary,Europe,Eastern_Europe,1955-1960,26.3
+Hungary,Europe,Eastern_Europe,1960-1965,25.7
+Hungary,Europe,Eastern_Europe,1965-1970,25.5
+Hungary,Europe,Eastern_Europe,1970-1975,25.4
+Hungary,Europe,Eastern_Europe,1975-1980,24.9
+Hungary,Europe,Eastern_Europe,1980-1985,24.8
+Hungary,Europe,Eastern_Europe,1985-1990,25.4
+Hungary,Europe,Eastern_Europe,1990-1995,25.9
+Hungary,Europe,Eastern_Europe,1995-2000,26.8
+Hungary,Europe,Eastern_Europe,2000-2005,27.9
+Hungary,Europe,Eastern_Europe,2005-2010,28.9
+Hungary,Europe,Eastern_Europe,2010-2015,29.4
+Hungary,Europe,Eastern_Europe,2015-2020,30.3
+Iceland,Europe,Northern_Europe,1950-1955,28.4
+Iceland,Europe,Northern_Europe,1955-1960,28
+Iceland,Europe,Northern_Europe,1960-1965,27.9
+Iceland,Europe,Northern_Europe,1965-1970,27.5
+Iceland,Europe,Northern_Europe,1970-1975,27
+Iceland,Europe,Northern_Europe,1975-1980,27
+Iceland,Europe,Northern_Europe,1980-1985,27.2
+Iceland,Europe,Northern_Europe,1985-1990,27.8
+Iceland,Europe,Northern_Europe,1990-1995,28.5
+Iceland,Europe,Northern_Europe,1995-2000,28.7
+Iceland,Europe,Northern_Europe,2000-2005,29.2
+Iceland,Europe,Northern_Europe,2005-2010,29.7
+Iceland,Europe,Northern_Europe,2010-2015,30.2
+Iceland,Europe,Northern_Europe,2015-2020,30.5
+India,Asia,South-Central_Asia,1950-1955,29.6
+India,Asia,South-Central_Asia,1955-1960,29.6
+India,Asia,South-Central_Asia,1960-1965,29.5
+India,Asia,South-Central_Asia,1965-1970,29.3
+India,Asia,South-Central_Asia,1970-1975,28.7
+India,Asia,South-Central_Asia,1975-1980,28.2
+India,Asia,South-Central_Asia,1980-1985,27.8
+India,Asia,South-Central_Asia,1985-1990,27.3
+India,Asia,South-Central_Asia,1990-1995,27
+India,Asia,South-Central_Asia,1995-2000,26.9
+India,Asia,South-Central_Asia,2000-2005,26.8
+India,Asia,South-Central_Asia,2005-2010,26.6
+India,Asia,South-Central_Asia,2010-2015,26.6
+India,Asia,South-Central_Asia,2015-2020,26.6
+Indonesia,Asia,South-Eastern_Asia,1950-1955,28.3
+Indonesia,Asia,South-Eastern_Asia,1955-1960,28.3
+Indonesia,Asia,South-Eastern_Asia,1960-1965,28.1
+Indonesia,Asia,South-Eastern_Asia,1965-1970,27.9
+Indonesia,Asia,South-Eastern_Asia,1970-1975,28.3
+Indonesia,Asia,South-Eastern_Asia,1975-1980,28
+Indonesia,Asia,South-Eastern_Asia,1980-1985,27.9
+Indonesia,Asia,South-Eastern_Asia,1985-1990,28.1
+Indonesia,Asia,South-Eastern_Asia,1990-1995,28.2
+Indonesia,Asia,South-Eastern_Asia,1995-2000,28.9
+Indonesia,Asia,South-Eastern_Asia,2000-2005,28.2
+Indonesia,Asia,South-Eastern_Asia,2005-2010,28.2
+Indonesia,Asia,South-Eastern_Asia,2010-2015,28.2
+Indonesia,Asia,South-Eastern_Asia,2015-2020,28.2
+Iran (Islamic Republic of),Asia,South-Central_Asia,1950-1955,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1955-1960,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1960-1965,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1965-1970,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1970-1975,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1975-1980,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1980-1985,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1985-1990,29.6
+Iran (Islamic Republic of),Asia,South-Central_Asia,1990-1995,29.3
+Iran (Islamic Republic of),Asia,South-Central_Asia,1995-2000,28.5
+Iran (Islamic Republic of),Asia,South-Central_Asia,2000-2005,28.2
+Iran (Islamic Republic of),Asia,South-Central_Asia,2005-2010,28.4
+Iran (Islamic Republic of),Asia,South-Central_Asia,2010-2015,28.4
+Iran (Islamic Republic of),Asia,South-Central_Asia,2015-2020,28.5
+Iraq,Asia,Western_Asia,1950-1955,28.7
+Iraq,Asia,Western_Asia,1955-1960,28.7
+Iraq,Asia,Western_Asia,1960-1965,28.7
+Iraq,Asia,Western_Asia,1965-1970,29.1
+Iraq,Asia,Western_Asia,1970-1975,29.9
+Iraq,Asia,Western_Asia,1975-1980,30.4
+Iraq,Asia,Western_Asia,1980-1985,30.8
+Iraq,Asia,Western_Asia,1985-1990,31
+Iraq,Asia,Western_Asia,1990-1995,31
+Iraq,Asia,Western_Asia,1995-2000,30.6
+Iraq,Asia,Western_Asia,2000-2005,29.9
+Iraq,Asia,Western_Asia,2005-2010,29
+Iraq,Asia,Western_Asia,2010-2015,29
+Iraq,Asia,Western_Asia,2015-2020,28.7
+Ireland,Europe,Northern_Europe,1950-1955,31.4
+Ireland,Europe,Northern_Europe,1955-1960,31.4
+Ireland,Europe,Northern_Europe,1960-1965,31.2
+Ireland,Europe,Northern_Europe,1965-1970,30.6
+Ireland,Europe,Northern_Europe,1970-1975,29.9
+Ireland,Europe,Northern_Europe,1975-1980,29.8
+Ireland,Europe,Northern_Europe,1980-1985,29.9
+Ireland,Europe,Northern_Europe,1985-1990,29.9
+Ireland,Europe,Northern_Europe,1990-1995,30.1
+Ireland,Europe,Northern_Europe,1995-2000,30.4
+Ireland,Europe,Northern_Europe,2000-2005,30.7
+Ireland,Europe,Northern_Europe,2005-2010,31.3
+Ireland,Europe,Northern_Europe,2010-2015,31.5
+Ireland,Europe,Northern_Europe,2015-2020,31.4
+Israel,Asia,Western_Asia,1950-1955,27.7
+Israel,Asia,Western_Asia,1955-1960,27.9
+Israel,Asia,Western_Asia,1960-1965,28.1
+Israel,Asia,Western_Asia,1965-1970,28.4
+Israel,Asia,Western_Asia,1970-1975,28.4
+Israel,Asia,Western_Asia,1975-1980,28.3
+Israel,Asia,Western_Asia,1980-1985,28.3
+Israel,Asia,Western_Asia,1985-1990,28.7
+Israel,Asia,Western_Asia,1990-1995,29.1
+Israel,Asia,Western_Asia,1995-2000,29.4
+Israel,Asia,Western_Asia,2000-2005,29.8
+Israel,Asia,Western_Asia,2005-2010,30.1
+Israel,Asia,Western_Asia,2010-2015,30.4
+Israel,Asia,Western_Asia,2015-2020,30.7
+Italy,Europe,Southern_Europe,1950-1955,29.8
+Italy,Europe,Southern_Europe,1955-1960,29.4
+Italy,Europe,Southern_Europe,1960-1965,29
+Italy,Europe,Southern_Europe,1965-1970,28.6
+Italy,Europe,Southern_Europe,1970-1975,28
+Italy,Europe,Southern_Europe,1975-1980,27.5
+Italy,Europe,Southern_Europe,1980-1985,27.7
+Italy,Europe,Southern_Europe,1985-1990,28.5
+Italy,Europe,Southern_Europe,1990-1995,29.3
+Italy,Europe,Southern_Europe,1995-2000,30.2
+Italy,Europe,Southern_Europe,2000-2005,30.6
+Italy,Europe,Southern_Europe,2005-2010,31
+Italy,Europe,Southern_Europe,2010-2015,31.4
+Italy,Europe,Southern_Europe,2015-2020,31.7
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1950-1955,27.4
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1955-1960,27.5
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1960-1965,27.7
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1965-1970,28
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1970-1975,27.7
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1975-1980,27.3
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1980-1985,27.2
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.1
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1990-1995,27
+Jamaica,Latin_America_and_the_Carribean,Caribbean,1995-2000,27
+Jamaica,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.1
+Jamaica,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.2
+Jamaica,Latin_America_and_the_Carribean,Caribbean,2010-2015,27.4
+Jamaica,Latin_America_and_the_Carribean,Caribbean,2015-2020,27.6
+Japan,Asia,Eastern_Asia,1950-1955,29.3
+Japan,Asia,Eastern_Asia,1955-1960,28.3
+Japan,Asia,Eastern_Asia,1960-1965,27.7
+Japan,Asia,Eastern_Asia,1965-1970,27.7
+Japan,Asia,Eastern_Asia,1970-1975,27.6
+Japan,Asia,Eastern_Asia,1975-1980,27.5
+Japan,Asia,Eastern_Asia,1980-1985,27.9
+Japan,Asia,Eastern_Asia,1985-1990,28.5
+Japan,Asia,Eastern_Asia,1990-1995,29.1
+Japan,Asia,Eastern_Asia,1995-2000,29.5
+Japan,Asia,Eastern_Asia,2000-2005,29.7
+Japan,Asia,Eastern_Asia,2005-2010,30.2
+Japan,Asia,Eastern_Asia,2010-2015,30.8
+Japan,Asia,Eastern_Asia,2015-2020,31.4
+Jordan,Asia,Western_Asia,1950-1955,29.5
+Jordan,Asia,Western_Asia,1955-1960,29.8
+Jordan,Asia,Western_Asia,1960-1965,30.1
+Jordan,Asia,Western_Asia,1965-1970,30.4
+Jordan,Asia,Western_Asia,1970-1975,30.6
+Jordan,Asia,Western_Asia,1975-1980,30.8
+Jordan,Asia,Western_Asia,1980-1985,30.7
+Jordan,Asia,Western_Asia,1985-1990,30.3
+Jordan,Asia,Western_Asia,1990-1995,30.1
+Jordan,Asia,Western_Asia,1995-2000,29.9
+Jordan,Asia,Western_Asia,2000-2005,29.9
+Jordan,Asia,Western_Asia,2005-2010,29.8
+Jordan,Asia,Western_Asia,2010-2015,29.8
+Jordan,Asia,Western_Asia,2015-2020,29.8
+Kazakhstan,Asia,South-Central_Asia,1950-1955,29.6
+Kazakhstan,Asia,South-Central_Asia,1955-1960,29.5
+Kazakhstan,Asia,South-Central_Asia,1960-1965,29.3
+Kazakhstan,Asia,South-Central_Asia,1965-1970,29
+Kazakhstan,Asia,South-Central_Asia,1970-1975,28.6
+Kazakhstan,Asia,South-Central_Asia,1975-1980,28
+Kazakhstan,Asia,South-Central_Asia,1980-1985,27.4
+Kazakhstan,Asia,South-Central_Asia,1985-1990,27
+Kazakhstan,Asia,South-Central_Asia,1990-1995,26.2
+Kazakhstan,Asia,South-Central_Asia,1995-2000,26.3
+Kazakhstan,Asia,South-Central_Asia,2000-2005,27.3
+Kazakhstan,Asia,South-Central_Asia,2005-2010,28.1
+Kazakhstan,Asia,South-Central_Asia,2010-2015,28.1
+Kazakhstan,Asia,South-Central_Asia,2015-2020,28.6
+Kenya,Africa,Eastern_Africa,1950-1955,29.1
+Kenya,Africa,Eastern_Africa,1955-1960,29.1
+Kenya,Africa,Eastern_Africa,1960-1965,29.1
+Kenya,Africa,Eastern_Africa,1965-1970,29.1
+Kenya,Africa,Eastern_Africa,1970-1975,29.1
+Kenya,Africa,Eastern_Africa,1975-1980,29.1
+Kenya,Africa,Eastern_Africa,1980-1985,29.1
+Kenya,Africa,Eastern_Africa,1985-1990,29.1
+Kenya,Africa,Eastern_Africa,1990-1995,29.5
+Kenya,Africa,Eastern_Africa,1995-2000,29.2
+Kenya,Africa,Eastern_Africa,2000-2005,29.2
+Kenya,Africa,Eastern_Africa,2005-2010,29.1
+Kenya,Africa,Eastern_Africa,2010-2015,28.8
+Kenya,Africa,Eastern_Africa,2015-2020,28.7
+Kiribati,Oceania,Micronesia,1950-1955,30.2
+Kiribati,Oceania,Micronesia,1955-1960,30.2
+Kiribati,Oceania,Micronesia,1960-1965,30.2
+Kiribati,Oceania,Micronesia,1965-1970,30.2
+Kiribati,Oceania,Micronesia,1970-1975,30.2
+Kiribati,Oceania,Micronesia,1975-1980,30.2
+Kiribati,Oceania,Micronesia,1980-1985,30.2
+Kiribati,Oceania,Micronesia,1985-1990,30.2
+Kiribati,Oceania,Micronesia,1990-1995,30.2
+Kiribati,Oceania,Micronesia,1995-2000,30.2
+Kiribati,Oceania,Micronesia,2000-2005,30.3
+Kiribati,Oceania,Micronesia,2005-2010,30.5
+Kiribati,Oceania,Micronesia,2010-2015,30.6
+Kiribati,Oceania,Micronesia,2015-2020,30.7
+Kuwait,Asia,Western_Asia,1950-1955,28.1
+Kuwait,Asia,Western_Asia,1955-1960,28.1
+Kuwait,Asia,Western_Asia,1960-1965,28.1
+Kuwait,Asia,Western_Asia,1965-1970,28.5
+Kuwait,Asia,Western_Asia,1970-1975,28.5
+Kuwait,Asia,Western_Asia,1975-1980,28.5
+Kuwait,Asia,Western_Asia,1980-1985,29.2
+Kuwait,Asia,Western_Asia,1985-1990,29.7
+Kuwait,Asia,Western_Asia,1990-1995,29.8
+Kuwait,Asia,Western_Asia,1995-2000,29.5
+Kuwait,Asia,Western_Asia,2000-2005,29.7
+Kuwait,Asia,Western_Asia,2005-2010,29.8
+Kuwait,Asia,Western_Asia,2010-2015,29.9
+Kuwait,Asia,Western_Asia,2015-2020,29.9
+Kyrgyzstan,Asia,South-Central_Asia,1950-1955,30.5
+Kyrgyzstan,Asia,South-Central_Asia,1955-1960,30.3
+Kyrgyzstan,Asia,South-Central_Asia,1960-1965,30.1
+Kyrgyzstan,Asia,South-Central_Asia,1965-1970,29.9
+Kyrgyzstan,Asia,South-Central_Asia,1970-1975,29.5
+Kyrgyzstan,Asia,South-Central_Asia,1975-1980,29
+Kyrgyzstan,Asia,South-Central_Asia,1980-1985,28.3
+Kyrgyzstan,Asia,South-Central_Asia,1985-1990,27.7
+Kyrgyzstan,Asia,South-Central_Asia,1990-1995,26.9
+Kyrgyzstan,Asia,South-Central_Asia,1995-2000,26.9
+Kyrgyzstan,Asia,South-Central_Asia,2000-2005,27.7
+Kyrgyzstan,Asia,South-Central_Asia,2005-2010,28.1
+Kyrgyzstan,Asia,South-Central_Asia,2010-2015,28
+Kyrgyzstan,Asia,South-Central_Asia,2015-2020,28.2
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1950-1955,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1955-1960,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1960-1965,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1965-1970,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1970-1975,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1975-1980,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1980-1985,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1985-1990,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1990-1995,29.6
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,1995-2000,29.4
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,2000-2005,28.9
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,2005-2010,28.4
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,2010-2015,28
+Lao People's Democratic Republic,Asia,South-Eastern_Asia,2015-2020,27.5
+Latvia,Europe,Northern_Europe,1950-1955,28.2
+Latvia,Europe,Northern_Europe,1955-1960,28.2
+Latvia,Europe,Northern_Europe,1960-1965,27.8
+Latvia,Europe,Northern_Europe,1965-1970,27.2
+Latvia,Europe,Northern_Europe,1970-1975,26.9
+Latvia,Europe,Northern_Europe,1975-1980,26.4
+Latvia,Europe,Northern_Europe,1980-1985,26
+Latvia,Europe,Northern_Europe,1985-1990,26
+Latvia,Europe,Northern_Europe,1990-1995,25.6
+Latvia,Europe,Northern_Europe,1995-2000,26.5
+Latvia,Europe,Northern_Europe,2000-2005,27.6
+Latvia,Europe,Northern_Europe,2005-2010,28.4
+Latvia,Europe,Northern_Europe,2010-2015,29.4
+Latvia,Europe,Northern_Europe,2015-2020,30.2
+Lebanon,Asia,Western_Asia,1950-1955,29.3
+Lebanon,Asia,Western_Asia,1955-1960,29.3
+Lebanon,Asia,Western_Asia,1960-1965,29.3
+Lebanon,Asia,Western_Asia,1965-1970,29.3
+Lebanon,Asia,Western_Asia,1970-1975,29.3
+Lebanon,Asia,Western_Asia,1975-1980,29.3
+Lebanon,Asia,Western_Asia,1980-1985,29
+Lebanon,Asia,Western_Asia,1985-1990,28.8
+Lebanon,Asia,Western_Asia,1990-1995,28.9
+Lebanon,Asia,Western_Asia,1995-2000,29.1
+Lebanon,Asia,Western_Asia,2000-2005,29.4
+Lebanon,Asia,Western_Asia,2005-2010,29.6
+Lebanon,Asia,Western_Asia,2010-2015,29.6
+Lebanon,Asia,Western_Asia,2015-2020,29.7
+Lesotho,Africa,Souther_Africa,1950-1955,30.1
+Lesotho,Africa,Souther_Africa,1955-1960,30.1
+Lesotho,Africa,Souther_Africa,1960-1965,30.1
+Lesotho,Africa,Souther_Africa,1965-1970,30.1
+Lesotho,Africa,Souther_Africa,1970-1975,30.1
+Lesotho,Africa,Souther_Africa,1975-1980,30.1
+Lesotho,Africa,Souther_Africa,1980-1985,30.1
+Lesotho,Africa,Souther_Africa,1985-1990,29.9
+Lesotho,Africa,Souther_Africa,1990-1995,29.4
+Lesotho,Africa,Souther_Africa,1995-2000,29
+Lesotho,Africa,Souther_Africa,2000-2005,28.6
+Lesotho,Africa,Souther_Africa,2005-2010,28
+Lesotho,Africa,Souther_Africa,2010-2015,28
+Lesotho,Africa,Souther_Africa,2015-2020,27.8
+Liberia,Africa,Western_Africa,1950-1955,28.2
+Liberia,Africa,Western_Africa,1955-1960,28.2
+Liberia,Africa,Western_Africa,1960-1965,28.2
+Liberia,Africa,Western_Africa,1965-1970,28.5
+Liberia,Africa,Western_Africa,1970-1975,28.9
+Liberia,Africa,Western_Africa,1975-1980,29.3
+Liberia,Africa,Western_Africa,1980-1985,29.5
+Liberia,Africa,Western_Africa,1985-1990,29.7
+Liberia,Africa,Western_Africa,1990-1995,29.8
+Liberia,Africa,Western_Africa,1995-2000,29.7
+Liberia,Africa,Western_Africa,2000-2005,29.4
+Liberia,Africa,Western_Africa,2005-2010,29
+Liberia,Africa,Western_Africa,2010-2015,28.8
+Liberia,Africa,Western_Africa,2015-2020,28.6
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1950-1955,29.3
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1955-1960,29.3
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1960-1965,29.3
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1965-1970,29.3
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1970-1975,29.3
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1975-1980,30.4
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1980-1985,31.3
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1985-1990,32.2
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1990-1995,32.4
+Libyan Arab Jamahiriya,Africa,Northern_Africa,1995-2000,32.6
+Libyan Arab Jamahiriya,Africa,Northern_Africa,2000-2005,32.9
+Libyan Arab Jamahiriya,Africa,Northern_Africa,2005-2010,32.9
+Libyan Arab Jamahiriya,Africa,Northern_Africa,2010-2015,32.9
+Libyan Arab Jamahiriya,Africa,Northern_Africa,2015-2020,32.8
+Lithuania,Europe,Northern_Europe,1950-1955,29.3
+Lithuania,Europe,Northern_Europe,1955-1960,29.4
+Lithuania,Europe,Northern_Europe,1960-1965,29.1
+Lithuania,Europe,Northern_Europe,1965-1970,28.3
+Lithuania,Europe,Northern_Europe,1970-1975,27.6
+Lithuania,Europe,Northern_Europe,1975-1980,27.1
+Lithuania,Europe,Northern_Europe,1980-1985,27
+Lithuania,Europe,Northern_Europe,1985-1990,26.5
+Lithuania,Europe,Northern_Europe,1990-1995,25.6
+Lithuania,Europe,Northern_Europe,1995-2000,26.2
+Lithuania,Europe,Northern_Europe,2000-2005,27.1
+Lithuania,Europe,Northern_Europe,2005-2010,28.1
+Lithuania,Europe,Northern_Europe,2010-2015,29
+Lithuania,Europe,Northern_Europe,2015-2020,29.7
+Luxembourg,Europe,Western_Europe,1950-1955,27.5
+Luxembourg,Europe,Western_Europe,1955-1960,27.5
+Luxembourg,Europe,Western_Europe,1960-1965,27.5
+Luxembourg,Europe,Western_Europe,1965-1970,27.1
+Luxembourg,Europe,Western_Europe,1970-1975,27
+Luxembourg,Europe,Western_Europe,1975-1980,27.1
+Luxembourg,Europe,Western_Europe,1980-1985,27.6
+Luxembourg,Europe,Western_Europe,1985-1990,28.2
+Luxembourg,Europe,Western_Europe,1990-1995,28.5
+Luxembourg,Europe,Western_Europe,1995-2000,29.1
+Luxembourg,Europe,Western_Europe,2000-2005,29.5
+Luxembourg,Europe,Western_Europe,2005-2010,30.2
+Luxembourg,Europe,Western_Europe,2010-2015,31.1
+Luxembourg,Europe,Western_Europe,2015-2020,31.7
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1950-1955,30.3
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1955-1960,30.3
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1960-1965,31.4
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1965-1970,31.4
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1970-1975,31
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1975-1980,29.8
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1980-1985,28
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1985-1990,29.2
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1990-1995,29.3
+Macao Special Administrative Region of China,Asia,Eastern_Asia,1995-2000,29.7
+Macao Special Administrative Region of China,Asia,Eastern_Asia,2000-2005,29.6
+Macao Special Administrative Region of China,Asia,Eastern_Asia,2005-2010,30
+Macao Special Administrative Region of China,Asia,Eastern_Asia,2010-2015,30.4
+Macao Special Administrative Region of China,Asia,Eastern_Asia,2015-2020,30.9
+Madagascar,Africa,Eastern_Africa,1950-1955,29.3
+Madagascar,Africa,Eastern_Africa,1955-1960,29.3
+Madagascar,Africa,Eastern_Africa,1960-1965,29.3
+Madagascar,Africa,Eastern_Africa,1965-1970,29.3
+Madagascar,Africa,Eastern_Africa,1970-1975,29.3
+Madagascar,Africa,Eastern_Africa,1975-1980,29.3
+Madagascar,Africa,Eastern_Africa,1980-1985,29.3
+Madagascar,Africa,Eastern_Africa,1985-1990,29.3
+Madagascar,Africa,Eastern_Africa,1990-1995,29.2
+Madagascar,Africa,Eastern_Africa,1995-2000,28.8
+Madagascar,Africa,Eastern_Africa,2000-2005,28.5
+Madagascar,Africa,Eastern_Africa,2005-2010,28.3
+Madagascar,Africa,Eastern_Africa,2010-2015,28.1
+Madagascar,Africa,Eastern_Africa,2015-2020,28
+Malawi,Africa,Eastern_Africa,1950-1955,29.7
+Malawi,Africa,Eastern_Africa,1955-1960,29.7
+Malawi,Africa,Eastern_Africa,1960-1965,29.7
+Malawi,Africa,Eastern_Africa,1965-1970,29.7
+Malawi,Africa,Eastern_Africa,1970-1975,29.7
+Malawi,Africa,Eastern_Africa,1975-1980,29.7
+Malawi,Africa,Eastern_Africa,1980-1985,29.7
+Malawi,Africa,Eastern_Africa,1985-1990,29.7
+Malawi,Africa,Eastern_Africa,1990-1995,29.7
+Malawi,Africa,Eastern_Africa,1995-2000,29.1
+Malawi,Africa,Eastern_Africa,2000-2005,29.1
+Malawi,Africa,Eastern_Africa,2005-2010,29
+Malawi,Africa,Eastern_Africa,2010-2015,28.3
+Malawi,Africa,Eastern_Africa,2015-2020,28
+Malaysia,Asia,South-Eastern_Asia,1950-1955,29.4
+Malaysia,Asia,South-Eastern_Asia,1955-1960,29.4
+Malaysia,Asia,South-Eastern_Asia,1960-1965,29.4
+Malaysia,Asia,South-Eastern_Asia,1965-1970,29.4
+Malaysia,Asia,South-Eastern_Asia,1970-1975,29.5
+Malaysia,Asia,South-Eastern_Asia,1975-1980,29.4
+Malaysia,Asia,South-Eastern_Asia,1980-1985,29.6
+Malaysia,Asia,South-Eastern_Asia,1985-1990,30.1
+Malaysia,Asia,South-Eastern_Asia,1990-1995,30
+Malaysia,Asia,South-Eastern_Asia,1995-2000,30.1
+Malaysia,Asia,South-Eastern_Asia,2000-2005,30.4
+Malaysia,Asia,South-Eastern_Asia,2005-2010,30.5
+Malaysia,Asia,South-Eastern_Asia,2010-2015,30.7
+Malaysia,Asia,South-Eastern_Asia,2015-2020,30.9
+Maldives,Asia,South-Central_Asia,1950-1955,28.2
+Maldives,Asia,South-Central_Asia,1955-1960,28.2
+Maldives,Asia,South-Central_Asia,1960-1965,28.2
+Maldives,Asia,South-Central_Asia,1965-1970,28.2
+Maldives,Asia,South-Central_Asia,1970-1975,28.2
+Maldives,Asia,South-Central_Asia,1975-1980,28.2
+Maldives,Asia,South-Central_Asia,1980-1985,28.3
+Maldives,Asia,South-Central_Asia,1985-1990,28.6
+Maldives,Asia,South-Central_Asia,1990-1995,29.1
+Maldives,Asia,South-Central_Asia,1995-2000,29.4
+Maldives,Asia,South-Central_Asia,2000-2005,29.3
+Maldives,Asia,South-Central_Asia,2005-2010,29
+Maldives,Asia,South-Central_Asia,2010-2015,29
+Maldives,Asia,South-Central_Asia,2015-2020,29
+Mali,Africa,Western_Africa,1950-1955,29
+Mali,Africa,Western_Africa,1955-1960,29
+Mali,Africa,Western_Africa,1960-1965,29.2
+Mali,Africa,Western_Africa,1965-1970,29.3
+Mali,Africa,Western_Africa,1970-1975,29.4
+Mali,Africa,Western_Africa,1975-1980,29.5
+Mali,Africa,Western_Africa,1980-1985,29.4
+Mali,Africa,Western_Africa,1985-1990,29.3
+Mali,Africa,Western_Africa,1990-1995,29.2
+Mali,Africa,Western_Africa,1995-2000,29.1
+Mali,Africa,Western_Africa,2000-2005,29.2
+Mali,Africa,Western_Africa,2005-2010,29.1
+Mali,Africa,Western_Africa,2010-2015,29
+Mali,Africa,Western_Africa,2015-2020,29
+Malta,Europe,Southern_Europe,1950-1955,29
+Malta,Europe,Southern_Europe,1955-1960,29
+Malta,Europe,Southern_Europe,1960-1965,29
+Malta,Europe,Southern_Europe,1965-1970,29
+Malta,Europe,Southern_Europe,1970-1975,28.8
+Malta,Europe,Southern_Europe,1975-1980,28.6
+Malta,Europe,Southern_Europe,1980-1985,28.7
+Malta,Europe,Southern_Europe,1985-1990,28.9
+Malta,Europe,Southern_Europe,1990-1995,28.8
+Malta,Europe,Southern_Europe,1995-2000,28.5
+Malta,Europe,Southern_Europe,2000-2005,28.2
+Malta,Europe,Southern_Europe,2005-2010,29.1
+Malta,Europe,Southern_Europe,2010-2015,29.7
+Malta,Europe,Southern_Europe,2015-2020,30.4
+Martinique,Latin_America_and_the_Carribean,Caribbean,1950-1955,30.3
+Martinique,Latin_America_and_the_Carribean,Caribbean,1955-1960,30.3
+Martinique,Latin_America_and_the_Carribean,Caribbean,1960-1965,30.3
+Martinique,Latin_America_and_the_Carribean,Caribbean,1965-1970,29.8
+Martinique,Latin_America_and_the_Carribean,Caribbean,1970-1975,29.3
+Martinique,Latin_America_and_the_Carribean,Caribbean,1975-1980,28.8
+Martinique,Latin_America_and_the_Carribean,Caribbean,1980-1985,28.3
+Martinique,Latin_America_and_the_Carribean,Caribbean,1985-1990,28.5
+Martinique,Latin_America_and_the_Carribean,Caribbean,1990-1995,28.8
+Martinique,Latin_America_and_the_Carribean,Caribbean,1995-2000,29.1
+Martinique,Latin_America_and_the_Carribean,Caribbean,2000-2005,29.4
+Martinique,Latin_America_and_the_Carribean,Caribbean,2005-2010,29.7
+Martinique,Latin_America_and_the_Carribean,Caribbean,2010-2015,29.9
+Martinique,Latin_America_and_the_Carribean,Caribbean,2015-2020,30.2
+Mauritania,Africa,Western_Africa,1950-1955,29.4
+Mauritania,Africa,Western_Africa,1955-1960,29.7
+Mauritania,Africa,Western_Africa,1960-1965,30
+Mauritania,Africa,Western_Africa,1965-1970,30.2
+Mauritania,Africa,Western_Africa,1970-1975,30.4
+Mauritania,Africa,Western_Africa,1975-1980,30.5
+Mauritania,Africa,Western_Africa,1980-1985,30.6
+Mauritania,Africa,Western_Africa,1985-1990,30.7
+Mauritania,Africa,Western_Africa,1990-1995,30.8
+Mauritania,Africa,Western_Africa,1995-2000,30.7
+Mauritania,Africa,Western_Africa,2000-2005,30.6
+Mauritania,Africa,Western_Africa,2005-2010,30.5
+Mauritania,Africa,Western_Africa,2010-2015,30.5
+Mauritania,Africa,Western_Africa,2015-2020,30.4
+Mauritius,Africa,Eastern_Africa,1950-1955,28.1
+Mauritius,Africa,Eastern_Africa,1955-1960,28.1
+Mauritius,Africa,Eastern_Africa,1960-1965,28.7
+Mauritius,Africa,Eastern_Africa,1965-1970,28.7
+Mauritius,Africa,Eastern_Africa,1970-1975,28.4
+Mauritius,Africa,Eastern_Africa,1975-1980,27.5
+Mauritius,Africa,Eastern_Africa,1980-1985,27.6
+Mauritius,Africa,Eastern_Africa,1985-1990,27.1
+Mauritius,Africa,Eastern_Africa,1990-1995,27.1
+Mauritius,Africa,Eastern_Africa,1995-2000,27.2
+Mauritius,Africa,Eastern_Africa,2000-2005,27.3
+Mauritius,Africa,Eastern_Africa,2005-2010,27.3
+Mauritius,Africa,Eastern_Africa,2010-2015,27.8
+Mauritius,Africa,Eastern_Africa,2015-2020,28.1
+Mayotte,Africa,Eastern_Africa,1950-1955,28.7
+Mayotte,Africa,Eastern_Africa,1955-1960,28.7
+Mayotte,Africa,Eastern_Africa,1960-1965,28.7
+Mayotte,Africa,Eastern_Africa,1965-1970,28.7
+Mayotte,Africa,Eastern_Africa,1970-1975,28.7
+Mayotte,Africa,Eastern_Africa,1975-1980,28.7
+Mayotte,Africa,Eastern_Africa,1980-1985,29
+Mayotte,Africa,Eastern_Africa,1985-1990,29.3
+Mayotte,Africa,Eastern_Africa,1990-1995,29.5
+Mayotte,Africa,Eastern_Africa,1995-2000,29.8
+Mayotte,Africa,Eastern_Africa,2000-2005,29.8
+Mayotte,Africa,Eastern_Africa,2005-2010,29.8
+Mayotte,Africa,Eastern_Africa,2010-2015,29.8
+Mayotte,Africa,Eastern_Africa,2015-2020,29.8
+Mexico,Latin_America_and_the_Carribean,Central_America,1950-1955,29.6
+Mexico,Latin_America_and_the_Carribean,Central_America,1955-1960,29.6
+Mexico,Latin_America_and_the_Carribean,Central_America,1960-1965,29.5
+Mexico,Latin_America_and_the_Carribean,Central_America,1965-1970,29.5
+Mexico,Latin_America_and_the_Carribean,Central_America,1970-1975,29.4
+Mexico,Latin_America_and_the_Carribean,Central_America,1975-1980,28.8
+Mexico,Latin_America_and_the_Carribean,Central_America,1980-1985,28.2
+Mexico,Latin_America_and_the_Carribean,Central_America,1985-1990,27.9
+Mexico,Latin_America_and_the_Carribean,Central_America,1990-1995,27.7
+Mexico,Latin_America_and_the_Carribean,Central_America,1995-2000,27.2
+Mexico,Latin_America_and_the_Carribean,Central_America,2000-2005,27.1
+Mexico,Latin_America_and_the_Carribean,Central_America,2005-2010,26.9
+Mexico,Latin_America_and_the_Carribean,Central_America,2010-2015,26.9
+Mexico,Latin_America_and_the_Carribean,Central_America,2015-2020,26.9
+Micronesia (Federated States of),Oceania,Micronesia,1950-1955,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1955-1960,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1960-1965,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1965-1970,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1970-1975,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1975-1980,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1980-1985,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1985-1990,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1990-1995,30.2
+Micronesia (Federated States of),Oceania,Micronesia,1995-2000,30.2
+Micronesia (Federated States of),Oceania,Micronesia,2000-2005,30.3
+Micronesia (Federated States of),Oceania,Micronesia,2005-2010,30.5
+Micronesia (Federated States of),Oceania,Micronesia,2010-2015,30.6
+Micronesia (Federated States of),Oceania,Micronesia,2015-2020,30.7
+Mongolia,Asia,Eastern_Asia,1950-1955,31.5
+Mongolia,Asia,Eastern_Asia,1955-1960,31.5
+Mongolia,Asia,Eastern_Asia,1960-1965,31.5
+Mongolia,Asia,Eastern_Asia,1965-1970,31.5
+Mongolia,Asia,Eastern_Asia,1970-1975,31.5
+Mongolia,Asia,Eastern_Asia,1975-1980,30.8
+Mongolia,Asia,Eastern_Asia,1980-1985,30.2
+Mongolia,Asia,Eastern_Asia,1985-1990,29.4
+Mongolia,Asia,Eastern_Asia,1990-1995,28.2
+Mongolia,Asia,Eastern_Asia,1995-2000,27.8
+Mongolia,Asia,Eastern_Asia,2000-2005,28
+Mongolia,Asia,Eastern_Asia,2005-2010,28.5
+Mongolia,Asia,Eastern_Asia,2010-2015,28.8
+Mongolia,Asia,Eastern_Asia,2015-2020,29.3
+Montenegro,Europe,Southern_Europe,1950-1955,30.4
+Montenegro,Europe,Southern_Europe,1955-1960,29.3
+Montenegro,Europe,Southern_Europe,1960-1965,28.8
+Montenegro,Europe,Southern_Europe,1965-1970,27.9
+Montenegro,Europe,Southern_Europe,1970-1975,27.6
+Montenegro,Europe,Southern_Europe,1975-1980,27.8
+Montenegro,Europe,Southern_Europe,1980-1985,27.3
+Montenegro,Europe,Southern_Europe,1985-1990,27.2
+Montenegro,Europe,Southern_Europe,1990-1995,27.3
+Montenegro,Europe,Southern_Europe,1995-2000,27.9
+Montenegro,Europe,Southern_Europe,2000-2005,28.1
+Montenegro,Europe,Southern_Europe,2005-2010,28.5
+Montenegro,Europe,Southern_Europe,2010-2015,28.9
+Montenegro,Europe,Southern_Europe,2015-2020,29.3
+Morocco,Africa,Northern_Africa,1950-1955,29.2
+Morocco,Africa,Northern_Africa,1955-1960,29.2
+Morocco,Africa,Northern_Africa,1960-1965,29.2
+Morocco,Africa,Northern_Africa,1965-1970,29.2
+Morocco,Africa,Northern_Africa,1970-1975,29.6
+Morocco,Africa,Northern_Africa,1975-1980,29.9
+Morocco,Africa,Northern_Africa,1980-1985,30.5
+Morocco,Africa,Northern_Africa,1985-1990,31.1
+Morocco,Africa,Northern_Africa,1990-1995,31.1
+Morocco,Africa,Northern_Africa,1995-2000,30.6
+Morocco,Africa,Northern_Africa,2000-2005,30.4
+Morocco,Africa,Northern_Africa,2005-2010,30.4
+Morocco,Africa,Northern_Africa,2010-2015,30.4
+Morocco,Africa,Northern_Africa,2015-2020,30.4
+Mozambique,Africa,Eastern_Africa,1950-1955,30.4
+Mozambique,Africa,Eastern_Africa,1955-1960,30.4
+Mozambique,Africa,Eastern_Africa,1960-1965,30.4
+Mozambique,Africa,Eastern_Africa,1965-1970,30.4
+Mozambique,Africa,Eastern_Africa,1970-1975,29.8
+Mozambique,Africa,Eastern_Africa,1975-1980,29.3
+Mozambique,Africa,Eastern_Africa,1980-1985,29
+Mozambique,Africa,Eastern_Africa,1985-1990,29
+Mozambique,Africa,Eastern_Africa,1990-1995,28.7
+Mozambique,Africa,Eastern_Africa,1995-2000,28.7
+Mozambique,Africa,Eastern_Africa,2000-2005,28.7
+Mozambique,Africa,Eastern_Africa,2005-2010,28.7
+Mozambique,Africa,Eastern_Africa,2010-2015,29
+Mozambique,Africa,Eastern_Africa,2015-2020,29.1
+Myanmar,Asia,South-Eastern_Asia,1950-1955,29.6
+Myanmar,Asia,South-Eastern_Asia,1955-1960,29.6
+Myanmar,Asia,South-Eastern_Asia,1960-1965,29.6
+Myanmar,Asia,South-Eastern_Asia,1965-1970,29.6
+Myanmar,Asia,South-Eastern_Asia,1970-1975,29.6
+Myanmar,Asia,South-Eastern_Asia,1975-1980,29.6
+Myanmar,Asia,South-Eastern_Asia,1980-1985,30
+Myanmar,Asia,South-Eastern_Asia,1985-1990,30.1
+Myanmar,Asia,South-Eastern_Asia,1990-1995,30.1
+Myanmar,Asia,South-Eastern_Asia,1995-2000,30
+Myanmar,Asia,South-Eastern_Asia,2000-2005,29.9
+Myanmar,Asia,South-Eastern_Asia,2005-2010,29.8
+Myanmar,Asia,South-Eastern_Asia,2010-2015,29.7
+Myanmar,Asia,South-Eastern_Asia,2015-2020,29.6
+Namibia,Africa,Souther_Africa,1950-1955,30.2
+Namibia,Africa,Souther_Africa,1955-1960,30.2
+Namibia,Africa,Souther_Africa,1960-1965,30.2
+Namibia,Africa,Souther_Africa,1965-1970,30.2
+Namibia,Africa,Souther_Africa,1970-1975,30.2
+Namibia,Africa,Souther_Africa,1975-1980,30.2
+Namibia,Africa,Souther_Africa,1980-1985,30.2
+Namibia,Africa,Souther_Africa,1985-1990,30.2
+Namibia,Africa,Souther_Africa,1990-1995,30.2
+Namibia,Africa,Souther_Africa,1995-2000,30.2
+Namibia,Africa,Souther_Africa,2000-2005,29.6
+Namibia,Africa,Souther_Africa,2005-2010,29.1
+Namibia,Africa,Souther_Africa,2010-2015,28.9
+Namibia,Africa,Souther_Africa,2015-2020,28.6
+Nepal,Asia,South-Central_Asia,1950-1955,29.5
+Nepal,Asia,South-Central_Asia,1955-1960,29.5
+Nepal,Asia,South-Central_Asia,1960-1965,29.5
+Nepal,Asia,South-Central_Asia,1965-1970,29.4
+Nepal,Asia,South-Central_Asia,1970-1975,29.2
+Nepal,Asia,South-Central_Asia,1975-1980,28.9
+Nepal,Asia,South-Central_Asia,1980-1985,28.6
+Nepal,Asia,South-Central_Asia,1985-1990,28.2
+Nepal,Asia,South-Central_Asia,1990-1995,27.7
+Nepal,Asia,South-Central_Asia,1995-2000,27.2
+Nepal,Asia,South-Central_Asia,2000-2005,26.8
+Nepal,Asia,South-Central_Asia,2005-2010,26.4
+Nepal,Asia,South-Central_Asia,2010-2015,26
+Nepal,Asia,South-Central_Asia,2015-2020,25.7
+Netherlands,Europe,Western_Europe,1950-1955,30.7
+Netherlands,Europe,Western_Europe,1955-1960,30.1
+Netherlands,Europe,Western_Europe,1960-1965,29.4
+Netherlands,Europe,Western_Europe,1965-1970,28.5
+Netherlands,Europe,Western_Europe,1970-1975,27.7
+Netherlands,Europe,Western_Europe,1975-1980,27.5
+Netherlands,Europe,Western_Europe,1980-1985,28
+Netherlands,Europe,Western_Europe,1985-1990,28.9
+Netherlands,Europe,Western_Europe,1990-1995,29.7
+Netherlands,Europe,Western_Europe,1995-2000,30.2
+Netherlands,Europe,Western_Europe,2000-2005,30.4
+Netherlands,Europe,Western_Europe,2005-2010,30.7
+Netherlands,Europe,Western_Europe,2010-2015,30.8
+Netherlands,Europe,Western_Europe,2015-2020,31
+New Caledonia,Oceania,Melanesia,1950-1955,30.5
+New Caledonia,Oceania,Melanesia,1955-1960,30.5
+New Caledonia,Oceania,Melanesia,1960-1965,30.5
+New Caledonia,Oceania,Melanesia,1965-1970,29.1
+New Caledonia,Oceania,Melanesia,1970-1975,28.5
+New Caledonia,Oceania,Melanesia,1975-1980,27.7
+New Caledonia,Oceania,Melanesia,1980-1985,27.5
+New Caledonia,Oceania,Melanesia,1985-1990,28
+New Caledonia,Oceania,Melanesia,1990-1995,28.4
+New Caledonia,Oceania,Melanesia,1995-2000,29.6
+New Caledonia,Oceania,Melanesia,2000-2005,28.9
+New Caledonia,Oceania,Melanesia,2005-2010,29.3
+New Caledonia,Oceania,Melanesia,2010-2015,29.6
+New Caledonia,Oceania,Melanesia,2015-2020,30
+New Zealand,Oceania,Australia_and_New_Zealand,1950-1955,27.4
+New Zealand,Oceania,Australia_and_New_Zealand,1955-1960,27.4
+New Zealand,Oceania,Australia_and_New_Zealand,1960-1965,27.4
+New Zealand,Oceania,Australia_and_New_Zealand,1965-1970,26.8
+New Zealand,Oceania,Australia_and_New_Zealand,1970-1975,26.3
+New Zealand,Oceania,Australia_and_New_Zealand,1975-1980,26.4
+New Zealand,Oceania,Australia_and_New_Zealand,1980-1985,27
+New Zealand,Oceania,Australia_and_New_Zealand,1985-1990,27.6
+New Zealand,Oceania,Australia_and_New_Zealand,1990-1995,28.2
+New Zealand,Oceania,Australia_and_New_Zealand,1995-2000,28.8
+New Zealand,Oceania,Australia_and_New_Zealand,2000-2005,29.4
+New Zealand,Oceania,Australia_and_New_Zealand,2005-2010,29.6
+New Zealand,Oceania,Australia_and_New_Zealand,2010-2015,29.9
+New Zealand,Oceania,Australia_and_New_Zealand,2015-2020,30.1
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1950-1955,28.9
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1955-1960,28.9
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1960-1965,28.9
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1965-1970,28.7
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1970-1975,28.5
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1975-1980,28.3
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1980-1985,28.1
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1985-1990,27.5
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1990-1995,27.6
+Nicaragua,Latin_America_and_the_Carribean,Central_America,1995-2000,26.9
+Nicaragua,Latin_America_and_the_Carribean,Central_America,2000-2005,26.7
+Nicaragua,Latin_America_and_the_Carribean,Central_America,2005-2010,26.6
+Nicaragua,Latin_America_and_the_Carribean,Central_America,2010-2015,26.6
+Nicaragua,Latin_America_and_the_Carribean,Central_America,2015-2020,26.6
+Niger,Africa,Western_Africa,1950-1955,28.9
+Niger,Africa,Western_Africa,1955-1960,29
+Niger,Africa,Western_Africa,1960-1965,29
+Niger,Africa,Western_Africa,1965-1970,29.1
+Niger,Africa,Western_Africa,1970-1975,29.1
+Niger,Africa,Western_Africa,1975-1980,29.1
+Niger,Africa,Western_Africa,1980-1985,29.1
+Niger,Africa,Western_Africa,1985-1990,29.1
+Niger,Africa,Western_Africa,1990-1995,29.1
+Niger,Africa,Western_Africa,1995-2000,29.1
+Niger,Africa,Western_Africa,2000-2005,29.1
+Niger,Africa,Western_Africa,2005-2010,29.1
+Niger,Africa,Western_Africa,2010-2015,29.1
+Niger,Africa,Western_Africa,2015-2020,29.1
+Nigeria,Africa,Western_Africa,1950-1955,29.5
+Nigeria,Africa,Western_Africa,1955-1960,29.5
+Nigeria,Africa,Western_Africa,1960-1965,29.5
+Nigeria,Africa,Western_Africa,1965-1970,29.5
+Nigeria,Africa,Western_Africa,1970-1975,29.6
+Nigeria,Africa,Western_Africa,1975-1980,29.6
+Nigeria,Africa,Western_Africa,1980-1985,29.7
+Nigeria,Africa,Western_Africa,1985-1990,29.7
+Nigeria,Africa,Western_Africa,1990-1995,29.7
+Nigeria,Africa,Western_Africa,1995-2000,29.7
+Nigeria,Africa,Western_Africa,2000-2005,29.8
+Nigeria,Africa,Western_Africa,2005-2010,29.9
+Nigeria,Africa,Western_Africa,2010-2015,29.8
+Nigeria,Africa,Western_Africa,2015-2020,29.8
+Norway,Europe,Northern_Europe,1950-1955,29.5
+Norway,Europe,Northern_Europe,1955-1960,28.7
+Norway,Europe,Northern_Europe,1960-1965,28.3
+Norway,Europe,Northern_Europe,1965-1970,27.9
+Norway,Europe,Northern_Europe,1970-1975,27.3
+Norway,Europe,Northern_Europe,1975-1980,27.2
+Norway,Europe,Northern_Europe,1980-1985,27.6
+Norway,Europe,Northern_Europe,1985-1990,27.8
+Norway,Europe,Northern_Europe,1990-1995,28.4
+Norway,Europe,Northern_Europe,1995-2000,29
+Norway,Europe,Northern_Europe,2000-2005,29.5
+Norway,Europe,Northern_Europe,2005-2010,29.9
+Norway,Europe,Northern_Europe,2010-2015,30.4
+Norway,Europe,Northern_Europe,2015-2020,30.7
+Occupied Palestinian Territory,Asia,Western_Asia,1950-1955,29.9
+Occupied Palestinian Territory,Asia,Western_Asia,1955-1960,29.9
+Occupied Palestinian Territory,Asia,Western_Asia,1960-1965,29.9
+Occupied Palestinian Territory,Asia,Western_Asia,1965-1970,29.9
+Occupied Palestinian Territory,Asia,Western_Asia,1970-1975,29.9
+Occupied Palestinian Territory,Asia,Western_Asia,1975-1980,29.9
+Occupied Palestinian Territory,Asia,Western_Asia,1980-1985,30
+Occupied Palestinian Territory,Asia,Western_Asia,1985-1990,29.5
+Occupied Palestinian Territory,Asia,Western_Asia,1990-1995,29.1
+Occupied Palestinian Territory,Asia,Western_Asia,1995-2000,28.8
+Occupied Palestinian Territory,Asia,Western_Asia,2000-2005,28.9
+Occupied Palestinian Territory,Asia,Western_Asia,2005-2010,28.9
+Occupied Palestinian Territory,Asia,Western_Asia,2010-2015,28.9
+Occupied Palestinian Territory,Asia,Western_Asia,2015-2020,28.9
+Oman,Asia,Western_Asia,1950-1955,31.6
+Oman,Asia,Western_Asia,1955-1960,31.6
+Oman,Asia,Western_Asia,1960-1965,31.6
+Oman,Asia,Western_Asia,1965-1970,31.6
+Oman,Asia,Western_Asia,1970-1975,31.4
+Oman,Asia,Western_Asia,1975-1980,31.1
+Oman,Asia,Western_Asia,1980-1985,31.1
+Oman,Asia,Western_Asia,1985-1990,31
+Oman,Asia,Western_Asia,1990-1995,30.7
+Oman,Asia,Western_Asia,1995-2000,30.5
+Oman,Asia,Western_Asia,2000-2005,30.6
+Oman,Asia,Western_Asia,2005-2010,30.8
+Oman,Asia,Western_Asia,2010-2015,31
+Oman,Asia,Western_Asia,2015-2020,31.1
+Pakistan,Asia,South-Central_Asia,1950-1955,29.9
+Pakistan,Asia,South-Central_Asia,1955-1960,29.9
+Pakistan,Asia,South-Central_Asia,1960-1965,29.9
+Pakistan,Asia,South-Central_Asia,1965-1970,29.9
+Pakistan,Asia,South-Central_Asia,1970-1975,30
+Pakistan,Asia,South-Central_Asia,1975-1980,30
+Pakistan,Asia,South-Central_Asia,1980-1985,30
+Pakistan,Asia,South-Central_Asia,1985-1990,29.9
+Pakistan,Asia,South-Central_Asia,1990-1995,29.9
+Pakistan,Asia,South-Central_Asia,1995-2000,29.8
+Pakistan,Asia,South-Central_Asia,2000-2005,29.7
+Pakistan,Asia,South-Central_Asia,2005-2010,29.4
+Pakistan,Asia,South-Central_Asia,2010-2015,28.9
+Pakistan,Asia,South-Central_Asia,2015-2020,28.6
+Panama,Latin_America_and_the_Carribean,Central_America,1950-1955,28.3
+Panama,Latin_America_and_the_Carribean,Central_America,1955-1960,28.3
+Panama,Latin_America_and_the_Carribean,Central_America,1960-1965,28.3
+Panama,Latin_America_and_the_Carribean,Central_America,1965-1970,28
+Panama,Latin_America_and_the_Carribean,Central_America,1970-1975,27.6
+Panama,Latin_America_and_the_Carribean,Central_America,1975-1980,27.3
+Panama,Latin_America_and_the_Carribean,Central_America,1980-1985,27.1
+Panama,Latin_America_and_the_Carribean,Central_America,1985-1990,27
+Panama,Latin_America_and_the_Carribean,Central_America,1990-1995,26.6
+Panama,Latin_America_and_the_Carribean,Central_America,1995-2000,26.7
+Panama,Latin_America_and_the_Carribean,Central_America,2000-2005,26.7
+Panama,Latin_America_and_the_Carribean,Central_America,2005-2010,26.7
+Panama,Latin_America_and_the_Carribean,Central_America,2010-2015,26.7
+Panama,Latin_America_and_the_Carribean,Central_America,2015-2020,26.7
+Papua New Guinea,Oceania,Melanesia,1950-1955,30.4
+Papua New Guinea,Oceania,Melanesia,1955-1960,30.4
+Papua New Guinea,Oceania,Melanesia,1960-1965,30.4
+Papua New Guinea,Oceania,Melanesia,1965-1970,30.4
+Papua New Guinea,Oceania,Melanesia,1970-1975,30.4
+Papua New Guinea,Oceania,Melanesia,1975-1980,30.3
+Papua New Guinea,Oceania,Melanesia,1980-1985,30.1
+Papua New Guinea,Oceania,Melanesia,1985-1990,30
+Papua New Guinea,Oceania,Melanesia,1990-1995,29.9
+Papua New Guinea,Oceania,Melanesia,1995-2000,29.8
+Papua New Guinea,Oceania,Melanesia,2000-2005,29.8
+Papua New Guinea,Oceania,Melanesia,2005-2010,29.8
+Papua New Guinea,Oceania,Melanesia,2010-2015,29.8
+Papua New Guinea,Oceania,Melanesia,2015-2020,29.8
+Paraguay,Latin_America_and_the_Carribean,South_America,1950-1955,30.1
+Paraguay,Latin_America_and_the_Carribean,South_America,1955-1960,30.1
+Paraguay,Latin_America_and_the_Carribean,South_America,1960-1965,30.1
+Paraguay,Latin_America_and_the_Carribean,South_America,1965-1970,29.9
+Paraguay,Latin_America_and_the_Carribean,South_America,1970-1975,29.7
+Paraguay,Latin_America_and_the_Carribean,South_America,1975-1980,29.6
+Paraguay,Latin_America_and_the_Carribean,South_America,1980-1985,29.5
+Paraguay,Latin_America_and_the_Carribean,South_America,1985-1990,29.3
+Paraguay,Latin_America_and_the_Carribean,South_America,1990-1995,28.9
+Paraguay,Latin_America_and_the_Carribean,South_America,1995-2000,28.5
+Paraguay,Latin_America_and_the_Carribean,South_America,2000-2005,28.5
+Paraguay,Latin_America_and_the_Carribean,South_America,2005-2010,28.3
+Paraguay,Latin_America_and_the_Carribean,South_America,2010-2015,28.3
+Paraguay,Latin_America_and_the_Carribean,South_America,2015-2020,28.2
+Peru,Latin_America_and_the_Carribean,South_America,1950-1955,29.9
+Peru,Latin_America_and_the_Carribean,South_America,1955-1960,29.9
+Peru,Latin_America_and_the_Carribean,South_America,1960-1965,29.9
+Peru,Latin_America_and_the_Carribean,South_America,1965-1970,30.3
+Peru,Latin_America_and_the_Carribean,South_America,1970-1975,30
+Peru,Latin_America_and_the_Carribean,South_America,1975-1980,29.4
+Peru,Latin_America_and_the_Carribean,South_America,1980-1985,29.7
+Peru,Latin_America_and_the_Carribean,South_America,1985-1990,29.4
+Peru,Latin_America_and_the_Carribean,South_America,1990-1995,28.9
+Peru,Latin_America_and_the_Carribean,South_America,1995-2000,28.6
+Peru,Latin_America_and_the_Carribean,South_America,2000-2005,28.7
+Peru,Latin_America_and_the_Carribean,South_America,2005-2010,28.8
+Peru,Latin_America_and_the_Carribean,South_America,2010-2015,28.8
+Peru,Latin_America_and_the_Carribean,South_America,2015-2020,28.8
+Philippines,Asia,South-Eastern_Asia,1950-1955,30.7
+Philippines,Asia,South-Eastern_Asia,1955-1960,30.7
+Philippines,Asia,South-Eastern_Asia,1960-1965,30.7
+Philippines,Asia,South-Eastern_Asia,1965-1970,30.7
+Philippines,Asia,South-Eastern_Asia,1970-1975,30.7
+Philippines,Asia,South-Eastern_Asia,1975-1980,30.4
+Philippines,Asia,South-Eastern_Asia,1980-1985,30.2
+Philippines,Asia,South-Eastern_Asia,1985-1990,29.9
+Philippines,Asia,South-Eastern_Asia,1990-1995,29.4
+Philippines,Asia,South-Eastern_Asia,1995-2000,29.2
+Philippines,Asia,South-Eastern_Asia,2000-2005,28.9
+Philippines,Asia,South-Eastern_Asia,2005-2010,28.8
+Philippines,Asia,South-Eastern_Asia,2010-2015,28.9
+Philippines,Asia,South-Eastern_Asia,2015-2020,28.9
+Poland,Europe,Eastern_Europe,1950-1955,28.9
+Poland,Europe,Eastern_Europe,1955-1960,28.1
+Poland,Europe,Eastern_Europe,1960-1965,27.3
+Poland,Europe,Eastern_Europe,1965-1970,27.2
+Poland,Europe,Eastern_Europe,1970-1975,27
+Poland,Europe,Eastern_Europe,1975-1980,26.7
+Poland,Europe,Eastern_Europe,1980-1985,26.5
+Poland,Europe,Eastern_Europe,1985-1990,26.3
+Poland,Europe,Eastern_Europe,1990-1995,26.4
+Poland,Europe,Eastern_Europe,1995-2000,27.1
+Poland,Europe,Eastern_Europe,2000-2005,27.8
+Poland,Europe,Eastern_Europe,2005-2010,28.5
+Poland,Europe,Eastern_Europe,2010-2015,28.9
+Poland,Europe,Eastern_Europe,2015-2020,29.5
+Portugal,Europe,Southern_Europe,1950-1955,30.2
+Portugal,Europe,Southern_Europe,1955-1960,29.8
+Portugal,Europe,Southern_Europe,1960-1965,29.6
+Portugal,Europe,Southern_Europe,1965-1970,29.3
+Portugal,Europe,Southern_Europe,1970-1975,29
+Portugal,Europe,Southern_Europe,1975-1980,28.1
+Portugal,Europe,Southern_Europe,1980-1985,27.2
+Portugal,Europe,Southern_Europe,1985-1990,27.2
+Portugal,Europe,Southern_Europe,1990-1995,27.7
+Portugal,Europe,Southern_Europe,1995-2000,28.3
+Portugal,Europe,Southern_Europe,2000-2005,28.9
+Portugal,Europe,Southern_Europe,2005-2010,29.5
+Portugal,Europe,Southern_Europe,2010-2015,30.2
+Portugal,Europe,Southern_Europe,2015-2020,30.8
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1950-1955,27.5
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1955-1960,27.5
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1960-1965,27.5
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1965-1970,27.1
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1970-1975,26.9
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1975-1980,26.5
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1980-1985,26.2
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1985-1990,26.1
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1990-1995,25.9
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,1995-2000,25.9
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,2000-2005,25.9
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,2005-2010,26.5
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,2010-2015,26.5
+Puerto Rico,Latin_America_and_the_Carribean,Caribbean,2015-2020,26.9
+Qatar,Asia,Western_Asia,1950-1955,28.1
+Qatar,Asia,Western_Asia,1955-1960,28.1
+Qatar,Asia,Western_Asia,1960-1965,28.1
+Qatar,Asia,Western_Asia,1965-1970,28.1
+Qatar,Asia,Western_Asia,1970-1975,28.1
+Qatar,Asia,Western_Asia,1975-1980,28.1
+Qatar,Asia,Western_Asia,1980-1985,28.1
+Qatar,Asia,Western_Asia,1985-1990,28.1
+Qatar,Asia,Western_Asia,1990-1995,28.6
+Qatar,Asia,Western_Asia,1995-2000,29
+Qatar,Asia,Western_Asia,2000-2005,30
+Qatar,Asia,Western_Asia,2005-2010,30.2
+Qatar,Asia,Western_Asia,2010-2015,29.9
+Qatar,Asia,Western_Asia,2015-2020,29.9
+Republic of Korea,Asia,Eastern_Asia,1950-1955,30.5
+Republic of Korea,Asia,Eastern_Asia,1955-1960,30.5
+Republic of Korea,Asia,Eastern_Asia,1960-1965,30.2
+Republic of Korea,Asia,Eastern_Asia,1965-1970,29.8
+Republic of Korea,Asia,Eastern_Asia,1970-1975,29.3
+Republic of Korea,Asia,Eastern_Asia,1975-1980,28.1
+Republic of Korea,Asia,Eastern_Asia,1980-1985,27.1
+Republic of Korea,Asia,Eastern_Asia,1985-1990,26.8
+Republic of Korea,Asia,Eastern_Asia,1990-1995,27.6
+Republic of Korea,Asia,Eastern_Asia,1995-2000,28.4
+Republic of Korea,Asia,Eastern_Asia,2000-2005,29.3
+Republic of Korea,Asia,Eastern_Asia,2005-2010,30.2
+Republic of Korea,Asia,Eastern_Asia,2010-2015,31.3
+Republic of Korea,Asia,Eastern_Asia,2015-2020,32.3
+Republic of Moldova,Europe,Eastern_Europe,1950-1955,29.1
+Republic of Moldova,Europe,Eastern_Europe,1955-1960,29.1
+Republic of Moldova,Europe,Eastern_Europe,1960-1965,29.1
+Republic of Moldova,Europe,Eastern_Europe,1965-1970,28.6
+Republic of Moldova,Europe,Eastern_Europe,1970-1975,27.7
+Republic of Moldova,Europe,Eastern_Europe,1975-1980,26.7
+Republic of Moldova,Europe,Eastern_Europe,1980-1985,26.5
+Republic of Moldova,Europe,Eastern_Europe,1985-1990,26.3
+Republic of Moldova,Europe,Eastern_Europe,1990-1995,25
+Republic of Moldova,Europe,Eastern_Europe,1995-2000,25.1
+Republic of Moldova,Europe,Eastern_Europe,2000-2005,25.9
+Republic of Moldova,Europe,Eastern_Europe,2005-2010,26.5
+Republic of Moldova,Europe,Eastern_Europe,2010-2015,26.8
+Republic of Moldova,Europe,Eastern_Europe,2015-2020,27.4
+Reunion,Africa,Eastern_Africa,1950-1955,30.4
+Reunion,Africa,Eastern_Africa,1955-1960,30.3
+Reunion,Africa,Eastern_Africa,1960-1965,30.2
+Reunion,Africa,Eastern_Africa,1965-1970,29.8
+Reunion,Africa,Eastern_Africa,1970-1975,28.7
+Reunion,Africa,Eastern_Africa,1975-1980,28.4
+Reunion,Africa,Eastern_Africa,1980-1985,27.9
+Reunion,Africa,Eastern_Africa,1985-1990,28.2
+Reunion,Africa,Eastern_Africa,1990-1995,27.7
+Reunion,Africa,Eastern_Africa,1995-2000,28.3
+Reunion,Africa,Eastern_Africa,2000-2005,28.9
+Reunion,Africa,Eastern_Africa,2005-2010,28.5
+Reunion,Africa,Eastern_Africa,2010-2015,28.5
+Reunion,Africa,Eastern_Africa,2015-2020,28.3
+Romania,Europe,Eastern_Europe,1950-1955,27.8
+Romania,Europe,Eastern_Europe,1955-1960,27.4
+Romania,Europe,Eastern_Europe,1960-1965,26.3
+Romania,Europe,Eastern_Europe,1965-1970,26.6
+Romania,Europe,Eastern_Europe,1970-1975,26.4
+Romania,Europe,Eastern_Europe,1975-1980,25.9
+Romania,Europe,Eastern_Europe,1980-1985,25.1
+Romania,Europe,Eastern_Europe,1985-1990,25.7
+Romania,Europe,Eastern_Europe,1990-1995,25
+Romania,Europe,Eastern_Europe,1995-2000,25.3
+Romania,Europe,Eastern_Europe,2000-2005,26.1
+Romania,Europe,Eastern_Europe,2005-2010,26.9
+Romania,Europe,Eastern_Europe,2010-2015,27.3
+Romania,Europe,Eastern_Europe,2015-2020,28
+Russian Federation,Europe,Eastern_Europe,1950-1955,29.3
+Russian Federation,Europe,Eastern_Europe,1955-1960,28.6
+Russian Federation,Europe,Eastern_Europe,1960-1965,27.8
+Russian Federation,Europe,Eastern_Europe,1965-1970,27.3
+Russian Federation,Europe,Eastern_Europe,1970-1975,26.6
+Russian Federation,Europe,Eastern_Europe,1975-1980,26
+Russian Federation,Europe,Eastern_Europe,1980-1985,25.8
+Russian Federation,Europe,Eastern_Europe,1985-1990,25.9
+Russian Federation,Europe,Eastern_Europe,1990-1995,24.8
+Russian Federation,Europe,Eastern_Europe,1995-2000,25.3
+Russian Federation,Europe,Eastern_Europe,2000-2005,26.2
+Russian Federation,Europe,Eastern_Europe,2005-2010,27
+Russian Federation,Europe,Eastern_Europe,2010-2015,27.9
+Russian Federation,Europe,Eastern_Europe,2015-2020,28.8
+Rwanda,Africa,Eastern_Africa,1950-1955,31.6
+Rwanda,Africa,Eastern_Africa,1955-1960,31.6
+Rwanda,Africa,Eastern_Africa,1960-1965,31.6
+Rwanda,Africa,Eastern_Africa,1965-1970,31.6
+Rwanda,Africa,Eastern_Africa,1970-1975,31.6
+Rwanda,Africa,Eastern_Africa,1975-1980,31.6
+Rwanda,Africa,Eastern_Africa,1980-1985,31.6
+Rwanda,Africa,Eastern_Africa,1985-1990,31.4
+Rwanda,Africa,Eastern_Africa,1990-1995,31.2
+Rwanda,Africa,Eastern_Africa,1995-2000,30.9
+Rwanda,Africa,Eastern_Africa,2000-2005,30.9
+Rwanda,Africa,Eastern_Africa,2005-2010,30.8
+Rwanda,Africa,Eastern_Africa,2010-2015,30.3
+Rwanda,Africa,Eastern_Africa,2015-2020,30
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1950-1955,27.8
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1955-1960,28.4
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1960-1965,28.7
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1965-1970,28.4
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1970-1975,28.1
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1975-1980,27.7
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1980-1985,26.9
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1985-1990,26.8
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1990-1995,27.2
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.7
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.9
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.8
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,2010-2015,27.7
+Saint Lucia,Latin_America_and_the_Carribean,Caribbean,2015-2020,27.7
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1950-1955,28
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1955-1960,28
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1960-1965,27.9
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1965-1970,27.8
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1970-1975,27.7
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1975-1980,27.6
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1980-1985,27.4
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.3
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1990-1995,27.2
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.4
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.3
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.2
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,2010-2015,27.1
+Saint Vincent and the Grenadines,Latin_America_and_the_Carribean,Caribbean,2015-2020,27.1
+Samoa,Oceania,Polynesia,1950-1955,30.3
+Samoa,Oceania,Polynesia,1955-1960,30.3
+Samoa,Oceania,Polynesia,1960-1965,30.3
+Samoa,Oceania,Polynesia,1965-1970,30.4
+Samoa,Oceania,Polynesia,1970-1975,30.3
+Samoa,Oceania,Polynesia,1975-1980,30.6
+Samoa,Oceania,Polynesia,1980-1985,30.8
+Samoa,Oceania,Polynesia,1985-1990,31
+Samoa,Oceania,Polynesia,1990-1995,31.2
+Samoa,Oceania,Polynesia,1995-2000,29.8
+Samoa,Oceania,Polynesia,2000-2005,30
+Samoa,Oceania,Polynesia,2005-2010,30.1
+Samoa,Oceania,Polynesia,2010-2015,30.2
+Samoa,Oceania,Polynesia,2015-2020,30.3
+Sao Tome and Principe,Africa,Middle_Africa,1950-1955,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1955-1960,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1960-1965,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1965-1970,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1970-1975,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1975-1980,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1980-1985,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1985-1990,28.2
+Sao Tome and Principe,Africa,Middle_Africa,1990-1995,28.3
+Sao Tome and Principe,Africa,Middle_Africa,1995-2000,28.4
+Sao Tome and Principe,Africa,Middle_Africa,2000-2005,28.5
+Sao Tome and Principe,Africa,Middle_Africa,2005-2010,28.6
+Sao Tome and Principe,Africa,Middle_Africa,2010-2015,28.7
+Sao Tome and Principe,Africa,Middle_Africa,2015-2020,28.8
+Saudi Arabia,Asia,Western_Asia,1950-1955,30.6
+Saudi Arabia,Asia,Western_Asia,1955-1960,30.6
+Saudi Arabia,Asia,Western_Asia,1960-1965,30.6
+Saudi Arabia,Asia,Western_Asia,1965-1970,30.6
+Saudi Arabia,Asia,Western_Asia,1970-1975,30.6
+Saudi Arabia,Asia,Western_Asia,1975-1980,30.6
+Saudi Arabia,Asia,Western_Asia,1980-1985,30.6
+Saudi Arabia,Asia,Western_Asia,1985-1990,30.8
+Saudi Arabia,Asia,Western_Asia,1990-1995,31.2
+Saudi Arabia,Asia,Western_Asia,1995-2000,31.5
+Saudi Arabia,Asia,Western_Asia,2000-2005,31.6
+Saudi Arabia,Asia,Western_Asia,2005-2010,31.8
+Saudi Arabia,Asia,Western_Asia,2010-2015,32.1
+Saudi Arabia,Asia,Western_Asia,2015-2020,32.2
+Senegal,Africa,Western_Africa,1950-1955,28.6
+Senegal,Africa,Western_Africa,1955-1960,28.9
+Senegal,Africa,Western_Africa,1960-1965,29.2
+Senegal,Africa,Western_Africa,1965-1970,29.4
+Senegal,Africa,Western_Africa,1970-1975,29.6
+Senegal,Africa,Western_Africa,1975-1980,29.7
+Senegal,Africa,Western_Africa,1980-1985,29.9
+Senegal,Africa,Western_Africa,1985-1990,30.1
+Senegal,Africa,Western_Africa,1990-1995,30.2
+Senegal,Africa,Western_Africa,1995-2000,30.1
+Senegal,Africa,Western_Africa,2000-2005,29.9
+Senegal,Africa,Western_Africa,2005-2010,29.9
+Senegal,Africa,Western_Africa,2010-2015,30.2
+Senegal,Africa,Western_Africa,2015-2020,30.3
+Serbia,Europe,Southern_Europe,1950-1955,28
+Serbia,Europe,Southern_Europe,1955-1960,26.7
+Serbia,Europe,Southern_Europe,1960-1965,26.4
+Serbia,Europe,Southern_Europe,1965-1970,26
+Serbia,Europe,Southern_Europe,1970-1975,26
+Serbia,Europe,Southern_Europe,1975-1980,26.2
+Serbia,Europe,Southern_Europe,1980-1985,26.2
+Serbia,Europe,Southern_Europe,1985-1990,26.2
+Serbia,Europe,Southern_Europe,1990-1995,26.5
+Serbia,Europe,Southern_Europe,1995-2000,26.8
+Serbia,Europe,Southern_Europe,2000-2005,27.2
+Serbia,Europe,Southern_Europe,2005-2010,27.8
+Serbia,Europe,Southern_Europe,2010-2015,28.5
+Serbia,Europe,Southern_Europe,2015-2020,29.2
+Seychelles,Africa,Eastern_Africa,1950-1955,27.8
+Seychelles,Africa,Eastern_Africa,1955-1960,27.8
+Seychelles,Africa,Eastern_Africa,1960-1965,27.8
+Seychelles,Africa,Eastern_Africa,1965-1970,27.8
+Seychelles,Africa,Eastern_Africa,1970-1975,27.8
+Seychelles,Africa,Eastern_Africa,1975-1980,27.8
+Seychelles,Africa,Eastern_Africa,1980-1985,28
+Seychelles,Africa,Eastern_Africa,1985-1990,27.7
+Seychelles,Africa,Eastern_Africa,1990-1995,27.3
+Seychelles,Africa,Eastern_Africa,1995-2000,27.1
+Seychelles,Africa,Eastern_Africa,2000-2005,27.3
+Seychelles,Africa,Eastern_Africa,2005-2010,27.5
+Seychelles,Africa,Eastern_Africa,2010-2015,27.4
+Seychelles,Africa,Eastern_Africa,2015-2020,27.5
+Sierra Leone,Africa,Western_Africa,1950-1955,28.7
+Sierra Leone,Africa,Western_Africa,1955-1960,28.7
+Sierra Leone,Africa,Western_Africa,1960-1965,28.7
+Sierra Leone,Africa,Western_Africa,1965-1970,28.7
+Sierra Leone,Africa,Western_Africa,1970-1975,28.7
+Sierra Leone,Africa,Western_Africa,1975-1980,28.7
+Sierra Leone,Africa,Western_Africa,1980-1985,28.7
+Sierra Leone,Africa,Western_Africa,1985-1990,29.3
+Sierra Leone,Africa,Western_Africa,1990-1995,29.7
+Sierra Leone,Africa,Western_Africa,1995-2000,29.9
+Sierra Leone,Africa,Western_Africa,2000-2005,29.8
+Sierra Leone,Africa,Western_Africa,2005-2010,29.4
+Sierra Leone,Africa,Western_Africa,2010-2015,29
+Sierra Leone,Africa,Western_Africa,2015-2020,28.7
+Singapore,Asia,South-Eastern_Asia,1950-1955,29
+Singapore,Asia,South-Eastern_Asia,1955-1960,29.3
+Singapore,Asia,South-Eastern_Asia,1960-1965,29.7
+Singapore,Asia,South-Eastern_Asia,1965-1970,29.1
+Singapore,Asia,South-Eastern_Asia,1970-1975,28.6
+Singapore,Asia,South-Eastern_Asia,1975-1980,28.2
+Singapore,Asia,South-Eastern_Asia,1980-1985,28.4
+Singapore,Asia,South-Eastern_Asia,1985-1990,29.2
+Singapore,Asia,South-Eastern_Asia,1990-1995,29.6
+Singapore,Asia,South-Eastern_Asia,1995-2000,29.9
+Singapore,Asia,South-Eastern_Asia,2000-2005,30.1
+Singapore,Asia,South-Eastern_Asia,2005-2010,30.5
+Singapore,Asia,South-Eastern_Asia,2010-2015,31.2
+Singapore,Asia,South-Eastern_Asia,2015-2020,31.3
+Slovakia,Europe,Eastern_Europe,1950-1955,28.1
+Slovakia,Europe,Eastern_Europe,1955-1960,27.4
+Slovakia,Europe,Eastern_Europe,1960-1965,26.8
+Slovakia,Europe,Eastern_Europe,1965-1970,26.5
+Slovakia,Europe,Eastern_Europe,1970-1975,26.2
+Slovakia,Europe,Eastern_Europe,1975-1980,25.7
+Slovakia,Europe,Eastern_Europe,1980-1985,25.3
+Slovakia,Europe,Eastern_Europe,1985-1990,25.1
+Slovakia,Europe,Eastern_Europe,1990-1995,25.2
+Slovakia,Europe,Eastern_Europe,1995-2000,26.1
+Slovakia,Europe,Eastern_Europe,2000-2005,27.2
+Slovakia,Europe,Eastern_Europe,2005-2010,28.2
+Slovakia,Europe,Eastern_Europe,2010-2015,28.8
+Slovakia,Europe,Eastern_Europe,2015-2020,29.6
+Slovenia,Europe,Southern_Europe,1950-1955,29.7
+Slovenia,Europe,Southern_Europe,1955-1960,28.6
+Slovenia,Europe,Southern_Europe,1960-1965,27.5
+Slovenia,Europe,Southern_Europe,1965-1970,26.9
+Slovenia,Europe,Southern_Europe,1970-1975,26.2
+Slovenia,Europe,Southern_Europe,1975-1980,25.6
+Slovenia,Europe,Southern_Europe,1980-1985,25.5
+Slovenia,Europe,Southern_Europe,1985-1990,25.5
+Slovenia,Europe,Southern_Europe,1990-1995,26.2
+Slovenia,Europe,Southern_Europe,1995-2000,27.6
+Slovenia,Europe,Southern_Europe,2000-2005,28.8
+Slovenia,Europe,Southern_Europe,2005-2010,29.8
+Slovenia,Europe,Southern_Europe,2010-2015,30.1
+Slovenia,Europe,Southern_Europe,2015-2020,30.7
+Solomon Islands,Oceania,Melanesia,1950-1955,31.5
+Solomon Islands,Oceania,Melanesia,1955-1960,31.5
+Solomon Islands,Oceania,Melanesia,1960-1965,31.5
+Solomon Islands,Oceania,Melanesia,1965-1970,31.5
+Solomon Islands,Oceania,Melanesia,1970-1975,30.1
+Solomon Islands,Oceania,Melanesia,1975-1980,29.8
+Solomon Islands,Oceania,Melanesia,1980-1985,29.6
+Solomon Islands,Oceania,Melanesia,1985-1990,29.4
+Solomon Islands,Oceania,Melanesia,1990-1995,29.3
+Solomon Islands,Oceania,Melanesia,1995-2000,29.2
+Solomon Islands,Oceania,Melanesia,2000-2005,29.2
+Solomon Islands,Oceania,Melanesia,2005-2010,29.4
+Solomon Islands,Oceania,Melanesia,2010-2015,29.6
+Solomon Islands,Oceania,Melanesia,2015-2020,29.8
+Somalia,Africa,Eastern_Africa,1950-1955,32.2
+Somalia,Africa,Eastern_Africa,1955-1960,32.2
+Somalia,Africa,Eastern_Africa,1960-1965,32.2
+Somalia,Africa,Eastern_Africa,1965-1970,32.2
+Somalia,Africa,Eastern_Africa,1970-1975,32.2
+Somalia,Africa,Eastern_Africa,1975-1980,32.2
+Somalia,Africa,Eastern_Africa,1980-1985,32.2
+Somalia,Africa,Eastern_Africa,1985-1990,31.9
+Somalia,Africa,Eastern_Africa,1990-1995,31.6
+Somalia,Africa,Eastern_Africa,1995-2000,31.4
+Somalia,Africa,Eastern_Africa,2000-2005,31.2
+Somalia,Africa,Eastern_Africa,2005-2010,30.4
+Somalia,Africa,Eastern_Africa,2010-2015,30.1
+Somalia,Africa,Eastern_Africa,2015-2020,29.7
+South Africa,Africa,Souther_Africa,1950-1955,31.1
+South Africa,Africa,Souther_Africa,1955-1960,31.1
+South Africa,Africa,Souther_Africa,1960-1965,31.1
+South Africa,Africa,Souther_Africa,1965-1970,31.1
+South Africa,Africa,Souther_Africa,1970-1975,30.6
+South Africa,Africa,Souther_Africa,1975-1980,30.1
+South Africa,Africa,Souther_Africa,1980-1985,29.6
+South Africa,Africa,Souther_Africa,1985-1990,29.1
+South Africa,Africa,Souther_Africa,1990-1995,28.5
+South Africa,Africa,Souther_Africa,1995-2000,28.3
+South Africa,Africa,Souther_Africa,2000-2005,28.2
+South Africa,Africa,Souther_Africa,2005-2010,28.2
+South Africa,Africa,Souther_Africa,2010-2015,28.3
+South Africa,Africa,Souther_Africa,2015-2020,28.3
+South Sudan,Africa,Eastern_Africa,1950-1955,29.2
+South Sudan,Africa,Eastern_Africa,1955-1960,29.2
+South Sudan,Africa,Eastern_Africa,1960-1965,29.2
+South Sudan,Africa,Eastern_Africa,1965-1970,29.2
+South Sudan,Africa,Eastern_Africa,1970-1975,29.3
+South Sudan,Africa,Eastern_Africa,1975-1980,29.4
+South Sudan,Africa,Eastern_Africa,1980-1985,29.6
+South Sudan,Africa,Eastern_Africa,1985-1990,29.8
+South Sudan,Africa,Eastern_Africa,1990-1995,29.9
+South Sudan,Africa,Eastern_Africa,1995-2000,30.1
+South Sudan,Africa,Eastern_Africa,2000-2005,30.3
+South Sudan,Africa,Eastern_Africa,2005-2010,30.1
+South Sudan,Africa,Eastern_Africa,2010-2015,29.8
+South Sudan,Africa,Eastern_Africa,2015-2020,29.6
+Spain,Europe,Southern_Europe,1950-1955,30.5
+Spain,Europe,Southern_Europe,1955-1960,30.1
+Spain,Europe,Southern_Europe,1960-1965,30
+Spain,Europe,Southern_Europe,1965-1970,29.8
+Spain,Europe,Southern_Europe,1970-1975,29.1
+Spain,Europe,Southern_Europe,1975-1980,28.5
+Spain,Europe,Southern_Europe,1980-1985,28.4
+Spain,Europe,Southern_Europe,1985-1990,28.6
+Spain,Europe,Southern_Europe,1990-1995,29.4
+Spain,Europe,Southern_Europe,1995-2000,30.4
+Spain,Europe,Southern_Europe,2000-2005,30.8
+Spain,Europe,Southern_Europe,2005-2010,30.9
+Spain,Europe,Southern_Europe,2010-2015,31.6
+Spain,Europe,Southern_Europe,2015-2020,32
+Sri Lanka,Asia,South-Central_Asia,1950-1955,29.2
+Sri Lanka,Asia,South-Central_Asia,1955-1960,29.2
+Sri Lanka,Asia,South-Central_Asia,1960-1965,29.2
+Sri Lanka,Asia,South-Central_Asia,1965-1970,29.4
+Sri Lanka,Asia,South-Central_Asia,1970-1975,29.7
+Sri Lanka,Asia,South-Central_Asia,1975-1980,29.2
+Sri Lanka,Asia,South-Central_Asia,1980-1985,28.7
+Sri Lanka,Asia,South-Central_Asia,1985-1990,28.7
+Sri Lanka,Asia,South-Central_Asia,1990-1995,29.1
+Sri Lanka,Asia,South-Central_Asia,1995-2000,29.3
+Sri Lanka,Asia,South-Central_Asia,2000-2005,28.9
+Sri Lanka,Asia,South-Central_Asia,2005-2010,29.2
+Sri Lanka,Asia,South-Central_Asia,2010-2015,29.7
+Sri Lanka,Asia,South-Central_Asia,2015-2020,30
+Sudan,Africa,Northern_Africa,1950-1955,29.3
+Sudan,Africa,Northern_Africa,1955-1960,29.3
+Sudan,Africa,Northern_Africa,1960-1965,29.3
+Sudan,Africa,Northern_Africa,1965-1970,29.3
+Sudan,Africa,Northern_Africa,1970-1975,29.3
+Sudan,Africa,Northern_Africa,1975-1980,29.7
+Sudan,Africa,Northern_Africa,1980-1985,29.9
+Sudan,Africa,Northern_Africa,1985-1990,30.4
+Sudan,Africa,Northern_Africa,1990-1995,30.2
+Sudan,Africa,Northern_Africa,1995-2000,29.9
+Sudan,Africa,Northern_Africa,2000-2005,29.3
+Sudan,Africa,Northern_Africa,2005-2010,29.2
+Sudan,Africa,Northern_Africa,2010-2015,29.8
+Sudan,Africa,Northern_Africa,2015-2020,30
+Suriname,Latin_America_and_the_Carribean,South_America,1950-1955,27.1
+Suriname,Latin_America_and_the_Carribean,South_America,1955-1960,27.2
+Suriname,Latin_America_and_the_Carribean,South_America,1960-1965,27.3
+Suriname,Latin_America_and_the_Carribean,South_America,1965-1970,27.4
+Suriname,Latin_America_and_the_Carribean,South_America,1970-1975,27.5
+Suriname,Latin_America_and_the_Carribean,South_America,1975-1980,27.6
+Suriname,Latin_America_and_the_Carribean,South_America,1980-1985,27.7
+Suriname,Latin_America_and_the_Carribean,South_America,1985-1990,27.8
+Suriname,Latin_America_and_the_Carribean,South_America,1990-1995,28
+Suriname,Latin_America_and_the_Carribean,South_America,1995-2000,28.1
+Suriname,Latin_America_and_the_Carribean,South_America,2000-2005,28.2
+Suriname,Latin_America_and_the_Carribean,South_America,2005-2010,28.3
+Suriname,Latin_America_and_the_Carribean,South_America,2010-2015,28.4
+Suriname,Latin_America_and_the_Carribean,South_America,2015-2020,28.5
+Swaziland,Africa,Souther_Africa,1950-1955,30.5
+Swaziland,Africa,Souther_Africa,1955-1960,30.3
+Swaziland,Africa,Souther_Africa,1960-1965,30
+Swaziland,Africa,Souther_Africa,1965-1970,29.8
+Swaziland,Africa,Souther_Africa,1970-1975,29.6
+Swaziland,Africa,Souther_Africa,1975-1980,29.5
+Swaziland,Africa,Souther_Africa,1980-1985,29.3
+Swaziland,Africa,Souther_Africa,1985-1990,29.2
+Swaziland,Africa,Souther_Africa,1990-1995,29.1
+Swaziland,Africa,Souther_Africa,1995-2000,28.8
+Swaziland,Africa,Souther_Africa,2000-2005,28.5
+Swaziland,Africa,Souther_Africa,2005-2010,28.4
+Swaziland,Africa,Souther_Africa,2010-2015,28
+Swaziland,Africa,Souther_Africa,2015-2020,27.8
+Sweden,Europe,Northern_Europe,1950-1955,27.9
+Sweden,Europe,Northern_Europe,1955-1960,27.6
+Sweden,Europe,Northern_Europe,1960-1965,27.3
+Sweden,Europe,Northern_Europe,1965-1970,27
+Sweden,Europe,Northern_Europe,1970-1975,26.8
+Sweden,Europe,Northern_Europe,1975-1980,27.1
+Sweden,Europe,Northern_Europe,1980-1985,28
+Sweden,Europe,Northern_Europe,1985-1990,28.5
+Sweden,Europe,Northern_Europe,1990-1995,28.9
+Sweden,Europe,Northern_Europe,1995-2000,29.6
+Sweden,Europe,Northern_Europe,2000-2005,30.2
+Sweden,Europe,Northern_Europe,2005-2010,30.6
+Sweden,Europe,Northern_Europe,2010-2015,30.8
+Sweden,Europe,Northern_Europe,2015-2020,30.9
+Switzerland,Europe,Western_Europe,1950-1955,29.4
+Switzerland,Europe,Western_Europe,1955-1960,29
+Switzerland,Europe,Western_Europe,1960-1965,28.4
+Switzerland,Europe,Western_Europe,1965-1970,28
+Switzerland,Europe,Western_Europe,1970-1975,27.6
+Switzerland,Europe,Western_Europe,1975-1980,27.7
+Switzerland,Europe,Western_Europe,1980-1985,28
+Switzerland,Europe,Western_Europe,1985-1990,28.7
+Switzerland,Europe,Western_Europe,1990-1995,29.2
+Switzerland,Europe,Western_Europe,1995-2000,29.6
+Switzerland,Europe,Western_Europe,2000-2005,30.2
+Switzerland,Europe,Western_Europe,2005-2010,30.9
+Switzerland,Europe,Western_Europe,2010-2015,31.4
+Switzerland,Europe,Western_Europe,2015-2020,31.9
+Syrian Arab Republic,Asia,Western_Asia,1950-1955,29.1
+Syrian Arab Republic,Asia,Western_Asia,1955-1960,29.1
+Syrian Arab Republic,Asia,Western_Asia,1960-1965,29.1
+Syrian Arab Republic,Asia,Western_Asia,1965-1970,29.3
+Syrian Arab Republic,Asia,Western_Asia,1970-1975,29.7
+Syrian Arab Republic,Asia,Western_Asia,1975-1980,30
+Syrian Arab Republic,Asia,Western_Asia,1980-1985,30.2
+Syrian Arab Republic,Asia,Western_Asia,1985-1990,30.4
+Syrian Arab Republic,Asia,Western_Asia,1990-1995,30.2
+Syrian Arab Republic,Asia,Western_Asia,1995-2000,29.7
+Syrian Arab Republic,Asia,Western_Asia,2000-2005,29.5
+Syrian Arab Republic,Asia,Western_Asia,2005-2010,29.4
+Syrian Arab Republic,Asia,Western_Asia,2010-2015,29.4
+Syrian Arab Republic,Asia,Western_Asia,2015-2020,29.4
+Taiwan Province of China,Asia,Eastern_Asia,1950-1955,30.6
+Taiwan Province of China,Asia,Eastern_Asia,1955-1960,30.2
+Taiwan Province of China,Asia,Eastern_Asia,1960-1965,29.3
+Taiwan Province of China,Asia,Eastern_Asia,1965-1970,28
+Taiwan Province of China,Asia,Eastern_Asia,1970-1975,27.2
+Taiwan Province of China,Asia,Eastern_Asia,1975-1980,26.4
+Taiwan Province of China,Asia,Eastern_Asia,1980-1985,26.3
+Taiwan Province of China,Asia,Eastern_Asia,1985-1990,26.8
+Taiwan Province of China,Asia,Eastern_Asia,1990-1995,27.3
+Taiwan Province of China,Asia,Eastern_Asia,1995-2000,27.9
+Taiwan Province of China,Asia,Eastern_Asia,2000-2005,28.4
+Taiwan Province of China,Asia,Eastern_Asia,2005-2010,29.6
+Taiwan Province of China,Asia,Eastern_Asia,2010-2015,30.8
+Taiwan Province of China,Asia,Eastern_Asia,2015-2020,31.9
+Tajikistan,Asia,South-Central_Asia,1950-1955,29.7
+Tajikistan,Asia,South-Central_Asia,1955-1960,29.5
+Tajikistan,Asia,South-Central_Asia,1960-1965,29.3
+Tajikistan,Asia,South-Central_Asia,1965-1970,29
+Tajikistan,Asia,South-Central_Asia,1970-1975,28.6
+Tajikistan,Asia,South-Central_Asia,1975-1980,28.2
+Tajikistan,Asia,South-Central_Asia,1980-1985,27.9
+Tajikistan,Asia,South-Central_Asia,1985-1990,27.9
+Tajikistan,Asia,South-Central_Asia,1990-1995,28
+Tajikistan,Asia,South-Central_Asia,1995-2000,28.2
+Tajikistan,Asia,South-Central_Asia,2000-2005,28.2
+Tajikistan,Asia,South-Central_Asia,2005-2010,27.9
+Tajikistan,Asia,South-Central_Asia,2010-2015,27.9
+Tajikistan,Asia,South-Central_Asia,2015-2020,27.8
+Thailand,Asia,South-Eastern_Asia,1950-1955,30.8
+Thailand,Asia,South-Eastern_Asia,1955-1960,30.8
+Thailand,Asia,South-Eastern_Asia,1960-1965,30.8
+Thailand,Asia,South-Eastern_Asia,1965-1970,30.7
+Thailand,Asia,South-Eastern_Asia,1970-1975,30.2
+Thailand,Asia,South-Eastern_Asia,1975-1980,29.3
+Thailand,Asia,South-Eastern_Asia,1980-1985,28.3
+Thailand,Asia,South-Eastern_Asia,1985-1990,27.6
+Thailand,Asia,South-Eastern_Asia,1990-1995,27.2
+Thailand,Asia,South-Eastern_Asia,1995-2000,27
+Thailand,Asia,South-Eastern_Asia,2000-2005,27.1
+Thailand,Asia,South-Eastern_Asia,2005-2010,27.1
+Thailand,Asia,South-Eastern_Asia,2010-2015,27.2
+Thailand,Asia,South-Eastern_Asia,2015-2020,27.3
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1950-1955,30.4
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1955-1960,29.4
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1960-1965,28.4
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1965-1970,27.7
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1970-1975,27.2
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1975-1980,26.6
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1980-1985,26
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1985-1990,25.8
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1990-1995,25.8
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,1995-2000,26.1
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,2000-2005,26.8
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,2005-2010,27.3
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,2010-2015,28.2
+The former Yugoslav Republic of Macedonia,Europe,Southern_Europe,2015-2020,29
+Timor-Leste,Asia,South-Eastern_Asia,1950-1955,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1955-1960,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1960-1965,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1965-1970,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1970-1975,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1975-1980,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1980-1985,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1985-1990,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1990-1995,29.8
+Timor-Leste,Asia,South-Eastern_Asia,1995-2000,30.3
+Timor-Leste,Asia,South-Eastern_Asia,2000-2005,30.9
+Timor-Leste,Asia,South-Eastern_Asia,2005-2010,30.9
+Timor-Leste,Asia,South-Eastern_Asia,2010-2015,30.5
+Timor-Leste,Asia,South-Eastern_Asia,2015-2020,30.3
+Togo,Africa,Western_Africa,1950-1955,28.2
+Togo,Africa,Western_Africa,1955-1960,28.7
+Togo,Africa,Western_Africa,1960-1965,29.3
+Togo,Africa,Western_Africa,1965-1970,30
+Togo,Africa,Western_Africa,1970-1975,30.5
+Togo,Africa,Western_Africa,1975-1980,30.8
+Togo,Africa,Western_Africa,1980-1985,30.7
+Togo,Africa,Western_Africa,1985-1990,30.5
+Togo,Africa,Western_Africa,1990-1995,30.3
+Togo,Africa,Western_Africa,1995-2000,30
+Togo,Africa,Western_Africa,2000-2005,29.7
+Togo,Africa,Western_Africa,2005-2010,29.5
+Togo,Africa,Western_Africa,2010-2015,29.2
+Togo,Africa,Western_Africa,2015-2020,28.9
+Tonga,Oceania,Polynesia,1950-1955,31.6
+Tonga,Oceania,Polynesia,1955-1960,31.6
+Tonga,Oceania,Polynesia,1960-1965,32
+Tonga,Oceania,Polynesia,1965-1970,31.1
+Tonga,Oceania,Polynesia,1970-1975,31
+Tonga,Oceania,Polynesia,1975-1980,30.9
+Tonga,Oceania,Polynesia,1980-1985,30.8
+Tonga,Oceania,Polynesia,1985-1990,30.8
+Tonga,Oceania,Polynesia,1990-1995,30.9
+Tonga,Oceania,Polynesia,1995-2000,31
+Tonga,Oceania,Polynesia,2000-2005,31.1
+Tonga,Oceania,Polynesia,2005-2010,31.1
+Tonga,Oceania,Polynesia,2010-2015,31.1
+Tonga,Oceania,Polynesia,2015-2020,31.1
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1950-1955,27
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1955-1960,27.3
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1960-1965,27.2
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1965-1970,27.2
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1970-1975,27.2
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1975-1980,27.2
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1980-1985,27.2
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1985-1990,27.2
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1990-1995,27.3
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,1995-2000,27.3
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.3
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.7
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,2010-2015,27.7
+Trinidad and Tobago,Latin_America_and_the_Carribean,Caribbean,2015-2020,27.8
+Tunisia,Africa,Northern_Africa,1950-1955,30.7
+Tunisia,Africa,Northern_Africa,1955-1960,30.7
+Tunisia,Africa,Northern_Africa,1960-1965,30.6
+Tunisia,Africa,Northern_Africa,1965-1970,30.7
+Tunisia,Africa,Northern_Africa,1970-1975,30.9
+Tunisia,Africa,Northern_Africa,1975-1980,30.7
+Tunisia,Africa,Northern_Africa,1980-1985,30.5
+Tunisia,Africa,Northern_Africa,1985-1990,30.5
+Tunisia,Africa,Northern_Africa,1990-1995,30.5
+Tunisia,Africa,Northern_Africa,1995-2000,30.6
+Tunisia,Africa,Northern_Africa,2000-2005,31.1
+Tunisia,Africa,Northern_Africa,2005-2010,31.1
+Tunisia,Africa,Northern_Africa,2010-2015,31.1
+Tunisia,Africa,Northern_Africa,2015-2020,31
+Turkey,Asia,Western_Asia,1950-1955,28.6
+Turkey,Asia,Western_Asia,1955-1960,28.4
+Turkey,Asia,Western_Asia,1960-1965,28.2
+Turkey,Asia,Western_Asia,1965-1970,28.1
+Turkey,Asia,Western_Asia,1970-1975,27.9
+Turkey,Asia,Western_Asia,1975-1980,27.6
+Turkey,Asia,Western_Asia,1980-1985,27.4
+Turkey,Asia,Western_Asia,1985-1990,27.3
+Turkey,Asia,Western_Asia,1990-1995,27.2
+Turkey,Asia,Western_Asia,1995-2000,27.2
+Turkey,Asia,Western_Asia,2000-2005,27.3
+Turkey,Asia,Western_Asia,2005-2010,27.6
+Turkey,Asia,Western_Asia,2010-2015,28.2
+Turkey,Asia,Western_Asia,2015-2020,28.6
+Turkmenistan,Asia,South-Central_Asia,1950-1955,30.7
+Turkmenistan,Asia,South-Central_Asia,1955-1960,30.9
+Turkmenistan,Asia,South-Central_Asia,1960-1965,30.9
+Turkmenistan,Asia,South-Central_Asia,1965-1970,30.9
+Turkmenistan,Asia,South-Central_Asia,1970-1975,30.7
+Turkmenistan,Asia,South-Central_Asia,1975-1980,30.2
+Turkmenistan,Asia,South-Central_Asia,1980-1985,29.6
+Turkmenistan,Asia,South-Central_Asia,1985-1990,29.1
+Turkmenistan,Asia,South-Central_Asia,1990-1995,28.4
+Turkmenistan,Asia,South-Central_Asia,1995-2000,27.7
+Turkmenistan,Asia,South-Central_Asia,2000-2005,27.5
+Turkmenistan,Asia,South-Central_Asia,2005-2010,27.7
+Turkmenistan,Asia,South-Central_Asia,2010-2015,27.7
+Turkmenistan,Asia,South-Central_Asia,2015-2020,27.9
+Uganda,Africa,Eastern_Africa,1950-1955,29.1
+Uganda,Africa,Eastern_Africa,1955-1960,29.1
+Uganda,Africa,Eastern_Africa,1960-1965,29.1
+Uganda,Africa,Eastern_Africa,1965-1970,29.1
+Uganda,Africa,Eastern_Africa,1970-1975,29.1
+Uganda,Africa,Eastern_Africa,1975-1980,29.1
+Uganda,Africa,Eastern_Africa,1980-1985,29.1
+Uganda,Africa,Eastern_Africa,1985-1990,29
+Uganda,Africa,Eastern_Africa,1990-1995,28.7
+Uganda,Africa,Eastern_Africa,1995-2000,28.7
+Uganda,Africa,Eastern_Africa,2000-2005,28.6
+Uganda,Africa,Eastern_Africa,2005-2010,28.4
+Uganda,Africa,Eastern_Africa,2010-2015,28.3
+Uganda,Africa,Eastern_Africa,2015-2020,28.1
+Ukraine,Europe,Eastern_Europe,1950-1955,28.2
+Ukraine,Europe,Eastern_Europe,1955-1960,27.7
+Ukraine,Europe,Eastern_Europe,1960-1965,27.2
+Ukraine,Europe,Eastern_Europe,1965-1970,26.7
+Ukraine,Europe,Eastern_Europe,1970-1975,26.2
+Ukraine,Europe,Eastern_Europe,1975-1980,25.7
+Ukraine,Europe,Eastern_Europe,1980-1985,25.2
+Ukraine,Europe,Eastern_Europe,1985-1990,24.8
+Ukraine,Europe,Eastern_Europe,1990-1995,24.6
+Ukraine,Europe,Eastern_Europe,1995-2000,24.7
+Ukraine,Europe,Eastern_Europe,2000-2005,25.5
+Ukraine,Europe,Eastern_Europe,2005-2010,26.4
+Ukraine,Europe,Eastern_Europe,2010-2015,27.1
+Ukraine,Europe,Eastern_Europe,2015-2020,28
+United Arab Emirates,Asia,Western_Asia,1950-1955,28.8
+United Arab Emirates,Asia,Western_Asia,1955-1960,28.8
+United Arab Emirates,Asia,Western_Asia,1960-1965,28.8
+United Arab Emirates,Asia,Western_Asia,1965-1970,28.8
+United Arab Emirates,Asia,Western_Asia,1970-1975,28.8
+United Arab Emirates,Asia,Western_Asia,1975-1980,28.8
+United Arab Emirates,Asia,Western_Asia,1980-1985,29.1
+United Arab Emirates,Asia,Western_Asia,1985-1990,29.8
+United Arab Emirates,Asia,Western_Asia,1990-1995,30.4
+United Arab Emirates,Asia,Western_Asia,1995-2000,30.6
+United Arab Emirates,Asia,Western_Asia,2000-2005,29.5
+United Arab Emirates,Asia,Western_Asia,2005-2010,27.6
+United Arab Emirates,Asia,Western_Asia,2010-2015,27.3
+United Arab Emirates,Asia,Western_Asia,2015-2020,26.7
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1950-1955,25.9
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1955-1960,25.9
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1960-1965,25.9
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1965-1970,26.2
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1970-1975,26.5
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1975-1980,26.8
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1980-1985,27.2
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1985-1990,27.4
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1990-1995,27.9
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,1995-2000,28.3
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,2000-2005,28.8
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,2005-2010,29.3
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,2010-2015,30
+United Kingdom of Great Britain and Northern Ireland,Europe,Northern_Europe,2015-2020,30.4
+United Republic of Tanzania,Africa,Eastern_Africa,1950-1955,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1955-1960,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1960-1965,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1965-1970,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1970-1975,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1975-1980,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1980-1985,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1985-1990,29.5
+United Republic of Tanzania,Africa,Eastern_Africa,1990-1995,29.4
+United Republic of Tanzania,Africa,Eastern_Africa,1995-2000,29.1
+United Republic of Tanzania,Africa,Eastern_Africa,2000-2005,28.9
+United Republic of Tanzania,Africa,Eastern_Africa,2005-2010,28.6
+United Republic of Tanzania,Africa,Eastern_Africa,2010-2015,28.4
+United Republic of Tanzania,Africa,Eastern_Africa,2015-2020,28.2
+United States of America,North_America,North America,1950-1955,26.6
+United States of America,North_America,North America,1955-1960,26.4
+United States of America,North_America,North America,1960-1965,26.5
+United States of America,North_America,North America,1965-1970,26.3
+United States of America,North_America,North America,1970-1975,25.9
+United States of America,North_America,North America,1975-1980,26
+United States of America,North_America,North America,1980-1985,26.2
+United States of America,North_America,North America,1985-1990,26.5
+United States of America,North_America,North America,1990-1995,26.7
+United States of America,North_America,North America,1995-2000,27.1
+United States of America,North_America,North America,2000-2005,27.7
+United States of America,North_America,North America,2005-2010,28
+United States of America,North_America,North America,2010-2015,28.7
+United States of America,North_America,North America,2015-2020,29.5
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1950-1955,27.6
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1955-1960,26.9
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1960-1965,27
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1965-1970,26.8
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1970-1975,26.3
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1975-1980,26.4
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1980-1985,26.5
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1985-1990,26.6
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1990-1995,26.7
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,1995-2000,26.8
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,2000-2005,27.1
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,2005-2010,27.4
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,2010-2015,27.1
+United States Virgin Islands,Latin_America_and_the_Carribean,Caribbean,2015-2020,27.1
+Uruguay,Latin_America_and_the_Carribean,South_America,1950-1955,27.8
+Uruguay,Latin_America_and_the_Carribean,South_America,1955-1960,27.8
+Uruguay,Latin_America_and_the_Carribean,South_America,1960-1965,27.8
+Uruguay,Latin_America_and_the_Carribean,South_America,1965-1970,27.8
+Uruguay,Latin_America_and_the_Carribean,South_America,1970-1975,27.8
+Uruguay,Latin_America_and_the_Carribean,South_America,1975-1980,27.6
+Uruguay,Latin_America_and_the_Carribean,South_America,1980-1985,27.5
+Uruguay,Latin_America_and_the_Carribean,South_America,1985-1990,27.6
+Uruguay,Latin_America_and_the_Carribean,South_America,1990-1995,27.4
+Uruguay,Latin_America_and_the_Carribean,South_America,1995-2000,27.2
+Uruguay,Latin_America_and_the_Carribean,South_America,2000-2005,27.6
+Uruguay,Latin_America_and_the_Carribean,South_America,2005-2010,27.6
+Uruguay,Latin_America_and_the_Carribean,South_America,2010-2015,27.6
+Uruguay,Latin_America_and_the_Carribean,South_America,2015-2020,27.6
+Uzbekistan,Asia,South-Central_Asia,1950-1955,31
+Uzbekistan,Asia,South-Central_Asia,1955-1960,31
+Uzbekistan,Asia,South-Central_Asia,1960-1965,30.9
+Uzbekistan,Asia,South-Central_Asia,1965-1970,30.7
+Uzbekistan,Asia,South-Central_Asia,1970-1975,30.2
+Uzbekistan,Asia,South-Central_Asia,1975-1980,29.4
+Uzbekistan,Asia,South-Central_Asia,1980-1985,28.7
+Uzbekistan,Asia,South-Central_Asia,1985-1990,27.8
+Uzbekistan,Asia,South-Central_Asia,1990-1995,26.7
+Uzbekistan,Asia,South-Central_Asia,1995-2000,26.5
+Uzbekistan,Asia,South-Central_Asia,2000-2005,27
+Uzbekistan,Asia,South-Central_Asia,2005-2010,27
+Uzbekistan,Asia,South-Central_Asia,2010-2015,27.1
+Uzbekistan,Asia,South-Central_Asia,2015-2020,27.1
+Vanuatu,Oceania,Melanesia,1950-1955,29.1
+Vanuatu,Oceania,Melanesia,1955-1960,29.1
+Vanuatu,Oceania,Melanesia,1960-1965,29.1
+Vanuatu,Oceania,Melanesia,1965-1970,29.3
+Vanuatu,Oceania,Melanesia,1970-1975,29.8
+Vanuatu,Oceania,Melanesia,1975-1980,29.4
+Vanuatu,Oceania,Melanesia,1980-1985,29.4
+Vanuatu,Oceania,Melanesia,1985-1990,29.4
+Vanuatu,Oceania,Melanesia,1990-1995,29.5
+Vanuatu,Oceania,Melanesia,1995-2000,29.5
+Vanuatu,Oceania,Melanesia,2000-2005,29.4
+Vanuatu,Oceania,Melanesia,2005-2010,29.3
+Vanuatu,Oceania,Melanesia,2010-2015,29.3
+Vanuatu,Oceania,Melanesia,2015-2020,29.3
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1950-1955,28.7
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1955-1960,28.7
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1960-1965,28.7
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1965-1970,28.7
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1970-1975,28.7
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1975-1980,28.5
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1980-1985,28.1
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1985-1990,27.7
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1990-1995,27.5
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,1995-2000,27.1
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,2000-2005,26.9
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,2005-2010,26.7
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,2010-2015,26.5
+Venezuela (Bolivarian Republic of),Latin_America_and_the_Carribean,South_America,2015-2020,26.4
+Viet Nam,Asia,South-Eastern_Asia,1950-1955,31.8
+Viet Nam,Asia,South-Eastern_Asia,1955-1960,31.8
+Viet Nam,Asia,South-Eastern_Asia,1960-1965,31.8
+Viet Nam,Asia,South-Eastern_Asia,1965-1970,31.8
+Viet Nam,Asia,South-Eastern_Asia,1970-1975,31.8
+Viet Nam,Asia,South-Eastern_Asia,1975-1980,31.4
+Viet Nam,Asia,South-Eastern_Asia,1980-1985,30.5
+Viet Nam,Asia,South-Eastern_Asia,1985-1990,29.5
+Viet Nam,Asia,South-Eastern_Asia,1990-1995,28.4
+Viet Nam,Asia,South-Eastern_Asia,1995-2000,27.7
+Viet Nam,Asia,South-Eastern_Asia,2000-2005,27.3
+Viet Nam,Asia,South-Eastern_Asia,2005-2010,27.2
+Viet Nam,Asia,South-Eastern_Asia,2010-2015,27.1
+Viet Nam,Asia,South-Eastern_Asia,2015-2020,28
+Western Sahara,Africa,Northern_Africa,1950-1955,29.2
+Western Sahara,Africa,Northern_Africa,1955-1960,29.2
+Western Sahara,Africa,Northern_Africa,1960-1965,29.2
+Western Sahara,Africa,Northern_Africa,1965-1970,29.2
+Western Sahara,Africa,Northern_Africa,1970-1975,29.6
+Western Sahara,Africa,Northern_Africa,1975-1980,29.9
+Western Sahara,Africa,Northern_Africa,1980-1985,30.1
+Western Sahara,Africa,Northern_Africa,1985-1990,30.2
+Western Sahara,Africa,Northern_Africa,1990-1995,30.2
+Western Sahara,Africa,Northern_Africa,1995-2000,30.4
+Western Sahara,Africa,Northern_Africa,2000-2005,30.6
+Western Sahara,Africa,Northern_Africa,2005-2010,30.7
+Western Sahara,Africa,Northern_Africa,2010-2015,30.9
+Western Sahara,Africa,Northern_Africa,2015-2020,31
+Yemen,Asia,Western_Asia,1950-1955,31.4
+Yemen,Asia,Western_Asia,1955-1960,31.4
+Yemen,Asia,Western_Asia,1960-1965,31.3
+Yemen,Asia,Western_Asia,1965-1970,31.1
+Yemen,Asia,Western_Asia,1970-1975,31.1
+Yemen,Asia,Western_Asia,1975-1980,31.1
+Yemen,Asia,Western_Asia,1980-1985,31.1
+Yemen,Asia,Western_Asia,1985-1990,31
+Yemen,Asia,Western_Asia,1990-1995,30.4
+Yemen,Asia,Western_Asia,1995-2000,30.3
+Yemen,Asia,Western_Asia,2000-2005,30.5
+Yemen,Asia,Western_Asia,2005-2010,30.2
+Yemen,Asia,Western_Asia,2010-2015,30.1
+Yemen,Asia,Western_Asia,2015-2020,30
+Zambia,Africa,Eastern_Africa,1950-1955,29.8
+Zambia,Africa,Eastern_Africa,1955-1960,29.8
+Zambia,Africa,Eastern_Africa,1960-1965,29.8
+Zambia,Africa,Eastern_Africa,1965-1970,29.8
+Zambia,Africa,Eastern_Africa,1970-1975,29.8
+Zambia,Africa,Eastern_Africa,1975-1980,29.8
+Zambia,Africa,Eastern_Africa,1980-1985,29.8
+Zambia,Africa,Eastern_Africa,1985-1990,29.8
+Zambia,Africa,Eastern_Africa,1990-1995,29.4
+Zambia,Africa,Eastern_Africa,1995-2000,29.1
+Zambia,Africa,Eastern_Africa,2000-2005,29.3
+Zambia,Africa,Eastern_Africa,2005-2010,29.3
+Zambia,Africa,Eastern_Africa,2010-2015,29
+Zambia,Africa,Eastern_Africa,2015-2020,28.9
+Zimbabwe,Africa,Eastern_Africa,1950-1955,29.5
+Zimbabwe,Africa,Eastern_Africa,1955-1960,29.5
+Zimbabwe,Africa,Eastern_Africa,1960-1965,29.5
+Zimbabwe,Africa,Eastern_Africa,1965-1970,29.5
+Zimbabwe,Africa,Eastern_Africa,1970-1975,29.5
+Zimbabwe,Africa,Eastern_Africa,1975-1980,29.5
+Zimbabwe,Africa,Eastern_Africa,1980-1985,29.7
+Zimbabwe,Africa,Eastern_Africa,1985-1990,29.7
+Zimbabwe,Africa,Eastern_Africa,1990-1995,29.1
+Zimbabwe,Africa,Eastern_Africa,1995-2000,28.6
+Zimbabwe,Africa,Eastern_Africa,2000-2005,28.5
+Zimbabwe,Africa,Eastern_Africa,2005-2010,28.1
+Zimbabwe,Africa,Eastern_Africa,2010-2015,28
+Zimbabwe,Africa,Eastern_Africa,2015-2020,27.8
