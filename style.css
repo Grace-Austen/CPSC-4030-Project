@@ -21,6 +21,9 @@ h2 {
 #main-viz {
     background-color: black;
     margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Credits*/
