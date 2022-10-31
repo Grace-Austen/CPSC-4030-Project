@@ -72,12 +72,18 @@ d3.csv("../data/migrationmanyyears_final.csv").then((dataset1) => {
             .attr("cy", d => yScale(+d["migration"]))
             .attr("r", 2)
             .attr("fill", "blue");
-        
+
+        //Sort x values
+        combinedData.sort((a, b) => {
+            return(a["school"] - b["school"]);
+        });
+
+        //Add line to points
         svg.append("path")
             .datum(combinedData)
             .attr("fill", "none")
-            .attr("stroke", "steelblue")
-            .attr("stroke-width", 1.5)
+            .attr("stroke", "red")
+            .attr("stroke-width", 1)
             .attr("d", d3.line()
                 .x(d => +xScale(+d["school"]))
                 .y(d => +yScale(+d["migration"]))
