@@ -30,8 +30,59 @@ d3.csv("../data/migrationmanyyears_final.csv").then((dataset1) => {
         console.log(combinedData);
 
         //Select the svg we will be using
-        var svg = d3.select("q4-viz");
+        var svg = d3.select("#q4-viz");
 
+        var dims = {
+            width: 1000,
+            height: 500,
+            margin: {
+                top: 10,
+                bottom: 50,
+                right: 10,
+                left: 50
+            }
+        };
 
+        //Set the width and height for the svg
+        svg.style("width", dims.width);
+        svg.style("height", dims.height);
+
+        //Create x and y scales
+        var xScale = d3.scaleLinear()
+                        .domain(d3.extent(combinedData, d => +d["school"]))
+                        .range([dims.margin.left, dims.width - dims.margin.right]);
+
+        var yScale = d3.scaleLinear()
+                        .domain(d3.extent(combinedData, d => +d["migration"]))
+                        .range([dims.height - dims.margin.bottom, dims.margin.top]);
+        
+        //Add x and y axes
+        svg.append("g").call(d3.axisBottom().scale(xScale))
+                        .style("transform", `translateY(${dims.height - dims.margin.bottom}px)`);
+        svg.append("g").call(d3.axisLeft().scale(yScale))
+                        .style("transform", `translateX(${dims.margin.left}px)`);
+
+        //Add dots
+        svg.append("g")
+            .selectAll("dot")
+            .data(combinedData)
+            .enter()
+            .append("circle")
+            .attr("cx", d => xScale(+d["school"]))
+            .attr("cy", d => yScale(+d["migration"]))
+            .attr("r", 2)
+            .attr("fill", "blue");
+        
+        svg.append("path")
+            .datum(combinedData)
+            .attr("fill", "none")
+            .attr("stroke", "steelblue")
+            .attr("stroke-width", 1.5)
+            .attr("d", d3.line()
+                .x(d => +xScale(+d["school"]))
+                .y(d => +yScale(+d["migration"]))
+            )
+            
+        
     })
 })
