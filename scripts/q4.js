@@ -13,7 +13,7 @@ d3.csv("../data/migrationmanyyears_final.csv").then((dataset1) => {
 
             //If the periods and countries match up, add it and go to next country in first dataset
             for (let element2 of dataset2) {
-                if (element1["Period"] == element2["Period"] && element1["Country"] == element2["Country"]) {
+                if (element1["Period"] == element2["Period"] && element1["Period"] == "2015-2020" && element1["Country"] == element2["Country"]) {
                     let newData = {
                         "country": element1["Country"],
                         "migration": element1["Net"],
@@ -27,8 +27,6 @@ d3.csv("../data/migrationmanyyears_final.csv").then((dataset1) => {
             }
         }
         
-        console.log(combinedData);
-
         //Select the svg we will be using
         var svg = d3.select("#q4-viz");
 
@@ -88,7 +86,5 @@ d3.csv("../data/migrationmanyyears_final.csv").then((dataset1) => {
                 .x(d => +xScale(+d["school"]))
                 .y(d => +yScale(+d["migration"]))
             )
-            
-        
     })
 })
