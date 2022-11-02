@@ -1,4 +1,4 @@
-d3.csv("../data/q3_data/q3_data.csv").then(function(dataset) {
+d3.csv("../CPSC-4030-Project/data/q3_data/q3_data.csv").then(function(dataset) {
     var dimensions = {
         height: 750,
         width: .8 * window.screen.width,

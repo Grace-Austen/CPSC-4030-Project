@@ -1,6 +1,6 @@
 //Open both csv's and combine data
-d3.csv("../data/migrationmanyyears_final.csv").then((dataset1) => {
-    d3.csv("../data/meanyearsschooling_final.csv").then((dataset2) => {
+d3.csv("../CPSC-4030-Project/data/migrationmanyyears_final.csv").then((dataset1) => {
+    d3.csv("../CPSC-4030-Project/data/meanyearsschooling_final.csv").then((dataset2) => {
         //Create combined data array
         var combinedData = [];
 
