@@ -21,11 +21,31 @@
 
     <!--Main viz that the user will make-->
     <div id = "q3_placeholder">
-      <svg id="q3">
+      <svg id="q3" style="border-style: solid; padding: 5px";>
 
       </svg>
-      <script src="src/q3.js"></script>
+      <script src="scripts/q3.js"></script>
     </div>
+    <table style="width:100%;">
+      <td>
+        <!--Select country map-->
+        <svg id="select-country" width="98%" height="500" style="background-color:black; margin: 10px;">
+            <text x="10%" y="10%" fill="white">Want to select by region or continent</text>
+        </svg>
+      </td>
+
+      <td>
+        <!--Viz editing stuff, like attributes and question info-->
+        <svg id="other-stuff" width="98%" height="500" style="background-color:black; margin: 10px;">
+          <g>
+            <rect x="10%" y="3%" width="80%" height="45%" fill="yellow"/>
+          </g>
+          <g>
+            <rect x="10%" y="52%" width="80%" height="45%" fill="blue"/>
+          </g>
+        </svg>
+      </td> 
+    </table>
     <!--We can add about us info and stuff here-->
     <h2>
       We are us :)<br>

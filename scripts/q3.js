@@ -1,4 +1,4 @@
-d3.csv("src/data/q3_data.csv").then(function(dataset) {
+d3.csv("../data/q3_data/q3_data.csv").then(function(dataset) {
     var dimensions = {
         height: 750,
         width: .8 * window.screen.width,
@@ -28,7 +28,7 @@ d3.csv("src/data/q3_data.csv").then(function(dataset) {
 
     var xScale = d3.scaleLinear()
                    .domain(d3.extent(dataset, xAccessor))
-                   .range([dimensions.margin.left,dimensions.width])
+                   .range([dimensions.margin.left,dimensions.width-dimensions.margin.right])
     var schoolScale = d3.scaleLinear()
                     .domain(d3.extent(dataset, schoolAccessor))
                     .range([dimensions.height/2, dimensions.margin.top])
@@ -71,13 +71,3 @@ d3.csv("src/data/q3_data.csv").then(function(dataset) {
                 .style("transform", `translateX(${dimensions.margin.left}px)`)
                 .style("transform", `translateY(${dimensions.height/2})`)
 })
-
-/*
-
-
-        var xScale = d3.scaleBand()
-                       .domain(d3.map(dataset, d => {
-                        
-                       }))
-    }
-)*/
