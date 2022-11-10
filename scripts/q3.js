@@ -1,7 +1,7 @@
 d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
     var dimensions = {
-        height: 750,
-        width: .8 * window.screen.width,
+        height: 300,
+        width: .5 * window.screen.width,
         margin: {
             top: 10,
             bottom: 10,

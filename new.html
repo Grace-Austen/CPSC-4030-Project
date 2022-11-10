@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Overhead stuff-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSC 4030 Project</title>
+    <link rel="icon" href="assets\favicon.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Main content, where stuff will be-->
+    <h1>
+      CPSC 4030 Data Viz Project
+    </h1>
+    <table style="width:100%;">
+      <!--Scatterplot-->
+      <td>
+        <svg id="q2-viz"></svg>
+      </td>
+      <!--Diverging Scatterplot-->
+      <td>
+        <svg id="q3"></svg>
+      </td>
+    </table>
+
+
+    <!--Migration line chart-->
+    <svg id="q4-viz"></svg>
+    <!--Year selector-->
+
+    <!-- <svg id="year-slider" width="80%" height="100"> -->
+    <img src="Nov10Rework/slider.png">
+    <!-- </svg> -->
+    <!--Education map-->
+    <!-- <svg id="main-viz" width="80%" height="600"> -->
+    
+    <!-- </svg> -->
+    <table style="width:100%">
+        <td>
+            <img src="Nov10Rework/map.jpeg">
+        </td>
+        <td>
+            <ul>
+                <li style="text-align: left">fertility rate: </li>
+                <li style="text-align: left">migration rate:</li>
+                <li style="text-align: left">life expectancy:</li>
+                <li style="text-align: left">mean years of education: </li>
+                <li style="text-align: left">gender gap in education: </li>
+            </ul>
+        </td>
+    </table>
+
+    <!--Scripts-->
+    <script src="scripts/d3.js"></script>
+    <script src="scripts/q2.js"></script>
+    <script src="scripts/q3.js"></script>
+    <script src="scripts/q4.js"></script>
+  </body>
+</html>
