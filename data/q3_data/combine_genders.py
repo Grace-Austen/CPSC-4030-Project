@@ -1,9 +1,9 @@
 import glob
 from typing import Dict
 
-life_expectancy_path = "lifeexpectancy_final.csv"
-years_school_path = "meanyearsschooling_final.csv"
-fertility_rate_path = "fertilityRate_final.csv"
+life_expectancy_path = "../lifeexpectancy_final.csv"
+years_school_path = "../meanyearsschooling_final.csv"
+fertility_rate_path = "../fertilityRate_final.csv"
 
 paths = [life_expectancy_path, years_school_path]
 

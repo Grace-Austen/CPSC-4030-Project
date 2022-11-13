@@ -24,7 +24,7 @@ d3.csv("data/fertilityRate_final.csv").then((dataset1) =>{
 
         var dimensions = {
             height: 300,
-            width: .5 * window.screen.width,
+            width: .45 * window.screen.width,
             margin:{
                 top: 10,
                 bottom: 50,

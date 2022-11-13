@@ -31,7 +31,7 @@ d3.csv("data/migrationmanyyears_final.csv").then((dataset1) => {
         var svg = d3.select("#q4-viz");
 
         var dims = {
-            width: window.screen.width,
+            width: .9 * window.screen.width,
             height: 300,
             margin: {
                 top: 10,

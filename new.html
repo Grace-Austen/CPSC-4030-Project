@@ -20,7 +20,7 @@
       </td>
       <!--Diverging Scatterplot-->
       <td>
-        <svg id="q3"></svg>
+        <svg id="q3-viz"></svg>
       </td>
     </table>
 
@@ -36,9 +36,10 @@
     <!-- <svg id="main-viz" width="80%" height="600"> -->
     
     <!-- </svg> -->
-    <table style="width:100%">
+    <table style="width:100%" id="q1-viz-table">
         <td>
-            <img src="Nov10Rework/map.jpeg">
+            <svg id="q1-viz"></svg>
+            <!--<img src="Nov10Rework/map.jpeg">-->
         </td>
         <td>
             <ul>
@@ -53,6 +54,8 @@
 
     <!--Scripts-->
     <script src="scripts/d3.js"></script>
+    <script src="scripts/d3-legend.min.js"></script>
+    <script type="module" src="scripts/q1.js"></script>
     <script src="scripts/q2.js"></script>
     <script src="scripts/q3.js"></script>
     <script src="scripts/q4.js"></script>

@@ -1,10 +1,12 @@
 d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
+    var fontSize = 10
+
     var dimensions = {
         height: 300,
-        width: .5 * window.screen.width,
+        width: .45 * window.screen.width,
         margin: {
             top: 10,
-            bottom: 10,
+            bottom: 10, // + fontSize,
             right: 10,
             left: 50
         }
@@ -12,19 +14,19 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
 
     var point_size = 3
 
-    var svg = d3.select("#q3")
+    var svg = d3.select("#q3-viz")
                 .style("width", dimensions.width)
                 .style("height", dimensions.height)
                 .style("margin-left", "auto")
                 .style("margin-right", "auto")
                 .style("display", "block")
-    console.log(dataset)
+    //console.log(dataset)
 
     var xAccessor = d => +d["Life Expectancy"]
     var schoolAccessor = d => +d["Years School"]
     var fertAccessor = d => +d["Fertility Rate"]
 
-    console.log(d3.extent(dataset, fertAccessor))
+    //console.log(d3.extent(dataset, fertAccessor))
 
     var xScale = d3.scaleLinear()
                    .domain(d3.extent(dataset, xAccessor))
@@ -70,4 +72,11 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                 .call(fertilityAxisGen)
                 .style("transform", `translateX(${dimensions.margin.left}px)`)
                 .style("transform", `translateY(${dimensions.height/2})`)
+    /*
+    var bottomLabel = svg.append("text")
+                         .attr("text-anchor", "middle")
+                         .attr("font-size", fontSize)
+                         .attr("x", dimensions.width/2)
+                         .attr("y", dimensions.height - fontSize)
+                         .text("")*/
 })
