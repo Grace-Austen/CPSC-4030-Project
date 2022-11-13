@@ -69,10 +69,11 @@ d3.csv("data/fertilityRate_final.csv").then((dataset1) =>{
         var color = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"];
                           
         var points = svg.append("g")
-                        .selectAll("circle")
+                        .selectAll(".q2-points")
                         .data(combinedData)
                         .enter()
                         .append("circle")
+                        .attr("class", "q2-points")
                         .attr("cx", d => xScale(+d["gap"]))
                         .attr("cy", d => yScale(+d["fertility"]))
                         .attr("r", 3)

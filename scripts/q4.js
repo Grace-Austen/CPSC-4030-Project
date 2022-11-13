@@ -62,10 +62,11 @@ d3.csv("data/migrationmanyyears_final.csv").then((dataset1) => {
 
         //Add dots
         svg.append("g")
-            .selectAll("dot")
+            .selectAll(".q4-circle")
             .data(combinedData)
             .enter()
             .append("circle")
+            .attr("class", "q4-circle")
             .attr("cx", d => xScale(+d["school"]))
             .attr("cy", d => yScale(+d["migration"]))
             .attr("r", 2)

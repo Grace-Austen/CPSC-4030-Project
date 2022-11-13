@@ -1,7 +1,7 @@
 
 //select by
-var selectedPeriod = "2000-2005"
-var selectedCountry = null;
+window.selectedPeriod = "2000-2005"
+window.selectedCountry = null;
 
 d3.csv("data/meanyearsschooling_final.csv").then(function(dataset) {
     d3.json("data/map.json").then(function(mapdata) {
@@ -47,7 +47,7 @@ d3.csv("data/meanyearsschooling_final.csv").then(function(dataset) {
         })
 
         //colorscale and education accessor
-        var educationAccessor = function(dict) {return dict.get(selectedPeriod).values()}
+        var educationAccessor = function(dict) {return dict.get(window.selectedPeriod).values()}
         var colorScale = d3.scaleSequential(colormap)
                             .domain(d3.extent(educationAccessor(yearsDict)))
         //map drawing stuff
@@ -79,23 +79,25 @@ d3.csv("data/meanyearsschooling_final.csv").then(function(dataset) {
                            .attr("stroke", lineColor)
                            .attr("stroke-width", countryStroke)
                            .on("mouseover", function(){
-                                selectedCountry = d3.select(this)["_groups"][0][0]["__data__"]["properties"].ADMIN
+                                window.selectedCountry = d3.select(this)["_groups"][0][0]["__data__"]["properties"].ADMIN
                                 d3.select(this)
                                   .attr("stroke", countrySelectLineColor)
                                   .attr("stroke-width", countrySelectStroke)
-                                  countrySelectedText.text("Country selected: " + selectedCountry)
+                                  countrySelectedText.text("Country selected: " + window.selectedCountry)
+                                selectCountry()
                                 //console.log(d3.select(this))
                             })
                             .on("mouseout", function(){
-                                selectedCountry = null
+                                window.selectedCountry = null
                                 d3.select(this)
                                   .attr("stroke", lineColor)
                                   .attr("stroke-width", countryStroke)
                                 countrySelectedText.text("Country selected: none")
+                                deselectCountry()
                            })
 
         //color in countries
-        countries.attr("fill", d => colorScale(yearsDict.get(selectedPeriod).get(d.properties.ADMIN)))
+        countries.attr("fill", d => colorScale(yearsDict.get(window.selectedPeriod).get(d.properties.ADMIN)))
         
         //color legend
         var legend = d3.legendColor()

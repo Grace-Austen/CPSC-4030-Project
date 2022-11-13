@@ -1,12 +1,12 @@
 d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
-    var fontSize = 10
+    var fontSize = 20
 
     var dimensions = {
         height: 300,
         width: .45 * window.screen.width,
         margin: {
             top: 10,
-            bottom: 10, // + fontSize,
+            bottom: 20 + fontSize,
             right: 10,
             left: 50
         }
@@ -42,6 +42,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .selectAll(".school_points")
                     .data(dataset)
                     .enter()
+                    .filter(d => d["Period"] === window.selectedPeriod)
                     .append("circle")
                     .attr("class", "school_points")
                     .attr("cx", d => xScale(xAccessor(d)))
@@ -52,6 +53,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .selectAll(".fertility_points")
                     .data(dataset)
                     .enter()
+                    .filter(d => d["Period"] === window.selectedPeriod)
                     .append("circle")
                     .attr("class", "fertility_points")
                     .attr("cx", d => xScale(xAccessor(d)))
@@ -72,11 +74,29 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                 .call(fertilityAxisGen)
                 .style("transform", `translateX(${dimensions.margin.left}px)`)
                 .style("transform", `translateY(${dimensions.height/2})`)
-    /*
-    var bottomLabel = svg.append("text")
+    
+    var bottomLabel = svg.append("g")
+                         .append("text")
                          .attr("text-anchor", "middle")
                          .attr("font-size", fontSize)
                          .attr("x", dimensions.width/2)
                          .attr("y", dimensions.height - fontSize)
-                         .text("")*/
+                         .text("Average Life Expectancy")
+    var schoolLabel = svg.append("g")
+                         .append("text") //avg school
+                         .attr("text-anchor", "middle")
+                         .attr("transform", `rotate(-90, ${dimensions.margin.left - fontSize*1.5}, ${dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/4})`)
+                         .attr("font-size", fontSize/2)
+                         .attr("x", dimensions.margin.left - fontSize*1.5)
+                         .attr("y", dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/4)
+                         .text("Average Years of School")
+    var fertLabel = svg.append("g")
+                       .append("text") //avg school
+                       .attr("text-anchor", "middle")
+                       .attr("transform", `rotate(-90, ${dimensions.margin.left - fontSize*1.5}, ${dimensions.margin.top+3*(dimensions.height-dimensions.margin.bottom)/4})`)
+                       .attr("font-size", fontSize/2)
+                       .attr("x", dimensions.margin.left - fontSize*1.5)
+                       .attr("y", dimensions.margin.top+3*(dimensions.height-dimensions.margin.bottom)/4)
+                       .text("Fertility Rate")
+
 })
