@@ -26,7 +26,7 @@ with open("combined.csv", "w") as combinedFile:
         print(file["data"][0].keys())
     
     #Fields for the combined data
-    fields = ["Country", "Continent", "Region", "Period"]
+    fields = ["Country", "Continent", "Region", "Period", "Age", "Sex", "FertRate", "MigrRate", "LifeYears", "Mean Age", "YearsDifference", "SchoolYears", "MigrNet"]
 
     #Setup writer and create header with fields
     writer = csv.DictWriter(combinedFile, fieldnames=fields)
