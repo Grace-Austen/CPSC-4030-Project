@@ -28,4 +28,6 @@ function test(d){
 function selectPeriod() {
     q2_points = d3.selectAll(".q2-points")
                   .style("opacity", d => d["period"] === window.selectedPeriod ? 1 : 0)
+    q4_points = d3.selectAll(".q4-circle")
+                    .style("opacity", d => d["Period"] === window.selectedPeriod ? 1: 0);
 }
