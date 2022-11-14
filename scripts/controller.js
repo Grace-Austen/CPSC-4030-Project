@@ -1,3 +1,4 @@
+window.selectedPeriod = "2010-2015"
 function selectCountry() {
     school_points = d3.selectAll(".school_points")
                       .filter(d => d["Country"] === window.selectedCountry)
@@ -11,4 +12,20 @@ function deselectCountry() {
                       .attr("stroke", "none")
                       .attr("fill", "black")
                       .attr("r", 3)
+}
+
+function test(d){
+    console.log(d)
+    console.log(window.selectedPeriod)
+    if(d["period"] !== window.selectedPeriod){
+        return 0
+    }
+    else{
+        return 1
+    }
+}
+
+function selectPeriod() {
+    q2_points = d3.selectAll(".q2-points")
+                  .style("opacity", d => d["period"] === window.selectedPeriod ? 1 : 0)
 }
