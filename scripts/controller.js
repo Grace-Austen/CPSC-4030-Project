@@ -2,7 +2,7 @@ window.circle_r = 3
 window.selectStroke = 3
 
 window.continents = ['Asia', 'Europe', 'Africa', 'Latin_America_and_the_Carribean', 'Oceania', 'North_America']
-
+window.dataset = d3.csv("data/combined_data/combined.csv")
 window.selectedCountry = null
 window.selectedPeriod = "2010-2015"
 function selectCountry() {
@@ -22,8 +22,8 @@ function selectCountry() {
                       .raise()
 
     q2_points = d3.selectAll(".q2-points")
-                  .filter(d => d["period"] === window.selectedPeriod)
-                  .filter(d => d["country"] === window.selectedCountry)
+                  .filter(d => d["Period"] === window.selectedPeriod)
+                  .filter(d => d["Country"] === window.selectedCountry)
                   .attr("r", 6)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
@@ -43,7 +43,7 @@ function deselectCountry() {
                       .lower()
     
     q2_points = d3.selectAll(".q2-points")
-                  .filter(d => d["period"] === window.selectedPeriod)
+                  .filter(d => d["Period"] === window.selectedPeriod)
                   .attr("r", 3)
                   .attr("stroke-width", 0)
                   .lower()
@@ -58,7 +58,7 @@ function selectPeriod(chosen_year_bar) {
                    .attr("id", "chosen_year")
     q2_points = d3.selectAll(".q2-points")
                   .transition().duration(1000)
-                  .style("opacity", d => d["period"] === window.selectedPeriod ? 1 : 0)
+                  .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
     countries = d3.selectAll(".country")
                 .transition().duration(1000)
                 .attr("fill", d => window.q1colorscale(window.q1dict.get(window.selectedPeriod).get(d.properties.ADMIN)))
@@ -71,15 +71,4 @@ function selectPeriod(chosen_year_bar) {
     q4_points = d3.selectAll(".q4-circle")
                   .transition().duration(1000)
                   .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0);
-}
-
-function test(d){
-    console.log(d)
-    console.log(window.selectedPeriod)
-    if(d["period"] !== window.selectedPeriod){
-        return 0
-    }
-    else{
-        return 1
-    }
 }

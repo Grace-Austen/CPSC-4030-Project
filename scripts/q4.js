@@ -1,4 +1,4 @@
-d3.csv("data/combined_data/combined.csv").then((dataset) => {
+window.dataset.then((dataset) => {
     //Select the svg we will be using
     var svg = d3.select("#q4-viz");
     
