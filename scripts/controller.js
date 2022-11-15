@@ -8,7 +8,7 @@ window.selectedPeriod = "2010-2015"
 function selectCountry() {
     school_points = d3.selectAll(".school_points")
                       .filter(d => d["Country"] === window.selectedCountry)
-                      .filter(window.selectedPeriod ? d : d => d["Period"] === window.selectedPeriod)
+                      .filter(d => d["Period"] === window.selectedPeriod)
                       .attr("r", 6)
                       .attr("stroke", "grey")
                       .attr("stroke-width", 1)
