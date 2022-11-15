@@ -30,7 +30,7 @@ d3.csv("data/combined_data/combined.csv").then((dataset) => {
     
     //Add x and y axes
     svg.append("g").call(d3.axisBottom().scale(xScale))
-                    .style("transform", `translateY(${dims.height - dims.margin.bottom}px)`);
+                    .style("transform", `translateY(${yScale(0)}px)`);
     svg.append("g").call(d3.axisLeft().scale(yScale))
                     .style("transform", `translateX(${dims.margin.left}px)`);
 
@@ -46,7 +46,7 @@ d3.csv("data/combined_data/combined.csv").then((dataset) => {
         .attr("cy", d => yScale(+d["MigrRate"]))
         .attr("r", 2)
         .attr("fill", "blue");
-
+    /*
     //Sort x values
     dataset.sort((a, b) => {
         return(a["SchoolYears"] - b["SchoolYears"]);
@@ -61,5 +61,5 @@ d3.csv("data/combined_data/combined.csv").then((dataset) => {
         .attr("d", d3.line()
             .x(d => +xScale(+d["SchoolYears"]))
             .y(d => +yScale(+d["MigrRate"]))
-        );
+        );//*/
 })

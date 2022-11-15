@@ -6,7 +6,7 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset) {
         var svg = d3.select("#q1-viz")
         var container = document.getElementById("q1-viz-table")
 
-        var width_percentage = 0.75
+        var width_percentage = 0.5
 
         //svg dimensions
         var dimensions = {

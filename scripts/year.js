@@ -6,15 +6,16 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
     })
 
     var svg = d3.select("#year")
-
+    var container = document.getElementById("q1-viz-table")
+    var width_percentage = 0.5
     var dims = {
-        width: .9 * window.screen.width,
-        height: 200,
+        width: (1-width_percentage) * container.clientWidth,
+        height: .6 * width_percentage * container.clientWidth,
         margin: {
             top: 10,
             bottom: 50,
             right: 10,
-            left: 50
+            left: 100
         }
     };
 
@@ -24,10 +25,6 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
     svg.style("width", dims.width);
     svg.style("height", dims.height);
 
-    var xScale = d3.scaleBand()
-                   .domain(yearsDict.keys())
-                   .range([dims.margin.left, dims.width - dims.margin.right]);
-
     var averageEducation = [];
     yearsDict.forEach((value, year) => {
         let newData = {
@@ -36,15 +33,26 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
         };
         averageEducation.push(newData)
     })
-    //console.log(averageEducation)
-    var yScale = d3.scaleLinear()
-        .domain(d3.extent(averageEducation, d => +d["school"]))
-        .range([dims.height - dims.margin.bottom, dims.margin.top]);
 
-    svg.append("g").call(d3.axisBottom().scale(xScale))
-        .style("transform", `translateY(${dims.height - dims.margin.bottom}px)`);
-    svg.append("g").call(d3.axisLeft().scale(yScale))
-        .style("transform", `translateX(${dims.margin.left}px)`);
+    var maxEd = 0
+    averageEducation.forEach(dict => {
+        if (dict["school"] > maxEd)
+            maxEd = dict["school"]
+    })
+    
+    var yScale = d3.scaleBand()
+                   .domain(yearsDict.keys())
+                   .range([dims.margin.top, dims.height - dims.margin.bottom])
+    var xScale = d3.scaleLinear()
+                   .domain([0, maxEd])//d3.extent(averageEducation, d => +d["school"]))
+                   .range([0, dims.width - dims.margin.right - dims.margin.left])
+
+    // var xScale = d3.scaleBand()
+    //                .domain(yearsDict.keys())
+    //                .range([dims.margin.left, dims.width - dims.margin.right]);
+    // var yScale = d3.scaleLinear()
+    //     .domain(d3.extent(averageEducation, d => +d["school"]))
+    //     .range([dims.height - dims.margin.bottom, dims.margin.top]);
 
     var bars = svg.append("g")
         .selectAll("rect")
@@ -70,14 +78,20 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
               .attr("stroke-width", window.selectStroke)
               .attr("stroke-opacity", 1)
         })
-        .attr("x", d => xScale(d["year"]))
-        .attr("y", d => yScale(+d["school"]))
-        .attr("height", d => dims.height - dims.margin.bottom - yScale(+d["school"]))
-        .attr("width", xScale.bandwidth() - 10)
+        .attr("x", dims.margin.left)//d => xScale(+d["school"]))
+        .attr("y", d => yScale(d["year"]))
+        .attr("width", d => xScale(+d["school"]))
+        .attr("height", yScale.bandwidth() - 10)
         .attr("fill", barFill)
         .attr("stroke", "black")
         .attr("stroke-width", 0)
         .filter(d => d["year"] === window.selectedPeriod)
         .attr("stroke-width", window.selectStroke)
         .attr("id", "chosen_year")
+
+        //axis
+        svg.append("g").call(d3.axisBottom().scale(xScale))
+           .style("transform", `translateY(${dims.height - dims.margin.bottom}px) translateX(${dims.margin.left}px)`)
+        svg.append("g").call(d3.axisLeft().scale(yScale))
+           .style("transform", `translateX(${dims.margin.left}px)`);
 })
