@@ -1,4 +1,3 @@
-window.selectedPeriod = "2015-2020"
 d3.csv("data/combined_data/combined.csv").then(function(dataset){
     var data = d3.group(dataset, d => d["Period"])
     var yearsDict = new Map()
@@ -19,6 +18,8 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
         }
     };
 
+    var barFill = "darkgrey"
+
     //Set the width and height for the svg
     svg.style("width", dims.width);
     svg.style("height", dims.height);
@@ -35,7 +36,7 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
         };
         averageEducation.push(newData)
     })
-    console.log(averageEducation)
+    //console.log(averageEducation)
     var yScale = d3.scaleLinear()
         .domain(d3.extent(averageEducation, d => +d["school"]))
         .range([dims.height - dims.margin.bottom, dims.margin.top]);
@@ -50,12 +51,33 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
         .data(averageEducation)
         .enter()
         .append("rect")
+        .attr("class", "year_bar")
         .on("click", function(){
             window.selectedPeriod = d3.select(this)["_groups"][0][0]["__data__"]["year"]
-            selectPeriod()
+            selectPeriod(d3.select(this))
+        })
+        .on("mouseover", function(){
+            d3.select(this)
+              .attr("stroke-width", window.selectStroke)
+            d3.select("#chosen_year")
+              .attr("stroke-width", window.selectStroke)
+              .attr("stroke-opacity", .5)
+        })
+        .on("mouseout", function(){
+            d3.select(this)
+              .attr("stroke-width", 0)
+            d3.select("#chosen_year")
+              .attr("stroke-width", window.selectStroke)
+              .attr("stroke-opacity", 1)
         })
         .attr("x", d => xScale(d["year"]))
         .attr("y", d => yScale(+d["school"]))
         .attr("height", d => dims.height - dims.margin.bottom - yScale(+d["school"]))
         .attr("width", xScale.bandwidth() - 10)
+        .attr("fill", barFill)
+        .attr("stroke", "black")
+        .attr("stroke-width", 0)
+        .filter(d => d["year"] === window.selectedPeriod)
+        .attr("stroke-width", window.selectStroke)
+        .attr("id", "chosen_year")
 })

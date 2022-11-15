@@ -1,9 +1,5 @@
 
-//select by
-window.selectedPeriod = "2000-2005"
-window.selectedCountry = null;
-
-d3.csv("data/meanyearsschooling_final.csv").then(function(dataset) {
+d3.csv("data/combined_data/combined.csv").then(function(dataset) {
     d3.json("data/map.json").then(function(mapdata) {
 
         //get relevant elements
@@ -31,7 +27,6 @@ d3.csv("data/meanyearsschooling_final.csv").then(function(dataset) {
         var lineColor = "grey"
         var graticuleStroke = 1
         var countryStroke = .75
-        var countrySelectStroke = 3
         var countrySelectLineColor = "dimgrey"
         var countryFontSize = 30
 
@@ -43,13 +38,18 @@ d3.csv("data/meanyearsschooling_final.csv").then(function(dataset) {
         var data = d3.group(dataset, d => d["Period"])
         var yearsDict = new Map()
         data.forEach((list, year) => {
-            yearsDict.set(year, d3.rollup(list, v => d3.mean(v, d => d["Years"]), d => d["Country"]))
+            yearsDict.set(year, d3.rollup(list, v => d3.mean(v, d => d["SchoolYears"]), d => d["Country"]))
         })
+
+        window.q1dict = yearsDict
 
         //colorscale and education accessor
         var educationAccessor = function(dict) {return dict.get(window.selectedPeriod).values()}
         var colorScale = d3.scaleSequential(colormap)
-                            .domain(d3.extent(educationAccessor(yearsDict)))
+                            .domain(d3.extent(dataset, d => d["SchoolYears"]))
+
+        window.q1colorscale = colorScale
+
         //map drawing stuff
         var projection = d3.geoEqualEarth()
                            .fitWidth(dimensions.width, {type: "Sphere"})
@@ -82,7 +82,7 @@ d3.csv("data/meanyearsschooling_final.csv").then(function(dataset) {
                                 window.selectedCountry = d3.select(this)["_groups"][0][0]["__data__"]["properties"].ADMIN
                                 d3.select(this)
                                   .attr("stroke", countrySelectLineColor)
-                                  .attr("stroke-width", countrySelectStroke)
+                                  .attr("stroke-width", window.selectStroke)
                                   countrySelectedText.text("Country selected: " + window.selectedCountry)
                                 selectCountry()
                                 //console.log(d3.select(this))

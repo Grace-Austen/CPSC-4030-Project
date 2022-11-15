@@ -42,18 +42,10 @@ d3.csv("data/fertilityRate_final.csv").then((dataset1) =>{
                        .domain(d3.extent(combinedData, d => +d["fertility"]))
                        .range([dimensions.height - dimensions.margin.bottom, dimensions.margin.top])
 
-        var continents = [];
-        for(let continent of combinedData){
-            if(!continents.includes(continent["continent"])){
-                let newContinent = continent["continent"]
-                continents.push(newContinent)
-            }
-        }
-
-        function colorForCountry(currentContinet){
+        function colorForCountry(currentContinent){
             var index = 0
-            for(let continent of continents){
-                if(continent == currentContinet){
+            for(let continent of window.continents){
+                if(continent == currentContinent){
                     return index 
                 }
                 else{
@@ -74,7 +66,7 @@ d3.csv("data/fertilityRate_final.csv").then((dataset1) =>{
                         .attr("class", "q2-points")
                         .attr("cx", d => xScale(+d["gap"]))
                         .attr("cy", d => yScale(+d["fertility"]))
-                        .attr("r", 3)
+                        .attr("r", window.circle_r)
                         .attr("fill", d => color[colorForCountry(d["continent"])])
         
         var xAxisGen = d3.axisBottom().scale(xScale)
