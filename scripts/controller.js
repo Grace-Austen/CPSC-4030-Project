@@ -69,6 +69,7 @@ function selectPeriod(chosen_year_bar) {
                        .transition().duration(1000)
                        .attr("r", d => d["Period"] === window.selectedPeriod ? 3 : 0)
     q4_points = d3.selectAll(".q4-circle")
+                  .transition().duration(1000)
                   .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0);
 }
 
