@@ -32,8 +32,13 @@ with open("combined.csv", "w", newline="") as combinedFile:
     writer = csv.DictWriter(combinedFile, fieldnames=fields)
     writer.writeheader()
 
+    dictsToWrite = []
+
     for item in files[5]["data"]:
         dictToWrite = item
+        
+        if item["Period"] == "2020-2025":
+            continue
 
         for i in range(8):
             if i == 5:
@@ -55,7 +60,9 @@ with open("combined.csv", "w", newline="") as combinedFile:
                     if key not in dictToWrite:
                         dictToWrite.update(item2)
 
-        writer.writerow(dictToWrite)
+        dictsToWrite.append(dictToWrite)
+
+        writer.writerow(dictToWrite)            
 
     #Close the csv's
     for i in range(8):
