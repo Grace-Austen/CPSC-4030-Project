@@ -1,5 +1,5 @@
 
-d3.csv("data/combined_data/combined.csv").then(function(dataset) {
+window.dataset.then((dataset) => {
     d3.json("data/map.json").then(function(mapdata) {
 
         //get relevant elements

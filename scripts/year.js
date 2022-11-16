@@ -44,15 +44,8 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
                    .domain(yearsDict.keys())
                    .range([dims.margin.top, dims.height - dims.margin.bottom])
     var xScale = d3.scaleLinear()
-                   .domain([0, maxEd])//d3.extent(averageEducation, d => +d["school"]))
+                   .domain([0, maxEd])
                    .range([0, dims.width - dims.margin.right - dims.margin.left])
-
-    // var xScale = d3.scaleBand()
-    //                .domain(yearsDict.keys())
-    //                .range([dims.margin.left, dims.width - dims.margin.right]);
-    // var yScale = d3.scaleLinear()
-    //     .domain(d3.extent(averageEducation, d => +d["school"]))
-    //     .range([dims.height - dims.margin.bottom, dims.margin.top]);
 
     var bars = svg.append("g")
         .selectAll("rect")
@@ -78,7 +71,7 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
               .attr("stroke-width", window.selectStroke)
               .attr("stroke-opacity", 1)
         })
-        .attr("x", dims.margin.left)//d => xScale(+d["school"]))
+        .attr("x", dims.margin.left)
         .attr("y", d => yScale(d["year"]))
         .attr("width", d => xScale(+d["school"]))
         .attr("height", yScale.bandwidth() - 10)
@@ -90,8 +83,25 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
         .attr("id", "chosen_year")
 
         //axis
-        svg.append("g").call(d3.axisBottom().scale(xScale))
-           .style("transform", `translateY(${dims.height - dims.margin.bottom}px) translateX(${dims.margin.left}px)`)
-        svg.append("g").call(d3.axisLeft().scale(yScale))
-           .style("transform", `translateX(${dims.margin.left}px)`);
+    svg.append("g").call(d3.axisBottom().scale(xScale))
+       .style("transform", `translateY(${dims.height - dims.margin.bottom}px) translateX(${dims.margin.left}px)`)
+    svg.append("g").call(d3.axisLeft().scale(yScale))
+       .style("transform", `translateX(${dims.margin.left}px)`);
+
+    var schoolLabel = svg.append("g")
+                         .append("text")
+                         .attr("text-anchor", "middle")
+                         .attr("font-size", "10")
+                         .attr("x", dims.width/2)
+                         .attr("y", dims.height - 20)
+                         .text("Global Average Years of Schooling")
+
+    var periodLabel = svg.append("g")
+                         .append("text")
+                         .attr("text-anchor", "middle")
+                         .attr("transform", `rotate(-90, ${dims.margin.left - 70}, ${dims.margin.top+(dims.height-dims.margin.bottom)/2})`)
+                         .attr("font-size", "10")
+                         .attr("x", dims.margin.left - 30)
+                         .attr("y", dims.margin.top+(dims.height-dims.margin.bottom)/2)
+                         .text("Time Period")
 })
