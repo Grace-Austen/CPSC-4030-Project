@@ -15,6 +15,9 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
             left: 50
         }
     };
+    
+    //Setup color wheel
+    var color = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"];    
 
     //Set the width and height for the svg
     svg.style("width", dims.width);
@@ -45,8 +48,8 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         .attr("class", "q4-circle")
         .attr("cx", d => xScale(+d["Years"]))
         .attr("cy", d => yScale(+d["Net"]))
-        .attr("r", 2)
-        .attr("fill", "blue");
+        .attr("r", 3)
+        .attr("fill", d => color[colorForCountry(d["Continent"])]);
     
     // //Sort x values
     // dataset.sort((a, b) => {

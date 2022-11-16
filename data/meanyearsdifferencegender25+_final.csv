@@ -1,4 +1,4 @@
-Country,Continent,Region,Year,YearsDifference
+Country,Continent,Region,Period,YearsDifference
 Afghanistan,Asia,South-Central_Asia,1950-1955,0.3
 Afghanistan,Asia,South-Central_Asia,1955-1960,0.4
 Afghanistan,Asia,South-Central_Asia,1960-1965,0.4

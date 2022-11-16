@@ -1,4 +1,4 @@
-window.dataset.then((dataset) => {
+d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var dimensions = {
         height: 300,
         width: .45 * window.screen.width,
@@ -10,6 +10,8 @@ window.dataset.then((dataset) => {
         }
     }
 
+    console.log(dataset);
+
     var svg = d3.select("#q2-viz")
                 .style("width", dimensions.width)
                 .style("height", dimensions.height)
@@ -19,7 +21,7 @@ window.dataset.then((dataset) => {
                    .range([dimensions.margin.left,dimensions.width - dimensions.margin.right])
 
     var yScale = d3.scaleLinear()
-                   .domain(d3.extent(dataset, d => +d["FertRate"]))
+                   .domain(d3.extent(dataset, d => +d["Rate"]))
                    .range([dimensions.height - dimensions.margin.bottom, dimensions.margin.top])
 
     function colorForCountry(currentContinent){
@@ -44,7 +46,7 @@ window.dataset.then((dataset) => {
                     .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
                     .attr("class", "q2-points")
                     .attr("cx", d => xScale(+d["YearsDifference"]))
-                    .attr("cy", d => yScale(+d["FertRate"]))
+                    .attr("cy", d => yScale(+d["Rate"]))
                     .attr("r", window.circle_r)
                     .attr("fill", d => color[colorForCountry(d["Continent"])])
     

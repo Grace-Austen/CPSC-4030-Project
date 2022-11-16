@@ -28,6 +28,14 @@ function selectCountry() {
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
                   .raise()
+
+    q4_points = d3.selectAll(".q4-circle")
+                    .filter(d => d["Period"] === window.selectedPeriod)
+                    .filter(d => d["Country"] == window.selectedCountry)
+                    .attr("r", 6)
+                    .attr("stroke", "grey")
+                    .attr("stroke-width", 1)
+                    .raise();
 }
 
 function deselectCountry() {
@@ -47,6 +55,12 @@ function deselectCountry() {
                   .attr("r", 3)
                   .attr("stroke-width", 0)
                   .lower()
+
+    q4_points = d3.selectAll(".q4-circle")
+                    .filter(d => d["Period"] === window.selectedPeriod)
+                    .attr("r", 3)
+                    .attr("stroke-width", 0)
+                    .lower();
 }
 
 function selectPeriod(chosen_year_bar) {
