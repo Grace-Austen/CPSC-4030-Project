@@ -1,5 +1,4 @@
 window.dataset.then((dataset) => {
-
     var dimensions = {
         height: 300,
         width: .45 * window.screen.width,
@@ -12,16 +11,16 @@ window.dataset.then((dataset) => {
     }
 
     var svg = d3.select("#q2-viz")
-        .style("width", dimensions.width)
-        .style("height", dimensions.height)
+                .style("width", dimensions.width)
+                .style("height", dimensions.height)
 
     var xScale = d3.scaleLinear()
-                    .domain(d3.extent(dataset, d => +d["YearsDifference"]))
-                    .range([dimensions.margin.left,dimensions.width - dimensions.margin.right])
+                   .domain(d3.extent(dataset, d => +d["YearsDifference"]))
+                   .range([dimensions.margin.left,dimensions.width - dimensions.margin.right])
 
     var yScale = d3.scaleLinear()
-                    .domain(d3.extent(dataset, d => +d["FertRate"]))
-                    .range([dimensions.height - dimensions.margin.bottom, dimensions.margin.top])
+                   .domain(d3.extent(dataset, d => +d["FertRate"]))
+                   .range([dimensions.height - dimensions.margin.bottom, dimensions.margin.top])
 
     function colorForCountry(currentContinent){
         var index = 0
@@ -31,8 +30,7 @@ window.dataset.then((dataset) => {
             }
             else{
                 index++
-            }
-            
+            } 
         }
     }
 
@@ -53,13 +51,29 @@ window.dataset.then((dataset) => {
     var xAxisGen = d3.axisBottom().scale(xScale)
 
     var xAxis = svg.append("g")
-                    .call(xAxisGen)
-                    .style("transform", `translateY(${dimensions.height - dimensions.margin.bottom}px)`)
+                   .call(xAxisGen)
+                   .style("transform", `translateY(${dimensions.height - dimensions.margin.bottom}px)`)
 
     var yAxisGen = d3.axisLeft().scale(yScale)
 
     var yAxis = svg.append("g")
-                    .call(yAxisGen)
-                    .style("transform", `translateX(${dimensions.margin.left}px)`)
+                   .call(yAxisGen)
+                   .style("transform", `translateX(${dimensions.margin.left}px)`)
+
+    var differenceLabel = svg.append("g")
+                             .append("text")
+                             .attr("text-anchor", "middle")
+                             .attr("font-size", "10")
+                             .attr("x", dimensions.width/2)
+                             .attr("y", dimensions.height - 20)
+                             .text("Average Years of Difference in Schooling Between Genders")
+    var fertLabel = svg.append("g")
+                        .append("text") //avg school
+                        .attr("text-anchor", "middle")
+                        .attr("transform", `rotate(-90, ${dimensions.margin.left - 30}, ${dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2})`)
+                        .attr("font-size", "10")
+                        .attr("x", dimensions.margin.left - 30)
+                        .attr("y", dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2)
+                        .text("Fertility Rate (Number of Children)")
                     
 })
