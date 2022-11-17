@@ -9,7 +9,7 @@ window.dataset = d3.csv("data/combined_data/combined.csv")
 
 window.selectedCountry = null
 window.selectedPeriod = "2010-2015"
-function selectCountry(selectedCountry) {
+function highlightCountry(selectedCountry) {
     //change text
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${selectedCountry}`)
@@ -76,7 +76,7 @@ function selectCountry(selectedCountry) {
     }
 }
 
-function deselectCountry(selectedCountry) {
+function unhighlightCountry(selectedCountry) {
     //changing selected country text
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
@@ -138,7 +138,7 @@ function deselectCountry(selectedCountry) {
                 .raise()
 }
 
-function setCountry(){
+function selectCountry(){
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
 
