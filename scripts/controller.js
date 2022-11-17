@@ -10,10 +10,6 @@ continent_color_dict = {
     "Latin_America_and_the_Carribean": "#fb8072"//red
 }
 
-window.continents = ['Asia', 'Europe', 'Africa', 'Latin_America_and_the_Carribean', 'Oceania', 'North_America']
-window.continentColors = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]
-window.colorForCountry = colorForCountry
-
 window.dataset = d3.csv("data/combined_data/combined.csv")
 
 window.selectedCountry = null
@@ -273,18 +269,4 @@ function selectPeriod(chosen_year_bar) {
 
     selectedPoints = d3.selectAll(".selected_points")
                       .raise()
-}
-
-
-function colorForCountry(currentContinent){
-    var index = 0
-    for(let continent of window.continents){
-        if(continent == currentContinent){
-            return index 
-        }
-        else{
-            index++
-        }
-        
-    }
 }

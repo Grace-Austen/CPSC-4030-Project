@@ -8,9 +8,6 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         //drawing style
         var width_percentage = .75
         var colormap = d3.interpolateGreens
-        var earthColor = "blue"
-        var lineColor = "grey"
-        var graticuleStroke = 1
         var countryStroke = .75
 
 
@@ -45,30 +42,12 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         window.q1dict = yearsDict
 
         // //colorscale and education accessor
-        var educationAccessor = function(dict) {return dict.get(window.selectedPeriod)}
         var countryAccessor = d => d["properties"].ADMIN
-        var colorScale = d3.scaleSequential(colormap)
-                            .domain(d3.extent(dataset, d => d["SchoolYears"]))
-
-        window.q1colorscale = colorScale
 
         //map drawing stuff
         var projection = d3.geoEqualEarth()
                            .fitWidth(dimensions.width, {type: "Sphere"})
         var pathGenerator = d3.geoPath(projection)
-
-        //earth background
-        // var earth = svg.append("path")
-        //                .attr("id", "map-background")
-        //                .attr("d", pathGenerator({type: "Sphere"}))
-        //                .attr("fill", earthColor)
-        // //long/lat lines
-        // var graticule = svg.append("path")
-        //                    .attr("id", "map-graticule")
-        //                    .attr("d", pathGenerator(d3.geoGraticule10()))
-        //                    .attr("stroke", lineColor)
-        //                    .attr("stroke-width", graticuleStroke)
-        //                    .attr("fill", "none")
 
         //draw in countries
         var countries = svg.append("g")
@@ -103,7 +82,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                                 else if(currentContinent == "South America"){
                                     currentContinent = "Latin_America_and_the_Carribean"
                                 }
-                                return window.continentColors[window.colorForCountry(currentContinent)]
+                                return window.continent_color_dict[currentContinent]
                         })
     })
 })

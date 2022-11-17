@@ -8,7 +8,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
             top: 10,
             bottom: 30 + fontSize,
             right: 10,
-            left: 50
+            left: 70
         }
     }
 
@@ -77,9 +77,9 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var fertLabel = svg.append("g")
                         .append("text") //avg school
                         .attr("text-anchor", "middle")
-                        .attr("transform", `rotate(-90, ${dimensions.margin.left - fontSize*1.5}, ${dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2})`)
+                        .attr("transform", `rotate(-90, ${dimensions.margin.left - fontSize*2}, ${dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2})`)
                         .attr("font-size", fontSize/2)
-                        .attr("x", dimensions.margin.left - fontSize*1.5)
+                        .attr("x", dimensions.margin.left - fontSize*2)
                         .attr("y", dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2)
                         .text("Fertility Rate (Number of Children)")
                     
