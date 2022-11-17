@@ -16,9 +16,6 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         }
     };
     
-    //Setup color wheel
-    var color = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"];    
-
     //Set the width and height for the svg
     svg.style("width", dims.width);
     svg.style("height", dims.height);
@@ -47,7 +44,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         .attr("class", "q4-circle")
         .attr("cx", d => xScale(+d["Years"]))
         .attr("cy", d => yScale(+d["Net"]))
-        .attr("fill", d => color[colorForCountry(d["Continent"])])
+        .attr("fill", d => window.continent_color_dict[d["Continent"]])
         .on("mouseover", function(){
             if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
                 highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])

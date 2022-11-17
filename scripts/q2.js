@@ -23,20 +23,6 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var yScale = d3.scaleLinear()
                    .domain(d3.extent(dataset, d => +d["Rate"]))
                    .range([dimensions.height - dimensions.margin.bottom, dimensions.margin.top])
-
-    function colorForCountry(currentContinent){
-        var index = 0
-        for(let continent of window.continents){
-            if(continent == currentContinent){
-                return index 
-            }
-            else{
-                index++
-            } 
-        }
-    }
-
-    var color = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"];    
             
     var points = svg.append("g")
                     .selectAll(".q2-points")
@@ -46,7 +32,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     .attr("class", "q2-points")
                     .attr("cx", d => xScale(+d["YearsDifference"]))
                     .attr("cy", d => yScale(+d["Rate"]))
-                    .attr("fill", d => color[colorForCountry(d["Continent"])])
+                    .attr("fill", d => window.continent_color_dict[d["Continent"]])
                     .on("mouseover", function(){
                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
                             highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
@@ -67,6 +53,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
+
     
     var xAxisGen = d3.axisBottom().scale(xScale)
 

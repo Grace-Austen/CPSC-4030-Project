@@ -81,7 +81,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .attr("stroke", d => {
                                             var countryInfo = educationAccessor(yearsDict).get(countryAccessor(d))
                                             if (countryInfo !== undefined) {
-                                                return window.continentColors[window.colorForCountry(countryInfo["Continent"])]
+                                                return window.continent_color_dict[countryInfo["Continent"]]
                                             } else {
                                                 return countryStroke
                                             }

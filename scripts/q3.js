@@ -46,7 +46,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("cx", d => xScale(xAccessor(d)))
                     .attr("cy", d => schoolScale(schoolAccessor(d)))
                     .attr("r", 0)
-                    .attr("fill", d => window.continentColors[colorForCountry(d["Continent"])])
+                    .attr("fill", d => window.continent_color_dict[d["Continent"]])
                     .on("mouseover", function(){
                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
                             highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
@@ -76,7 +76,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("class", "fertility_points")
                     .attr("cx", d => xScale(xAccessor(d)))
                     .attr("cy", d => fertScale(fertAccessor(d)))
-                    .attr("fill", d => window.continentColors[colorForCountry(d["Continent"])])
+                    .attr("fill", d => window.continent_color_dict[d["Continent"]])
                     .on("mouseover", function(){
                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
                             highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
@@ -97,6 +97,8 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
+
+        
 
     var xAxisGen = d3.axisBottom().scale(xScale)
     var xAxis = svg.append("g")

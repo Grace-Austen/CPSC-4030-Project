@@ -1,6 +1,15 @@
 window.circle_r = 3
 window.selectStroke = 3
 
+continent_color_dict = {
+    "Europe":"#ffffb3", //yellow
+    "Africa":"#fdb462", //orange
+    "North_America": "#bebada", //purple
+    "Asia": "#80b1d3", //blue
+    "Oceania": "#8dd3c7", //green
+    "Latin_America_and_the_Carribean": "#fb8072"//red
+}
+
 window.continents = ['Asia', 'Europe', 'Africa', 'Latin_America_and_the_Carribean', 'Oceania', 'North_America']
 window.continentColors = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]
 window.colorForCountry = colorForCountry
