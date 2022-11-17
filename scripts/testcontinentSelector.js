@@ -6,22 +6,21 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         var container = document.getElementById("newMapContainer")
 
         //drawing style
-        var width_percentage = 1
+        var width_percentage = .75
         var colormap = d3.interpolateGreens
         var earthColor = "blue"
         var lineColor = "grey"
         var graticuleStroke = 1
         var countryStroke = .75
-        var countryFontSize = .6 * width_percentage * container.clientWidth * .05
 
 
         //svg dimensions
         var dimensions = {
             width: width_percentage * container.clientWidth,
-            height: .6 * width_percentage * container.clientWidth + 2*countryFontSize,
+            height: .45 * width_percentage * container.clientWidth,
             margin: {
                 top: 10,
-                bottom: 50 + countryFontSize,
+                bottom: 50,
                 right: 10,
                 left: 10,
                 legend: .5 * width_percentage * container.clientWidth 
