@@ -1,11 +1,12 @@
 d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var container = document.getElementById("q2-container")
+    var fontSize = 20
     var dimensions = {
         height: 250,
         width: .95 * container.clientWidth,
         margin:{
             top: 10,
-            bottom: 50,
+            bottom: 30 + fontSize,
             right: 10,
             left: 50
         }
@@ -44,11 +45,9 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     .data(dataset)
                     .enter()
                     .append("circle")
-                    .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
                     .attr("class", "q2-points")
                     .attr("cx", d => xScale(+d["YearsDifference"]))
                     .attr("cy", d => yScale(+d["Rate"]))
-                    .attr("r", window.circle_r)
                     .attr("fill", d => color[colorForCountry(d["Continent"])])
                     .on("mouseover", function(){
                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
@@ -60,16 +59,16 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                             deselectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                          }  
                     })
-                //Can't get radius to reset for whatever reason
-                //    .on("click", function(){
-                //         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                //             var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
-                //             window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
-                //             setCountry()
-                //         }
-                //    })
-                    .filter(d => d["Period"] !== window.selectedPeriod)
-                    .lower()
+                    .on("click", function(){
+                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        if(thisData["Period"] === window.selectedPeriod) {
+                            var thisCountry = thisData["Country"]
+                            window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
+                            setCountry()
+                        }
+                    })
+                    .filter(d => d["Period"] === window.selectedPeriod)
+                    .attr("r", window.circle_r)
 
     
     var xAxisGen = d3.axisBottom().scale(xScale)
@@ -87,16 +86,16 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var differenceLabel = svg.append("g")
                              .append("text")
                              .attr("text-anchor", "middle")
-                             .attr("font-size", 20)
+                             .attr("font-size", fontSize)
                              .attr("x", dimensions.width/2)
-                             .attr("y", dimensions.height - 20)
+                             .attr("y", dimensions.height - dimensions.margin.bottom + 2*fontSize)
                              .text("Average Years of Difference in Schooling Between Genders")
     var fertLabel = svg.append("g")
                         .append("text") //avg school
                         .attr("text-anchor", "middle")
-                        .attr("transform", `rotate(-90, ${dimensions.margin.left - 30}, ${dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2})`)
-                        .attr("font-size", "10")
-                        .attr("x", dimensions.margin.left - 30)
+                        .attr("transform", `rotate(-90, ${dimensions.margin.left - fontSize*1.5}, ${dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2})`)
+                        .attr("font-size", fontSize/2)
+                        .attr("x", dimensions.margin.left - fontSize*1.5)
                         .attr("y", dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/2)
                         .text("Fertility Rate (Number of Children)")
                     

@@ -6,7 +6,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         var container = document.getElementById("q1-container")
 
         //drawing style
-        var width_percentage = 0.95
+        var width_percentage = 1
         var colormap = d3.interpolateGreens
         var earthColor = "darkblue"
         var lineColor = "grey"
@@ -18,7 +18,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         //svg dimensions
         var dimensions = {
             width: width_percentage * container.clientWidth,
-            height: .6 * width_percentage * container.clientWidth + 15 + countryFontSize,
+            height: .6 * width_percentage * container.clientWidth + 2*countryFontSize,
             margin: {
                 top: 10,
                 bottom: 50 + countryFontSize,
@@ -89,24 +89,15 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                             })
                            .attr("stroke-width", countryStroke)
                            .on("mouseover", function(){
-                                //window.selectedCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
-                                // d3.select(this)
-                                //   .attr("stroke-width", window.selectStroke)
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
-                                countrySelectedText.text("Country selected: " + thisCountry)
                                 selectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                             })
                             .on("mouseout", function(){
-                                // window.selectedCountry = null
-                                // d3.select(this)
-                                //   .attr("stroke-width", countryStroke)
-                                countrySelectedText.text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
                                 deselectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                            })
                            .on("click", function(){
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
                                 window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
-                                countrySelectedText.text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
                                 setCountry()
                            })
 
@@ -133,16 +124,15 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         var legendLabels = d3.selectAll(".label")
                             .attr("font-size", countryFontSize)
         legendLabels = document.getElementsByClassName("label")
-        console.log(legendLabels)
         for (var item of legendLabels){
-            console.log("wut", item.attributes.transform) //get y value
             var ytrans = item.attributes.transform.value.split("(")[1].split(",")[1].split(")")[0] - (countryFontSize)
-            var newtrans = item.attributes.transform.value.split(",")[0] + "," + ytrans + ")"
+            var newtrans = item.attributes.transform.value.split(",")[0] + "," + 2*countryFontSize + ")"
             item.attributes.transform.value = newtrans
         }
 
         //country selected
         var countrySelectedText = svg.append("text")
+                                    .attr("id", "countrySelectedText")
                                     .attr("text-anchor", "middle")
                                     .attr("font-size", countryFontSize)
                                     .attr("x", (dimensions.width/2))

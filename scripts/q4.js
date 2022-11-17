@@ -42,26 +42,29 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         .data(dataset)
         .enter()
         .append("circle")
-        .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
         .attr("class", "q4-circle")
         .attr("cx", d => xScale(+d["Years"]))
         .attr("cy", d => yScale(+d["Net"]))
-        .attr("r", 3)
-        .attr("fill", d => color[colorForCountry(d["Continent"])]);
-    
-    // //Sort x values
-    // dataset.sort((a, b) => {
-    //     return(a["Years"] - b["Years"]);
-    // });
+        .attr("fill", d => color[colorForCountry(d["Continent"])])
+        .on("mouseover", function(){
+            if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
+                selectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+            }
+        })
+        .on("mouseout", function(){
+             if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
+                deselectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+             }  
+        })
+        .on("click", function(){
+            var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+            if(thisData["Period"] === window.selectedPeriod) {
+                var thisCountry = thisData["Country"]
+                window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
+                setCountry()
+            }
+        })
+        .filter(d => d["Period"] === window.selectedPeriod)
+        .attr("r", window.circle_r)
 
-    // //Add line to points
-    // svg.append("path")
-    //     .datum(dataset)
-    //     .attr("fill", "none")
-    //     .attr("stroke", "red")
-    //     .attr("stroke-width", 1)
-    //     .attr("d", d3.line()
-    //         .x(d => +xScale(+d["Years"]))
-    //         .y(d => +yScale(+d["Net"]))
-    //     );
 })
