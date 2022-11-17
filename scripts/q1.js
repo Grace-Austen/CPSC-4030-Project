@@ -41,7 +41,6 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
             }
             yearsDict.set(year, innerDict)
         })
-        console.log(yearsDict)
 
         window.q1dict = yearsDict
 

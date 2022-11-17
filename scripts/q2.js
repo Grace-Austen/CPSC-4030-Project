@@ -12,8 +12,6 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
         }
     }
 
-    console.log(dataset);
-
     var svg = d3.select("#q2-viz")
                 .style("width", dimensions.width)
                 .style("height", dimensions.height)
