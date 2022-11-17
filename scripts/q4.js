@@ -53,7 +53,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         })
         .on("mouseout", function(){
              if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                unhighlighttCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                unhighlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
              }  
         })
         .on("click", function(){

@@ -49,7 +49,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     .attr("fill", d => color[colorForCountry(d["Continent"])])
                     .on("mouseover", function(){
                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                            highlighttCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                            highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                         }
                     })
                     .on("mouseout", function(){
