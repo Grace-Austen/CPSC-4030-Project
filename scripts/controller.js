@@ -184,6 +184,10 @@ function selectPeriod(chosen_year_bar) {
     q2_points = d3.selectAll(".q2-points")
                   .transition().duration(1000)
                   .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
+    //Makes it to where 0 opacity points don't block the clicking of visible points
+    q2_points = d3.selectAll(".q2-points")
+                  .filter(d => d["Period"] !== window.selectedPeriod)
+                  .lower()
 
     countries = d3.selectAll(".country")
                 .transition().duration(1000)

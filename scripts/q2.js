@@ -49,6 +49,27 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     .attr("cy", d => yScale(+d["Rate"]))
                     .attr("r", window.circle_r)
                     .attr("fill", d => color[colorForCountry(d["Continent"])])
+                    .on("mouseover", function(){
+                        if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
+                            selectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                        }
+                    })
+                    .on("mouseout", function(){
+                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
+                            deselectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                         }  
+                    })
+                //Can't get radius to reset for whatever reason
+                //    .on("click", function(){
+                //         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
+                //             var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+                //             window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
+                //             setCountry()
+                //         }
+                //    })
+                    .filter(d => d["Period"] !== window.selectedPeriod)
+                    .lower()
+
     
     var xAxisGen = d3.axisBottom().scale(xScale)
 
