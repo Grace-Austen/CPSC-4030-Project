@@ -1,6 +1,15 @@
 window.circle_r = 3
 window.selectStroke = 3
 
+continent_color_dict = {
+    "Europe":"#ffffb3", //yellow
+    "Africa":"#fdb462", //orange
+    "North_America": "#bebada", //purple
+    "Asia": "#80b1d3", //blue
+    "Oceania": "#8dd3c7", //green
+    "Latin_America_and_the_Carribean": "#fb8072"//red
+}
+
 window.continents = ['Asia', 'Europe', 'Africa', 'Latin_America_and_the_Carribean', 'Oceania', 'North_America']
 window.continentColors = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]
 window.colorForCountry = colorForCountry
@@ -9,7 +18,7 @@ window.dataset = d3.csv("data/combined_data/combined.csv")
 
 window.selectedCountry = null
 window.selectedPeriod = "2010-2015"
-function selectCountry(selectedCountry) {
+function highlightCountry(selectedCountry) {
     //change text
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${selectedCountry}`)
@@ -76,7 +85,7 @@ function selectCountry(selectedCountry) {
     }
 }
 
-function deselectCountry(selectedCountry) {
+function unhighlightCountry(selectedCountry) {
     //changing selected country text
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
@@ -138,7 +147,7 @@ function deselectCountry(selectedCountry) {
                 .raise()
 }
 
-function setCountry(){
+function selectCountry(){
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
 
@@ -204,7 +213,7 @@ function selectPeriod(chosen_year_bar) {
                 }) 
     
     q2_points = d3.selectAll(".q2-points").transition().duration(1000)
-                  .attr("class", ".q2")
+                  .attr("class", "q2-points")
                   .attr("r", d => {
                     if(d["Period"] === window.selectedPeriod){
                         return d["Country"] === window.selectedCountry ? 6 : window.circle_r
@@ -212,13 +221,14 @@ function selectPeriod(chosen_year_bar) {
                         return 0
                     }
                   })
+                  .attr("stroke-width", 0)
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
-                  .attr("class", ".q2 selected_points")
+                  .attr("class", "q2-points selected_points")
                  
     q3_fert_points = d3.selectAll(".fertility_points").transition().duration(1000)
-                       .attr("class", ".fertility_points")
+                       .attr("class", "fertility_points")
                        .attr("r", d => {
                          if(d["Period"] === window.selectedPeriod){
                              return d["Country"] === window.selectedCountry ? 6 : window.circle_r
@@ -226,12 +236,13 @@ function selectPeriod(chosen_year_bar) {
                              return 0
                          }
                        })
+                       .attr("stroke-width", 0)
                        .filter(d => d["Country"] === window.selectedCountry)
                        .attr("stroke", "grey")
                        .attr("stroke-width", 1)
-                       .attr("class", ".fertility_points selected_points")
+                       .attr("class", "fertility_points selected_points")
     q3_school_points = d3.selectAll(".school_points").transition().duration(1000)
-                  .attr("class", ".school_points")
+                  .attr("class", "school_points")
                   .attr("r", d => {
                     if(d["Period"] === window.selectedPeriod){
                         return d["Country"] === window.selectedCountry ? 6 : window.circle_r
@@ -239,10 +250,11 @@ function selectPeriod(chosen_year_bar) {
                         return 0
                     }
                   })
+                  .attr("stroke-width", 0)
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
-                  .attr("class", ".school_points selected_points")
+                  .attr("class", "school_points selected_points")
 
     q4_points = d3.selectAll(".q4-circle").transition().duration(1000)
                   .attr("class", "q4-circle")
@@ -253,6 +265,7 @@ function selectPeriod(chosen_year_bar) {
                         return 0
                     }
                   })
+                  .attr("stroke-width", 0)
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
