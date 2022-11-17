@@ -2,15 +2,17 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
     //Select the svg we will be using
     var svg = d3.select("#q4-viz");
     var container = document.getElementById("q4-container")
+    var fontSize = 20
+    
     //Setup dimensions
     var dims = {
         width: .95 * container.clientWidth,
-        height: 200,
+        height: 250,
         margin: {
             top: 10,
-            bottom: 50,
+            bottom: 30 + fontSize,
             right: 10,
-            left: 50
+            left: 70
         }
     };
     
@@ -65,6 +67,23 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
             }
         })
         .filter(d => d["Period"] === window.selectedPeriod)
-        .attr("r", window.circle_r)
+        .attr("r", window.circle_r);
 
+    //Add labels
+    svg.append("g")
+        .append("text")
+        .attr("text-anchor", "middle")
+        .attr("font-size", fontSize)
+        .attr("x", dims.width / 2)
+        .attr("y", dims.height - dims.margin.bottom + (2 * fontSize))
+        .text("Mean Years of Schooling");
+
+    svg.append("g")
+        .append("text")
+        .attr("text-anchor", "middle")
+        .attr("transform", `rotate(-90, ${dims.margin.left - (fontSize * 2.5)}, ${dims.margin.top + (dims.height - dims.margin.bottom) / 2})`)
+        .attr("font-size", fontSize / 2)
+        .attr("x", dims.margin.left - (fontSize * 1.5))
+        .attr("y", dims.margin.top + (dims.height - dims.margin.bottom) / 2)
+        .text("Average Migration Rate");
 })
