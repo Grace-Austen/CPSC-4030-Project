@@ -198,9 +198,11 @@ function selectPeriod(chosen_year_bar) {
                  
     q3_fert_points = d3.selectAll(".fertility_points")
                        .transition().duration(1000)
+                       .attr("r", window.circle_r)
                        .attr("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
     q3_school_points = d3.selectAll(".school_points")
                        .transition().duration(1000)
+                       .attr("r", window.circle_r)
                        .attr("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
 
     q4_points = d3.selectAll(".q4-circle")
