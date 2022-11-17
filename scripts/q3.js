@@ -79,12 +79,12 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("fill", d => window.continentColors[colorForCountry(d["Continent"])])
                     .on("mouseover", function(){
                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                            selectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                            highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                         }
                     })
                     .on("mouseout", function(){
                          if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                            deselectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                            unhighlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                          }  
                     })
                     .on("click", function(){
@@ -92,7 +92,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                         if(thisData["Period"] === window.selectedPeriod) {
                             var thisCountry = thisData["Country"]
                             window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
-                            setCountry()
+                            selectCountry()
                         }
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)

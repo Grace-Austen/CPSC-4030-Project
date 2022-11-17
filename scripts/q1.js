@@ -41,7 +41,6 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
             }
             yearsDict.set(year, innerDict)
         })
-        console.log(yearsDict)
 
         window.q1dict = yearsDict
 
@@ -90,15 +89,15 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .attr("stroke-width", countryStroke)
                            .on("mouseover", function(){
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
-                                selectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                                highlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                             })
                             .on("mouseout", function(){
-                                deselectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                                unhighlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                            })
                            .on("click", function(){
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
                                 window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
-                                setCountry()
+                                selectCountry()
                            })
 
         //color in countries

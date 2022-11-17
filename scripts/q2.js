@@ -12,8 +12,6 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
         }
     }
 
-    console.log(dataset);
-
     var svg = d3.select("#q2-viz")
                 .style("width", dimensions.width)
                 .style("height", dimensions.height)
@@ -51,12 +49,12 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     .attr("fill", d => color[colorForCountry(d["Continent"])])
                     .on("mouseover", function(){
                         if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                            selectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                            highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                         }
                     })
                     .on("mouseout", function(){
                          if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                            deselectCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                            unhighlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                          }  
                     })
                     .on("click", function(){
@@ -64,7 +62,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                         if(thisData["Period"] === window.selectedPeriod) {
                             var thisCountry = thisData["Country"]
                             window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
-                            setCountry()
+                            seelectCountry()
                         }
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)

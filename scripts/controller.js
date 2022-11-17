@@ -9,7 +9,7 @@ window.dataset = d3.csv("data/combined_data/combined.csv")
 
 window.selectedCountry = null
 window.selectedPeriod = "2010-2015"
-function selectCountry(selectedCountry) {
+function highlightCountry(selectedCountry) {
     //change text
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${selectedCountry}`)
@@ -76,7 +76,7 @@ function selectCountry(selectedCountry) {
     }
 }
 
-function deselectCountry(selectedCountry) {
+function unhighlightCountry(selectedCountry) {
     //changing selected country text
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
@@ -138,7 +138,7 @@ function deselectCountry(selectedCountry) {
                 .raise()
 }
 
-function setCountry(){
+function selectCountry(){
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
 
@@ -204,7 +204,7 @@ function selectPeriod(chosen_year_bar) {
                 }) 
     
     q2_points = d3.selectAll(".q2-points").transition().duration(1000)
-                  .attr("class", ".q2")
+                  .attr("class", "q2-points")
                   .attr("r", d => {
                     if(d["Period"] === window.selectedPeriod){
                         return d["Country"] === window.selectedCountry ? 6 : window.circle_r
@@ -215,10 +215,10 @@ function selectPeriod(chosen_year_bar) {
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
-                  .attr("class", ".q2 selected_points")
+                  .attr("class", "q2-points selected_points")
                  
     q3_fert_points = d3.selectAll(".fertility_points").transition().duration(1000)
-                       .attr("class", ".fertility_points")
+                       .attr("class", "fertility_points")
                        .attr("r", d => {
                          if(d["Period"] === window.selectedPeriod){
                              return d["Country"] === window.selectedCountry ? 6 : window.circle_r
@@ -229,9 +229,9 @@ function selectPeriod(chosen_year_bar) {
                        .filter(d => d["Country"] === window.selectedCountry)
                        .attr("stroke", "grey")
                        .attr("stroke-width", 1)
-                       .attr("class", ".fertility_points selected_points")
+                       .attr("class", "fertility_points selected_points")
     q3_school_points = d3.selectAll(".school_points").transition().duration(1000)
-                  .attr("class", ".school_points")
+                  .attr("class", "school_points")
                   .attr("r", d => {
                     if(d["Period"] === window.selectedPeriod){
                         return d["Country"] === window.selectedCountry ? 6 : window.circle_r
@@ -242,7 +242,7 @@ function selectPeriod(chosen_year_bar) {
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
-                  .attr("class", ".school_points selected_points")
+                  .attr("class", "school_points selected_points")
 
     q4_points = d3.selectAll(".q4-circle").transition().duration(1000)
                   .attr("class", "q4-circle")
