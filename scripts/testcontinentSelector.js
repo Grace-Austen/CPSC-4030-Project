@@ -43,6 +43,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
 
         // //colorscale and education accessor
         var countryAccessor = d => d["properties"].ADMIN
+        var continentAccessor = d => d["properties"].CONTINENT
 
         //map drawing stuff
         var projection = d3.geoEqualEarth()
@@ -60,12 +61,25 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .attr("d", d => pathGenerator(d))
                            .attr("stroke", "none")
                            .attr("stroke-width", countryStroke)
-                        //    .on("mouseover", function(){
-                        //         var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
-                        //         selectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
-                        //     })
+                           .on("mouseover", function(){
+                                var currentContinent = continentAccessor(d3.select(this)["_groups"][0][0]["__data__"])
+                                if(currentContinent == "North America"){
+                                    currentContinent = "North_America"
+                                }
+                                else if(currentContinent == "South America"){
+                                    currentContinent = "Latin_America_and_the_Carribean"
+                                }
+                                highlightContinent(currentContinent)
+                            })
                         //     .on("mouseout", function(){
-                        //         deselectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                        //         var currentContinent = continentAccessor(d3.select(this)["_groups"][0][0]["__data__"])
+                        //         if(currentContinent == "North America"){
+                        //             currentContinent = "North_America"
+                        //         }
+                        //         else if(currentContinent == "South America"){
+                        //             currentContinent = "Latin_America_and_the_Carribean"
+                        //         }
+                        //         unhighlightContinent(currentContinent)
                         //    })
                         //    .on("click", function(){
                         //         var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
@@ -75,7 +89,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
 
         //color in countries
         countries.attr("fill", d => {
-                                var currentContinent = d["properties"].CONTINENT
+                                var currentContinent = continentAccessor(d)
                                 if(currentContinent == "North America"){
                                     currentContinent = "North_America"
                                 }

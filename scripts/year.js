@@ -1,31 +1,32 @@
 d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
-    var data = d3.group(dataset, d => d["Period"])
-    var yearsDict = new Map()
-    data.forEach((list, year) => {
-        yearsDict.set(year, d3.rollup(list, v => d3.mean(v, d => d["SchoolYears"])))
-    })
-
     var svg = d3.select("#year")
     var container = document.getElementById("year-container")
+
+    var barFill = "darkgrey"
+
     var width_percentage = 0.95
     var dims = {
         width: width_percentage * container.clientWidth,
         height: .6 * width_percentage * container.clientWidth,
         margin: {
             top: 10,
-            bottom: 50,
+            bottom: 30 + window.xAxisFontSize,
             right: 10,
-            left: 100,
+            left: 70 + 2*window.yAxisFontSize,
             barHeight: (.6 * width_percentage * container.clientWidth) / (15*4)
         }
     };
 
-    var barFill = "darkgrey"
-
     //Set the width and height for the svg
-    svg.style("width", dims.width);
-    svg.style("height", dims.height);
+    svg
+        .style("width", dims.width)
+        .style("height", dims.height);
 
+    var data = d3.group(dataset, d => d["Period"])
+    var yearsDict = new Map()
+    data.forEach((list, year) => {
+        yearsDict.set(year, d3.rollup(list, v => d3.mean(v, d => d["SchoolYears"])))
+    })
     var averageEducation = [];
     yearsDict.forEach((value, year) => {
         let newData = {
@@ -92,17 +93,17 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
     var schoolLabel = svg.append("g")
                          .append("text")
                          .attr("text-anchor", "middle")
-                         .attr("font-size", "10")
+                         .attr("font-size", window.xAxisFontSize)
                          .attr("x", dims.width/2)
-                         .attr("y", dims.height - 20)
+                         .attr("y", dims.height - dims.margin.bottom + 2.5*window.xAxisFontSize)
                          .text("Global Average Years of Schooling")
 
     var periodLabel = svg.append("g")
                          .append("text")
                          .attr("text-anchor", "middle")
-                         .attr("transform", `rotate(-90, ${dims.margin.left - 70}, ${dims.margin.bottom+(dims.height-dims.margin.bottom)/2})`)
-                         .attr("font-size", "10")
-                         .attr("x", dims.margin.left - 30)
-                         .attr("y", dims.margin.bottom+(dims.height-dims.margin.bottom)/2)
+                         .attr("transform", `rotate(-90, ${dims.margin.left - 7.5*window.yAxisFontSize}, ${dims.margin.top + (dims.height-dims.margin.top-dims.margin.bottom)/2})`)
+                         .attr("font-size", window.yAxisFontSize)
+                         .attr("x", dims.margin.left - 7.5*window.yAxisFontSize)
+                         .attr("y", dims.margin.top + (dims.height-dims.margin.top-dims.margin.bottom)/2)
                          .text("Time Period")
 })

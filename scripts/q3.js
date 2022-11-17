@@ -1,26 +1,21 @@
 d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
-    //style stuff
-    var fontSize = 20
-
     var container = document.getElementById("q3-container")
+    var svg = d3.select("#q3-viz")
 
     var dimensions = {
         height: 250,
         width: .95 * container.clientWidth,
         margin: {
             top: 10,
-            bottom: 10 + fontSize,
+            bottom: 10 + window.xAxisFontSize,
             right: 10,
-            left: 70
+            left: 50 + 2*window.yAxisFontSize
         }
     }
 
-    var svg = d3.select("#q3-viz")
-                .style("width", dimensions.width)
-                .style("height", dimensions.height)
-                .style("margin-left", "auto")
-                .style("margin-right", "auto")
-                .style("display", "block")
+    svg
+        .style("width", dimensions.width)
+        .style("height", dimensions.height)
 
     var xAccessor = d => +d["Life Expectancy"]
     var schoolAccessor = d => +d["Years School"]
@@ -98,44 +93,38 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
 
-        
-
-    var xAxisGen = d3.axisBottom().scale(xScale)
     var xAxis = svg.append("g")
-                .call(xAxisGen)
+                .call(d3.axisBottom().scale(xScale))
                 .style("transform", `translateY(${dimensions.height/2}px)`)
-    var schoolAxisGen = d3.axisLeft().scale(schoolScale)
     var schoolAxis = svg.append("g")
-                .call(schoolAxisGen)
+                .call(d3.axisLeft().scale(schoolScale))
                 .style("transform", `translateX(${dimensions.margin.left}px)`)
-    var fertilityAxisGen = d3.axisLeft().scale(fertScale)
     var fertilityAxis = svg.append("g")
-                .call(fertilityAxisGen)
+                .call(d3.axisLeft().scale(fertScale))
                 .style("transform", `translateX(${dimensions.margin.left}px)`)
                 .style("transform", `translateY(${dimensions.height/2})`)
     
     var bottomLabel = svg.append("g")
                          .append("text")
                          .attr("text-anchor", "middle")
-                         .attr("font-size", fontSize)
+                         .attr("font-size", window.xAxisFontSize)
                          .attr("x", dimensions.width/2)
-                         .attr("y", dimensions.height - fontSize)
+                         .attr("y", dimensions.height - window.xAxisFontSize)
                          .text("Average Life Expectancy")
     var schoolLabel = svg.append("g")
                          .append("text") //avg school
                          .attr("text-anchor", "middle")
-                         .attr("transform", `rotate(-90, ${dimensions.margin.left - fontSize*2}, ${dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/4})`)
-                         .attr("font-size", fontSize/2)
-                         .attr("x", dimensions.margin.left - fontSize*2)
-                         .attr("y", dimensions.margin.top+(dimensions.height-dimensions.margin.bottom)/4)
+                         .attr("transform", `rotate(-90, ${dimensions.margin.left - window.yAxisFontSize*5}, ${dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)/4})`)
+                         .attr("font-size", window.yAxisFontSize)
+                         .attr("x", dimensions.margin.left - yAxisFontSize*5)
+                         .attr("y", dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)/4)
                          .text("Average Years of School")
     var fertLabel = svg.append("g")
                        .append("text") //avg school
                        .attr("text-anchor", "middle")
-                       .attr("transform", `rotate(-90, ${dimensions.margin.left - fontSize*2}, ${dimensions.margin.top+3*(dimensions.height-dimensions.margin.bottom)/4})`)
-                       .attr("font-size", fontSize/2)
-                       .attr("x", dimensions.margin.left - fontSize*2)
-                       .attr("y", dimensions.margin.top+(3/4)*(dimensions.height-dimensions.margin.bottom))
+                       .attr("transform", `rotate(-90, ${dimensions.margin.left - window.yAxisFontSize*5}, ${dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)*(3/4)})`)
+                       .attr("font-size", window.yAxisFontSize)
+                       .attr("x", dimensions.margin.left - window.yAxisFontSize*5)
+                       .attr("y", dimensions.margin.top + (dimensions.height-dimensions.margin.bottom)*(3/4))
                        .text("Fertility Rate")
-
 })
