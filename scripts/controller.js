@@ -184,6 +184,10 @@ function selectPeriod(chosen_year_bar) {
     q2_points = d3.selectAll(".q2-points")
                   .transition().duration(1000)
                   .style("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
+    //Makes it to where 0 opacity points don't block the clicking of visible points
+    q2_points = d3.selectAll(".q2-points")
+                  .filter(d => d["Period"] !== window.selectedPeriod)
+                  .lower()
 
     countries = d3.selectAll(".country")
                 .transition().duration(1000)
@@ -198,9 +202,11 @@ function selectPeriod(chosen_year_bar) {
                  
     q3_fert_points = d3.selectAll(".fertility_points")
                        .transition().duration(1000)
+                       .attr("r", window.circle_r)
                        .attr("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
     q3_school_points = d3.selectAll(".school_points")
                        .transition().duration(1000)
+                       .attr("r", window.circle_r)
                        .attr("opacity", d => d["Period"] === window.selectedPeriod ? 1 : 0)
 
     q4_points = d3.selectAll(".q4-circle")
