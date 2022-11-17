@@ -62,12 +62,11 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                         if(thisData["Period"] === window.selectedPeriod) {
                             var thisCountry = thisData["Country"]
                             window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
-                            seelectCountry()
+                            selectCountry()
                         }
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
-
     
     var xAxisGen = d3.axisBottom().scale(xScale)
 

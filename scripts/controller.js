@@ -212,6 +212,7 @@ function selectPeriod(chosen_year_bar) {
                         return 0
                     }
                   })
+                  .attr("stroke-width", 0)
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
@@ -226,6 +227,7 @@ function selectPeriod(chosen_year_bar) {
                              return 0
                          }
                        })
+                       .attr("stroke-width", 0)
                        .filter(d => d["Country"] === window.selectedCountry)
                        .attr("stroke", "grey")
                        .attr("stroke-width", 1)
@@ -239,6 +241,7 @@ function selectPeriod(chosen_year_bar) {
                         return 0
                     }
                   })
+                  .attr("stroke-width", 0)
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
@@ -253,6 +256,7 @@ function selectPeriod(chosen_year_bar) {
                         return 0
                     }
                   })
+                  .attr("stroke-width", 0)
                   .filter(d => d["Country"] === window.selectedCountry)
                   .attr("stroke", "grey")
                   .attr("stroke-width", 1)
