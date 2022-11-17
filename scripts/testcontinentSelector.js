@@ -71,21 +71,27 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                                 }
                                 highlightContinent(currentContinent)
                             })
-                        //     .on("mouseout", function(){
-                        //         var currentContinent = continentAccessor(d3.select(this)["_groups"][0][0]["__data__"])
-                        //         if(currentContinent == "North America"){
-                        //             currentContinent = "North_America"
-                        //         }
-                        //         else if(currentContinent == "South America"){
-                        //             currentContinent = "Latin_America_and_the_Carribean"
-                        //         }
-                        //         unhighlightContinent(currentContinent)
-                        //    })
-                        //    .on("click", function(){
-                        //         var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
-                        //         window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
-                        //         setCountry()
-                        //    })
+                            .on("mouseout", function(){
+                                var currentContinent = continentAccessor(d3.select(this)["_groups"][0][0]["__data__"])
+                                if(currentContinent == "North America"){
+                                    currentContinent = "North_America"
+                                }
+                                else if(currentContinent == "South America"){
+                                    currentContinent = "Latin_America_and_the_Carribean"
+                                }
+                                unhighlightContinent(currentContinent)
+                           })
+                           .on("click", function(){
+                                var currentContinent = continentAccessor(d3.select(this)["_groups"][0][0]["__data__"])
+                                if(currentContinent == "North America"){
+                                    currentContinent = "North_America"
+                                }
+                                else if(currentContinent == "South America"){
+                                    currentContinent = "Latin_America_and_the_Carribean"
+                                }
+                                window.selectedContinent = window.selectedContinent === currentContinent ? null : currentContinent
+                                setContinent()
+                           })
 
         //color in countries
         countries.attr("fill", d => {

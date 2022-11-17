@@ -43,7 +43,7 @@ function selectPeriod(chosen_year_bar) {
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-points"]
     for(var pointset of points) {
         set = d3.selectAll(pointset)
-        set.attr("class", pointset)
+        set.attr("class", pointset.split(".")[1])
             .attr("r", d => {
                 if(d["Period"] === window.selectedPeriod){
                     return d["Country"] === window.selectedCountry ? window.selectCircle_r : window.circle_r
@@ -55,7 +55,7 @@ function selectPeriod(chosen_year_bar) {
             .filter(d => d["Country"] === window.selectedCountry)
             .attr("stroke", "grey")
             .attr("stroke-width", 1)
-            .attr("class", pointset + " selected_points")
+            .attr("class", pointset.split(".")[1] + " selected_points")
     }    
     selectedPoints = d3.selectAll(".selected_points")
                       .raise()
@@ -168,8 +168,9 @@ function highlightContinent(selectedContinent) { //really just want everything e
     // countries = d3.selectAll(".country")
     //             .filter(d => d.properties.ADMIN === selectedCountry)
     //             .attr("stroke-width", window.selectStroke)
-    points = [d3.selectAll(".q2-points"), d3.selectAll(".school_points"), d3.selectAll(".fertility_points"), d3.selectAll(".q4-points")]
-    for(var set of points) {
+    points = [".q2-points", ".school_points", ".fertility_points", ".q4-points"]
+    for(var pointset of points) {
+        set = d3.selectAll(pointset)
         set.filter(d => d["Period"] === window.selectedPeriod)
         .style("opacity", d => {
             var thisContinent = d["Continent"]
@@ -177,15 +178,54 @@ function highlightContinent(selectedContinent) { //really just want everything e
                 return 1
             } else {
                 if (window.selectedContinent === null) {
-                    console.log("True")
                     return .3
                 } else {
-                    return thisContinent === window.selectedContinent ? 0.3 : 0 
+                    return thisContinent === window.selectedContinent ? 0.5 : 0 
                 }
             }
         })
         .filter(d => d["Continent"] !== selectedContinent)
           .lower()
+    }
+}
+
+function unhighlightContinent() { //really just want everything else to be opaque on hover
+    //highlight new point
+    // countries = d3.selectAll(".country")
+    //             .filter(d => d.properties.ADMIN === selectedCountry)
+    //             .attr("stroke-width", window.selectStroke)
+    points = [".q2-points", ".school_points", ".fertility_points", ".q4-points"]
+    for(var pointset of points) {
+        set = d3.selectAll(pointset)
+        set.filter(d => d["Period"] === window.selectedPeriod)
+        .style("opacity", d => {
+            var thisContinent = d["Continent"]
+            if (window.selectedContinent === null) {
+                return 1
+            } else {
+                return thisContinent === window.selectedContinent ? 1 : 0 
+            }
+        })
+    }
+}
+
+function setContinent() { //really just want everything else to be opaque on hover
+    //highlight new point
+    // countries = d3.selectAll(".country")
+    //             .filter(d => d.properties.ADMIN === selectedCountry)
+    //             .attr("stroke-width", window.selectStroke)
+    points = [".q2-points", ".school_points", ".fertility_points", ".q4-points"]
+    for(var pointset of points) {
+        set = d3.selectAll(pointset)
+        set.filter(d => d["Period"] === window.selectedPeriod)
+        .style("opacity", d => {
+            var thisContinent = d["Continent"]
+            if (window.selectedContinent === null) {
+                return 1
+            } else {
+                return thisContinent === window.selectedContinent ? 1 : 0 
+            }
+        })
     }
 }
 
