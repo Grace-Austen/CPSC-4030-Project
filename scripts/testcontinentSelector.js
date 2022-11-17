@@ -73,12 +73,12 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
 
         //draw in countries
         var countries = svg.append("g")
-                           .selectAll(".country")
+                           .selectAll(".continent_countries")
                            .data(mapdata.features)
                            .enter()
                            .filter(d => countryAccessor(d) !== "Antarctica")
                            .append("path")
-                           .attr("class", "country")
+                           .attr("class", "continent_countries")
                            .attr("d", d => pathGenerator(d))
                            .attr("stroke", "none")
                            .attr("stroke-width", countryStroke)
