@@ -13,30 +13,62 @@
     <h1>
       CPSC 4030 Data Viz Project
     </h1>
+    <table style="width:100%">
+      <tr>
+        <td rowspan="3" style="width:20%"> <!--Map and year viz-->
+          <table>
+            <tr> <!--Map viz-->
+              <td id="q1-container" style="width:100%">
+                <svg id="q1-viz"></svg>
+              </td>
+            </tr>
+            <tr> <!--Year viz-->
+              <td id="year-container" style="width:100%">
+                <svg id="year"></svg>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td id="q2-container" style="width:80%"> <!--Q2-->
+          <svg id="q2-viz"></svg> 
+        </td>
+      </tr>
+      <tr> <!--Q3-->
+        <td id="q3-container" style="width:80%">
+          <svg id="q3-viz"></svg> 
+        </td>
+      </tr>
+      <tr> <!--Q4-->
+        <td id="q4-container" style="width:80%">
+          <svg id="q4-viz"></svg> 
+        </td>
+      </tr>
+    </table>
+
     <table style="width:100%;">
       <!--Scatterplot-->
       <td>
-        <svg id="q2-viz"></svg>
+        <!-- <svg id="q2-viz"></svg> -->
       </td>
       <!--Diverging Scatterplot-->
       <td>
-        <svg id="q3-viz"></svg>
+        <!-- <svg id="q3-viz"></svg> -->
       </td>
     </table>
 
     <!--Migration line chart-->
-    <svg id="q4-viz"></svg>
+    <!-- <svg id="q4-viz"></svg> -->
     
     <!--Year selector-->
     
     
     <!--Education map-->
-    <table style="width:100%" id="q1-viz-table">
+    <table style="width:100%"><!-- id="q1-viz-table"-->
         <td>
-            <svg id="q1-viz"></svg>
+            <!-- <svg id="q1-viz"></svg> -->
         </td>
         <td>
-          <svg id="year"></svg>
+          <!-- <svg id="year"></svg> -->
             <!-- <ul>
                 <li style="text-align: left">fertility rate: </li>
                 <li style="text-align: left">migration rate:</li>
@@ -63,7 +95,7 @@
     <script src="scripts/d3-legend.min.js"></script>
     <script src="scripts/controller.js"></script>
     <script src="scripts/year.js"></script>
-    <script type="module" src="scripts/q1.js"></script>
+    <script src="scripts/q1.js"></script>
     <script src="scripts/q2.js"></script>
     <script src="scripts/q3.js"></script>
     <script src="scripts/q4.js"></script>

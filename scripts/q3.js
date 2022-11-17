@@ -2,9 +2,11 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
     //style stuff
     var fontSize = 20
 
+    var container = document.getElementById("q3-container")
+
     var dimensions = {
-        height: 300,
-        width: .45 * window.screen.width,
+        height: 250,
+        width: .95 * container.clientWidth,
         margin: {
             top: 10,
             bottom: 20 + fontSize,

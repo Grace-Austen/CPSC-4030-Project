@@ -1,7 +1,8 @@
 d3.csv("data/q2_data/q2.csv").then((dataset) => {
+    var container = document.getElementById("q2-container")
     var dimensions = {
-        height: 300,
-        width: .45 * window.screen.width,
+        height: 250,
+        width: .95 * container.clientWidth,
         margin:{
             top: 10,
             bottom: 50,
@@ -65,7 +66,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var differenceLabel = svg.append("g")
                              .append("text")
                              .attr("text-anchor", "middle")
-                             .attr("font-size", "10")
+                             .attr("font-size", 20)
                              .attr("x", dimensions.width/2)
                              .attr("y", dimensions.height - 20)
                              .text("Average Years of Difference in Schooling Between Genders")

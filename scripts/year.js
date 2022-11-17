@@ -6,10 +6,10 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
     })
 
     var svg = d3.select("#year")
-    var container = document.getElementById("q1-viz-table")
-    var width_percentage = 0.5
+    var container = document.getElementById("year-container")
+    var width_percentage = 0.95
     var dims = {
-        width: (1-width_percentage) * container.clientWidth,
+        width: width_percentage * container.clientWidth,
         height: .6 * width_percentage * container.clientWidth,
         margin: {
             top: 10,
@@ -100,9 +100,9 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
     var periodLabel = svg.append("g")
                          .append("text")
                          .attr("text-anchor", "middle")
-                         .attr("transform", `rotate(-90, ${dims.margin.left - 70}, ${dims.margin.top+(dims.height-dims.margin.bottom)/2})`)
+                         .attr("transform", `rotate(-90, ${dims.margin.left - 70}, ${dims.margin.bottom+(dims.height-dims.margin.bottom)/2})`)
                          .attr("font-size", "10")
                          .attr("x", dims.margin.left - 30)
-                         .attr("y", dims.margin.top+(dims.height-dims.margin.bottom)/2)
+                         .attr("y", dims.margin.bottom+(dims.height-dims.margin.bottom)/2)
                          .text("Time Period")
 })

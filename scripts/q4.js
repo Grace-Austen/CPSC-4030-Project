@@ -1,13 +1,11 @@
 d3.csv("data/q4_data/q4.csv").then((dataset) => {
     //Select the svg we will be using
     var svg = d3.select("#q4-viz");
-    
-    console.log(window.selectedPeriod)
-
+    var container = document.getElementById("q4-container")
     //Setup dimensions
     var dims = {
-        width: .9 * window.screen.width,
-        height: 300,
+        width: .95 * container.clientWidth,
+        height: 200,
         margin: {
             top: 10,
             bottom: 50,

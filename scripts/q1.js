@@ -3,18 +3,17 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
 
         //get relevant elements
         var svg = d3.select("#q1-viz")
-        var container = document.getElementById("q1-viz-table")
+        var container = document.getElementById("q1-container")
 
         //drawing style
+        var width_percentage = 0.95
         var colormap = d3.interpolateGreens
         var earthColor = "darkblue"
         var lineColor = "grey"
         var graticuleStroke = 1
         var countryStroke = .75
-        var countrySelectLineColor = "dimgrey"
-        var countryFontSize = 30
+        var countryFontSize = .6 * width_percentage * container.clientWidth * .05
 
-        var width_percentage = 0.5
 
         //svg dimensions
         var dimensions = {
@@ -129,6 +128,18 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         svg.append("g")
            .style("transform", `translateY(${dimensions.margin.legend}px)`)
            .call(legend)
+        var legendSwatches = d3.selectAll(".swatch")
+        legendSwatches.attr("height", countryFontSize)
+        var legendLabels = d3.selectAll(".label")
+                            .attr("font-size", countryFontSize)
+        legendLabels = document.getElementsByClassName("label")
+        console.log(legendLabels)
+        for (var item of legendLabels){
+            console.log("wut", item.attributes.transform) //get y value
+            var ytrans = item.attributes.transform.value.split("(")[1].split(",")[1].split(")")[0] - (countryFontSize)
+            var newtrans = item.attributes.transform.value.split(",")[0] + "," + ytrans + ")"
+            item.attributes.transform.value = newtrans
+        }
 
         //country selected
         var countrySelectedText = svg.append("text")
