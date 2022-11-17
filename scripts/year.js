@@ -1,4 +1,4 @@
-d3.csv("data/combined_data/combined.csv").then(function(dataset){
+d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
     var data = d3.group(dataset, d => d["Period"])
     var yearsDict = new Map()
     data.forEach((list, year) => {
@@ -15,7 +15,8 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
             top: 10,
             bottom: 50,
             right: 10,
-            left: 100
+            left: 100,
+            barHeight: (.6 * width_percentage * container.clientWidth) / (15*4)
         }
     };
 
@@ -74,7 +75,7 @@ d3.csv("data/combined_data/combined.csv").then(function(dataset){
         .attr("x", dims.margin.left)
         .attr("y", d => yScale(d["year"]))
         .attr("width", d => xScale(+d["school"]))
-        .attr("height", yScale.bandwidth() - 10)
+        .attr("height", yScale.bandwidth() - dims.margin.barHeight)
         .attr("fill", barFill)
         .attr("stroke", "black")
         .attr("stroke-width", 0)

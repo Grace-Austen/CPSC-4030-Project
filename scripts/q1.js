@@ -1,50 +1,54 @@
-
-window.dataset.then((dataset) => {
+d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
     d3.json("data/map.json").then(function(mapdata) {
 
         //get relevant elements
         var svg = d3.select("#q1-viz")
         var container = document.getElementById("q1-viz-table")
 
-        var width_percentage = 0.5
-
-        //svg dimensions
-        var dimensions = {
-            width: width_percentage * container.clientWidth,
-            height: .6 * width_percentage * container.clientWidth,
-            margin: {
-                top: 10,
-                bottom: 100,
-                right: 10,
-                left: 10,
-                legend: .5 * width_percentage * container.clientWidth 
-            }
-        }
-
         //drawing style
         var colormap = d3.interpolateGreens
-        var earthColor = "lightblue"
+        var earthColor = "darkblue"
         var lineColor = "grey"
         var graticuleStroke = 1
         var countryStroke = .75
         var countrySelectLineColor = "dimgrey"
         var countryFontSize = 30
 
+        var width_percentage = 0.5
+
+        //svg dimensions
+        var dimensions = {
+            width: width_percentage * container.clientWidth,
+            height: .6 * width_percentage * container.clientWidth + 15 + countryFontSize,
+            margin: {
+                top: 10,
+                bottom: 50 + countryFontSize,
+                right: 10,
+                left: 10,
+                legend: .5 * width_percentage * container.clientWidth 
+            }
+        }
+
         //set svg width and height
         svg.attr("height", dimensions.height)
            .attr("width", dimensions.width)
 
-        //data manip 2
         var data = d3.group(dataset, d => d["Period"])
         var yearsDict = new Map()
         data.forEach((list, year) => {
-            yearsDict.set(year, d3.rollup(list, v => d3.mean(v, d => d["SchoolYears"]), d => d["Country"]))
+            var innerDict = new Map()
+            for (var country of list) {
+                innerDict.set(country["Country"], country)
+            }
+            yearsDict.set(year, innerDict)
         })
+        console.log(yearsDict)
 
         window.q1dict = yearsDict
 
-        //colorscale and education accessor
-        var educationAccessor = function(dict) {return dict.get(window.selectedPeriod).values()}
+        // //colorscale and education accessor
+        var educationAccessor = function(dict) {return dict.get(window.selectedPeriod)}
+        var countryAccessor = d => d["properties"].ADMIN
         var colorScale = d3.scaleSequential(colormap)
                             .domain(d3.extent(dataset, d => d["SchoolYears"]))
 
@@ -76,28 +80,46 @@ window.dataset.then((dataset) => {
                            .append("path")
                            .attr("class", "country")
                            .attr("d", d => pathGenerator(d))
-                           .attr("stroke", lineColor)
+                           .attr("stroke", d => {
+                                            var countryInfo = educationAccessor(yearsDict).get(countryAccessor(d))
+                                            if (countryInfo !== undefined) {
+                                                return window.continentColors[window.colorForCountry(countryInfo["Continent"])]
+                                            } else {
+                                                return countryStroke
+                                            }
+                            })
                            .attr("stroke-width", countryStroke)
                            .on("mouseover", function(){
-                                window.selectedCountry = d3.select(this)["_groups"][0][0]["__data__"]["properties"].ADMIN
-                                d3.select(this)
-                                  .attr("stroke", countrySelectLineColor)
-                                  .attr("stroke-width", window.selectStroke)
-                                  countrySelectedText.text("Country selected: " + window.selectedCountry)
-                                selectCountry()
-                                //console.log(d3.select(this))
+                                //window.selectedCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
+                                // d3.select(this)
+                                //   .attr("stroke-width", window.selectStroke)
+                                var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
+                                countrySelectedText.text("Country selected: " + thisCountry)
+                                selectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                             })
                             .on("mouseout", function(){
-                                window.selectedCountry = null
-                                d3.select(this)
-                                  .attr("stroke", lineColor)
-                                  .attr("stroke-width", countryStroke)
-                                countrySelectedText.text("Country selected: none")
-                                deselectCountry()
+                                // window.selectedCountry = null
+                                // d3.select(this)
+                                //   .attr("stroke-width", countryStroke)
+                                countrySelectedText.text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
+                                deselectCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                           })
+                           .on("click", function(){
+                                var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
+                                window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
+                                countrySelectedText.text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
+                                setCountry()
                            })
 
         //color in countries
-        countries.attr("fill", d => colorScale(yearsDict.get(window.selectedPeriod).get(d.properties.ADMIN)))
+        countries.attr("fill", d => {
+                            var countryInfo =  educationAccessor(yearsDict).get(countryAccessor(d));
+                            if(countryInfo !== undefined) {
+                                return colorScale(countryInfo["SchoolYears"])
+                            } else {
+                                return "black"
+                            }
+                        })
         
         //color legend
         var legend = d3.legendColor()

@@ -13,9 +13,6 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
         }
     }
 
-    var color = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"];    
-
-
     var svg = d3.select("#q3-viz")
                 .style("width", dimensions.width)
                 .style("height", dimensions.height)
@@ -47,7 +44,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("cx", d => xScale(xAccessor(d)))
                     .attr("cy", d => schoolScale(schoolAccessor(d)))
                     .attr("r", 0)
-                    .attr("fill", d => color[colorForCountry(d["Continent"])])
+                    .attr("fill", d => window.continentColors[colorForCountry(d["Continent"])])
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
     var fert_points = svg.append("g")
@@ -59,7 +56,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("class", "fertility_points")
                     .attr("cx", d => xScale(xAccessor(d)))
                     .attr("cy", d => fertScale(fertAccessor(d)))
-                    .attr("fill", d => color[colorForCountry(d["Continent"])])
+                    .attr("fill", d => window.continentColors[colorForCountry(d["Continent"])])
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
 
@@ -102,17 +99,3 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                        .text("Fertility Rate")
 
 })
-
-
-function colorForCountry(currentContinent){
-    var index = 0
-    for(let continent of window.continents){
-        if(continent == currentContinent){
-            return index 
-        }
-        else{
-            index++
-        }
-        
-    }
-}
