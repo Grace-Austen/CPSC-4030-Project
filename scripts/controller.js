@@ -16,19 +16,22 @@ continent_color_dict = {
 
 window.dataset = d3.csv("data/combined_data/combined.csv")
 
-window.selectedPeriod = "2010-2015"
+periods = ["1950-1955", "1955-1960", "1960-1965", "1965-1970",
+           "1970-1975", "1975-1980", "1980-1985", "1985-1990",
+           "1990-1995", "1995-2000", "2000-2005", "2005-2010",
+           "2010-2015", "2015-2020"]
+
+currentPeriod = 0
+window.selectedPeriod = periods[0]
 window.selectedContinent = null
 window.selectedCountry = null
 window.playYears = true
 
 function selectPeriod(chosen_year_bar) {
-    ch_yr_old = d3.selectAll("#chosen_year")
-                  .attr("id", null)
+    currentPeriod = periods.findIndex(d => d === window.selectedPeriod)
+    ch_yr_old = d3.selectAll(".year_bar")
                   .attr("stroke-opacity", 1)
-                  .attr("stroke-width", 0)
-    chosen_year_bar.attr("stroke-width", window.selectStroke)
-                   .attr("id", "chosen_year")
-
+                  .attr("stroke-width", d => d["year"] === window.selectedPeriod ? window.selectStroke : 0)
 
     countries = d3.selectAll(".country")
                 .transition().duration(1000)
@@ -43,7 +46,7 @@ function selectPeriod(chosen_year_bar) {
 
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
-        set = d3.selectAll(pointset)
+        set = d3.selectAll(pointset).transition().duration(1000)
         set.attr("class", pointset.split(".")[1])
             .attr("r", d => {
                 if(d["Period"] === window.selectedPeriod){
@@ -284,8 +287,21 @@ function setContinent() { //really just want everything else to be opaque on hov
     }
 }
 
-function playThroughYears(){
-    while(window.playYears) {
+intervalVar = null
 
+function playThroughYears(){ //don't want mult intervals to be set at once
+    if(intervalVar === null){
+        intervalVar = window.setInterval(updateYear, 4000)
     }
+}
+function stopPlay(){ //don't want to break things if you pass in null
+    if(intervalVar !== null) {
+        window.clearInterval(intervalVar)
+    }
+}
+
+function updateYear(){
+    currentPeriod = (currentPeriod+1)%14
+    window.selectedPeriod = periods[currentPeriod]
+    selectPeriod()
 }
