@@ -222,9 +222,8 @@ function unhighlightContinent() { //really just want everything else to be opaqu
     //             .attr("stroke-width", window.selectStroke)
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
-        set = d3.selectAll(pointset)
-        set.filter(d => d["Period"] === window.selectedPeriod)
-            .style("opacity", d => {
+        set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
+        set.style("opacity", d => {
                 var thisContinent = d["Continent"]
                 if (window.selectedContinent === null) {
                     return 1
@@ -256,11 +255,11 @@ function setContinent() { //really just want everything else to be opaque on hov
     //             .attr("stroke-width", window.selectStroke)
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
-        set = d3.selectAll(pointset).transition().duration(500)
-        set.filter(d => d["Period"] === window.selectedPeriod)
+        set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
+        set.transition().duration(1000)
         .style("opacity", d => {
             var thisContinent = d["Continent"]
-            if (window.selectedContinent === null) {
+            if (window.selectedContinent === null || d["Country"] === window.selectedCountry) {
                 return 1
             } else {
                 return thisContinent === window.selectedContinent ? 1 : 0 
@@ -269,13 +268,15 @@ function setContinent() { //really just want everything else to be opaque on hov
         .attr("r", d => {
             var thisContinent = d["Continent"]
             if (window.selectedContinent === null) {
-                return window.circle_r
+                return d["Country"] === window.selectedCountry ? window.selectCircle_r : window.circle_r
             } else {
+                if(d["Country"] === window.selectedCountry) {
+                    return window.selectCircle_r
+                }
                 return thisContinent === window.selectedContinent ? window.circle_r : 0 
             }
         })
         set.filter(d => d["Country"] === window.selectedCountry)
-            .attr("r", window.selectCircle_r)
             .attr("stroke", "grey")
             .attr("stroke-width", 1)
             .style("opacity", 1)
