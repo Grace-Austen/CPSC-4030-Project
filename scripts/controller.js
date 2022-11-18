@@ -206,6 +206,12 @@ function highlightContinent(selectedContinent) { //really just want everything e
           .lower()
         set.filter(d => d["Continent"] === selectedContinent) //update radius of points for hover continent 
             .attr("r", window.circle_r)
+        set.filter(d => d["Country"] === window.selectedCountry)
+            .attr("r", window.selectCircle_r)
+            .attr("stroke", "grey")
+            .attr("stroke-width", 1)
+            .style("opacity", 1)
+            .raise()
     }
 }
 
@@ -234,6 +240,12 @@ function unhighlightContinent() { //really just want everything else to be opaqu
                     return thisContinent === window.selectedContinent ? window.circle_r : 0 
                 }
             })
+        set.filter(d => d["Country"] === window.selectedCountry)
+            .attr("r", window.selectCircle_r)
+            .attr("stroke", "grey")
+            .attr("stroke-width", 1)
+            .style("opacity", 1)
+            .raise()
     }
 }
 
@@ -262,6 +274,12 @@ function setContinent() { //really just want everything else to be opaque on hov
                 return thisContinent === window.selectedContinent ? window.circle_r : 0 
             }
         })
+        set.filter(d => d["Country"] === window.selectedCountry)
+            .attr("r", window.selectCircle_r)
+            .attr("stroke", "grey")
+            .attr("stroke-width", 1)
+            .style("opacity", 1)
+            .raise()
     }
 }
 
