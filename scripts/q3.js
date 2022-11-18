@@ -3,8 +3,8 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
     var svg = d3.select("#q3-viz")
 
     var dimensions = {
-        height: 250,
-        width: .95 * container.clientWidth,
+        width: window.width_percentage * container.clientWidth,
+        height: 1/4 * window.width_percentage * container.clientWidth,
         margin: {
             top: 10,
             bottom: 10 + window.xAxisFontSize,
@@ -116,7 +116,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                          .attr("text-anchor", "middle")
                          .attr("transform", `rotate(-90, ${dimensions.margin.left - window.yAxisFontSize*5}, ${dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)/4})`)
                          .attr("font-size", window.yAxisFontSize)
-                         .attr("x", dimensions.margin.left - yAxisFontSize*5)
+                         .attr("x", dimensions.margin.left - window.yAxisFontSize*5)
                          .attr("y", dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)/4)
                          .text("Average Years of School")
     var fertLabel = svg.append("g")
@@ -125,6 +125,6 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                        .attr("transform", `rotate(-90, ${dimensions.margin.left - window.yAxisFontSize*5}, ${dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)*(3/4)})`)
                        .attr("font-size", window.yAxisFontSize)
                        .attr("x", dimensions.margin.left - window.yAxisFontSize*5)
-                       .attr("y", dimensions.margin.top + (dimensions.height-dimensions.margin.bottom)*(3/4))
+                       .attr("y", dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)*(3/4))
                        .text("Fertility Rate")
 })

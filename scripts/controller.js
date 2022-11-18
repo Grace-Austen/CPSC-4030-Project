@@ -4,6 +4,8 @@ window.selectStroke = 3
 window.selectCircle_r = 6
 window.xAxisFontSize = 15
 window.yAxisFontSize = 10
+window.width_percentage = 1
+window.scatter_plot_ratio = .2 //5 wide, 1 tall
 
 continent_color_dict = {
     "Europe":"#ffffb3", //yellow
@@ -288,6 +290,17 @@ function setContinent() { //really just want everything else to be opaque on hov
 }
 
 intervalVar = null
+play_button = document.getElementById("play_button")
+
+play_button.onclick = function(){
+        if(intervalVar === null){
+            play_button.innerText = "Pause"
+            playThroughYears()
+        } else {
+            play_button.innerText = "Play"
+            stopPlay()
+        }
+    }
 
 function playThroughYears(){ //don't want mult intervals to be set at once
     if(intervalVar === null){
@@ -297,6 +310,7 @@ function playThroughYears(){ //don't want mult intervals to be set at once
 function stopPlay(){ //don't want to break things if you pass in null
     if(intervalVar !== null) {
         window.clearInterval(intervalVar)
+        intervalVar = null
     }
 }
 

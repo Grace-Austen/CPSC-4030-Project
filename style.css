@@ -15,13 +15,9 @@ a {
     text-decoration: none;
 }
 
-/*Viz stuff*/
-#main-viz {
-    background-color: black;
-    margin: 10px;
-    display: block;
+table {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 /*Credits*/
