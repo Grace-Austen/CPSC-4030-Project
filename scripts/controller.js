@@ -42,7 +42,7 @@ function selectPeriod(chosen_year_bar) {
                     if(countryInfo !== undefined) {
                         return window.q1colorscale(countryInfo["SchoolYears"])
                     } else {
-                        return "black"
+                        return "lightgrey"
                     }
                 }) 
 

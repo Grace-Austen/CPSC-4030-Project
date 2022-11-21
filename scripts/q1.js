@@ -7,10 +7,11 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
 
         //drawing style
         var colormap = d3.interpolateGreens
-        var earthColor = "darkblue"
+        var earthColor = "lightblue"
         var lineColor = "grey"
         var graticuleStroke = 1
         var countryStroke = .75
+        var countryStrokeColor = "lightgrey"
         var countryFontSize = .6 * window.width_percentage * container.clientWidth * .05
 
         //svg dimensions
@@ -64,7 +65,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         var graticule = svg.append("path")
                            .attr("id", "map-graticule")
                            .attr("d", pathGenerator(d3.geoGraticule10()))
-                           .attr("stroke", lineColor)
+                           .attr("stroke", countryStrokeColor)
                            .attr("stroke-width", graticuleStroke)
                            .attr("fill", "none")
 
@@ -76,14 +77,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .append("path")
                            .attr("class", "country")
                            .attr("d", d => pathGenerator(d))
-                           .attr("stroke", d => {
-                                            var countryInfo = educationAccessor(yearsDict).get(countryAccessor(d))
-                                            if (countryInfo !== undefined) {
-                                                return window.continent_color_dict[countryInfo["Continent"]]
-                                            } else {
-                                                return countryStroke
-                                            }
-                            })
+                           .attr("stroke", lineColor)
                            .attr("stroke-width", countryStroke)
                            .on("mouseover", function(){
                                 highlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
@@ -103,7 +97,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                             if(countryInfo !== undefined) {
                                 return colorScale(countryInfo["SchoolYears"])
                             } else {
-                                return "black"
+                                return "lightgrey"
                             }
                         })
         
