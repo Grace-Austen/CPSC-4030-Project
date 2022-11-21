@@ -14,3 +14,67 @@
     stroke-width: 1;
     fill: none;
 }
+
+/* Q3 styling */
+
+circle.baseline{
+    r: 0;
+    stroke-width: 0;
+    stroke: white;
+}
+
+/* correct period, nothing else selected */
+circle.period{
+    r: 3;
+    opacity: 1;
+    stroke-width: 0;
+}
+
+/* correct period, continent selected */
+circle.periodContinent{
+    r: 3;
+    opacity: 1;
+    stroke-width: 0;
+}
+
+/* correct period, continent selected dim */
+circle.periodContinentDim{
+    r: 3;
+    opacity: .5;
+    stroke-width: 0;
+}
+
+/* correct period, country selected */
+circle.periodSelect{
+    r: 6;
+    opacity: 1;
+    stroke-width: 3;
+}
+
+/* correct period, country selected, dim */
+circle.periodSelectDim{
+    r: 6;
+    opacity: 1;
+    stroke-width: 0;
+}
+
+
+
+.onPeriod.onContinent{
+    r: 3;
+    opacity: 1;
+}
+.onPeriod.dimContinent{ /*must at least be part of this period*/
+    r: 3;
+    opacity: .5;
+}
+
+.onPeriod.selectedPoint{ /*must at least be part of this period*/
+    r: 6;
+    stroke-width: 3;
+}
+
+.onPeriod.dimPoint{ /*must at least be part of this period*/
+    r: 6;
+    stroke-width: 0;
+}

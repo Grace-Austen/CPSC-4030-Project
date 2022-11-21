@@ -46,9 +46,23 @@ function selectPeriod(chosen_year_bar) {
                     }
                 }) 
 
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+    school_points = d3.selectAll(".school_points").transition().duration(1000)
+    school_points.attr("class", d => {
+        if(d["Period"] !== window.selectedPeriod) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        if(d["Country"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodSelect`
+        }
+        if(d["Continent"] === window.selectedContinent) {
+            return `${".school_points".split(".")[1]} periodContinent`
+        }
+        return `${".school_points".split(".")[1]} period`
+    })
+
+    points = [".q2-points", ".fertility_points", ".q4-circle"] //, ".school_points"
     for(var pointset of points) {
-        set = d3.selectAll(pointset).transition().duration(1000)
+        set = d3.selectAll(pointset)//.transition().duration(1000)
         set.attr("class", pointset.split(".")[1])
             .attr("r", d => {
                 if(d["Period"] === window.selectedPeriod){
@@ -62,7 +76,7 @@ function selectPeriod(chosen_year_bar) {
             .attr("stroke", "grey")
             .attr("stroke-width", 1)
             .attr("class", pointset.split(".")[1] + " selected_points")
-    }    
+    } 
     selectedPoints = d3.selectAll(".selected_points")
                       .raise()
     setContinent()
@@ -72,8 +86,26 @@ function highlightCountry(selectedCountry) {
     //change text
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${selectedCountry}`)
+                            
+    school_points = d3.selectAll(".school_points").transition().duration(1000)
+    school_points.attr("class", d => {
+        if(d["Period"] !== window.selectedPeriod) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        if(d["Country"] === selectedCountry) {
+            console.log("highlight", d)
+            return `${".school_points".split(".")[1]} periodSelect`
+        }
+        if(d["Country"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodSelectDim`
+        }
+        if(d["Continent"] === window.selectedContinent) {
+            return `${".school_points".split(".")[1]} periodContinent`
+        }
+        return `${".school_points".split(".")[1]} period`
+    })
 
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+    points = [".q2-points", ".fertility_points", ".q4-circle"] //, ".school_points"
     for(var pointset of points) {
         set = d3.selectAll(pointset)
         set.filter(d => d["Period"] === window.selectedPeriod)
@@ -105,8 +137,21 @@ function unhighlightCountry(selectedCountry) {
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
 
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
-    
+    school_points = d3.selectAll(".school_points").transition().duration(1000)
+    school_points.attr("class", d => {
+        if(d["Period"] !== window.selectedPeriod) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        if(d["Country"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodSelect`
+        }
+        if(d["Continent"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodContinent`
+        }
+        return `${".school_points".split(".")[1]} period`
+    })
+
+    points = [".q2-points", ".fertility_points", ".q4-circle"] //, ".school_points"    
     //make selected country normal and lower it
     if(selectedCountry !== window.selectedCountry){
         for(var pointset of points) {
@@ -139,8 +184,22 @@ function unhighlightCountry(selectedCountry) {
 function selectCountry(){
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
-    
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+
+    school_points = d3.selectAll(".school_points").transition().duration(1000)
+    school_points.attr("class", d => {
+        if(d["Period"] !== window.selectedPeriod) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        if(d["Country"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodSelect`
+        }
+        if(d["Continent"] === window.selectedContinent) {
+            return `${".school_points".split(".")[1]} periodContinent`
+        }
+        return `${".school_points".split(".")[1]} period`
+    })    
+
+    points = [".q2-points", ".fertility_points", ".q4-circle"] //, ".school_points"
 
     //reset all the things
     for(var pointset of points) {
@@ -175,7 +234,53 @@ function selectCountry(){
 
 function highlightContinent(selectedContinent) { //really just want everything else to be opaque on hover
     //highlight new point
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+    school_points = d3.selectAll(".school_points").transition().duration(1000)
+    school_points.attr("class", d => {
+        if(d["Period"] !== window.selectedPeriod) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        if(d["Country"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodSelect`
+        }
+        if(d["Continent"] === selectedContinent) {
+            console.log("highlight cont", d)
+            return `${".school_points".split(".")[1]} periodContinent`
+        }
+        if(d["Continent"] === window.selectedContinent) {
+            return `${".school_points".split(".")[1]} periodContinentDim`
+        }
+        if(window.selectedContinent !== null) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        return `${".school_points".split(".")[1]} periodContinentDim`
+    })
+    // school_points = d3.selectAll(".school_points")
+    // school_points.classed("onContinent", d => d["Continent"] === selectedContinent)
+    //              .classed("dimContinent", d => d["Continent"] === window.selectedContinent)
+    // school_points.attr("class", d => {
+    //     var old_classes = school_points.attr("class").split(" ")
+    //     var new_classes = [".school_points".split(".")[1]]
+    //     if(d["Continent"] === selectedContinent) { //only add correct points
+    //         new_classes.push("onContinent")
+    //     }
+
+    //     for(var c of old_classes) {
+    //         switch(c){
+    //             case "onPeriod":
+    //             case "selectedPoint":
+    //                 new_classes.push(c); //want to keep this
+    //                 break;
+    //             case "onContinent":
+    //                 new_classes.push("dimContinent"); //selected should go "dim", won't worry about selected points individually, they should always be highlighted
+    //                 break;
+    //             default:
+    //                 continue; //don't want to add period or country
+    //         }
+    //     }
+    //     console.log(new_classes); return new_classes.join(" ") //return all the classes we want
+    // })
+
+    points = [".q2-points", ".fertility_points", ".q4-circle"] //, ".school_points"
     for(var pointset of points) { //translucent relevant points
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
         set.style("opacity", d => {
@@ -205,7 +310,46 @@ function highlightContinent(selectedContinent) { //really just want everything e
 
 function unhighlightContinent() { //really just want everything else to be opaque on hover
     //highlight new point
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+    school_points = d3.selectAll(".school_points").transition().duration(1000)
+    school_points.attr("class", d => {
+        if(d["Period"] !== window.selectedPeriod) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        if(d["Country"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodSelect`
+        }
+        if(d["Continent"] === window.selectedContinent) {
+            return `${".school_points".split(".")[1]} periodContinent`
+        }
+        if(window.selectedContinent !== null) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        return `${".school_points".split(".")[1]} period`
+    })
+    // school_points = d3.selectAll(".school_points")
+    // school_points.classed("onContinent", d => d["Continent"] === window.selectedContinent)
+    //              .classed("dimContinent", false)
+    // school_points.attr("class", d => {
+    //     var old_classes = school_points.attr("class").split(" ")
+    //     var new_classes = [".school_points".split(".")[1]]
+    //     if(d["Continent"] === window.selectedContinent) { //only add correct points
+    //         new_classes.push("onContinent")
+    //     }
+
+    //     for(var c of old_classes) {
+    //         switch(c){
+    //             case "onPeriod":
+    //             case "selectedPoint":
+    //                 new_classes.push(c); //want to keep this
+    //                 break;
+    //             default:
+    //                 continue; //don't want to add continent or dim continent
+    //         }
+    //     }
+    //     console.log(new_classes); return new_classes.join(" ") //return all the classes we want
+    // })
+
+    points = [".q2-points", ".fertility_points", ".q4-circle"] //, ".school_points"
     for(var pointset of points) {
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
         set.style("opacity", d => {
@@ -235,10 +379,46 @@ function unhighlightContinent() { //really just want everything else to be opaqu
 
 function setContinent() { //really just want everything else to be opaque on hover
     //highlight new point
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+    school_points = d3.selectAll(".school_points").transition().duration(1000)
+    school_points.attr("class", d => {
+        if(d["Period"] !== window.selectedPeriod) {
+            return `${".school_points".split(".")[1]} baseline`
+        }
+        if(d["Country"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodSelect`
+        }
+        if(d["Continent"] === window.selectedCountry) {
+            return `${".school_points".split(".")[1]} periodContinent`
+        }
+        return `${".school_points".split(".")[1]} period`
+    })
+    // school_points = d3.selectAll(".school_points")
+    // school_points.classed("onContinent", d => d["Continent"] === window.selectedContinent)
+    //              .classed("dimContinent", false)
+    // school_points.attr("class", d => {
+    //     var old_classes = school_points.attr("class").split(" ")
+    //     var new_classes = [".school_points".split(".")[1]]
+    //     if(d["Continent"] === selectedContinent) { //only add correct points
+    //         new_classes.push("onContinent")
+    //     }
+
+    //     for(var c of old_classes) {
+    //         switch(c){
+    //             case "onPeriod":
+    //             case "selectedPoint":
+    //                 new_classes.push(c); //want to keep this
+    //                 break;
+    //             default:
+    //                 continue; //don't want to add period or country
+    //         }
+    //     }
+    //     console.log(new_classes); return new_classes.join(" ") //return all the classes we want
+    // })
+
+    points = [".q2-points", ".fertility_points", ".q4-circle"] //, ".school_points"
     for(var pointset of points) {
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
-        set.transition().duration(1000)
+        set//.transition().duration(1000)
         .style("opacity", d => {
             var thisContinent = d["Continent"]
             if (window.selectedContinent === null || d["Country"] === window.selectedCountry) {
