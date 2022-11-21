@@ -1,0 +1,16 @@
+/* Q1 country style */
+
+.country{
+    stroke: lightgrey;
+    stroke-width: .75;
+}
+
+#map-background{
+    fill: lightblue;
+}
+
+#map-graticule{
+    stroke: lightslategrey;
+    stroke-width: 1;
+    fill: none;
+}

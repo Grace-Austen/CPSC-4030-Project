@@ -60,14 +60,10 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         var earth = svg.append("path")
                        .attr("id", "map-background")
                        .attr("d", pathGenerator({type: "Sphere"}))
-                       .attr("fill", earthColor)
         //long/lat lines
         var graticule = svg.append("path")
                            .attr("id", "map-graticule")
                            .attr("d", pathGenerator(d3.geoGraticule10()))
-                           .attr("stroke", countryStrokeColor)
-                           .attr("stroke-width", graticuleStroke)
-                           .attr("fill", "none")
 
         //draw in countries
         var countries = svg.append("g")
@@ -77,8 +73,6 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .append("path")
                            .attr("class", "country")
                            .attr("d", d => pathGenerator(d))
-                           .attr("stroke", lineColor)
-                           .attr("stroke-width", countryStroke)
                            .on("mouseover", function(){
                                 highlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                             })

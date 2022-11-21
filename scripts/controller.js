@@ -73,11 +73,6 @@ function highlightCountry(selectedCountry) {
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${selectedCountry}`)
 
-    //highlight new point
-    countries = d3.selectAll(".country")
-                .filter(d => d.properties.ADMIN === selectedCountry)
-                .attr("stroke-width", window.selectStroke)
-
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
         set = d3.selectAll(pointset)
@@ -114,9 +109,6 @@ function unhighlightCountry(selectedCountry) {
     
     //make selected country normal and lower it
     if(selectedCountry !== window.selectedCountry){
-        countries = d3.selectAll(".country")
-                    .filter(d => d.properties.ADMIN === selectedCountry)
-                    .attr("stroke-width", .75)
         for(var pointset of points) {
             set = d3.selectAll(pointset)
             set.filter(d => d["Period"] === window.selectedPeriod)
@@ -135,9 +127,6 @@ function unhighlightCountry(selectedCountry) {
     }
 
     //bring opacity back of selected country and raise it
-    countries = d3.selectAll(".country")
-                .filter(d => d.properties.ADMIN === window.selectedCountry)
-                .attr("stroke-opacity", 1)
     for(var pointset of points) {
         set = d3.selectAll(pointset)
         set.filter(d => d["Period"] === window.selectedPeriod)
@@ -150,13 +139,10 @@ function unhighlightCountry(selectedCountry) {
 function selectCountry(){
     countrySelectedText = d3.select("#countrySelectedText")
                             .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
-
-    var countries = d3.selectAll(".country")
     
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
 
     //reset all the things
-    countries.attr("stroke-width", .75)
     for(var pointset of points) {
         set = d3.selectAll(pointset)
         set.filter(d => d["Period"] === window.selectedPeriod)
@@ -189,9 +175,6 @@ function selectCountry(){
 
 function highlightContinent(selectedContinent) { //really just want everything else to be opaque on hover
     //highlight new point
-    // countries = d3.selectAll(".country")
-    //             .filter(d => d.properties.ADMIN === selectedCountry)
-    //             .attr("stroke-width", window.selectStroke)
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) { //translucent relevant points
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
@@ -222,9 +205,6 @@ function highlightContinent(selectedContinent) { //really just want everything e
 
 function unhighlightContinent() { //really just want everything else to be opaque on hover
     //highlight new point
-    // countries = d3.selectAll(".country")
-    //             .filter(d => d.properties.ADMIN === selectedCountry)
-    //             .attr("stroke-width", window.selectStroke)
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
@@ -255,9 +235,6 @@ function unhighlightContinent() { //really just want everything else to be opaqu
 
 function setContinent() { //really just want everything else to be opaque on hover
     //highlight new point
-    // countries = d3.selectAll(".country")
-    //             .filter(d => d.properties.ADMIN === selectedCountry)
-    //             .attr("stroke-width", window.selectStroke)
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
