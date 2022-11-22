@@ -17,7 +17,17 @@ a {
 
 table {
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+}
+
+#play_button{
+    border-color:aliceblue;
+    border-radius: 15%;
+}
+
+#year-container{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Credits*/
@@ -30,9 +40,5 @@ footer {
     font-size: small;
 }
 
-#play_button{
-    border-color:aliceblue;
-    border-radius: 15%;
-}
 
 

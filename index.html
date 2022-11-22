@@ -14,40 +14,38 @@
       How Education Impacts Opportunity
     </h1>
     <table style="width:90%">
-      <tr>
-        <td rowspan="3" style="width:30%"> <!--Map and year viz-->
-          <table style="width:100%">
-            <tr> <!--Map viz-->
-              <td id="newMapContainer" style="width:100%">
-                <svg id="newMap"></svg>
-              </td>
-            </tr>
-            <tr> <!--Map viz-->
-              <td id="q1-container" style="width:100%">
+      <tr style="width:100%">
+        <td rowspan="3" style="width:15%" id="q4-container">
+          <svg id="q4-viz"></svg>
+        </td>
+        <td style="max-width:30%">
+          <table style="width:30%">
+            <tr>
+              <td id="q1-container" width="50%">
                 <svg id="q1-viz"></svg>
               </td>
-            </tr>
-            <tr> <!--Year viz-->
-              <td id="year-container" style="width:100%">
-                <svg id="year"></svg>
-                <br>
-                <button id="play_button">Pause</button>
+              <td id="newMapContainer" width="50%">
+                <svg id="newMap"></svg>
               </td>
             </tr>
           </table>
         </td>
-        <td id="q2-container" style="width:70%"> <!--Q2-->
-          <svg id="q2-viz"></svg> 
+        <td rowspan="3" style="width:15%" id="q2-container">
+          <svg id="q2-viz"></svg>
         </td>
       </tr>
-      <tr> <!--Q3-->
+      <tr style="width:100%">
         <td id="q3-container" style="width:70%">
-          <svg id="q3-viz"></svg> 
+          <svg id="q3-viz"></svg>
         </td>
+        <td></td>
       </tr>
-      <tr> <!--Q4-->
-        <td id="q4-container" style="width:70%">
-          <svg id="q4-viz"></svg> 
+      <tr style="width:100%">
+        <td>
+          <div id="year-container" style="max-width:50%">
+            <svg id="year"></svg>
+          </div>
+          <button id="play_button">Pause</button>
         </td>
       </tr>
     </table>

@@ -13,7 +13,6 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         var countryStroke = .75
         var countryStrokeColor = "lightgrey"
         var countryFontSize = .6 * window.width_percentage * container.clientWidth * .05
-
         //svg dimensions
         var dimensions = {
             width: window.width_percentage * container.clientWidth,
@@ -26,6 +25,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                 legend: .5 * window.width_percentage * container.clientWidth 
             }
         }
+        console.log(dimensions.width)
 
         //set svg width and height
         svg.attr("height", dimensions.height)
