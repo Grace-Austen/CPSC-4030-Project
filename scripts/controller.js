@@ -294,21 +294,21 @@ play_button = document.getElementById("play_button")
 
 play_button.onclick = function(){
         if(intervalVar === null){
-            play_button.innerText = "Pause"
             playThroughYears()
         } else {
-            play_button.innerText = "Play"
             stopPlay()
         }
     }
 
 function playThroughYears(){ //don't want mult intervals to be set at once
     if(intervalVar === null){
-        intervalVar = window.setInterval(updateYear, 4000)
+        play_button.innerText = "Pause"
+        intervalVar = window.setInterval(updateYear, 1500)
     }
 }
 function stopPlay(){ //don't want to break things if you pass in null
     if(intervalVar !== null) {
+        play_button.innerText = "Play"
         window.clearInterval(intervalVar)
         intervalVar = null
     }

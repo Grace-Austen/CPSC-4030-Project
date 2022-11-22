@@ -6,7 +6,7 @@
 
 /*Main body*/
 body {
-    background-color: beige;
+    background-color: slategrey;
     text-align: center;
 }
 
@@ -28,6 +28,11 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: small;
+}
+
+#play_button{
+    border-color:aliceblue;
+    border-radius: 15%;
 }
 
 
