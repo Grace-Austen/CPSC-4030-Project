@@ -12,14 +12,14 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
         var graticuleStroke = 1
         var countryStroke = .75
         var countryStrokeColor = "lightgrey"
-        var countryFontSize = .6 * window.width_percentage * container.clientWidth * .05
+        var fontSize = .6 * window.width_percentage * container.clientWidth * .05
         //svg dimensions
         var dimensions = {
             width: window.width_percentage * container.clientWidth,
-            height: .6 * window.width_percentage * container.clientWidth + 2*countryFontSize,
+            height: .6 * window.width_percentage * container.clientWidth + 1.5*window.xAxisFontSize,
             margin: {
                 top: 10,
-                bottom: 50 + countryFontSize,
+                bottom: 50 + window.xAxisFontSize,
                 right: 10,
                 left: 10,
                 legend: .5 * window.width_percentage * container.clientWidth 
@@ -110,24 +110,33 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
            .style("transform", `translateY(${dimensions.margin.legend}px)`)
            .call(legend)
         var legendSwatches = d3.selectAll(".swatch")
-        legendSwatches.attr("height", countryFontSize)
+        legendSwatches.attr("height", fontSize)
         var legendLabels = d3.selectAll(".label")
-                            .attr("font-size", countryFontSize)
+                            .attr("font-size", fontSize)
         legendLabels = document.getElementsByClassName("label")
         for (var item of legendLabels){
-            var ytrans = item.attributes.transform.value.split("(")[1].split(",")[1].split(")")[0] - (countryFontSize)
-            var newtrans = item.attributes.transform.value.split(",")[0] + "," + 2*countryFontSize + ")"
+            var ytrans = item.attributes.transform.value.split("(")[1].split(",")[1].split(")")[0] - (fontSize)
+            var newtrans = item.attributes.transform.value.split(",")[0] + "," + 2*fontSize + ")"
             item.attributes.transform.value = newtrans
         }
 
         //country selected
-        var countrySelectedText = svg.append("text")
-                                    .attr("id", "countrySelectedText")
+        var legendLabel = svg.append("text")
+                                    .attr("id", "q1-legend-label")
                                     .attr("text-anchor", "middle")
-                                    .attr("font-size", countryFontSize)
+                                    .attr("font-size", window.xAxisFontSize)
                                     .attr("x", (dimensions.width/2))
-                                    .attr("y", dimensions.height - countryFontSize)
-                                    .text("Country selected: none")
+                                    .attr("y", dimensions.height - window.xAxisFontSize)
+                                    .text("Mean Years of Schooling")
+
+        // //country selected
+        // var countrySelectedText = svg.append("text")
+        //                             .attr("id", "countrySelectedText")
+        //                             .attr("text-anchor", "middle")
+        //                             .attr("font-size", window.xAxisFontSize)
+        //                             .attr("x", (dimensions.width/2))
+        //                             .attr("y", dimensions.height - window.xAxisFontSize)
+        //                             .text("Country selected: none")
 
     })
 })

@@ -4,7 +4,7 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
 
     var barFill = "darkgrey"
 
-    var width_percentage = 0.95
+    var width_percentage = 1
     var dims = {
         width: width_percentage * container.clientWidth,
         height: .4 * width_percentage * container.clientWidth,
@@ -107,4 +107,40 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
                          .attr("x", dims.margin.left - 7.5*window.yAxisFontSize)
                          .attr("y", dims.margin.top + (dims.height-dims.margin.top-dims.margin.bottom)/2)
                          .text("Time Period")
+
+    var buttonDims = {
+        height: window.xAxisFontSize,
+        width: 100,
+        x: dims.width-100,
+        y: 0,
+        margin: 10
+    }
+
+    var button = svg.append("g")
+                    .style("transform", `translate(${buttonDims.x}px)`)
+                    .attr("id", "play_button")
+                    .on("click", function(){
+                        if(window.intervalVar === null){
+                            playThroughYears()
+                        } else {
+                            stopPlay()
+                        }
+                    })
+    button.append("rect")
+    .attr("width", buttonDims.width)
+    .attr("height", buttonDims.height+buttonDims.margin)
+    .attr("fill", "grey")
+    .attr("rx", "5px")
+    .attr("stroke", "aliceblue")
+    .attr("stroke-width", 1)
+
+    button.append("text")
+    .attr("id", "play_button_text")
+    .attr("x", buttonDims.width/2)
+    .attr("y", buttonDims.height/2+buttonDims.margin)
+    .attr("text-anchor", "middle")
+    .attr("font-size", window.xAxisFontSize)
+    .text("Pause")
+                    
+                    
 })

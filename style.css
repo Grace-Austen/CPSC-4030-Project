@@ -20,15 +20,46 @@ table {
     margin-right: auto;
 }
 
-#play_button{
-    border-color:aliceblue;
-    border-radius: 15%;
+#newMapContainer{
+    max-width: 100px;
 }
 
 #year-container{
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    min-width: 50%;
+    max-width: 60%;
 }
+
+#selector-container{
+    width: 100%;
+    min-width: 70%;
+    max-width: 80%;
+}
+
+#q1-container{
+    width: 100%;
+    min-width: 20%;
+    max-width: 30%;
+}
+
+#q2-container{
+    width: 100%;
+    min-width: 7.5%;
+    max-width: 10%;
+}
+
+#q3-container{
+    width: 100%;
+    min-width: 80%;
+    max-width: 85%;
+}
+
+#q4-container{
+    width: 100%;
+    min-width: 7.5%;
+    max-width: 10%;
+}
+
 
 /*Credits*/
 footer {

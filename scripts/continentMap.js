@@ -1,26 +1,21 @@
 d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
     d3.json("data/map.json").then(function(mapdata) {
-
-        //get relevant elements
-        var svg = d3.select("#newMap")
-        var container = document.getElementById("newMapContainer")
+        //going to be drawn inside q3 svg
+        var svg = d3.select("#q3-viz")
 
         //drawing style
-        var width_percentage = .75
-        var colormap = d3.interpolateGreens
         var countryStroke = .75
-
+        var width = 200
 
         //svg dimensions
         var dimensions = {
-            width: width_percentage * container.clientWidth,
-            height: .45 * width_percentage * container.clientWidth,
+            width: width,
+            height: .45 * width,
             margin: {
                 top: 10,
                 bottom: 50,
                 right: 10,
                 left: 10,
-                legend: .5 * width_percentage * container.clientWidth 
             }
         }
 
@@ -51,6 +46,10 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
 
         //draw in countries
         var countries = svg.append("g")
+                           .attr("class", "continent_map_group")
+                        //    .style("transform", `translateX(${window.q3_dims.margin.left}px)`)
+                        //    .style("transform", `translateY(${window.q3_dims.margin.top}px)`)
+                           .style("transform", `translate(${window.q3_dims.margin.left}px, ${window.q3_dims.margin.top}px)`)
                            .selectAll(".continent_countries")
                            .data(mapdata.features)
                            .enter()
