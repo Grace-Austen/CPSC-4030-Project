@@ -71,8 +71,8 @@ function selectPeriod(chosen_year_bar) {
 
 function highlightCountry(selectedCountry) {
     //change text
-    countrySelectedText = d3.select("#countrySelectedText")
-                            .text(`Country selected: ${selectedCountry}`)
+    // countrySelectedText = d3.select("#countrySelectedText")
+    //                         .text(`Country selected: ${selectedCountry}`)
 
     //highlight new point
     countries = d3.selectAll(".country")
@@ -108,8 +108,8 @@ function highlightCountry(selectedCountry) {
 
 function unhighlightCountry(selectedCountry) {
     //changing selected country text
-    countrySelectedText = d3.select("#countrySelectedText")
-                            .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
+    // countrySelectedText = d3.select("#countrySelectedText")
+    //                         .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
 
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     
@@ -149,8 +149,8 @@ function unhighlightCountry(selectedCountry) {
 }
 
 function selectCountry(){
-    countrySelectedText = d3.select("#countrySelectedText")
-                            .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
+    // countrySelectedText = d3.select("#countrySelectedText")
+    //                         .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
 
     var countries = d3.selectAll(".country")
     
@@ -290,28 +290,22 @@ function setContinent() { //really just want everything else to be opaque on hov
     }
 }
 
-intervalVar = null
-play_button = document.getElementById("play_button")
-
-play_button.onclick = function(){
-        if(intervalVar === null){
-            playThroughYears()
-        } else {
-            stopPlay()
-        }
-    }
+window.intervalVar = null
 
 function playThroughYears(){ //don't want mult intervals to be set at once
-    if(intervalVar === null){
-        play_button.innerText = "Pause"
-        intervalVar = window.setInterval(updateYear, 1500)
+    if(window.intervalVar === null){
+        play_button = d3.select("#play_button_text")
+        play_button.text("Pause")
+        window.intervalVar = window.setInterval(updateYear, 1500)
+        updateYear()
     }
 }
 function stopPlay(){ //don't want to break things if you pass in null
-    if(intervalVar !== null) {
-        play_button.innerText = "Play"
-        window.clearInterval(intervalVar)
-        intervalVar = null
+    if(window.intervalVar !== null) {
+        play_button = d3.select("#play_button_text")
+        play_button.text("Play")
+        window.clearInterval(window.intervalVar)
+        window.intervalVar = null
     }
 }
 
