@@ -13,6 +13,8 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
         }
     }
 
+    window.q3_dims = dimensions
+
     svg
         .style("width", dimensions.width)
         .style("height", dimensions.height)
