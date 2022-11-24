@@ -119,10 +119,7 @@ function selectPeriod(chosen_year_bar) {
                         }
                         
                     }
-                }
-                
-                
-                
+                }              
             })
         set.filter(d => {
             scountry = d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry
@@ -154,13 +151,11 @@ function highlightCountry(selectedCountry) {
     }
 
     q3_lines = d3.selectAll(".q3-lines")
-                .filter(d => d["Period"] === window.selectedPeriod)
-                .filter(d => d["Country"] === selectedCountry)
-                .style("stroke-opacity", 1)
-                .style("opacity", 1)
-                .attr("stroke-width", window.selectStroke)
-                .attr("stroke", "white")
-                .raise()
+                 .filter(d => d["Period"] === window.selectedPeriod)
+                 .filter(d => d["Country"] === selectedCountry)
+                 .attr("stroke", window.selectStroke)
+                 .attr("stroke-width", 1)
+                 .raise()
 
     //remove old point stroke/make country and line stroke translucent
     if(selectedCountry !== window.selectedCountry){
@@ -177,7 +172,7 @@ function highlightCountry(selectedCountry) {
         q3_lines = d3.selectAll(".q3-lines")
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .filter(d => d["Country"] === window.selectedCountry)
-                    .attr("stroke-opacity", 0.25)      
+                    .attr("stroke-width", 0)      
     }
 }
 
@@ -203,15 +198,7 @@ function unhighlightCountry(selectedCountry) {
         q3_lines = d3.selectAll(".q3-lines")
                 .filter(d => d["Period"] === window.selectedPeriod)
                 .filter(d => d["Country"] === selectedCountry)
-                .style("stroke-opacity", d => {
-                    currentContinent = d["Continent"]
-                    if(window.selectedContinent === null) {
-                        return 1
-                    } else {
-                        return currentContinent === window.selectedContinent ? 1 : 0
-                    }
-                })
-                .attr("stroke-width", 1)
+                .attr("stroke-width", d => {console.log(d); return 0})
     } 
 
     //bring opacity back of selected country and raise it
@@ -229,7 +216,8 @@ function unhighlightCountry(selectedCountry) {
     q3_lines = d3.selectAll(".q3-lines")
                 .filter(d => d["Period"] === window.selectedPeriod)
                 .filter(d => d["Country"] === window.selectedCountry)
-                .style("opacity", 1)
+                .attr("stroke-width", d=> {console.log(d); return 1})
+                .raise()
 }
 
 function selectCountry(){
@@ -239,7 +227,6 @@ function selectCountry(){
     var countries = d3.selectAll(".country")
     
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
-
     //reset all the things
     countries.attr("stroke-width", .75)
     for(var pointset of points) {
@@ -257,15 +244,14 @@ function selectCountry(){
     }
     q3_lines = d3.selectAll(".q3-lines")
                 .filter(d => d["Period"] === window.selectedPeriod)
+                .attr("stroke-width", 0)
                 .style("opacity", d => {
                     currentContinent = d["Continent"]
                     if(window.selectedContinent === null) {
                         return 1
                     } else {
-                        return currentContinent === window.selectedContinent ? 1 : 0
-                    }
+                        return currentContinent === window.selectedContinent ? 1 : 0}
                 })
-                .attr("stroke-width", 1)
 
     if (window.selectedCountry !== null) { //highlight relevant stuff
         countries.filter(d => d.properties.ADMIN == window.selectedCountry)
@@ -283,8 +269,7 @@ function selectCountry(){
         q3_lines = d3.selectAll(".q3-lines")
                 .filter(d => d["Period"] === window.selectedPeriod)
                 .filter(d => d["Country"] === window.selectedCountry)
-                .attr("stroke-width", window.selectStroke)
-                .style("stroke-opacity", 1)
+                .attr("stroke-width", 1)
                 .raise()
     }
 }
@@ -311,7 +296,7 @@ function highlightContinent(selectedContinent) { //really just want everything e
             }
         })
         .filter(d => d["Continent"] !== selectedContinent)
-          .lower()
+            .lower()
         set.filter(d => d["Continent"] === selectedContinent) //update radius of points for hover continent 
             .attr("r", window.circle_r)
         set.filter(d => d["Country"] === window.selectedCountry)

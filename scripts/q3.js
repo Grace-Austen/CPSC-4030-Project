@@ -5,6 +5,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
     var dimensions = {
         width: window.width_percentage * container.clientWidth,
         height: 1/4 * window.width_percentage * container.clientWidth,
+        lineWidth: 3,
         margin: {
             top: 10,
             bottom: 10 + window.xAxisFontSize,
@@ -40,15 +41,13 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .enter()
                     .append("rect")
                     .attr("class", "q3-lines")
-                    .attr("x", d => xScale(xAccessor(d))-.5)
+                    .attr("x", d => xScale(xAccessor(d))-dimensions.lineWidth/2)
                     .attr("y", d => schoolScale(schoolAccessor(d)))
                     .attr("height", d => fertScale(fertAccessor(d)) - schoolScale(schoolAccessor(d)))
                     .style("fill", d => window.continent_color_dict[d["Continent"]])
-                    .attr("stroke", d => window.continent_color_dict[d["Continent"]])
-                    .attr("stroke-width", 1)
                     .attr("width", 0)
                     .filter(d => d["Period"] === window.selectedPeriod)
-                    .attr("width", 1)
+                    .attr("width", dimensions.lineWidth)
 
     var school_points = svg.append("g")
                     .attr("id", "school_group")
