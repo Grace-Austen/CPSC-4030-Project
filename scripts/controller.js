@@ -26,7 +26,9 @@ periods = ["1950-1955", "1955-1960", "1960-1965", "1965-1970",
 
 currentPeriod = 0
 window.selectedPeriod = periods[0]
+window.hoverContinent = null
 window.selectedContinent = null
+window.hoverCountry = null
 window.selectedCountry = null
 window.playYears = true
 
@@ -49,36 +51,92 @@ function selectPeriod(chosen_year_bar) {
 
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
-        set = d3.selectAll(pointset).transition().duration(1000)
-        set.attr("class", pointset.split(".")[1])
+        set = d3.selectAll(pointset)
+        set_trainsitionable = set.transition().duration(1000)
+        set_trainsitionable
             .attr("r", d => {
-                if(d["Period"] === window.selectedPeriod){
-                    return d["Country"] === window.selectedCountry ? window.selectCircle_r : window.circle_r
-                } else {
+                if(d["Period"] !== window.selectedPeriod){
                     return 0
+                } else if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry){
+                    return window.selectCircle_r
+                } else {
+                    if(window.selectedContinent !== null) {
+                        if(d["Continent"] === window.selectedContinent || d["Continent"] === window.hoverContinent) {
+                            return window.circle_r
+                        } else {
+                            return 0
+                        }
+                    }
+                    return window.circle_r
                 }
             })
-            .attr("stroke-width", 0)
-            .filter(d => d["Country"] === window.selectedCountry)
-            .attr("stroke", window.selectStroke)
-            .attr("stroke-width", 1)
-            .attr("class", pointset.split(".")[1] + " selected_points")
-    }
-    q3_lines = d3.selectAll(".q3-lines").transition().duration(1000)
-                .attr("width", d => d["Period"] === window.selectedPeriod ? 1 : 0)
-                .filter(d => d["Country"] === window.selectedCountry)
-                .attr("stroke-width", window.selectStroke)
+            .style("opacity", d => {
+                if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry) {
+                    return 1
+                }
+                if(window.hoverContinent === null) {
+                    if(window.selectedContinent === null) {
+                        return 1
+                    } else {
+                        if(d["Continent"] === window.selectedContinent) {
+                            return 1
+                        } else {
+                            return 0.5
+                        }
+                    }
+                } else {
+                    if(d["Continent"] === window.hoverContinent) {
+                        return 1
+                    } else {
+                        return 0.5
+                    }
+                }
+            })
+            .attr("stroke", d => {
+                if(d["Period"] !== window.selectedPeriod){
+                    return null
+                } else if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry){
+                    return window.selectStroke
+                } else {
+                    return null
+                }
+            })
+            .attr("stroke-width", d => {
+                if(d["Period"] !== window.selectedPeriod){
+                    return 0
+                } else {
+                    if(window.hoverCountry === null) {
+                        if(d["Country"] === window.selectedCountry){
+                            return 1
+                        } else {
+                            return 0
+                        }
+                    } else {
+                        if(d["Country"] === window.hoverCountry){
+                            return 1
+                        } else {
+                            return 0
+                        }
+                        
+                    }
+                }
                 
-    selectedPoints = d3.selectAll(".selected_points")
-                      .raise()
-    setContinent()
+                
+                
+            })
+        set.filter(d => {
+            scountry = d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry
+            scontinent = d["Country"] === window.selectedContinent || d["Country"] === window.hoverContinent
+            return scountry || scontinent})
+           .raise()
+    }    
 }
 
 function highlightCountry(selectedCountry) {
     //change text
     // countrySelectedText = d3.select("#countrySelectedText")
     //                         .text(`Country selected: ${selectedCountry}`)
-
+    window.hoverCountry = selectedCountry
     //highlight new point
     countries = d3.selectAll(".country")
                 .filter(d => d.properties.ADMIN === selectedCountry)
@@ -127,10 +185,10 @@ function unhighlightCountry(selectedCountry) {
     //changing selected country text
     // countrySelectedText = d3.select("#countrySelectedText")
     //                         .text(`Country selected: ${window.selectedCountry === null ? "none" : window.selectedCountry}`)
+    window.hoverCountry = null
 
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
-    
-    //make selected country normal
+    //make selected country normal and lower it
     if(selectedCountry !== window.selectedCountry){
         countries = d3.selectAll(".country")
                     .filter(d => d.properties.ADMIN === selectedCountry)
@@ -236,6 +294,7 @@ function highlightContinent(selectedContinent) { //really just want everything e
     // countries = d3.selectAll(".country")
     //             .filter(d => d.properties.ADMIN === selectedCountry)
     //             .attr("stroke-width", window.selectStrokeWidth)
+    window.hoverContinent = selectedContinent
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) { //translucent relevant points
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
@@ -264,11 +323,12 @@ function highlightContinent(selectedContinent) { //really just want everything e
     }
 }
 
-function unhighlightContinent() { //really just want everything else to be opaque on hover
+function unhighlightContinent(selectedContinent) { //really just want everything else to be opaque on hover
     //highlight new point
     // countries = d3.selectAll(".country")
     //             .filter(d => d.properties.ADMIN === selectedCountry)
     //             .attr("stroke-width", window.selectStrokeWidth)
+    window.hoverContinent = null
     points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
     for(var pointset of points) {
         set = d3.selectAll(pointset).filter(d => d["Period"] === window.selectedPeriod)
