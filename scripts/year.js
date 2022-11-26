@@ -55,11 +55,6 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
         .enter()
         .append("rect")
         .attr("class", "year_bar")
-        .on("click", function(){
-            stopPlay()
-            window.selectedPeriod = d3.select(this)["_groups"][0][0]["__data__"]["year"]
-            selectPeriod()
-        })
         .on("mouseover", function(){
             d3.select(this)
               .attr("stroke-width", window.selectStroke)
@@ -73,6 +68,12 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
               .attr("stroke-opacity", 1)
               .filter(d => d["year"] === window.selectedPeriod)
               .attr("stroke-width", window.selectStroke)
+        })
+        .on("click", function(){
+            stopPlay()
+            window.selectedPeriod = d3.select(this)["_groups"][0][0]["__data__"]["year"]
+            update()
+            // selectPeriod()
         })
         .attr("x", dims.margin.left)
         .attr("y", d => yScale(d["year"]))
