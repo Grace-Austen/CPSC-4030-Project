@@ -80,15 +80,18 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .attr("stroke", lineColor)
                            .attr("stroke-width", countryStroke)
                            .on("mouseover", function(){
-                                highlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                                update("highlightCountry", countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                                // highlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                             })
                             .on("mouseout", function(){
-                                unhighlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                                update("highlightCountry", null)
+                                // unhighlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                            })
                            .on("click", function(){
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
                                 window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
-                                selectCountry()
+                                update()
+                                // selectCountry()
                            })
 
         //color in countries

@@ -67,7 +67,8 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                                 else if(currentContinent == "South America"){
                                     currentContinent = "Latin_America_and_the_Carribean"
                                 }
-                                highlightContinent(currentContinent)
+                                update("highlightContinent", currentContinent)
+                                // highlightContinent(currentContinent)
                             })
                             .on("mouseout", function(){
                                 var currentContinent = continentAccessor(d3.select(this)["_groups"][0][0]["__data__"])
@@ -77,7 +78,8 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                                 else if(currentContinent == "South America"){
                                     currentContinent = "Latin_America_and_the_Carribean"
                                 }
-                                unhighlightContinent(currentContinent)
+                                update("highlightContinent", null)
+                                // unhighlightContinent(currentContinent)
                            })
                            .on("click", function(){
                                 var currentContinent = continentAccessor(d3.select(this)["_groups"][0][0]["__data__"])
@@ -88,7 +90,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                                     currentContinent = "Latin_America_and_the_Carribean"
                                 }
                                 window.selectedContinent = window.selectedContinent === currentContinent ? null : currentContinent
-                                setContinent()
+                                update()
                            })
 
         //color in countries
