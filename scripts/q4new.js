@@ -6,12 +6,12 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
     //Setup dimensions
     var dims = {
         width: 500,
-        height: 300,
+        height: 250,
         margin: {
-            top: 100,
-            bottom: 100,
-            right: 100,
-            left: 100
+            top: 10,
+            bottom: 80,
+            right: 25,
+            left: 50
         }
     };
 
@@ -25,7 +25,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
     var xScale = d3.scaleBand()
                     .domain(["SchoolYears", "LifeYears", "Fertility", "MigrNet", "YearsDifference"])
                     .range([dims.margin.left, dims.width - dims.margin.right])
-                    .padding(0.1);
+                    .padding([0.2]);
 
     //Array of y scales, or bars
     var yScales = [];
@@ -39,7 +39,10 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
     
     //Add x axis
     svg.append("g").call(d3.axisBottom().scale(xScale))
-                    .style("transform", `translateY(${yScales[0](0)}px)`);
+                    .style("transform", `translateY(${yScales[0](0)}px)`)
+                    .selectAll("text")
+                    .attr("transform", `rotate(-90)`)
+                    .attr("dx", "-40");
 
     var space = 0;
     var counter = 0;
@@ -48,7 +51,10 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
     for (let y of yScales) {
         svg.append("g")
             .call(d3.axisLeft().scale(y).ticks(5))
-            .style("transform", `translateX(${xScale(accessors[counter]) + (xScale.bandwidth() / 2)}px)`);
+            .style("transform", `translateX(${xScale(accessors[counter]) + (xScale.bandwidth() / 2)}px)`)
+            .selectAll("text")
+            .attr("transform", `rotate(-90)`)
+            .attr("dy", "10");
 
         counter += 1;
     }
@@ -65,7 +71,8 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
             .attr("cx", (d, i) => xScale(accessors[i]) + (xScale.bandwidth() / 2))
             .attr("cy", (d, i) => yScales[i](d))
             .attr("fill", d => window.continent_color_dict[item["Continent"]])
-            .attr("r", 1);
+            .attr("r", 1)
+            .attr("opacity", 0);
     }
 
     svg.attr("transform", `rotate(90)`);
