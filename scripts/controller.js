@@ -29,7 +29,7 @@ window.selectedPeriod = periods[0]
 window.hoverContinent = null
 window.selectedContinent = null
 window.hoverCountry = null
-window.selectedCountry = null
+window.selectedCountry = "United States of America" 
 window.playYears = true
 
 function update(type, value){
@@ -141,7 +141,7 @@ function update(type, value){
     q3_lines_trainsitionable
         .attr("width", d => { //choose visibility based on period, selected continent, and selected country
             if(d["Period"] !== window.selectedPeriod){
-                console.log("yes")
+                //console.log("yes")
                 return 0
             } else if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry){
                 return window.selectCircle_r

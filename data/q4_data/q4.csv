@@ -1,4 +1,5 @@
-Country,Continent,Region,Period,SchoolYears,LifeYears,Fertility,MigrNet,YearsDifferenceAfghanistan,Asia,South-Central_Asia,1950-1955,0.35527777777777775,28.65,7.45,-20.0,0.3
+Country,Continent,Region,Period,SchoolYears,LifeYears,Fertility,MigrNet,YearsDifference
+Afghanistan,Asia,South-Central_Asia,1950-1955,0.35527777777777775,28.65,7.45,-20.0,0.3
 Afghanistan,Asia,South-Central_Asia,1955-1960,0.32055555555555554,31.2,7.45,-20.0,0.4
 Afghanistan,Asia,South-Central_Asia,1960-1965,0.29777777777777775,33.45,7.45,-20.0,0.4
 Afghanistan,Asia,South-Central_Asia,1965-1970,0.29666666666666663,35.65,7.45,-20.0,0.6
