@@ -44,7 +44,6 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
                     .attr("transform", `rotate(-90)`)
                     .attr("dx", "-40");
 
-    var space = 0;
     var counter = 0;
 
     //Add y axes
@@ -59,21 +58,41 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         counter += 1;
     }
 
+    //Iterate over every country
     for (let item of dataset) {
-        var itemSmall = [item["SchoolYears"], item["LifeYears"], item["Fertility"], item["MigrNet"], item["YearsDifference"]];
+        var counter2 = 0;
+        
+        //Plot every attribute of every country
+        for (let accessor of accessors) {
+            // svg.append("path")
+            //     .datum(item)
+            //     .attr("fill", "none")
+            //     .attr("stroke", "black")
+            //     .attr("stroke-width", 1.5)
+            //     .attr("d", d3.line()
+            //                     .x(xScale(accessor) + (xScale.bandwidth() / 2))
+            //                     .y(yScales[counter2](item[accessor])));
 
-        svg.append("g")
-            .selectAll(".q4-point")
-            .data(itemSmall)
-            .enter()
-            .append("circle")
-            .attr("class", "q4-point")
-            .attr("cx", (d, i) => xScale(accessors[i]) + (xScale.bandwidth() / 2))
-            .attr("cy", (d, i) => yScales[i](d))
-            .attr("fill", d => window.continent_color_dict[item["Continent"]])
-            .attr("r", 1)
-            .attr("opacity", 0);
+            var xval = xScale(accessor) + (xScale.bandwidth() / 2);
+            var yval = yScales[counter2](item[accessor]);
+
+            svg.append("g")
+                .selectAll(".q4-point")
+                .data(item)
+                .enter()
+                .append("circle")
+                .attr("class", "q4-point")
+                .attr("cx", xval)
+                .attr("cy", yval)
+                .attr("fill", window.continent_color_dict[item["Continent"]])
+                .attr("r", 1);
+            
+            console.log(xval)
+            console.log(yval)
+            ++counter2;
+        }
     }
 
+    //Flip
     svg.attr("transform", `rotate(90)`);
 });
