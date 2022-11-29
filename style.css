@@ -2,12 +2,20 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 0px;
+    margin-right: 0px;
 }
 
 /*Main body*/
 body {
     background-color: lightslategray;
     text-align: center;
+}
+
+h1 {
+    background-color: rgb(201, 201, 178);
+    margin-top: -8px;
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
 
 a {
@@ -72,8 +80,8 @@ footer {
     line-height: 1.2;
     background-color: rgb(201, 201, 178);
     width: 100%;
-    position: absolute;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: small;
+    margin-bottom: -8px;
 }
