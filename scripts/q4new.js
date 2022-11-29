@@ -58,44 +58,33 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         counter += 1;
     }
 
-    points = svg.append("g")
-    counter = 0
-    for (let accessor of accessors) {
-        // svg.append("path")
-        //     .datum(item)
-        //     .attr("fill", "none")
-        //     .attr("stroke", "black")
-        //     .attr("stroke-width", 1.5)
-        //     .attr("d", d3.line()
-        //                     .x(xScale(accessor) + (xScale.bandwidth() / 2))
-        //                     .y(yScales[counter2](item[accessor])));
+    //Function to generate line from coords
+    function lineMaker(d) {
+        let cords = [];
+        let counter = 0;
 
-        var xval = xScale(accessor) + (xScale.bandwidth() / 2);
-        var yval = yScales[counter](dataset[accessor]);
+        for (let accessor of accessors) {
+            var x = xScale(accessor) + (xScale.bandwidth() / 2);
+            var y = yScales[counter](d[accessor]);
 
-        points
-            .selectAll(".q4-point")
-            .data(dataset)
-            .enter()
-            .append("circle")
-            .attr("class", "q4-point")
-            .attr("cx", d => {console.log(xScale(accessor) + (xScale.bandwidth() / 2)); return xScale(accessor) + (xScale.bandwidth() / 2)})
-            .attr("cy", d => {console.log("y", yScales[counter](d[accessor])); return yScales[counter](d[accessor])})
-            .attr("fill", d => window.continent_color_dict[d["Continent"]])
-            .attr("r", 1);
-        
-        // console.log(xval)
-        // console.log(yval)
-        ++counter;
+            cords.push([x, y]);
+            ++counter;
+        }
+
+        return(d3.line().curve(d3.curveNatural)(cords));
     }
 
-    //Iterate over every country
-    for (let item of dataset) {
-        var counter2 = 0;
-        
-        //Plot every attribute of every country
-
-    }
+    //Add all lines for each element of dataset
+    svg.append("g")
+        .selectAll(".q4-lines")
+        .data(dataset)
+        .enter()
+        .append("path")
+        .attr("class", "q4-lines")
+        .attr("d", d => lineMaker(d))
+        .attr("fill", "none")
+        .attr("stroke-width", 3)
+        .attr("stroke", d => window.continent_color_dict[d["Continent"]]);
 
     //Flip
     svg.attr("transform", `rotate(90)`);

@@ -219,6 +219,21 @@ function update(type, value){
         scontinent = d["Country"] === window.selectedContinent || d["Country"] === window.hoverContinent
         return scountry || scontinent})
        .raise()
+
+    //Update q4 lines as countries are selected, setting their opacity
+    var q4_lines = d3.selectAll(".q4-lines");
+    var q4_transition = q4_lines.transition().duration(1000);
+
+    q4_transition
+        .attr("opacity", d => {
+            if ((d["Country"] == window.selectedCountry && d["Period"] == window.selectedPeriod) || (d["Country"] == window.hoverCountry && d["Period"] == window.selectedPeriod)) {
+                return(1);
+            }
+
+            else {
+                return(0);
+            }
+        })
 }
 
 window.intervalVar = null
