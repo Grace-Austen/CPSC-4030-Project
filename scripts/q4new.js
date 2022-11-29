@@ -5,8 +5,8 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
 
     //Setup dimensions
     var dims = {
-        width: 500,
-        height: 250,
+        width: container.clientHeight,
+        height: window.width_percentage * container.clientWidth,
         margin: {
             top: 10,
             bottom: 80,
@@ -58,39 +58,43 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         counter += 1;
     }
 
+    points = svg.append("g")
+    counter = 0
+    for (let accessor of accessors) {
+        // svg.append("path")
+        //     .datum(item)
+        //     .attr("fill", "none")
+        //     .attr("stroke", "black")
+        //     .attr("stroke-width", 1.5)
+        //     .attr("d", d3.line()
+        //                     .x(xScale(accessor) + (xScale.bandwidth() / 2))
+        //                     .y(yScales[counter2](item[accessor])));
+
+        var xval = xScale(accessor) + (xScale.bandwidth() / 2);
+        var yval = yScales[counter](dataset[accessor]);
+
+        points
+            .selectAll(".q4-point")
+            .data(dataset)
+            .enter()
+            .append("circle")
+            .attr("class", "q4-point")
+            .attr("cx", d => {console.log(xScale(accessor) + (xScale.bandwidth() / 2)); return xScale(accessor) + (xScale.bandwidth() / 2)})
+            .attr("cy", d => {console.log("y", yScales[counter](d[accessor])); return yScales[counter](d[accessor])})
+            .attr("fill", d => window.continent_color_dict[d["Continent"]])
+            .attr("r", 1);
+        
+        // console.log(xval)
+        // console.log(yval)
+        ++counter;
+    }
+
     //Iterate over every country
     for (let item of dataset) {
         var counter2 = 0;
         
         //Plot every attribute of every country
-        for (let accessor of accessors) {
-            // svg.append("path")
-            //     .datum(item)
-            //     .attr("fill", "none")
-            //     .attr("stroke", "black")
-            //     .attr("stroke-width", 1.5)
-            //     .attr("d", d3.line()
-            //                     .x(xScale(accessor) + (xScale.bandwidth() / 2))
-            //                     .y(yScales[counter2](item[accessor])));
 
-            var xval = xScale(accessor) + (xScale.bandwidth() / 2);
-            var yval = yScales[counter2](item[accessor]);
-
-            svg.append("g")
-                .selectAll(".q4-point")
-                .data(item)
-                .enter()
-                .append("circle")
-                .attr("class", "q4-point")
-                .attr("cx", xval)
-                .attr("cy", yval)
-                .attr("fill", window.continent_color_dict[item["Continent"]])
-                .attr("r", 1);
-            
-            console.log(xval)
-            console.log(yval)
-            ++counter2;
-        }
     }
 
     //Flip
