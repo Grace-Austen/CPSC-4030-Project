@@ -79,19 +79,18 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .attr("d", d => pathGenerator(d))
                            .attr("stroke", lineColor)
                            .attr("stroke-width", countryStroke)
-                           .on("mouseover", function(){
+                           .on("mouseover", function(event){
                                 update("highlightCountry", countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
-                                // highlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
                             })
-                            .on("mouseout", function(){
+                            .on("mouseout", function(event){
                                 update("highlightCountry", null)
-                                // unhighlightCountry(countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                                displayTooltip(event)
                            })
+                           .on("mousemove", event => displayTooltip(event))
                            .on("click", function(){
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
                                 window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
                                 update()
-                                // selectCountry()
                            })
 
         //color in countries

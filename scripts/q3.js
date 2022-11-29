@@ -60,12 +60,14 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("cy", d => schoolScale(schoolAccessor(d)))
                     .attr("r", 0)
                     .attr("fill", d => window.continent_color_dict[d["Continent"]])
-                    .on("mouseover", function(){
+                    .on("mouseover", function(event){
                         update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                     })
-                    .on("mouseout", function(){
+                    .on("mouseout", function(event){
                         update("highlightCountry", null)
+                        displayTooltip(event)
                     })
+                    .on("mousemove", event => displayTooltip(event))
                     .on("click", function(){
                         var thisData = d3.select(this)["_groups"][0][0]["__data__"]
                         window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
