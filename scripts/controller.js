@@ -262,18 +262,18 @@ function updateYear(){
     // selectPeriod()
 }
 
-function displayTooltip(event){
-    //tooltip on hovering
-    if(window.hoverCountry !== null) {
-        ttd = document.getElementById("tooltip-div")
-        ttd.innerHTML = `<p id="tooltip-text">Country: ${hoverCountry}</p>`
-        sY = event.clientY
-        sX = event.clientX
-        console.log(event, "x", sX, "y", sY)
-        ttd.style.top = `${sY}px`
-        ttd.style.left = `${sX}px`
-    } else {
-        ttd = document.getElementById("tooltip-div")
-        ttd.innerHTML = ""
-    }
-}
+// function displayTooltip(event){
+//     //tooltip on hovering
+//     if(window.hoverCountry !== null) {
+//         ttd = document.getElementById("tooltip-div")
+//         ttd.innerHTML = `<p id="tooltip-text">Country: ${hoverCountry}</p>`
+//         sY = event.clientY
+//         sX = event.clientX
+//         console.log(event, "x", sX, "y", sY)
+//         ttd.style.top = `${sY}px`
+//         ttd.style.left = `${sX}px`
+//     } else {
+//         ttd = document.getElementById("tooltip-div")
+//         ttd.innerHTML = ""
+//     }
+// }

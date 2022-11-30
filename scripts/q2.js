@@ -26,6 +26,14 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var yScale = d3.scaleLinear()
                    .domain(d3.extent(dataset, fertilityAccessor))
                    .range([dimensions.height - dimensions.margin.bottom, dimensions.margin.top])
+
+    var Tooltip = svg.append("text")
+                    .style("font-size", "10px")
+                    .attr("id","tooltip")
+                    .style("opacity", 0)
+                    .attr("x", 0)
+                    .attr("y", 0)
+                    .text("")
             
     var points = svg.append("g")
                     .selectAll(".q2-points")
@@ -38,14 +46,29 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     .attr("fill", d => window.continent_color_dict[d["Continent"]])
                     .on("mouseover", function(){
                         update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                        d3.select("#tooltip")
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(d3.select(this)["_groups"][0][0]["__data__"]["YearsDifference"]))
+                          .attr("y", yScale(d3.select(this)["_groups"][0][0]["__data__"]["Rate"]))
+                          .text(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                     })
                     .on("mouseout", function(){
                         update("highlightCountry", null) 
+                        d3.select("#tooltip")
+                          .lower()
+                          .style("opacity", 0)
                     })
                     .on("click", function(){
                         var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
+                        window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
                         update()
+                        d3.select("#tooltip")
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(d3.select(this)["_groups"][0][0]["__data__"]["YearsDifference"]))
+                          .attr("y", yScale(d3.select(this)["_groups"][0][0]["__data__"]["Rate"]))
+                          .text(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
@@ -66,6 +89,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var yAxisGen = d3.axisLeft().scale(yScale)
     var yAxis = svg.append("g")
                    .call(yAxisGen)
+                   .lower()
                    .style("transform", `translateX(${xScale(0.0)}px)`)
 
     var differenceLabel = svg.append("g")
