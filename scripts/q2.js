@@ -49,8 +49,8 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                         d3.select("#tooltip")
                           .raise()
                           .style("opacity", 1)
-                          .attr("x", xScale(d3.select(this)["_groups"][0][0]["__data__"]["YearsDifference"]))
-                          .attr("y", yScale(d3.select(this)["_groups"][0][0]["__data__"]["Rate"]))
+                          .attr("x", xScale(d3.select(this)["_groups"][0][0]["__data__"]["YearsDifference"]) - 20)
+                          .attr("y", yScale(d3.select(this)["_groups"][0][0]["__data__"]["Rate"]) - 10)
                           .text(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                     })
                     .on("mouseout", function(){
