@@ -58,7 +58,7 @@ function update(type, value){
                 }) 
 
     //update all the viz points
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+    points = [".q2-points", ".school_points", ".fertility_points"]
     for(var pointset of points) {
         set = d3.selectAll(pointset)
         set_trainsitionable = set.transition().duration(1000)
