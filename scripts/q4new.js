@@ -30,7 +30,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
     //Array of y scales, or bars
     var yScales = [];
 
-    //Create each y scale
+    //Create each y scale, I had to find min and max manually bc d3 wasnt doing it right
     for (let accessor of accessors) {
         var max = 0;
         var min = 0;
@@ -43,8 +43,6 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
                 min = +d[accessor];
             }
         }
-
-        console.log(min);
 
         yScales.push(d3.scaleLinear()
                         .domain([min, max])
@@ -85,7 +83,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
             ++counter;
         }
 
-        return(d3.line().curve(d3.curveNatural)(cords));
+        return(d3.line().curve(d3.curveCatmullRom)(cords));
     }
 
     //Add all lines for each element of dataset
