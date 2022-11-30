@@ -5,7 +5,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
 
     //Setup dimensions
     var dims = {
-        width: container.clientHeight,
+        width: container.clientHeight / 2,
         height: window.width_percentage * container.clientWidth,
         margin: {
             top: 20,
