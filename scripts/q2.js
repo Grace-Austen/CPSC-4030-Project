@@ -3,8 +3,8 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var svg = d3.select("#q2-viz")
 
     var dimensions = {
+        height: container.clientHeight,
         width: window.width_percentage * container.clientWidth,
-        height: window.scatter_plot_ratio * window.width_percentage * container.clientWidth,
         margin:{
             top: 10,
             bottom: 30 + window.xAxisFontSize,
@@ -55,25 +55,32 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var xAxis = svg.append("g")
                    .call(xAxisGen)
                    .style("transform", `translateY(${dimensions.height - dimensions.margin.bottom}px)`)
+                   .selectAll("text")
+                   .attr("y", 0)
+                   .attr("x", 9)
+                   .attr("dy", ".35em")
+                   .attr("transform", "rotate(90)")
+                   .style("text-anchor", "start");
+               
 
     var yAxisGen = d3.axisLeft().scale(yScale)
     var yAxis = svg.append("g")
                    .call(yAxisGen)
-                   .style("transform", `translateX(${dimensions.margin.left}px)`)
+                   .style("transform", `translateX(${xScale(0.0)}px)`)
 
     var differenceLabel = svg.append("g")
                              .append("text")
                              .attr("text-anchor", "middle")
                              .attr("font-size", window.xAxisFontSize)
                              .attr("x", dimensions.width/2)
-                             .attr("y", dimensions.height - dimensions.margin.bottom + 2.5*window.xAxisFontSize)
-                             .text("Average Years of Difference in Schooling Between Genders")
+                             .attr("y", dimensions.height)
+                             .text("Years of Increased Schooling for Males")
     var fertLabel = svg.append("g")
                         .append("text") //avg school
                         .attr("text-anchor", "middle")
-                        .attr("transform", `rotate(-90, ${dimensions.margin.left - window.yAxisFontSize*5}, ${dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)/2})`)
+                        .attr("transform", `rotate(-90, ${dimensions.margin.left - window.yAxisFontSize*2}, ${dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)/2})`)
                         .attr("font-size", window.yAxisFontSize)
-                        .attr("x", dimensions.margin.left - window.yAxisFontSize*5)
+                        .attr("x", dimensions.margin.left - window.yAxisFontSize*2)
                         .attr("y", dimensions.margin.top + (dimensions.height-dimensions.margin.top-dimensions.margin.bottom)/2)
                         .text("Fertility Rate (Number of Children)")
                     
