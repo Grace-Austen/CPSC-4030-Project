@@ -8,7 +8,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         width: container.clientHeight,
         height: window.width_percentage * container.clientWidth,
         margin: {
-            top: 10,
+            top: 20,
             bottom: 80,
             right: 25,
             left: 50
@@ -32,8 +32,22 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
 
     //Create each y scale
     for (let accessor of accessors) {
+        var max = 0;
+        var min = 0;
+
+        for (d of dataset) {
+            if (+d[accessor] > +max) {
+                max = +d[accessor];
+            }
+            else if (+d[accessor] < +min) {
+                min = +d[accessor];
+            }
+        }
+
+        console.log(min);
+
         yScales.push(d3.scaleLinear()
-                        .domain(d3.extent(dataset, d => d[accessor]))
+                        .domain([min, max])
                         .range([dims.height - dims.margin.bottom, dims.margin.top]));
     }
     
@@ -64,8 +78,8 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         let counter = 0;
 
         for (let accessor of accessors) {
-            var x = xScale(accessor) + (xScale.bandwidth() / 2);
-            var y = yScales[counter](d[accessor]);
+            var x = +(xScale(accessor) + (xScale.bandwidth() / 2));
+            var y = +yScales[counter](d[accessor]);
 
             cords.push([x, y]);
             ++counter;
@@ -84,6 +98,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         .attr("d", d => lineMaker(d))
         .attr("fill", "none")
         .attr("stroke-width", 3)
+        .attr("opacity", 0)
         .attr("stroke", d => window.continent_color_dict[d["Continent"]]);
 
     //Flip
