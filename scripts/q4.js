@@ -83,7 +83,7 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
             ++counter;
         }
 
-        return(d3.line().curve(d3.curveCatmullRom)(cords));
+        return(d3.line().curve(d3.curveLinear)(cords));
     }
 
     //Add all lines for each element of dataset
