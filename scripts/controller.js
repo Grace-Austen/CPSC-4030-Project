@@ -58,7 +58,7 @@ function update(type, value){
                 }) 
 
     //update all the viz points
-    points = [".q2-points", ".school_points", ".fertility_points", ".q4-circle"]
+    points = [".q2-points", ".school_points", ".fertility_points"]
     for(var pointset of points) {
         set = d3.selectAll(pointset)
         set_trainsitionable = set.transition().duration(1000)
@@ -219,6 +219,21 @@ function update(type, value){
         scontinent = d["Country"] === window.selectedContinent || d["Country"] === window.hoverContinent
         return scountry || scontinent})
        .raise()
+
+    //Update q4 lines as countries are selected, setting their opacity
+    var q4_lines = d3.selectAll(".q4-lines");
+    var q4_transition = q4_lines.transition().duration(1000);
+
+    q4_transition
+        .attr("opacity", d => {
+            if ((d["Country"] == window.selectedCountry && d["Period"] == window.selectedPeriod) || (d["Country"] == window.hoverCountry && d["Period"] == window.selectedPeriod)) {
+                return(1);
+            }
+
+            else {
+                return(0);
+            }
+        })
 }
 
 window.intervalVar = null
@@ -245,4 +260,20 @@ function updateYear(){
     window.selectedPeriod = periods[currentPeriod]
     update()
     // selectPeriod()
+}
+
+function displayTooltip(event){
+    //tooltip on hovering
+    if(window.hoverCountry !== null) {
+        ttd = document.getElementById("tooltip-div")
+        ttd.innerHTML = `<p id="tooltip-text">Country: ${hoverCountry}</p>`
+        sY = event.clientY
+        sX = event.clientX
+        console.log(event, "x", sX, "y", sY)
+        ttd.style.top = `${sY}px`
+        ttd.style.left = `${sX}px`
+    } else {
+        ttd = document.getElementById("tooltip-div")
+        ttd.innerHTML = ""
+    }
 }

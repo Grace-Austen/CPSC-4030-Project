@@ -1,88 +1,104 @@
 d3.csv("data/q4_data/q4.csv").then((dataset) => {
-    //Select the svg we will be using
+    //Select svg and overall container
     var svg = d3.select("#q4-viz");
-    var container = document.getElementById("q4-container")
-    
+    var container = document.getElementById("q4-container");
+
     //Setup dimensions
     var dims = {
-        width: window.width_percentage * container.clientWidth,
-        height: window.scatter_plot_ratio * window.width_percentage * container.clientWidth,
+        width: container.clientHeight,
+        height: window.width_percentage * container.clientWidth,
         margin: {
-            top: 10,
-            bottom: 30 + window.xAxisFontSize,
-            right: 10,
-            left: 50 + 2*window.yAxisFontSize
+            top: 20,
+            bottom: 80,
+            right: 25,
+            left: 50
         }
     };
-    
-    //Set the width and height for the svg
+
+    //Set width and height to svg
     svg.style("width", dims.width);
     svg.style("height", dims.height);
 
-    //variable accessors
-    var schoolAccessor = d => +d["Years"]
-    var netMigrAccessor = d => +d["Net"]
+    var accessors = ["SchoolYears", "LifeYears", "Fertility", "MigrNet", "YearsDifference"];
 
-    //Create x and y scales
-    var xScale = d3.scaleLinear()
-                    .domain(d3.extent(dataset, schoolAccessor))
-                    .range([dims.margin.left, dims.width - dims.margin.right]);
-    var yScale = d3.scaleLinear()
-                    .domain(d3.extent(dataset, netMigrAccessor))
-                    .range([dims.height - dims.margin.bottom, dims.margin.top]);
+    //Setup x scale, which is all the attributes
+    var xScale = d3.scaleBand()
+                    .domain(["SchoolYears", "LifeYears", "Fertility", "MigrNet", "YearsDifference"])
+                    .range([dims.margin.left, dims.width - dims.margin.right])
+                    .padding([0.2]);
+
+    //Array of y scales, or bars
+    var yScales = [];
+
+    //Create each y scale, I had to find min and max manually bc d3 wasnt doing it right
+    for (let accessor of accessors) {
+        var max = 0;
+        var min = 0;
+
+        for (d of dataset) {
+            if (+d[accessor] > +max) {
+                max = +d[accessor];
+            }
+            else if (+d[accessor] < +min) {
+                min = +d[accessor];
+            }
+        }
+
+        yScales.push(d3.scaleLinear()
+                        .domain([min, max])
+                        .range([dims.height - dims.margin.bottom, dims.margin.top]));
+    }
     
-    //Add x and y axes
+    //Add x axis
     svg.append("g").call(d3.axisBottom().scale(xScale))
-                    .style("transform", `translateY(${yScale(0)}px)`);
-    svg.append("g").call(d3.axisLeft().scale(yScale))
-                    .style("transform", `translateX(${dims.margin.left}px)`);
+                    .style("transform", `translateY(${yScales[0](0)}px)`)
+                    .selectAll("text")
+                    .attr("transform", `rotate(-90)`)
+                    .attr("dx", "-40");
 
-    //Add dots
+    var counter = 0;
+
+    //Add y axes
+    for (let y of yScales) {
+        svg.append("g")
+            .call(d3.axisLeft().scale(y).ticks(5))
+            .style("transform", `translateX(${xScale(accessors[counter]) + (xScale.bandwidth() / 2)}px)`)
+            .selectAll("text")
+            .attr("transform", `rotate(-90)`)
+            .attr("dy", "10");
+
+        counter += 1;
+    }
+
+    //Function to generate line from coords
+    function lineMaker(d) {
+        let cords = [];
+        let counter = 0;
+
+        for (let accessor of accessors) {
+            var x = +(xScale(accessor) + (xScale.bandwidth() / 2));
+            var y = +yScales[counter](d[accessor]);
+
+            cords.push([x, y]);
+            ++counter;
+        }
+
+        return(d3.line().curve(d3.curveLinear)(cords));
+    }
+
+    //Add all lines for each element of dataset
     svg.append("g")
-        .selectAll(".q4-circle")
+        .selectAll(".q4-lines")
         .data(dataset)
         .enter()
-        .append("circle")
-        .attr("class", "q4-circle")
-        .attr("cx", d => xScale(schoolAccessor(d)))
-        .attr("cy", d => yScale(netMigrAccessor(d)))
-        .attr("fill", d => window.continent_color_dict[d["Continent"]])
-        .on("mouseover", function(){
-            if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                highlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
-            }
-        })
-        .on("mouseout", function(){
-             if(d3.select(this)["_groups"][0][0]["__data__"]["Period"] === window.selectedPeriod){
-                unhighlightCountry(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
-             }  
-        })
-        .on("click", function(){
-            var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-            if(thisData["Period"] === window.selectedPeriod) {
-                var thisCountry = thisData["Country"]
-                window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
-                selectCountry()
-            }
-        })
-        .filter(d => d["Period"] === window.selectedPeriod)
-        .attr("r", window.circle_r);
+        .append("path")
+        .attr("class", "q4-lines")
+        .attr("d", d => lineMaker(d))
+        .attr("fill", "none")
+        .attr("stroke-width", 3)
+        .attr("opacity", 0)
+        .attr("stroke", d => window.continent_color_dict[d["Continent"]]);
 
-    //Add labels
-    svg.append("g")
-        .append("text")
-        .attr("text-anchor", "middle")
-        .attr("font-size", window.xAxisFontSize)
-        .attr("x", dims.width / 2)
-        .attr("y", dims.height - dims.margin.bottom + 2.5*window.xAxisFontSize)
-        .text("Mean Years of Schooling");
-
-    svg.append("g")
-        .append("text")
-        .attr("text-anchor", "middle")
-        .attr("transform", `rotate(-90, ${dims.margin.left - (window.yAxisFontSize*5)}, ${dims.margin.top + (dims.height-dims.margin.top-dims.margin.bottom)/2})`)
-        .attr("font-size", window.yAxisFontSize)
-        .attr("x", dims.margin.left - window.yAxisFontSize*5)
-        .attr("y", dims.margin.top + (dims.height-dims.margin.top-dims.margin.bottom)/2)
-        .text("Average Migration Rate");
-})
+    //Flip
+    svg.attr("transform", `rotate(90)`);
+});

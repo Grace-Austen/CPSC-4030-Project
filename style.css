@@ -74,6 +74,19 @@ li {
     list-style-type: none;
 }
 
+#tooltip-div {
+    width: min-content;
+    height: min-content;
+    position:fixed;
+    fill:beige;
+    stroke: white;
+    margin: 0px;
+}
+
+#tooltip-text {
+    font-size: 10px;
+}
+
 
 /*Credits*/
 footer {
