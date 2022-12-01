@@ -33,6 +33,14 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .domain(d3.extent(dataset, fertAccessor))
                     .range([dimensions.height - dimensions.margin.bottom, dimensions.height/2])
 
+    var Tooltip = svg.append("text")
+                    .style("font-size", "10px")
+                    .attr("id","tooltip")
+                    .style("opacity", 0)
+                    .attr("x", 0)
+                    .attr("y", 0)
+                    .text("")
+
     var lines = svg.append("g")
                     .attr("id", "q3-line-group")
                     .selectAll(".q3-lines")
@@ -48,6 +56,33 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("stroke", window.selectStroke)
                     .attr("stroke-width", 0)
                     .style("transform",`translateX(-${window.circle_r/2}px)`)
+                    .on("mouseover", function(){
+                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        Tooltip
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(xAccessor(thisData)) - 20)
+                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
+                        update("highlightCountry", thisData["Country"])
+                    })
+                    .on("mouseout", function(){
+                        Tooltip
+                          .lower()
+                          .style("opacity", 0)
+                        update("highlightCountry", null) 
+                    })
+                    .on("click", function(){
+                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        Tooltip
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(xAccessor(thisData)) - 20)
+                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
+                        window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
+                        update()
+                    })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("width", window.circle_r)
 
@@ -65,15 +100,29 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("stroke", window.selectStroke)
                     .attr("stroke-width", 0)
                     .on("mouseover", function(event){
-                        update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        Tooltip
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(xAccessor(thisData)) - 20)
+                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
+                        update("highlightCountry", thisData["Country"])
                     })
                     .on("mouseout", function(event){
+                        Tooltip
+                          .lower()
+                          .style("opacity", 0)
                         update("highlightCountry", null)
-                        displayTooltip(event)
                     })
-                    .on("mousemove", event => displayTooltip(event))
                     .on("click", function(){
                         var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        Tooltip
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(xAccessor(thisData)) - 20)
+                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
                         window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
                         update()
                     })
@@ -93,13 +142,29 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("stroke", window.selectStroke)
                     .attr("stroke-width", 0)
                     .on("mouseover", function(){
-                        update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        Tooltip
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(xAccessor(thisData)) - 20)
+                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
+                        update("highlightCountry", thisData["Country"])
                     })
                     .on("mouseout", function(){
+                        Tooltip
+                          .lower()
+                          .style("opacity", 0)
                         update("highlightCountry", null) 
                     })
                     .on("click", function(){
                         var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        Tooltip
+                          .raise()
+                          .style("opacity", 1)
+                          .attr("x", xScale(xAccessor(thisData)) - 20)
+                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
                         window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
                         update()
                     })
