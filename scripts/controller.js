@@ -29,7 +29,7 @@ window.selectedPeriod = periods[0]
 window.hoverContinent = null
 window.selectedContinent = null
 window.hoverCountry = null
-window.selectedCountry = "United States of America" 
+window.selectedCountry = null 
 window.playYears = true
 
 function update(type, value){
@@ -206,7 +206,31 @@ function update(type, value){
 
     q4_transition
         .attr("opacity", d => {
-            if ((d["Country"] == window.selectedCountry && d["Period"] == window.selectedPeriod) || (d["Country"] == window.hoverCountry && d["Period"] == window.selectedPeriod)) {
+            if (window.selectedCountry == null) {
+                if (window.hoverCountry == null) {
+                    return(1);
+                }
+                else if (window.hoverCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
+                    return(1);
+                }
+                else {
+                    return(0);
+                }
+            }
+
+            else if (window.hoverCountry == null) {
+                if (window.selectedCountry == null) {
+                    return(1);
+                }
+                else if (window.selectedCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
+                    return(1);
+                }
+                else {
+                    return(0);
+                }
+            }
+
+            else if ((d["Country"] == window.selectedCountry && d["Period"] == window.selectedPeriod) || (d["Country"] == window.hoverCountry && d["Period"] == window.selectedPeriod)) {
                 return(1);
             }
 

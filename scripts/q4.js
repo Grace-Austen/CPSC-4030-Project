@@ -96,7 +96,6 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         .attr("d", d => lineMaker(d))
         .attr("fill", "none")
         .attr("stroke-width", 3)
-        .attr("opacity", 0)
         .attr("stroke", d => window.continent_color_dict[d["Continent"]]);
 
     //Flip
