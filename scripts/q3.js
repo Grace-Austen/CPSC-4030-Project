@@ -45,6 +45,8 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("height", d => fertScale(fertAccessor(d)) - schoolScale(schoolAccessor(d)))
                     .style("fill", d => window.continent_color_dict[d["Continent"]])
                     .attr("width", 0)
+                    .attr("stroke", window.selectStroke)
+                    .attr("stroke-width", 0)
                     .style("transform",`translateX(-${window.circle_r/2}px)`)
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("width", window.circle_r)
@@ -60,6 +62,8 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("cy", d => schoolScale(schoolAccessor(d)))
                     .attr("r", 0)
                     .attr("fill", d => window.continent_color_dict[d["Continent"]])
+                    .attr("stroke", window.selectStroke)
+                    .attr("stroke-width", 0)
                     .on("mouseover", function(event){
                         update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                     })
@@ -75,6 +79,7 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
+
     var fert_points = svg.append("g")
                     .attr("id", "fertility_group")
                     .selectAll(".fertility_points")
@@ -85,6 +90,8 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("cx", d => xScale(xAccessor(d)))
                     .attr("cy", d => fertScale(fertAccessor(d)))
                     .attr("fill", d => window.continent_color_dict[d["Continent"]])
+                    .attr("stroke", window.selectStroke)
+                    .attr("stroke-width", 0)
                     .on("mouseover", function(){
                         update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                     })

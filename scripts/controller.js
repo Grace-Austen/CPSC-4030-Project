@@ -64,9 +64,11 @@ function update(type, value){
         set_trainsitionable = set.transition().duration(1000)
         set_trainsitionable
             .attr("r", d => { //choose visibility based on period, selected continent, and selected country
-                if(d["Period"] !== window.selectedPeriod){
+                if(d["Country"] === window.selectedCountry) {
+                    return window.selectCircle_r
+                } else if(d["Period"] !== window.selectedPeriod){
                     return 0
-                } else if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry){
+                } else if(d["Country"] === window.hoverCountry){
                     return window.selectCircle_r
                 } else {
                     if(window.selectedContinent !== null) {
@@ -101,32 +103,20 @@ function update(type, value){
                     }
                 }
             })
-            .attr("stroke", d => { //stroke based on period and selected country
-                if(d["Period"] !== window.selectedPeriod){
-                    return null
-                } else if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry){
-                    return window.selectStroke
-                } else {
-                    return null
-                }
-            })
             .attr("stroke-width", d => { //stroke width based on period and selected country
-                if(d["Period"] !== window.selectedPeriod){
+                if(window.hoverCountry === null) {
+                    if(d["Country"] === window.selectedCountry){
+                        return 1
+                    } else {
+                        return 0
+                    }
+                } else if(d["Period"] !== window.selectedPeriod){
                     return 0
                 } else {
-                    if(window.hoverCountry === null) {
-                        if(d["Country"] === window.selectedCountry){
-                            return 1
-                        } else {
-                            return 0
-                        }
+                    if(d["Country"] === window.hoverCountry){
+                        return 1
                     } else {
-                        if(d["Country"] === window.hoverCountry){
-                            return 1
-                        } else {
-                            return 0
-                        }
-                        
+                        return 0
                     }
                 }    
             })
@@ -140,10 +130,12 @@ function update(type, value){
     q3_lines_trainsitionable = q3_lines.transition().duration(1000)
     q3_lines_trainsitionable
         .attr("width", d => { //choose visibility based on period, selected continent, and selected country
-            if(d["Period"] !== window.selectedPeriod){
+            if(d["Country"] === window.selectedCountry){
+                return window.selectCircle_r
+            } else if(d["Period"] !== window.selectedPeriod){
                 //console.log("yes")
                 return 0
-            } else if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry){
+            } else if(d["Country"] === window.hoverCountry){
                 return window.selectCircle_r
             } else {
                 if(window.selectedContinent !== null) {
@@ -156,7 +148,7 @@ function update(type, value){
                 return window.circle_r
             }
         })
-        .style("transform", d => {
+        .style("transform", d => { //making the rectangle lines nicely aligned
             if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry) {
                 return `translateX(-${window.selectCircle_r/2}px)`
             } else {
@@ -185,32 +177,20 @@ function update(type, value){
                 }
             }
         })
-        .attr("stroke", d => { //stroke based on period and selected country
-            if(d["Period"] !== window.selectedPeriod){
-                return null
-            } else if(d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry){
-                return window.selectStroke
-            } else {
-                return null
-            }
-        })
         .attr("stroke-width", d => { //stroke width based on period and selected country
-            if(d["Period"] !== window.selectedPeriod){
+            if(window.hoverCountry === null) {
+                if(d["Country"] === window.selectedCountry){
+                    return 1
+                } else {
+                    return 0
+                }
+            } else if(d["Period"] !== window.selectedPeriod){
                 return 0
             } else {
-                if(window.hoverCountry === null) {
-                    if(d["Country"] === window.selectedCountry){
-                        return 1
-                    } else {
-                        return 0
-                    }
+                if(d["Country"] === window.hoverCountry){
+                    return 1
                 } else {
-                    if(d["Country"] === window.hoverCountry){
-                        return 1
-                    } else {
-                        return 0
-                    }
-                    
+                    return 0
                 }
             }    
         })

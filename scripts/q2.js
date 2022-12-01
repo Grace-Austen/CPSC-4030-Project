@@ -44,14 +44,17 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                     .attr("cx", d => xScale(yearsDiffAccessor(d)))
                     .attr("cy", d => yScale(fertilityAccessor(d)))
                     .attr("fill", d => window.continent_color_dict[d["Continent"]])
+                    .attr("stroke", window.selectStroke)
+                    .attr("stroke-width", 0)
                     .on("mouseover", function(){
-                        update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
                         d3.select("#tooltip")
                           .raise()
                           .style("opacity", 1)
                           .attr("x", xScale(d3.select(this)["_groups"][0][0]["__data__"]["YearsDifference"]) - 20)
                           .attr("y", yScale(d3.select(this)["_groups"][0][0]["__data__"]["Rate"]) - 10)
-                          .text(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                          .text(`${d3.select(this)["_groups"][0][0]["__data__"]["Country"]}, ${d3.select(this)["_groups"][0][0]["__data__"]["Period"]}`)
+                        update("highlightCountry", d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                        
                     })
                     .on("mouseout", function(){
                         update("highlightCountry", null) 
@@ -60,15 +63,15 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
                           .style("opacity", 0)
                     })
                     .on("click", function(){
-                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
-                        update()
                         d3.select("#tooltip")
                           .raise()
                           .style("opacity", 1)
-                          .attr("x", xScale(d3.select(this)["_groups"][0][0]["__data__"]["YearsDifference"]))
-                          .attr("y", yScale(d3.select(this)["_groups"][0][0]["__data__"]["Rate"]))
-                          .text(d3.select(this)["_groups"][0][0]["__data__"]["Country"])
+                          .attr("x", xScale(d3.select(this)["_groups"][0][0]["__data__"]["YearsDifference"]) - 20)
+                          .attr("y", yScale(d3.select(this)["_groups"][0][0]["__data__"]["Rate"]) - 10)
+                          .text(`${d3.select(this)["_groups"][0][0]["__data__"]["Country"]}, ${d3.select(this)["_groups"][0][0]["__data__"]["Period"]}`)
+                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
+                        window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
+                        update()
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
