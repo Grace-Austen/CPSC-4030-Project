@@ -25,7 +25,6 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                 legend: .5 * window.width_percentage * container.clientWidth 
             }
         }
-        console.log(dimensions.width)
 
         //set svg width and height
         svg.attr("height", dimensions.height)
@@ -84,9 +83,7 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                             })
                             .on("mouseout", function(event){
                                 update("highlightCountry", null)
-                                displayTooltip(event)
                            })
-                           .on("mousemove", event => displayTooltip(event))
                            .on("click", function(){
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
                                 window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
