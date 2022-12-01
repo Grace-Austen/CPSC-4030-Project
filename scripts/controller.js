@@ -104,16 +104,16 @@ function update(type, value){
                 }
             })
             .attr("stroke-width", d => { //stroke width based on period and selected country
-                if(window.hoverCountry === null) {
-                    if(d["Country"] === window.selectedCountry){
-                        return 1
-                    } else {
-                        return 0
-                    }
-                } else if(d["Period"] !== window.selectedPeriod){
+                if(d["Period"] !== window.selectedPeriod){
                     return 0
                 } else {
-                    if(d["Country"] === window.hoverCountry){
+                    if(window.hoverCountry === null) {
+                        if(d["Country"] === window.selectedCountry){
+                            return 1
+                        } else {
+                            return 0
+                        }
+                    } else if(d["Country"] === window.hoverCountry){
                         return 1
                     } else {
                         return 0
@@ -178,16 +178,16 @@ function update(type, value){
             }
         })
         .attr("stroke-width", d => { //stroke width based on period and selected country
-            if(window.hoverCountry === null) {
-                if(d["Country"] === window.selectedCountry){
-                    return 1
-                } else {
-                    return 0
-                }
-            } else if(d["Period"] !== window.selectedPeriod){
+            if(d["Period"] !== window.selectedPeriod){
                 return 0
             } else {
-                if(d["Country"] === window.hoverCountry){
+                if(window.hoverCountry === null) {
+                    if(d["Country"] === window.selectedCountry){
+                        return 1
+                    } else {
+                        return 0
+                    }
+                } else if(d["Country"] === window.hoverCountry){
                     return 1
                 } else {
                     return 0
