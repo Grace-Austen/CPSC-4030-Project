@@ -5,11 +5,11 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
 
     //Setup dimensions
     var dims = {
-        width: container.clientHeight / 2,
-        height: window.width_percentage * container.clientWidth,
+        width: container.clientHeight / 2 + 40,
+        height: window.width_percentage * container.clientWidth + 80,
         margin: {
             top: 20,
-            bottom: 80,
+            bottom: 90,
             right: 25,
             left: 50
         }
@@ -19,11 +19,11 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
     svg.style("width", dims.width);
     svg.style("height", dims.height);
 
-    var accessors = ["SchoolYears", "LifeYears", "Fertility", "MigrNet", "YearsDifference"];
+    var accessors = ["LifeYears", "SchoolYears", "MigrNet", "YearsDifference", "Fertility"];
 
     //Setup x scale, which is all the attributes
     var xScale = d3.scaleBand()
-                    .domain(["SchoolYears", "LifeYears", "Fertility", "MigrNet", "YearsDifference"])
+                    .domain(accessors)
                     .range([dims.margin.left, dims.width - dims.margin.right])
                     .padding([0.2]);
 
@@ -54,7 +54,8 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
                     .style("transform", `translateY(${yScales[0](0)}px)`)
                     .selectAll("text")
                     .attr("transform", `rotate(-90)`)
-                    .attr("dx", "-40");
+                    .attr("dx", "-40")
+                    .attr("dy", "10");
 
     var counter = 0;
 
@@ -66,7 +67,6 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
             .selectAll("text")
             .attr("transform", `rotate(-90)`)
             .attr("dy", "10");
-
         counter += 1;
     }
 

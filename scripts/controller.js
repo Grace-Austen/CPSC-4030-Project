@@ -206,23 +206,28 @@ function update(type, value){
 
     q4_transition
         .attr("opacity", d => {
-            if (window.selectedCountry == null) {
-                if (window.hoverCountry == null) {
+            if (window.hoverCountry == null && window.selectedCountry == null) {
+                if (window.selectedPeriod == d["Period"]) {
                     return(1);
                 }
-                else if (window.hoverCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
+
+                else {
+                    return(0);
+                }
+            }
+
+            else if (window.selectedCountry == null) {
+                if (window.hoverCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
                     return(1);
                 }
+
                 else {
                     return(0);
                 }
             }
 
             else if (window.hoverCountry == null) {
-                if (window.selectedCountry == null) {
-                    return(1);
-                }
-                else if (window.selectedCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
+                if (window.selectedCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
                     return(1);
                 }
                 else {
