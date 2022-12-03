@@ -122,7 +122,7 @@ function update(type, value){
             })
         set.filter(d => { //raise all selected items
             scountry = d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry
-            scontinent = d["Country"] === window.selectedContinent || d["Country"] === window.hoverContinent
+            scontinent = d["Continent"] === window.hoverContinent
             return scountry || scontinent})
            .raise()
     }
@@ -196,7 +196,7 @@ function update(type, value){
         })
     q3_lines.filter(d => { //raise all selected items
         scountry = d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry
-        scontinent = d["Country"] === window.selectedContinent || d["Country"] === window.hoverContinent
+        scontinent = d["Continent"] === window.hoverContinent
         return scountry || scontinent})
        .raise()
 
@@ -205,39 +205,84 @@ function update(type, value){
     var q4_transition = q4_lines.transition().duration(1000);
 
     q4_transition
+        .attr("stroke-width", d => {
+            //if a country is selected, only select that country, the continents if relevant, and hover
+            if(window.selectedCountry !== null){
+                if(d["Country"] === window.selectedCountry){ 
+                    return window.selectStrokeWidth
+                } else if(d["Period"] !== window.selectedPeriod){
+                    //console.log("yes")
+                    return 0
+                } else if(d["Country"] === window.hoverCountry){
+                    return window.selectStrokeWidth
+                } else {
+                    if(d["Continent"] === window.selectedContinent || d["Continent"] === window.hoverContinent) {
+                        return 1
+                    } else {
+                        return 0
+                    }
+                }
+            } else {
+                if(d["Period"] !== window.selectedPeriod){
+                    //console.log("yes")
+                    return 0
+                } else if(d["Country"] === window.hoverCountry){
+                    return window.selectStrokeWidth
+                } else {
+                    if(window.selectedContinent !== null || window.hoverContinent !== null) {
+                        if(d["Continent"] === window.selectedContinent || d["Continent"] === window.hoverContinent) {
+                            return 1
+                        } else {
+                            return 0
+                        }
+                    }
+                    return 1
+                }
+            }
+            
+        })
         .attr("opacity", d => {
-            if (window.selectedCountry == null) {
-                if (window.hoverCountry == null) {
-                    return(1);
+            //if a country is hovered over, it is full opacity, the selected country if applicable is not as opaque and neither are the selected continent
+            //if a country is selected, it and continent are even opaqueness
+            //if a continent is selected, then it is opaque
+            //if a continent is hovered over, it is full opacity and the selected continent is opque, country is unaffected
+            if(window.hoverCountry !== null) {
+                if(d["Country"] === window.hoverCountry) {
+                    if(d["Period"] === window.selectedPeriod){
+                        return 1
+                    } else {
+                        return .5
+                    }
+                } else {
+                    return .3
                 }
-                else if (window.hoverCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
-                    return(1);
+            } else {
+                if(d["Country"] === window.selectedCountry) {
+                    if(d["Period"] === window.selectedPeriod){
+                        return 1
+                    } else {
+                        return .5
+                    }
                 }
-                else {
-                    return(0);
+                if(window.hoverContinent !== null) {
+                    if(d["Continent"] === window.hoverContinent) {
+                        return 1
+                    } else if(d["Continent"] === window.selectedContinent){
+                        return .5
+                    } else {
+                        return .3 //everything else
+                    }
+                } else {
+                    return 1
                 }
-            }
-
-            else if (window.hoverCountry == null) {
-                if (window.selectedCountry == null) {
-                    return(1);
-                }
-                else if (window.selectedCountry == d["Country"] && d["Period"] == window.selectedPeriod) {
-                    return(1);
-                }
-                else {
-                    return(0);
-                }
-            }
-
-            else if ((d["Country"] == window.selectedCountry && d["Period"] == window.selectedPeriod) || (d["Country"] == window.hoverCountry && d["Period"] == window.selectedPeriod)) {
-                return(1);
-            }
-
-            else {
-                return(0);
             }
         })
+    q4_lines.filter(d => { //raise all selected items
+        scountry = d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry
+        scontinent = d["Continent"] === window.hoverContinent
+        console.log(scountry || scontinent)
+        return scountry || scontinent})
+        .raise()
 }
 
 window.intervalVar = null
