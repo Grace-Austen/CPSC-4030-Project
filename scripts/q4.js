@@ -96,7 +96,24 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
         .attr("d", d => lineMaker(d))
         .attr("fill", "none")
         .attr("stroke-width", 1)
-        .attr("stroke", d => window.continent_color_dict[d["Continent"]]);
+        .attr("stroke", d => window.continent_color_dict[d["Continent"]])
+        .on("mouseover", function(event){
+            var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+            update("highlightCountry", thisCountry)
+            displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
+        })
+        .on("mouseout", function(event){
+            removeToolTip()
+            update("highlightCountry", null)
+        })
+        .on("mousemove", event => {
+            displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
+        })
+        .on("click", function(){
+            var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+            window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
+            update()
+        })
 
     //Flip
     svg.attr("transform", `rotate(90)`);

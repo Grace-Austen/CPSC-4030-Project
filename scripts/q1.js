@@ -80,9 +80,14 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                            .attr("stroke-width", countryStroke)
                            .on("mouseover", function(event){
                                 update("highlightCountry", countryAccessor(d3.select(this)["_groups"][0][0]["__data__"]))
+                                displayTooltip(event, window.selectedPeriod)
                             })
                             .on("mouseout", function(event){
+                                removeToolTip()
                                 update("highlightCountry", null)
+                           })
+                           .on("mousemove", event => {
+                                displayTooltip(event, window.selectedPeriod)
                            })
                            .on("click", function(){
                                 var thisCountry = countryAccessor(d3.select(this)["_groups"][0][0]["__data__"])
@@ -127,15 +132,6 @@ d3.csv("data/q1_data/q1_data.csv").then((dataset) => {
                                     .attr("x", (dimensions.width/2))
                                     .attr("y", dimensions.height - window.xAxisFontSize)
                                     .text("Mean Years of Schooling")
-
-        // //country selected
-        // var countrySelectedText = svg.append("text")
-        //                             .attr("id", "countrySelectedText")
-        //                             .attr("text-anchor", "middle")
-        //                             .attr("font-size", window.xAxisFontSize)
-        //                             .attr("x", (dimensions.width/2))
-        //                             .attr("y", dimensions.height - window.xAxisFontSize)
-        //                             .text("Country selected: none")
 
     })
 })
