@@ -56,31 +56,30 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("stroke", window.selectStroke)
                     .attr("stroke-width", 0)
                     .style("transform",`translateX(-${window.circle_r/2}px)`)
-                    .on("mouseover", function(){
-                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        Tooltip
-                          .raise()
-                          .style("opacity", 1)
-                          .attr("x", xScale(xAccessor(thisData)) - 20)
-                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
-                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
-                        update("highlightCountry", thisData["Country"])
+                    .on("mouseover", function(event){
+                        var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+                        // Tooltip
+                        //   .raise()
+                        //   .style("opacity", 1)
+                        //   .attr("x", xScale(xAccessor(thisData)) - 20)
+                        //   .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                        //   .text(`${thisData["Country"]}, ${thisData["Period"]}`)
+                        update("highlightCountry", thisCountry)
+                        displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
                     })
                     .on("mouseout", function(){
-                        Tooltip
-                          .lower()
-                          .style("opacity", 0)
+                        // Tooltip
+                        //   .lower()
+                        //   .style("opacity", 0)
+                        removeToolTip()
                         update("highlightCountry", null) 
                     })
+                    .on("mousemove", event => {
+                      displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
+                    })
                     .on("click", function(){
-                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        Tooltip
-                          .raise()
-                          .style("opacity", 1)
-                          .attr("x", xScale(xAccessor(thisData)) - 20)
-                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
-                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
-                        window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
+                        var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+                        window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
                         update()
                     })
                     .filter(d => d["Period"] === window.selectedPeriod)
@@ -100,32 +99,31 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("stroke", window.selectStroke)
                     .attr("stroke-width", 0)
                     .on("mouseover", function(event){
-                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        Tooltip
-                          .raise()
-                          .style("opacity", 1)
-                          .attr("x", xScale(xAccessor(thisData)) - 20)
-                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
-                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
-                        update("highlightCountry", thisData["Country"])
-                    })
-                    .on("mouseout", function(event){
-                        Tooltip
-                          .lower()
-                          .style("opacity", 0)
-                        update("highlightCountry", null)
-                    })
-                    .on("click", function(){
-                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        Tooltip
-                          .raise()
-                          .style("opacity", 1)
-                          .attr("x", xScale(xAccessor(thisData)) - 20)
-                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
-                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
-                        window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
-                        update()
-                    })
+                      var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+                      // Tooltip
+                      //   .raise()
+                      //   .style("opacity", 1)
+                      //   .attr("x", xScale(xAccessor(thisData)) - 20)
+                      //   .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                      //   .text(`${thisData["Country"]}, ${thisData["Period"]}`)
+                      update("highlightCountry", thisCountry)
+                      displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
+                  })
+                  .on("mouseout", function(){
+                      // Tooltip
+                      //   .lower()
+                      //   .style("opacity", 0)
+                      removeToolTip()
+                      update("highlightCountry", null) 
+                  })
+                  .on("mousemove", event => {
+                    displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
+                  })
+                  .on("click", function(){
+                      var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+                      window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
+                      update()
+                  })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
 
@@ -141,33 +139,32 @@ d3.csv("data/q3_data/q3_data.csv").then(function(dataset) {
                     .attr("fill", d => window.continent_color_dict[d["Continent"]])
                     .attr("stroke", window.selectStroke)
                     .attr("stroke-width", 0)
-                    .on("mouseover", function(){
-                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        Tooltip
-                          .raise()
-                          .style("opacity", 1)
-                          .attr("x", xScale(xAccessor(thisData)) - 20)
-                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
-                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
-                        update("highlightCountry", thisData["Country"])
-                    })
-                    .on("mouseout", function(){
-                        Tooltip
-                          .lower()
-                          .style("opacity", 0)
-                        update("highlightCountry", null) 
-                    })
-                    .on("click", function(){
-                        var thisData = d3.select(this)["_groups"][0][0]["__data__"]
-                        Tooltip
-                          .raise()
-                          .style("opacity", 1)
-                          .attr("x", xScale(xAccessor(thisData)) - 20)
-                          .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
-                          .text(`${thisData["Country"]}, ${thisData["Period"]}`)
-                        window.selectedCountry = (window.selectedCountry === thisData["Country"] ? null : thisData["Country"])
-                        update()
-                    })
+                    .on("mouseover", function(event){
+                      var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+                      // Tooltip
+                      //   .raise()
+                      //   .style("opacity", 1)
+                      //   .attr("x", xScale(xAccessor(thisData)) - 20)
+                      //   .attr("y", schoolScale(schoolAccessor(thisData)) - 10)
+                      //   .text(`${thisData["Country"]}, ${thisData["Period"]}`)
+                      update("highlightCountry", thisCountry)
+                      displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
+                  })
+                  .on("mouseout", function(){
+                      // Tooltip
+                      //   .lower()
+                      //   .style("opacity", 0)
+                      removeToolTip()
+                      update("highlightCountry", null) 
+                  })
+                  .on("mousemove", event => {
+                    displayTooltip(event, d3.select(this)["_groups"][0][0]["__data__"]["Period"])
+                  })
+                  .on("click", function(){
+                      var thisCountry = d3.select(this)["_groups"][0][0]["__data__"]["Country"]
+                      window.selectedCountry = (window.selectedCountry === thisCountry ? null : thisCountry)
+                      update()
+                  })
                     .filter(d => d["Period"] === window.selectedPeriod)
                     .attr("r", window.circle_r)
 

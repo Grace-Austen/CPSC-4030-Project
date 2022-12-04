@@ -133,7 +133,6 @@ function update(type, value){
             if(d["Country"] === window.selectedCountry){
                 return window.selectCircle_r
             } else if(d["Period"] !== window.selectedPeriod){
-                //console.log("yes")
                 return 0
             } else if(d["Country"] === window.hoverCountry){
                 return window.selectCircle_r
@@ -211,7 +210,6 @@ function update(type, value){
                 if(d["Country"] === window.selectedCountry){ 
                     return window.selectStrokeWidth
                 } else if(d["Period"] !== window.selectedPeriod){
-                    //console.log("yes")
                     return 0
                 } else if(d["Country"] === window.hoverCountry){
                     return window.selectStrokeWidth
@@ -224,7 +222,6 @@ function update(type, value){
                 }
             } else {
                 if(d["Period"] !== window.selectedPeriod){
-                    //console.log("yes")
                     return 0
                 } else if(d["Country"] === window.hoverCountry){
                     return window.selectStrokeWidth
@@ -280,7 +277,6 @@ function update(type, value){
     q4_lines.filter(d => { //raise all selected items
         scountry = d["Country"] === window.selectedCountry || d["Country"] === window.hoverCountry
         scontinent = d["Continent"] === window.hoverContinent
-        console.log(scountry || scontinent)
         return scountry || scontinent})
         .raise()
 }
@@ -311,18 +307,20 @@ function updateYear(){
     // selectPeriod()
 }
 
-// function displayTooltip(event){
-//     //tooltip on hovering
-//     if(window.hoverCountry !== null) {
-//         ttd = document.getElementById("tooltip-div")
-//         ttd.innerHTML = `<p id="tooltip-text">Country: ${hoverCountry}</p>`
-//         sY = event.clientY
-//         sX = event.clientX
-//         console.log(event, "x", sX, "y", sY)
-//         ttd.style.top = `${sY}px`
-//         ttd.style.left = `${sX}px`
-//     } else {
-//         ttd = document.getElementById("tooltip-div")
-//         ttd.innerHTML = ""
-//     }
-// }
+function displayTooltip(event, period){
+    //tooltip on hovering
+    ttd = document.getElementById("tooltip-div")
+    ttd.innerHTML = `<p id="tooltip-text">${hoverCountry}
+                    <br>${period}
+                    </p>`
+    sY = event.pageY + 5
+    sX = event.pageX + 5
+    // console.log(event, "x", sX, "y", sY)
+    ttd.style.top = `${sY}px`
+    ttd.style.left = `${sX}px`
+}
+
+function removeToolTip(){
+    ttd = document.getElementById("tooltip-div")
+    ttd.innerHTML = ""
+}

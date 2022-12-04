@@ -75,12 +75,13 @@ li {
 }
 
 #tooltip-div {
-    width: min-content;
+    width: fit-content;
     height: min-content;
     position:fixed;
     fill:beige;
     stroke: white;
     margin: 0px;
+    z-index: 1000;
 }
 
 #tooltip-text {
