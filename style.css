@@ -58,7 +58,7 @@ li {
 #tooltip-div {
     width: fit-content;
     height: min-content;
-    position:fixed;
+    position: absolute;
     fill:beige;
     stroke: white;
     margin: 0px;
@@ -68,7 +68,6 @@ li {
 #tooltip-text {
     font-size: 10px;
 }
-
 
 /*Credits*/
 footer {
