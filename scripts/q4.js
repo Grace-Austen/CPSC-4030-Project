@@ -5,16 +5,19 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
 
     //Setup dimensions
     var dims = {
-        width: container.clientHeight / 2 + 40,
-        height: window.width_percentage * container.clientWidth + 80,
+        width: window.width_percentage * container.clientWidth * 0.5,
+        height: window.width_percentage * container.clientWidth * 0.5,
         margin: {
-            top: 20,
+            top: 10,
             bottom: 90,
-            right: 25,
-            left: 50
+            right: 10,
+            left: 30
         }
     };
 
+    //Flip
+    svg.attr("transform", `rotate(90)`);
+    
     //Set width and height to svg
     svg.style("width", dims.width);
     svg.style("height", dims.height);
@@ -114,7 +117,4 @@ d3.csv("data/q4_data/q4.csv").then((dataset) => {
             window.selectedCountry = window.selectedCountry === thisCountry ? null : thisCountry
             update()
         })
-
-    //Flip
-    svg.attr("transform", `rotate(90)`);
 });

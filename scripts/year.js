@@ -7,7 +7,7 @@ d3.csv("data/q1_data/q1_data.csv").then(function(dataset){
     var width_percentage = 1
     var dims = {
         width: width_percentage * container.clientWidth,
-        height: .4 * width_percentage * container.clientWidth,
+        height: 0.6 * width_percentage * container.clientWidth,
         margin: {
             top: 10,
             bottom: 30 + window.xAxisFontSize,
