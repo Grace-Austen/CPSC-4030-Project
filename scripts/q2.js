@@ -3,7 +3,7 @@ d3.csv("data/q2_data/q2.csv").then((dataset) => {
     var svg = d3.select("#q2-viz")
 
     var dimensions = {
-        height: container.clientHeight / 2,
+        height: window.width_percentage * container.clientHeight,
         width: window.width_percentage * container.clientWidth,
         margin:{
             top: 10,

@@ -14,8 +14,8 @@ body {
 h1 {
     background-color: rgb(201, 201, 178);
     margin-top: -8px;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 a {
@@ -28,40 +28,21 @@ table {
     margin-right: auto;
 }
 
-#year-container{
+tr {
     width: 100%;
-    min-width: 50%;
-    max-width: 60%;
 }
 
-#selector-container{
-    width: 100%;
-    min-width: 70%;
-    max-width: 80%;
+#q3-container, #q1-container, #q4-container, #q2-container, #year-container {
+    width: 30%;
+    height: 48vh;
 }
 
-#q1-container{
-    width: 100%;
-    min-width: 20%;
-    max-width: 30%;
+#q3-container {
+    width: 70%;
 }
 
-#q2-container{
-    width: 100%;
-    min-width: 7.5%;
-    max-width: 10%;
-}
-
-#q3-container{
-    width: 100%;
-    min-width: 80%;
-    max-width: 85%;
-}
-
-#q4-container{
-    width: 100%;
-    min-width: 7.5%;
-    max-width: 10%;
+#q4-container, #q2-container, #year-container {
+    width: 33%;
 }
 
 h5 {
@@ -77,7 +58,7 @@ li {
 #tooltip-div {
     width: fit-content;
     height: min-content;
-    position:fixed;
+    position: absolute;
     fill:beige;
     stroke: white;
     margin: 0px;
@@ -87,7 +68,6 @@ li {
 #tooltip-text {
     font-size: 10px;
 }
-
 
 /*Credits*/
 footer {
